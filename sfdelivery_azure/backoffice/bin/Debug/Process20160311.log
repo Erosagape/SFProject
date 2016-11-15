@@ -1,0 +1,77 @@
+﻿Start Schedule At :3/11/2016 10:00:00 AM
+Process 1285 of 1285
+Delivery201603 Created (599)
+DeliveryDetails201603 Created (18382)
+Delivery201603 Get! (599)
+DeliveryDetails201603 Get! (18382)
+Diff Header=7
+Delivery201603_1.json Created!
+Diff Detail=0
+Delivery201602 Created (2240)
+DeliveryDetails201602 Created (62819)
+Delivery201602 Get! (2240)
+DeliveryDetails201602 Get! (62819)
+Diff Header=0
+Diff Detail=0
+Complete!->File Delivery201603_1.json uploaded
+Completed! Delivery201603 files=1 rec=7 add=0,update=7
+
+Completed! DeliveryDetails201603 files=0 rec=0 add=0,update=0
+
+Completed! Delivery201602 files=0 rec=0 add=0,update=0
+
+Completed! DeliveryDetails201602 files=0 rec=0 add=0,update=0
+
+End Schedule At :3/11/2016 10:00:33 AM
+Start Schedule At :3/11/2016 10:00:35 AM
+Process 1285 of 1285
+Delivery201603 Created (599)
+DeliveryDetails201603 Created (18382)
+Delivery201603 Get! (599)
+DeliveryDetails201603 Get! (18382)
+Diff Header=0
+Diff Detail=0
+Delivery201602 Created (2240)
+DeliveryDetails201602 Created (62819)
+Delivery201602 Get! (2240)
+DeliveryDetails201602 Get! (62819)
+Diff Header=0
+Diff Detail=0
+Completed! Delivery201603 files=0 rec=0 add=0,update=0
+
+Completed! DeliveryDetails201603 files=0 rec=0 add=0,update=0
+
+Completed! Delivery201602 files=0 rec=0 add=0,update=0
+
+Completed! DeliveryDetails201602 files=0 rec=0 add=0,update=0
+
+End Schedule At :3/11/2016 10:01:03 AM
+Start Schedule At :3/11/2016 11:00:00 AM
+Process 1285 of 1285
+Delivery201603 Created (602)
+DeliveryDetails201603 Created (18434)
+Delivery201603 Get! (599)
+DeliveryDetails201603 Get! (18382)
+Diff Header=3
+Delivery201603_1.json Created!
+Diff Detail=52
+DeliveryDetails201603_1.json Created!
+DeliveryDetails201603_2.json Created!
+Delivery201602 Created (2240)
+DeliveryDetails201602 Created (62819)
+Delivery201602 Get! (2240)
+DeliveryDetails201602 Get! (62819)
+Diff Header=0
+Diff Detail=0
+Complete!->File Delivery201603_1.json uploaded
+Complete!->File DeliveryDetails201603_1.json uploaded
+Complete!->File DeliveryDetails201603_2.json uploaded
+Completed! Delivery201603 files=1 rec=3 add=3,update=0
+
+Completed! DeliveryDetails201603 files=2 rec=52 add=52,update=0
+
+Completed! Delivery201602 files=0 rec=0 add=0,update=0
+
+Completed! DeliveryDetails201602 files=0 rec=0 add=0,update=0
+
+End Schedule At :3/11/2016 11:00:44 AM

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SfDeliveryTrackingModelStoreContainer" CdmEntityContainer="SfDeliveryTrackingEntities">
+    <EntitySetMapping Name="DeliverPlaces">
+      <EntityTypeMapping TypeName="SfDeliveryTrackingModel.DeliverPlace">
+        <MappingFragment StoreEntitySet="DeliverPlaces">
+          <ScalarProperty Name="DeliverPlaceId" ColumnName="DeliverPlaceId" />
+          <ScalarProperty Name="DeliverPlaceCode" ColumnName="DeliverPlaceCode" />
+          <ScalarProperty Name="DeliverPlaceName" ColumnName="DeliverPlaceName" />
+          <ScalarProperty Name="DeliverPlaceAddress" ColumnName="DeliverPlaceAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeliveryOrders">
+      <EntityTypeMapping TypeName="SfDeliveryTrackingModel.DeliveryOrder">
+        <MappingFragment StoreEntitySet="DeliveryOrders">
+          <ScalarProperty Name="DeliverOrderId" ColumnName="DeliverOrderId" />
+          <ScalarProperty Name="DeliverOrderDate" ColumnName="DeliverOrderDate" />
+          <ScalarProperty Name="DeliverQty" ColumnName="DeliverQty" />
+          <ScalarProperty Name="TotalInv" ColumnName="TotalInv" />
+          <ScalarProperty Name="TotalBox" ColumnName="TotalBox" />
+          <ScalarProperty Name="TotalBundle" ColumnName="TotalBundle" />
+          <ScalarProperty Name="TotalSack" ColumnName="TotalSack" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="StaffName" ColumnName="StaffName" />
+          <ScalarProperty Name="SalesOrderId" ColumnName="SalesOrderId" />
+          <ScalarProperty Name="DeliverPlaceId" ColumnName="DeliverPlaceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesOrders">
+      <EntityTypeMapping TypeName="SfDeliveryTrackingModel.SalesOrder">
+        <MappingFragment StoreEntitySet="SalesOrders">
+          <ScalarProperty Name="SalesOrderId" ColumnName="SalesOrderId" />
+          <ScalarProperty Name="SalesOrderNo" ColumnName="SalesOrderNo" />
+          <ScalarProperty Name="SalesOrderDate" ColumnName="SalesOrderDate" />
+          <ScalarProperty Name="SalesQty" ColumnName="SalesQty" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Staffs">
+      <EntityTypeMapping TypeName="SfDeliveryTrackingModel.Staff">
+        <MappingFragment StoreEntitySet="Staffs">
+          <ScalarProperty Name="StaffID" ColumnName="StaffID" />
+          <ScalarProperty Name="StaffName" ColumnName="StaffName" />
+          <ScalarProperty Name="StaffPosition" ColumnName="StaffPosition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

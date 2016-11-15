@@ -1,0 +1,240 @@
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\ApplicationInsights.config
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\sfdelivery.dll.config
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\sfdelivery.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\sfdelivery.pdb
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\DevExpress.Data.v15.2.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\DevExpress.Printing.v15.2.Core.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\DevExpress.RichEdit.v15.2.Core.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\DevExpress.Web.ASPxThemes.v15.2.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\DevExpress.Web.v15.2.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\EntityFramework.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\EntityFramework.SqlServer.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\Microsoft.AI.Web.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\Microsoft.Diagnostics.Tracing.EventSource.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\Microsoft.Threading.Tasks.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\Newtonsoft.Json.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\System.IO.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\System.Runtime.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\System.Threading.Tasks.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\DevExpress.Office.v15.2.Core.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\DevExpress.Pdf.v15.2.Core.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\DevExpress.Pdf.v15.2.Drawing.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\DevExpress.Data.v15.2.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\DevExpress.Printing.v15.2.Core.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\DevExpress.RichEdit.v15.2.Core.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\DevExpress.Web.v15.2.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\EntityFramework.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\EntityFramework.SqlServer.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\Microsoft.AI.Web.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\Microsoft.Diagnostics.Tracing.EventSource.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\Microsoft.Threading.Tasks.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\Newtonsoft.Json.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\System.IO.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\System.Runtime.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\System.Threading.Tasks.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\DevExpress.Office.v15.2.Core.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\DevExpress.Pdf.v15.2.Core.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\DevExpress.Pdf.v15.2.Drawing.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\de\DevExpress.Data.v15.2.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\es\DevExpress.Data.v15.2.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\ja\DevExpress.Data.v15.2.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\ru\DevExpress.Data.v15.2.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\de\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\es\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\ja\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\ru\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\de\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\es\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\ja\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\ru\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\de\DevExpress.Web.v15.2.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\es\DevExpress.Web.v15.2.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\ja\DevExpress.Web.v15.2.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\ru\DevExpress.Web.v15.2.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\de\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\es\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\ja\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\ru\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\de\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\es\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\ja\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\bin\ru\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\obj\Release\sfdelivery_web.csproj.App.config
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\obj\Release\sfdelivery_web.csprojResolveAssemblyReference.cache
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\obj\Release\sfdelivery.dll.licenses
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\obj\Release\sfdelivery.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\sfdelivery\obj\Release\sfdelivery.pdb
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\ApplicationInsights.config
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\sfdelivery.dll.config
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\sfdelivery.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\sfdelivery.pdb
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\DevExpress.Data.v15.2.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\DevExpress.Printing.v15.2.Core.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\DevExpress.RichEdit.v15.2.Core.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\DevExpress.Web.ASPxThemes.v15.2.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\DevExpress.Web.v15.2.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\EntityFramework.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\EntityFramework.SqlServer.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\Microsoft.AI.Web.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\Microsoft.Diagnostics.Tracing.EventSource.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\Microsoft.Threading.Tasks.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\Newtonsoft.Json.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\System.IO.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\System.Runtime.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\System.Threading.Tasks.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\DevExpress.Office.v15.2.Core.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\DevExpress.Pdf.v15.2.Core.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\DevExpress.Pdf.v15.2.Drawing.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\DevExpress.Data.v15.2.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\DevExpress.Printing.v15.2.Core.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\DevExpress.RichEdit.v15.2.Core.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\DevExpress.Web.v15.2.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\EntityFramework.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\EntityFramework.SqlServer.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\Microsoft.AI.Web.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\Microsoft.Diagnostics.Tracing.EventSource.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\Microsoft.Threading.Tasks.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\Newtonsoft.Json.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\System.IO.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\System.Runtime.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\System.Threading.Tasks.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\DevExpress.Office.v15.2.Core.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\DevExpress.Pdf.v15.2.Core.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\DevExpress.Pdf.v15.2.Drawing.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\de\DevExpress.Data.v15.2.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\es\DevExpress.Data.v15.2.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\ja\DevExpress.Data.v15.2.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\ru\DevExpress.Data.v15.2.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\de\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\es\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\ja\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\ru\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\de\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\es\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\ja\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\ru\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\de\DevExpress.Web.v15.2.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\es\DevExpress.Web.v15.2.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\ja\DevExpress.Web.v15.2.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\ru\DevExpress.Web.v15.2.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\de\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\es\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\ja\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\ru\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\de\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\es\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\ja\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\bin\ru\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\obj\Release\sfdelivery_web.csproj.App.config
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\obj\Release\sfdelivery_web.csprojResolveAssemblyReference.cache
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\obj\Release\sfdelivery.dll.licenses
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\obj\Release\sfdelivery.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\sfdelivery\obj\Release\sfdelivery.pdb
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\ApplicationInsights.config
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\sfdelivery.dll.config
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\sfdelivery.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\sfdelivery.pdb
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\DevExpress.Data.v15.2.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\DevExpress.Printing.v15.2.Core.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\DevExpress.RichEdit.v15.2.Core.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\DevExpress.Web.ASPxThemes.v15.2.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\DevExpress.Web.v15.2.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\EntityFramework.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\EntityFramework.SqlServer.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\Microsoft.AI.DependencyCollector.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\Microsoft.AI.Web.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\Microsoft.AI.WindowsServer.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\Microsoft.ApplicationInsights.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\Microsoft.Diagnostics.Tracing.EventSource.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\Microsoft.Threading.Tasks.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\Microsoft.Threading.Tasks.Extensions.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\Newtonsoft.Json.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\System.IO.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\System.Runtime.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\System.Threading.Tasks.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\DevExpress.Office.v15.2.Core.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\DevExpress.Pdf.v15.2.Core.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\DevExpress.Pdf.v15.2.Drawing.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\DevExpress.Data.v15.2.xml
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\DevExpress.Printing.v15.2.Core.xml
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\DevExpress.RichEdit.v15.2.Core.xml
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\DevExpress.Web.v15.2.xml
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\EntityFramework.xml
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\EntityFramework.SqlServer.xml
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\Microsoft.AI.DependencyCollector.xml
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\Microsoft.AI.Web.xml
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\Microsoft.AI.WindowsServer.xml
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\Microsoft.ApplicationInsights.xml
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\Microsoft.Diagnostics.Tracing.EventSource.xml
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\Microsoft.Threading.Tasks.xml
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\Microsoft.Threading.Tasks.Extensions.xml
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\Newtonsoft.Json.xml
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\System.IO.xml
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\System.Runtime.xml
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\System.Threading.Tasks.xml
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\DevExpress.Office.v15.2.Core.xml
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\DevExpress.Pdf.v15.2.Core.xml
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\DevExpress.Pdf.v15.2.Drawing.xml
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\de\DevExpress.Data.v15.2.resources.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\es\DevExpress.Data.v15.2.resources.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\ja\DevExpress.Data.v15.2.resources.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\ru\DevExpress.Data.v15.2.resources.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\de\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\es\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\ja\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\ru\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\de\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\es\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\ja\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\ru\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\de\DevExpress.Web.v15.2.resources.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\es\DevExpress.Web.v15.2.resources.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\ja\DevExpress.Web.v15.2.resources.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\ru\DevExpress.Web.v15.2.resources.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\de\DevExpress.Office.v15.2.Core.resources.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\es\DevExpress.Office.v15.2.Core.resources.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\ja\DevExpress.Office.v15.2.Core.resources.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\ru\DevExpress.Office.v15.2.Core.resources.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\de\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\es\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\ja\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\bin\ru\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\obj\Release\sfdelivery_web.csproj.App.config
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\obj\Release\sfdelivery.dll.licenses
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\obj\Release\sfdelivery.dll
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\obj\Release\sfdelivery.pdb
+C:\Work\SFProject\Webapps\sfdelivery_azure\sfdelivery\obj\Release\sfdelivery_web.csprojResolveAssemblyReference.cache

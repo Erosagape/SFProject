@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="44dee540-7859-4557-855f-00c382c7883e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://sfoot.azurewebsites.net/IService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="IService2.xsd" MetadataType="Schema" ID="b627d509-4a84-4dc2-8ce8-3d7f41e513de" SourceId="1" SourceUrl="http://sfoot.azurewebsites.net/IService.svc?xsd=xsd1" />
+    <MetadataFile FileName="IService1.disco" MetadataType="Disco" ID="f85c1aa5-e313-4917-a01f-8901bacf6416" SourceId="1" SourceUrl="http://sfoot.azurewebsites.net/IService.svc?disco" />
+    <MetadataFile FileName="IService1.wsdl" MetadataType="Wsdl" ID="76d9c2d3-9bc7-4bb6-8be3-3669405b8a03" SourceId="1" SourceUrl="http://sfoot.azurewebsites.net/IService.svc?wsdl" />
+    <MetadataFile FileName="IService21.xsd" MetadataType="Schema" ID="b966dc1a-cb5b-4e72-8091-bc7bfd621cc5" SourceId="1" SourceUrl="http://sfoot.azurewebsites.net/IService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

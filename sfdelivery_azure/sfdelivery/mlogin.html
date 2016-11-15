@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>aerosoft delivery tracking</title>
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport"
+          content="width=device-width,
+                 height=device-height, user-scalable=no" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+    <script>
+        $(function(){
+            $('#submitbtn').click(function(){
+                var chk = $('#chkremember').prop('checked');
+                if (chk==true) {
+                    var $username = $('#uname').val();
+                    var $password = $('#pword').val();
+                    localStorage.setItem('usrnme', $username);
+                    localStorage.setItem('password', $password);
+                }
+                else {
+                    localStorage.setItem('usrnme', '');
+                    localStorage.setItem('password', '');
+                }; // end rememberme
+            }); //end my-form
+
+            var username = localStorage.usrnme;
+            if (username != '') {
+                var password = localStorage.password;
+                $('#uname').val(username);
+                $('#pword').val(password);
+                $('#chkremember').prop('checked', true).checkboxradio('refresh');
+            }
+            else {
+                $('#uname').val('');
+                $('#pword').val('');
+                $('#chkremember').prop('checked', false).checkboxradio('refresh');
+            };
+        });
+    </script>
+</head>
+<body>
+    <div data-role="page" id="page">
+        <div data-role="header">
+            <h1>Delivery Tracking</h1>
+        </div>
+        <div data-role="ui-content">
+            <img src="logo.png" />
+            <form id="frm" method="post" action="menu.aspx" data-ajax="false">
+                <div class="ui-field-contain">
+                    <table style="width:auto">
+                        <tr>
+                            <td>
+                                <label for="uname">User:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="uname" id="uname">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="pword">Password:</label>
+                            </td>
+                            <td>
+                                <input type="password" name="pword" id="pword">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" id="submitbtn" data-inline="true" value="Submit"></td>
+                            <td>
+                                <label for="chkremember">Remember Me</label>
+                                <input type="checkbox" id="chkremember" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+<a href="Default.aspx" data-ajax="false">Desktop Version</a>
+            </form>
+        </div>
+        <div data-role="footer" data-theme="d">
+            <h4>Develop by IT Department</h4>
+        </div><!-- /footer -->
+    </div>
+</body>
+</html>

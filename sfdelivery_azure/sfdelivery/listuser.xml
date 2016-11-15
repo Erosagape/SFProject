@@ -1,0 +1,223 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <listuser>
+    <oid>0</oid>
+    <id>Admin</id>
+    <name>Administrator</name>
+    <password>summit337</password>
+    <zonecode>ALL</zonecode>
+    <zonename>ทั้งหมด</zonename>
+    <roleid>0</roleid>
+    <roleName>Administrator</roleName>
+    <empid />
+  </listuser>
+  <listuser>
+    <oid>1</oid>
+    <id>BKK14</id>
+    <name>วรพลย์ ภัครศุภฤทธิ์</name>
+    <password>voraphon</password>
+    <zonecode>BKK</zonecode>
+    <zonename>กรุงเทพ/ปริมณฑล</zonename>
+    <roleid>1</roleid>
+    <roleName>Sale Supervisor กรุงเทพ/ปริมณฑล</roleName>
+    <empid>070,063,071,072</empid>
+  </listuser>
+  <listuser>
+    <oid>2</oid>
+    <id>BKK12</id>
+    <name>พงศ์ดนัย เมฆมูสิก</name>
+    <password>oam</password>
+    <zonecode>BKK</zonecode>
+    <zonename>กรุงเทพ/ปริมณฑล</zonename>
+    <roleid>2</roleid>
+    <roleName>Sale กรุงเทพ/ปริมณฑล</roleName>
+    <empid>063</empid>
+  </listuser>
+  <listuser>
+    <oid>3</oid>
+    <id>BKK15</id>
+    <name>อัครวัฒน์ กีรติบำรุงพงษ์</name>
+    <password>noom</password>
+    <zonecode>BKK</zonecode>
+    <zonename>กรุงเทพ/ปริมณฑล</zonename>
+    <roleid>2</roleid>
+    <roleName>Sale กรุงเทพ/ปริมณฑล</roleName>
+    <empid>071</empid>
+  </listuser>
+  <listuser>
+    <oid>4</oid>
+    <id>BKK16</id>
+    <name>ดวงเนตร อินด้วง</name>
+    <password>banana</password>
+    <zonecode>BKK</zonecode>
+    <zonename>กรุงเทพ/ปริมณฑล</zonename>
+    <roleid>2</roleid>
+    <roleName>Sale กรุงเทพ/ปริมณฑล</roleName>
+    <empid>072</empid>
+  </listuser>
+  <listuser>
+    <oid>5</oid>
+    <id>UPC2</id>
+    <name>ณัฐพงษ์ ไลออน</name>
+    <password>nat</password>
+    <zonecode>UPC</zonecode>
+    <zonename>ต่างจังหวัด</zonename>
+    <roleid>1</roleid>
+    <roleName>Sale Supervisor ต่างจังหวัด</roleName>
+    <empid>052,021,022,UPC2</empid>
+  </listuser>
+  <listuser>
+    <oid>6</oid>
+    <id>UPC21</id>
+    <name>พงษ์พันธ์ ปานาที</name>
+    <password>kratai</password>
+    <zonecode>UPC-N</zonecode>
+    <zonename>ภาคเหนือ</zonename>
+    <roleid>2</roleid>
+    <roleName>Sale ภาคเหนือ</roleName>
+    <empid>052</empid>
+  </listuser>
+  <listuser>
+    <oid>7</oid>
+    <id>UPC52</id>
+    <name>ธนภัทร ศรีทอง</name>
+    <password>ton</password>
+    <zonecode>UPC-C</zonecode>
+    <zonename>ภาคกลาง</zonename>
+    <roleid>2</roleid>
+    <roleName>Sale ภาคกลาง</roleName>
+    <empid>021</empid>
+  </listuser>
+  <listuser>
+    <oid>8</oid>
+    <id>UPC53</id>
+    <name>ธนกฤติ หรุ่นโพธิ์</name>
+    <password>hlong</password>
+    <zonecode>UPC-W</zonecode>
+    <zonename>คาคตะวันตก-ไต้ตอนบน</zonename>
+    <roleid>2</roleid>
+    <roleName>Sale คาคตะวันตก-ไต้ตอนบน</roleName>
+    <empid>022</empid>
+  </listuser>
+  <listuser>
+    <oid>9</oid>
+    <id>UPC1</id>
+    <name>วรุตน์ อัษฏาภรณ์</name>
+    <password>waruta</password>
+    <zonecode>UPC</zonecode>
+    <zonename>ต่างจังหวัด</zonename>
+    <roleid>1</roleid>
+    <roleName>Sale Supervisor ต่างจังหวัด</roleName>
+    <empid>UPC1,051,062,069</empid>
+  </listuser>
+  <listuser>
+    <oid>10</oid>
+    <id>UPC31</id>
+    <name>พิสิทธิ์ อารักขกุล</name>
+    <password>chick</password>
+    <zonecode>UPC-E1</zonecode>
+    <zonename>ภาคตะวันออก-อีสานตอนบน</zonename>
+    <roleid>2</roleid>
+    <roleName>Sale ภาคตะวันออก-อีสานตอนบน</roleName>
+    <empid>051</empid>
+  </listuser>
+  <listuser>
+    <oid>11</oid>
+    <id>UPC41</id>
+    <name>วรินทร ศุภกิจกุล</name>
+    <password>tiger</password>
+    <zonecode>UPC-S</zonecode>
+    <zonename>ภาคไต้ตอนล่าง</zonename>
+    <roleid>2</roleid>
+    <roleName>Sale ภาคไต้ตอนล่าง</roleName>
+    <empid>062</empid>
+  </listuser>
+  <listuser>
+    <oid>12</oid>
+    <id>UPC51</id>
+    <name>สิรยา แสงอาทิตย์</name>
+    <password>may</password>
+    <zonecode>UPC-E2</zonecode>
+    <zonename>ภาคตะวันออก-อีสานตอนล่าง</zonename>
+    <roleid>2</roleid>
+    <roleName>Sale ภาคตะวันออก-อีสานตอนล่าง</roleName>
+    <empid>069</empid>
+  </listuser>
+  <listuser>
+    <oid>13</oid>
+    <id>PJ1</id>
+    <name>สืบศักดิ์ สงเคราะห์ราษฏร์</name>
+    <password>top</password>
+    <zonecode>PJ</zonecode>
+    <zonename>โครงการ</zonename>
+    <roleid>2</roleid>
+    <roleName>Sale โครงการ</roleName>
+    <empid>PJ1</empid>
+  </listuser>
+  <listuser>
+    <oid>14</oid>
+    <id>PJ2</id>
+    <name>สยาม ศรีบุญเรือง</name>
+    <password>kob</password>
+    <zonecode>PJ</zonecode>
+    <zonename>โครงการ</zonename>
+    <roleid>2</roleid>
+    <roleName>Sale โครงการ</roleName>
+    <empid>PJ2</empid>
+  </listuser>
+  <listuser>
+    <oid>15</oid>
+    <id>KAE2</id>
+    <name>-</name>
+    <password>Cancelled</password>
+    <zonecode>KAE</zonecode>
+    <zonename>โมเดิร์นเทรด/KAE</zonename>
+    <roleid>2</roleid>
+    <roleName>Sale โมเดิร์นเทรด/KAE</roleName>
+    <empid>L,R</empid>
+  </listuser>
+  <listuser>
+    <oid>16</oid>
+    <id>KAE1</id>
+    <name>กัญญาศรี กลิ่นเกษร</name>
+    <password>knob4288</password>
+    <zonecode>KAE</zonecode>
+    <zonename>โมเดิร์นเทรด/KAE</zonename>
+    <roleid>2</roleid>
+    <roleName>Sale โมเดิร์นเทรด/KAE</roleName>
+    <empid>B,M,SM,SW,OL</empid>
+  </listuser>
+  <listuser>
+    <oid>17</oid>
+    <id>0000</id>
+    <name>พนักงานทดสอบระบบ</name>
+    <password>1234</password>
+    <zonecode>ALL</zonecode>
+    <zonename>ทั้งหมด</zonename>
+    <roleid>3</roleid>
+    <roleName>Test User</roleName>
+    <empid />
+  </listuser>
+  <listuser>
+    <oid>18</oid>
+    <id>MKT</id>
+    <name>ปัณณภัช ทองคำ</name>
+    <password>nice</password>
+    <zonecode>ALL</zonecode>
+    <zonename>ทั้งหมด</zonename>
+    <roleid>1</roleid>
+    <roleName>Administrator</roleName>
+    <empid>ALL</empid>
+  </listuser>
+  <listuser>
+    <oid>19</oid>
+    <id>PK</id>
+    <name>พุทธิพงษ์ คงพ่วง</name>
+    <password>4780</password>
+    <zonecode>ALL</zonecode>
+    <zonename>ทั้งหมด</zonename>
+    <roleid>0</roleid>
+    <roleName>Web Master</roleName>
+    <empid>ALL</empid>
+  </listuser>
+</DocumentElement>

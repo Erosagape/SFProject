@@ -1,0 +1,81 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <OID>17_20160903_rpc010 _HL1101RD370</OID>
+    <salesDate>2016-09-03</salesDate>
+    <salesType>3</salesType>
+    <discountRate>20</discountRate>
+    <prodID>3627</prodID>
+    <prodName>HL1101</prodName>
+    <ModelCode>HL1101</ModelCode>
+    <ColorCode>RD</ColorCode>
+    <ColorName>แดง</ColorName>
+    <sizeNo>37</sizeNo>
+    <salesQty>1</salesQty>
+    <TagPrice>390</TagPrice>
+    <salesPrice>312</salesPrice>
+    <shopName>โรบินสันระยอง</shopName>
+    <entryBy>RPC010 </entryBy>
+    <remark />
+    <prodType>6</prodType>
+    <prodCat>2</prodCat>
+    <prodGroup>รองเท้าผ้าใบ</prodGroup>
+    <lastUpdate>9/3/2016 8:58:11 PM</lastUpdate>
+    <ShareDiscount>50</ShareDiscount>
+    <GPx>58</GPx>
+    <note />
+    <postFlag>N</postFlag>
+  </Table>
+  <Table>
+    <OID>17_20160903_rpc010 _HL1207GN390</OID>
+    <salesDate>2016-09-03</salesDate>
+    <salesType>3</salesType>
+    <discountRate>20</discountRate>
+    <prodID>6656</prodID>
+    <prodName>HL1207</prodName>
+    <ModelCode>HL1207</ModelCode>
+    <ColorCode>GN</ColorCode>
+    <ColorName>เขียว</ColorName>
+    <sizeNo>39</sizeNo>
+    <salesQty>1</salesQty>
+    <TagPrice>490</TagPrice>
+    <salesPrice>392</salesPrice>
+    <shopName>โรบินสันระยอง</shopName>
+    <entryBy>RPC010 </entryBy>
+    <remark />
+    <prodType>3</prodType>
+    <prodCat>2</prodCat>
+    <prodGroup>รองเท้าแตะ</prodGroup>
+    <lastUpdate>9/3/2016 8:58:58 PM</lastUpdate>
+    <ShareDiscount>50</ShareDiscount>
+    <GPx>58</GPx>
+    <note />
+    <postFlag>N</postFlag>
+  </Table>
+  <Table>
+    <OID>17_20160903_rpc010 _DW0306OS350</OID>
+    <salesDate>2016-09-03</salesDate>
+    <salesType>3</salesType>
+    <discountRate>20</discountRate>
+    <prodID>3093</prodID>
+    <prodName>DW0306</prodName>
+    <ModelCode>DW0306</ModelCode>
+    <ColorCode>OS</ColorCode>
+    <ColorName>โอลด์โรส</ColorName>
+    <sizeNo>35</sizeNo>
+    <salesQty>1</salesQty>
+    <TagPrice>459</TagPrice>
+    <salesPrice>367.2</salesPrice>
+    <shopName>โรบินสันระยอง</shopName>
+    <entryBy>RPC010 </entryBy>
+    <remark />
+    <prodType>6</prodType>
+    <prodCat>5</prodCat>
+    <prodGroup>รองเท้าผ้าใบ</prodGroup>
+    <lastUpdate>9/3/2016 8:59:34 PM</lastUpdate>
+    <ShareDiscount>50</ShareDiscount>
+    <GPx>58</GPx>
+    <note />
+    <postFlag>N</postFlag>
+  </Table>
+</NewDataSet>

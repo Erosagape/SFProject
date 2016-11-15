@@ -1,0 +1,282 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <Table>
+    <OID>1</OID>
+    <ModelCode />
+    <Color />
+    <SizeNo />
+    <StockType>0</StockType>
+    <TransactionState>PCR</TransactionState>
+    <TransactionType>สั่งสินค้า One Price</TransactionType>
+    <StockDate />
+    <ProdCatName>รองเท้าแตะหญิง</ProdCatName>
+    <GoodsCode />
+    <ProdQty>3</ProdQty>
+    <StockQty>0</StockQty>
+    <TagPrice>0</TagPrice>
+    <GPx>0</GPx>
+    <DiscountRate>0</DiscountRate>
+    <ShareDiscount>0</ShareDiscount>
+    <Cal>1</Cal>
+    <SalesIn>0</SalesIn>
+    <SalesOut>0</SalesOut>
+    <UPriceIn>0</UPriceIn>
+    <UPriceOut>0</UPriceOut>
+    <StockIn>0</StockIn>
+    <StockOut>0</StockOut>
+    <TransactionDate>2016-09-20</TransactionDate>
+    <RefNo>STI2016090010001</RefNo>
+    <TransactionBy>WM001</TransactionBy>
+    <ApproveCode />
+    <ConfirmCode />
+    <AcceptCode />
+  </Table>
+  <Table>
+    <OID>2</OID>
+    <ModelCode />
+    <Color />
+    <SizeNo />
+    <StockType>0</StockType>
+    <TransactionState>PCR</TransactionState>
+    <TransactionType>สั่งสินค้า One Price</TransactionType>
+    <StockDate />
+    <ProdCatName>รองเท้าแตะเด็ก</ProdCatName>
+    <GoodsCode />
+    <ProdQty>3</ProdQty>
+    <StockQty>0</StockQty>
+    <TagPrice>0</TagPrice>
+    <GPx>0</GPx>
+    <DiscountRate>0</DiscountRate>
+    <ShareDiscount>0</ShareDiscount>
+    <Cal>0</Cal>
+    <SalesIn>0</SalesIn>
+    <SalesOut>0</SalesOut>
+    <UPriceIn>0</UPriceIn>
+    <UPriceOut>0</UPriceOut>
+    <StockIn>0</StockIn>
+    <StockOut>0</StockOut>
+    <TransactionDate>2016-09-20</TransactionDate>
+    <RefNo>STI2016090010002</RefNo>
+    <TransactionBy>WM001</TransactionBy>
+    <ApproveCode />
+    <ConfirmCode />
+    <AcceptCode />
+  </Table>
+  <Table>
+    <OID>3</OID>
+    <ModelCode>C1212</ModelCode>
+    <Color>แดง</Color>
+    <SizeNo>35</SizeNo>
+    <StockType>0</StockType>
+    <TransactionState>PCR</TransactionState>
+    <TransactionType>สั่งสินค้าปกติ</TransactionType>
+    <StockDate />
+    <ProdCatName>รองเท้าแตะหญิง</ProdCatName>
+    <GoodsCode>C1212RD350</GoodsCode>
+    <ProdQty>1</ProdQty>
+    <StockQty>0</StockQty>
+    <TagPrice>0</TagPrice>
+    <GPx>0</GPx>
+    <DiscountRate>0</DiscountRate>
+    <ShareDiscount>0</ShareDiscount>
+    <Cal>0</Cal>
+    <SalesIn>0</SalesIn>
+    <SalesOut>0</SalesOut>
+    <UPriceIn>0</UPriceIn>
+    <UPriceOut>0</UPriceOut>
+    <StockIn>0</StockIn>
+    <StockOut>0</StockOut>
+    <TransactionDate>2016-09-20</TransactionDate>
+    <RefNo>STI2016090010003</RefNo>
+    <TransactionBy>WM001</TransactionBy>
+    <ApproveCode />
+    <ConfirmCode />
+    <AcceptCode />
+  </Table>
+  <Table>
+    <OID>4</OID>
+    <ModelCode>C1212</ModelCode>
+    <Color>แดง</Color>
+    <SizeNo>36</SizeNo>
+    <StockType>0</StockType>
+    <TransactionState>PCR</TransactionState>
+    <TransactionType>สั่งสินค้าปกติ</TransactionType>
+    <StockDate />
+    <ProdCatName>รองเท้าแตะหญิง</ProdCatName>
+    <GoodsCode>C1212RD360</GoodsCode>
+    <ProdQty>2</ProdQty>
+    <StockQty>0</StockQty>
+    <TagPrice>0</TagPrice>
+    <GPx>0</GPx>
+    <DiscountRate>0</DiscountRate>
+    <ShareDiscount>0</ShareDiscount>
+    <Cal>0</Cal>
+    <SalesIn>0</SalesIn>
+    <SalesOut>0</SalesOut>
+    <UPriceIn>0</UPriceIn>
+    <UPriceOut>0</UPriceOut>
+    <StockIn>0</StockIn>
+    <StockOut>0</StockOut>
+    <TransactionDate>2016-09-20</TransactionDate>
+    <RefNo>STI2016090010004</RefNo>
+    <TransactionBy>WM001</TransactionBy>
+    <ApproveCode />
+    <ConfirmCode />
+    <AcceptCode />
+  </Table>
+  <Table>
+    <OID>5</OID>
+    <ModelCode>C1212</ModelCode>
+    <Color>แดง</Color>
+    <SizeNo>37</SizeNo>
+    <StockType>0</StockType>
+    <TransactionState>PCR</TransactionState>
+    <TransactionType>สั่งสินค้าปกติ</TransactionType>
+    <StockDate />
+    <ProdCatName>รองเท้าแตะหญิง</ProdCatName>
+    <GoodsCode>C1212RD370</GoodsCode>
+    <ProdQty>3</ProdQty>
+    <StockQty>0</StockQty>
+    <TagPrice>0</TagPrice>
+    <GPx>0</GPx>
+    <DiscountRate>0</DiscountRate>
+    <ShareDiscount>0</ShareDiscount>
+    <Cal>0</Cal>
+    <SalesIn>0</SalesIn>
+    <SalesOut>0</SalesOut>
+    <UPriceIn>0</UPriceIn>
+    <UPriceOut>0</UPriceOut>
+    <StockIn>0</StockIn>
+    <StockOut>0</StockOut>
+    <TransactionDate>2016-09-20</TransactionDate>
+    <RefNo>STI2016090010005</RefNo>
+    <TransactionBy>WM001</TransactionBy>
+    <ApproveCode />
+    <ConfirmCode />
+    <AcceptCode />
+  </Table>
+  <Table>
+    <OID>6</OID>
+    <ModelCode>C1212</ModelCode>
+    <Color>แดง</Color>
+    <SizeNo>38</SizeNo>
+    <StockType>0</StockType>
+    <TransactionState>PCR</TransactionState>
+    <TransactionType>สั่งสินค้าปกติ</TransactionType>
+    <StockDate />
+    <ProdCatName>รองเท้าแตะหญิง</ProdCatName>
+    <GoodsCode>C1212RD380</GoodsCode>
+    <ProdQty>4</ProdQty>
+    <StockQty>0</StockQty>
+    <TagPrice>0</TagPrice>
+    <GPx>0</GPx>
+    <DiscountRate>0</DiscountRate>
+    <ShareDiscount>0</ShareDiscount>
+    <Cal>0</Cal>
+    <SalesIn>0</SalesIn>
+    <SalesOut>0</SalesOut>
+    <UPriceIn>0</UPriceIn>
+    <UPriceOut>0</UPriceOut>
+    <StockIn>0</StockIn>
+    <StockOut>0</StockOut>
+    <TransactionDate>2016-09-20</TransactionDate>
+    <RefNo>STI2016090010006</RefNo>
+    <TransactionBy>WM001</TransactionBy>
+    <ApproveCode />
+    <ConfirmCode />
+    <AcceptCode />
+  </Table>
+  <Table>
+    <OID>7</OID>
+    <ModelCode>C1212</ModelCode>
+    <Color>แดง</Color>
+    <SizeNo>39</SizeNo>
+    <StockType>0</StockType>
+    <TransactionState>PCR</TransactionState>
+    <TransactionType>สั่งสินค้าปกติ</TransactionType>
+    <StockDate />
+    <ProdCatName>รองเท้าแตะหญิง</ProdCatName>
+    <GoodsCode>C1212RD390</GoodsCode>
+    <ProdQty>2</ProdQty>
+    <StockQty>0</StockQty>
+    <TagPrice>0</TagPrice>
+    <GPx>0</GPx>
+    <DiscountRate>0</DiscountRate>
+    <ShareDiscount>0</ShareDiscount>
+    <Cal>0</Cal>
+    <SalesIn>0</SalesIn>
+    <SalesOut>0</SalesOut>
+    <UPriceIn>0</UPriceIn>
+    <UPriceOut>0</UPriceOut>
+    <StockIn>0</StockIn>
+    <StockOut>0</StockOut>
+    <TransactionDate>2016-09-20</TransactionDate>
+    <RefNo>STI2016090010007</RefNo>
+    <TransactionBy>WM001</TransactionBy>
+    <ApproveCode />
+    <ConfirmCode />
+    <AcceptCode />
+  </Table>
+  <Table>
+    <OID>8</OID>
+    <ModelCode>C1212</ModelCode>
+    <Color>แดง</Color>
+    <SizeNo>40</SizeNo>
+    <StockType>0</StockType>
+    <TransactionState>PCR</TransactionState>
+    <TransactionType>สั่งสินค้าปกติ</TransactionType>
+    <StockDate />
+    <ProdCatName>รองเท้าแตะหญิง</ProdCatName>
+    <GoodsCode>C1212RD400</GoodsCode>
+    <ProdQty>1</ProdQty>
+    <StockQty>0</StockQty>
+    <TagPrice>0</TagPrice>
+    <GPx>0</GPx>
+    <DiscountRate>0</DiscountRate>
+    <ShareDiscount>0</ShareDiscount>
+    <Cal>0</Cal>
+    <SalesIn>0</SalesIn>
+    <SalesOut>0</SalesOut>
+    <UPriceIn>0</UPriceIn>
+    <UPriceOut>0</UPriceOut>
+    <StockIn>0</StockIn>
+    <StockOut>0</StockOut>
+    <TransactionDate>2016-09-20</TransactionDate>
+    <RefNo>STI2016090010008</RefNo>
+    <TransactionBy>WM001</TransactionBy>
+    <ApproveCode />
+    <ConfirmCode />
+    <AcceptCode />
+  </Table>
+  <Table>
+    <OID>9</OID>
+    <ModelCode>C1212</ModelCode>
+    <Color>แดง</Color>
+    <SizeNo>41</SizeNo>
+    <StockType>0</StockType>
+    <TransactionState>PCR</TransactionState>
+    <TransactionType>สั่งสินค้าปกติ</TransactionType>
+    <StockDate />
+    <ProdCatName>รองเท้าแตะหญิง</ProdCatName>
+    <GoodsCode>C1212RD410</GoodsCode>
+    <ProdQty>1</ProdQty>
+    <StockQty>0</StockQty>
+    <TagPrice>0</TagPrice>
+    <GPx>0</GPx>
+    <DiscountRate>0</DiscountRate>
+    <ShareDiscount>0</ShareDiscount>
+    <Cal>0</Cal>
+    <SalesIn>0</SalesIn>
+    <SalesOut>0</SalesOut>
+    <UPriceIn>0</UPriceIn>
+    <UPriceOut>0</UPriceOut>
+    <StockIn>0</StockIn>
+    <StockOut>0</StockOut>
+    <TransactionDate>2016-09-20</TransactionDate>
+    <RefNo>STI2016090010009</RefNo>
+    <TransactionBy>WM001</TransactionBy>
+    <ApproveCode />
+    <ConfirmCode />
+    <AcceptCode />
+  </Table>
+</DocumentElement>

@@ -1,0 +1,164 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <OID>0</OID>
+    <CustCode>000001</CustCode>
+    <CustName>ห้างทดสอบ สำนักงานใหญ่</CustName>
+    <ShopName>ห้างทดสอบ</ShopName>
+    <Branch>สำนักงานใหญ่</Branch>
+  </Table>
+  <Table>    
+    <OID>1</OID>
+    <CustCode>100001</CustCode>
+    <CustName>ไดอาน่า หาดใหญ่</CustName>
+    <ShopName>ไดอาน่า</ShopName>
+    <Branch>หาดใหญ่</Branch>
+  </Table>
+  <Table>
+    <OID>2</OID>
+    <CustCode>100002</CustCode>
+    <CustName>เดอะมอลล์ ท่าพระ</CustName>
+    <ShopName>เดอะมอลล์</ShopName>
+    <Branch>ท่าพระ</Branch>
+  </Table>
+  <Table>
+    <OID>3</OID>
+    <CustCode>100003</CustCode>
+    <CustName>เดอะมอลล์ โคราช</CustName>
+    <ShopName>เดอะมอลล์</ShopName>
+    <Branch>โคราช</Branch>
+  </Table>
+  <Table>
+    <OID>4</OID>
+    <CustCode>100004</CustCode>
+    <CustName>โรบินสัน ศรีนครินทร์</CustName>
+    <ShopName>โรบินสัน</ShopName>
+    <Branch>ศรีนครินทร์</Branch>
+  </Table>
+  <Table>
+    <OID>5</OID>
+    <CustCode>100005</CustCode>
+    <CustName>สปอร์ตมอลล์ งามวงศ์วาน</CustName>
+    <ShopName>สปอร์ตมอลล์</ShopName>
+    <Branch>งามวงศ์วาน</Branch>
+  </Table>
+  <Table>
+    <OID>6</OID>
+    <CustCode>100006</CustCode>
+    <CustName>โรบินสัน ร้อยเอ็ด</CustName>
+    <ShopName>โรบินสัน</ShopName>
+    <Branch>ร้อยเอ็ด</Branch>
+  </Table>
+  <Table>
+    <OID>7</OID>
+    <CustCode>100007</CustCode>
+    <CustName>โรบินสัน เมกาบางนา</CustName>
+    <ShopName>โรบินสัน</ShopName>
+    <Branch>เมกาบางนา</Branch>
+  </Table>
+  <Table>
+    <OID>8</OID>
+    <CustCode>100008</CustCode>
+    <CustName>เอ้าท์เล็ทมอลล์ พัทยา</CustName>
+    <ShopName>เอ้าท์เล็ทมอลล์</ShopName>
+    <Branch>พัทยา</Branch>
+  </Table>
+  <Table>
+    <OID>9</OID>
+    <CustCode>100009</CustCode>
+    <CustName>เอ้าท์เล็ทมอลล์ ชะอำ</CustName>
+    <ShopName>เอ้าท์เล็ทมอลล์</ShopName>
+    <Branch>ชะอำ</Branch>
+  </Table>
+  <Table>
+    <OID>10</OID>
+    <CustCode>100010</CustCode>
+    <CustName>เอ้าท์เล็ทมอลล์ สมุย</CustName>
+    <ShopName>เอ้าท์เล็ทมอลล์</ShopName>
+    <Branch>สมุย</Branch>
+  </Table>
+  <Table>
+    <OID>11</OID>
+    <CustCode>100011</CustCode>
+    <CustName>เอ้าท์เล็ทมอลล์ ภูเก็ต</CustName>
+    <ShopName>เอ้าท์เล็ทมอลล์</ShopName>
+    <Branch>ภูเก็ต</Branch>
+  </Table>
+  <Table>
+    <OID>13</OID>
+    <CustCode>100012</CustCode>
+    <CustName>เดอะมอลล์ บางแค</CustName>
+    <ShopName>เดอะมอลล์</ShopName>
+    <Branch>บางแค</Branch>
+  </Table>
+  <Table>
+    <OID>14</OID>
+    <CustCode>100013</CustCode>
+    <CustName>โรบินสัน ฉะเชิงเทรา</CustName>
+    <ShopName>โรบินสัน</ShopName>
+    <Branch>ฉะเชิงเทรา</Branch>
+  </Table>
+  <Table>
+    <OID>15</OID>
+    <CustCode>100014</CustCode>
+    <CustName>โรบินสัน แม่สอด</CustName>
+    <ShopName>โรบินสัน</ShopName>
+    <Branch>แม่สอด</Branch>
+  </Table>
+  <Table>
+    <OID>16</OID>
+    <CustCode>100015</CustCode>
+    <CustName>โรบินสัน ศรีสมาน</CustName>
+    <ShopName>โรบินสัน</ShopName>
+    <Branch>ศรีสมาน</Branch>
+  </Table>
+  <Table>
+    <OID>17</OID>
+    <CustCode>100016</CustCode>
+    <CustName>โรบินสัน ระยอง</CustName>
+    <ShopName>โรบินสัน</ShopName>
+    <Branch>ระยอง</Branch>
+  </Table>
+  <Table>
+    <OID>18</OID>
+    <CustCode>100017</CustCode>
+    <CustName>โรบินสัน พระราม 9</CustName>
+    <ShopName>โรบินสัน</ShopName>
+    <Branch>พระราม 9</Branch>
+  </Table>
+  <Table>
+    <OID>19</OID>
+    <CustCode>100018</CustCode>
+    <CustName>โรบินสัน ลำปาง</CustName>
+    <ShopName>โรบินสัน</ShopName>
+    <Branch>ลำปาง</Branch>
+  </Table>
+  <Table>
+    <OID>20</OID>
+    <CustCode>100019</CustCode>
+    <CustName>โรบินสัน สระบุรี</CustName>
+    <ShopName>โรบินสัน</ShopName>
+    <Branch>สระบุรี</Branch>
+  </Table>
+  <Table>
+    <OID>21</OID>
+    <CustCode>100020</CustCode>
+    <CustName>โรบินสัน เชียงใหม่</CustName>
+    <ShopName>โรบินสัน</ShopName>
+    <Branch>เชียงใหม่</Branch>
+  </Table>
+  <Table>
+    <OID>22</OID>
+    <CustCode>100021</CustCode>
+    <CustName>โรบินสัน ชลบุรี</CustName>
+    <ShopName>โรบินสัน</ShopName>
+    <Branch>ชลบุรี</Branch>
+  </Table>
+  <Table>
+    <OID>23</OID>
+    <CustCode>100022</CustCode>
+    <CustName>โรบินสัน ราชบุรี</CustName>
+    <ShopName>โรบินสัน</ShopName>
+    <Branch>ราชบุรี</Branch>    
+  </Table>
+</NewDataSet>

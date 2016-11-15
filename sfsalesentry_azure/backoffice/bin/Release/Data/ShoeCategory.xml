@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ProdCatID>1</ProdCatID>
+    <ProdCatCode>-- </ProdCatCode>
+    <ProdCatName>ไม่ระบุ</ProdCatName>
+  </Table>
+  <Table>
+    <ProdCatID>2</ProdCatID>
+    <ProdCatCode>S01</ProdCatCode>
+    <ProdCatName>รองเท้าแตะแบบสวม</ProdCatName>
+  </Table>
+  <Table>
+    <ProdCatID>3</ProdCatID>
+    <ProdCatCode>S02</ProdCatCode>
+    <ProdCatName>รองเท้าแตะหูหนีบ</ProdCatName>
+  </Table>
+  <Table>
+    <ProdCatID>4</ProdCatID>
+    <ProdCatCode>S03</ProdCatCode>
+    <ProdCatName>รองเท้าแตะรัดส้น</ProdCatName>
+  </Table>
+  <Table>
+    <ProdCatID>5</ProdCatID>
+    <ProdCatCode>C01</ProdCatCode>
+    <ProdCatName>รองเท้าผ้าใบ</ProdCatName>
+  </Table>
+</NewDataSet>
