@@ -1,0 +1,12 @@
+C:\Work\SFProject\SfWebBackoffice\SfWebBackoffice\bin\Debug\SfWebBackoffice.exe.config
+C:\Work\SFProject\SfWebBackoffice\SfWebBackoffice\bin\Debug\SfWebBackoffice.exe
+C:\Work\SFProject\SfWebBackoffice\SfWebBackoffice\bin\Debug\SfWebBackoffice.pdb
+C:\Work\SFProject\SfWebBackoffice\SfWebBackoffice\bin\Debug\Newtonsoft.Json.dll
+C:\Work\SFProject\SfWebBackoffice\SfWebBackoffice\bin\Debug\Newtonsoft.Json.xml
+C:\Work\SFProject\SfWebBackoffice\SfWebBackoffice\obj\Debug\SfWebBackoffice.frmBackupData.resources
+C:\Work\SFProject\SfWebBackoffice\SfWebBackoffice\obj\Debug\SfWebBackoffice.Properties.Resources.resources
+C:\Work\SFProject\SfWebBackoffice\SfWebBackoffice\obj\Debug\SfWebBackoffice.csproj.GenerateResource.Cache
+C:\Work\SFProject\SfWebBackoffice\SfWebBackoffice\obj\Debug\SfWebBackoffice.exe
+C:\Work\SFProject\SfWebBackoffice\SfWebBackoffice\obj\Debug\SfWebBackoffice.pdb
+C:\Work\SFProject\SfWebBackoffice\SfWebBackoffice\bin\Debug\Connect.xml
+C:\Work\SFProject\SfWebBackoffice\SfWebBackoffice\obj\Debug\SfWebBackoffice.csprojResolveAssemblyReference.cache
