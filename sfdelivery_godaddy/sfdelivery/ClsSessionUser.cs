@@ -143,7 +143,7 @@ namespace sfdelivery
             data += @"<LoginHistory>";
             data += @"<LoginDelivery>";
             data += @"<UserName>" + username + "</UserName>";
-            data += @"<DateTimeLogIn>" + DateTime.Now.AddHours(7+7).ToString("yyyy-MM-dd HH:mm:ss") + "</DateTimeLogIn>";
+            data += @"<DateTimeLogIn>" + ClsData.CurrentDateTH().ToString("yyyy-MM-dd HH:mm:ss") + "</DateTimeLogIn>";
             data += @"<FromMobile>" + fromMobile + "</FromMobile>";
             data += @"</LoginDelivery>";
             data += @"</LoginHistory>";

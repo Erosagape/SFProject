@@ -20,6 +20,10 @@ namespace sfdelivery
         private static DataSet dtUser = new DataSet();
         private static string errMessage = "";
         private static List<AccessTableLog> OpeningData = new List<AccessTableLog>();
+        public static DateTime CurrentDateTH()
+        {
+            return DateTime.Now.AddHours(7 + 7);
+        }
         public static string Error()
         {
             return errMessage;
