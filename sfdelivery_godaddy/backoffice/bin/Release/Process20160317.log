@@ -1,0 +1,103 @@
+﻿Start Schedule At :3/17/2016 2:00:00 PM
+Process 1287 of 1287
+Delivery201603 Created (929)
+DeliveryDetails201603 Created (27602)
+Delivery201603 Get! (925)
+DeliveryDetails201603 Get! (27445)
+Diff Header=18
+Delivery201603_1.json Created!
+Delivery201603 No data deleted!
+Diff Detail=157
+DeliveryDetails201603_1.json Created!
+DeliveryDetails201603_2.json Created!
+DeliveryDetails201603_3.json Created!
+DeliveryDetails201603_4.json Created!
+DeliveryDetails201603 No data deleted!
+Delivery201602 Created (2240)
+DeliveryDetails201602 Created (62819)
+Delivery201602 Get! (2240)
+DeliveryDetails201602 Get! (62819)
+Diff Header=0
+Delivery201602 No data deleted!
+Diff Detail=0
+DeliveryDetails201602 No data deleted!
+Complete!->File Delivery201603_1.json uploaded
+Complete!->File DeliveryDetails201603_1.json uploaded
+Complete!->File DeliveryDetails201603_2.json uploaded
+Complete!->File DeliveryDetails201603_3.json uploaded
+Complete!->File DeliveryDetails201603_4.json uploaded
+Completed! Delivery201603 files=1 rec=18 add=4,update=14
+
+Completed! DeliveryDetails201603 files=5 rec=157 add=157,update=0
+
+Completed! Delivery201602 files=0 rec=0 add=0,update=0
+
+Completed! DeliveryDetails201602 files=0 rec=0 add=0,update=0
+
+End Schedule At :3/17/2016 2:01:50 PM
+Start Schedule At :3/17/2016 2:30:00 PM
+Process 1287 of 1287
+Delivery201603 Created (931)
+DeliveryDetails201603 Created (27692)
+Delivery201603 Get! (929)
+DeliveryDetails201603 Get! (27602)
+Diff Header=2
+Delivery201603_1.json Created!
+Delivery201603 No data deleted!
+Diff Detail=90
+DeliveryDetails201603_1.json Created!
+DeliveryDetails201603_2.json Created!
+DeliveryDetails201603 No data deleted!
+Delivery201602 Created (2240)
+DeliveryDetails201602 Created (62819)
+Delivery201602 Get! (2240)
+DeliveryDetails201602 Get! (62819)
+Diff Header=0
+Delivery201602 No data deleted!
+Diff Detail=0
+DeliveryDetails201602 No data deleted!
+Complete!->File Delivery201603_1.json uploaded
+Complete!->File DeliveryDetails201603_1.json uploaded
+Complete!->File DeliveryDetails201603_2.json uploaded
+Completed! Delivery201603 files=1 rec=2 add=2,update=0
+
+Completed! DeliveryDetails201603 files=3 rec=90 add=90,update=0
+
+Completed! Delivery201602 files=0 rec=0 add=0,update=0
+
+Completed! DeliveryDetails201602 files=0 rec=0 add=0,update=0
+
+End Schedule At :3/17/2016 2:31:16 PM
+Start Schedule At :3/17/2016 3:00:00 PM
+Process 1287 of 1287
+Delivery201603 Created (932)
+DeliveryDetails201603 Created (27781)
+Delivery201603 Get! (931)
+DeliveryDetails201603 Get! (27692)
+Diff Header=1
+Delivery201603_1.json Created!
+Delivery201603 No data deleted!
+Diff Detail=89
+DeliveryDetails201603_1.json Created!
+DeliveryDetails201603_2.json Created!
+DeliveryDetails201603 No data deleted!
+Delivery201602 Created (2240)
+DeliveryDetails201602 Created (62819)
+Delivery201602 Get! (2240)
+DeliveryDetails201602 Get! (62819)
+Diff Header=0
+Delivery201602 No data deleted!
+Diff Detail=0
+DeliveryDetails201602 No data deleted!
+Complete!->File Delivery201603_1.json uploaded
+Complete!->File DeliveryDetails201603_1.json uploaded
+Complete!->File DeliveryDetails201603_2.json uploaded
+Completed! Delivery201603 files=1 rec=1 add=1,update=0
+
+Completed! DeliveryDetails201603 files=3 rec=89 add=89,update=0
+
+Completed! Delivery201602 files=0 rec=0 add=0,update=0
+
+Completed! DeliveryDetails201602 files=0 rec=0 add=0,update=0
+
+End Schedule At :3/17/2016 3:01:22 PM

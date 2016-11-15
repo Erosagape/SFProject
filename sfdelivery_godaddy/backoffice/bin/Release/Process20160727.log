@@ -1,0 +1,104 @@
+﻿Start Schedule At :7/27/2016 12:30:00 PM
+Process 1323 of 1323
+Delivery201607 Created (1753)
+DeliveryDetails201607 Created (53269)
+Delivery201607 Get! (1753)
+DeliveryDetails201607 Get! (53269)
+Diff Header=0
+Delivery201607 No data deleted!
+Diff Detail=0
+DeliveryDetails201607 No data deleted!
+Delivery201606 Created (2351)
+DeliveryDetails201606 Created (77202)
+Delivery201606 Get! (2351)
+DeliveryDetails201606 Get! (77202)
+Diff Header=0
+Delivery201606 No data deleted!
+Diff Detail=0
+DeliveryDetails201606 No data deleted!
+Delivery201605 Created (2407)
+DeliveryDetails201605 Created (77082)
+Delivery201605 Get! (2407)
+DeliveryDetails201605 Get! (77082)
+Diff Header=0
+Delivery201605 No data deleted!
+Diff Detail=0
+DeliveryDetails201605 No data deleted!
+End Schedule At :7/27/2016 12:30:54 PM
+Start Schedule At :7/27/2016 1:00:00 PM
+Process 1323 of 1323
+Delivery201607 Created (1753)
+DeliveryDetails201607 Created (53269)
+Delivery201607 Get! (1753)
+DeliveryDetails201607 Get! (53269)
+Diff Header=0
+Delivery201607 No data deleted!
+Diff Detail=0
+DeliveryDetails201607 No data deleted!
+Delivery201606 Created (2351)
+DeliveryDetails201606 Created (77202)
+Delivery201606 Get! (2351)
+DeliveryDetails201606 Get! (77202)
+Diff Header=0
+Delivery201606 No data deleted!
+Diff Detail=0
+DeliveryDetails201606 No data deleted!
+Delivery201605 Created (2407)
+DeliveryDetails201605 Created (77082)
+Delivery201605 Get! (2407)
+DeliveryDetails201605 Get! (77082)
+Diff Header=0
+Delivery201605 No data deleted!
+Diff Detail=0
+DeliveryDetails201605 No data deleted!
+End Schedule At :7/27/2016 1:00:58 PM
+Start Schedule At :7/27/2016 1:30:00 PM
+Process 1323 of 1323
+Delivery201607 Created (1761)
+DeliveryDetails201607 Created (53556)
+Delivery201607 Get! (1753)
+DeliveryDetails201607 Get! (53269)
+Diff Header=8
+Delivery201607_1.json Created!
+Delivery201607 No data deleted!
+Diff Detail=287
+DeliveryDetails201607_1.json Created!
+DeliveryDetails201607_2.json Created!
+DeliveryDetails201607_3.json Created!
+DeliveryDetails201607_4.json Created!
+DeliveryDetails201607_5.json Created!
+DeliveryDetails201607_6.json Created!
+DeliveryDetails201607 No data deleted!
+Delivery201606 Created (2351)
+DeliveryDetails201606 Created (77202)
+Delivery201606 Get! (2351)
+DeliveryDetails201606 Get! (77202)
+Diff Header=0
+Delivery201606 No data deleted!
+Diff Detail=0
+DeliveryDetails201606 No data deleted!
+Delivery201605 Created (2407)
+DeliveryDetails201605 Created (77082)
+Delivery201605 Get! (2407)
+DeliveryDetails201605 Get! (77082)
+Diff Header=0
+Delivery201605 No data deleted!
+Diff Detail=0
+DeliveryDetails201605 No data deleted!
+Complete!->File Delivery201607_1.json uploaded
+Complete!->File DeliveryDetails201607_1.json uploaded
+Complete!->File DeliveryDetails201607_2.json uploaded
+Complete!->File DeliveryDetails201607_3.json uploaded
+Complete!->File DeliveryDetails201607_4.json uploaded
+Complete!->File DeliveryDetails201607_5.json uploaded
+Complete!->File DeliveryDetails201607_6.json uploaded
+Open Delivery201607:Delivery201607 Opened!
+Read Delivery201607_1.json:Completed! Delivery201607_1 files=1 rec=8 add=8,update=0
+Read DeliveryDetails201607_1.json:ERROR:Cannot find column [ID_Detail].
+Read DeliveryDetails201607_2.json:ERROR:Cannot find column [ID_Detail].
+Read DeliveryDetails201607_3.json:ERROR:Cannot find column [ID_Detail].
+Read DeliveryDetails201607_4.json:ERROR:Cannot find column [ID_Detail].
+Save Delivery201607:Delivery201607 Updated!
+Open DeliveryDetails201607:DeliveryDetails201607 Opened!
+RRROR:The content type text/html of the response message does not match the content type of the binding (text/xml; charset=utf-8). If using a custom encoder, be sure that the IsContentTypeSupported method is implemented properly. The first 13 bytes of the response were: '<HTML></HTML>'.
+End Schedule At :7/27/2016 1:31:37 PM

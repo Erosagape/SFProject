@@ -1,0 +1,6 @@
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\shopsales\bin\shopsales.dll.config
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\shopsales\bin\shopsales.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\shopsales\bin\shopsales.pdb
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\shopsales\obj\Release\shopsales.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\shopsales\obj\Release\shopsales.pdb
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\shopsales\obj\Release\shopsales.csprojResolveAssemblyReference.cache

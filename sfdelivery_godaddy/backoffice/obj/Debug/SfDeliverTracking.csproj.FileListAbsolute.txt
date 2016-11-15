@@ -1,0 +1,89 @@
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\SfDeliverTracking\bin\Debug\SfDeliverTracking.exe.config
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\SfDeliverTracking\bin\Debug\Connect.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\SfDeliverTracking\bin\Debug\SfDeliverTracking.exe.manifest
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\SfDeliverTracking\bin\Debug\SfDeliverTracking.application
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\SfDeliverTracking\bin\Debug\SfDeliverTracking.exe
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\SfDeliverTracking\bin\Debug\SfDeliverTracking.pdb
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\SfDeliverTracking\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\SfDeliverTracking\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.Form1.resources
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.Form2.resources
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.Form3.resources
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.Form4.resources
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.Form5.resources
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.Form6.resources
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.Properties.Resources.resources
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.csproj.GenerateResource.Cache
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.TrustInfo.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.exe.manifest
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.application
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.exe
+C:\Users\Puttipong\Documents\Visual Studio 2015\Projects\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.pdb
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\SfDeliverTracking\bin\Debug\SfDeliverTracking.exe.config
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.exe
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.pdb
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\SfDeliverTracking\bin\Debug\Connect.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\SfDeliverTracking\bin\Debug\SfDeliverTracking.exe.manifest
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\SfDeliverTracking\bin\Debug\SfDeliverTracking.application
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\SfDeliverTracking\bin\Debug\SfDeliverTracking.exe
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\SfDeliverTracking\bin\Debug\SfDeliverTracking.pdb
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\SfDeliverTracking\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\SfDeliverTracking\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.Form1.resources
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.Form2.resources
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.Form3.resources
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.Form4.resources
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.Form5.resources
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.Form6.resources
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.Properties.Resources.resources
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.csproj.GenerateResource.Cache
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.TrustInfo.xml
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.exe.manifest
+C:\Users\Puttipong\Documents\Visual Studio 2015\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.application
+C:\Work\Boat\sfdelivery\SfDeliverTracking\bin\Debug\SfDeliverTracking.exe.config
+C:\Work\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.exe
+C:\Work\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.pdb
+C:\Work\Boat\sfdelivery\SfDeliverTracking\bin\Debug\Connect.xml
+C:\Work\Boat\sfdelivery\SfDeliverTracking\bin\Debug\SfDeliverTracking.exe.manifest
+C:\Work\Boat\sfdelivery\SfDeliverTracking\bin\Debug\SfDeliverTracking.application
+C:\Work\Boat\sfdelivery\SfDeliverTracking\bin\Debug\SfDeliverTracking.exe
+C:\Work\Boat\sfdelivery\SfDeliverTracking\bin\Debug\SfDeliverTracking.pdb
+C:\Work\Boat\sfdelivery\SfDeliverTracking\bin\Debug\Newtonsoft.Json.dll
+C:\Work\Boat\sfdelivery\SfDeliverTracking\bin\Debug\Newtonsoft.Json.xml
+C:\Work\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.csprojResolveAssemblyReference.cache
+C:\Work\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.Form1.resources
+C:\Work\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.Form2.resources
+C:\Work\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.Form3.resources
+C:\Work\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.Form4.resources
+C:\Work\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.Form5.resources
+C:\Work\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.Form6.resources
+C:\Work\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.Properties.Resources.resources
+C:\Work\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.csproj.GenerateResource.Cache
+C:\Work\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.TrustInfo.xml
+C:\Work\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.exe.manifest
+C:\Work\Boat\sfdelivery\SfDeliverTracking\obj\Debug\SfDeliverTracking.application
+\\192.168.0.107\sourcecode\sfdelivery_azure\backoffice\bin\Debug\SfDeliverTracking.exe.config
+\\192.168.0.107\sourcecode\sfdelivery_azure\backoffice\obj\Debug\SfDeliverTracking.exe
+\\192.168.0.107\sourcecode\sfdelivery_azure\backoffice\obj\Debug\SfDeliverTracking.pdb
+\\192.168.0.107\sourcecode\sfdelivery_azure\backoffice\bin\Debug\Connect.xml
+\\192.168.0.107\sourcecode\sfdelivery_azure\backoffice\bin\Debug\SfDeliverTracking.exe.manifest
+\\192.168.0.107\sourcecode\sfdelivery_azure\backoffice\bin\Debug\SfDeliverTracking.application
+\\192.168.0.107\sourcecode\sfdelivery_azure\backoffice\bin\Debug\SfDeliverTracking.exe
+\\192.168.0.107\sourcecode\sfdelivery_azure\backoffice\bin\Debug\SfDeliverTracking.pdb
+\\192.168.0.107\sourcecode\sfdelivery_azure\backoffice\bin\Debug\Newtonsoft.Json.dll
+\\192.168.0.107\sourcecode\sfdelivery_azure\backoffice\bin\Debug\Newtonsoft.Json.xml
+\\192.168.0.107\sourcecode\sfdelivery_azure\backoffice\obj\Debug\SfDeliverTracking.csprojResolveAssemblyReference.cache
+\\192.168.0.107\sourcecode\sfdelivery_azure\backoffice\obj\Debug\SfDeliverTracking.Form1.resources
+\\192.168.0.107\sourcecode\sfdelivery_azure\backoffice\obj\Debug\SfDeliverTracking.Form2.resources
+\\192.168.0.107\sourcecode\sfdelivery_azure\backoffice\obj\Debug\SfDeliverTracking.Form3.resources
+\\192.168.0.107\sourcecode\sfdelivery_azure\backoffice\obj\Debug\SfDeliverTracking.Form4.resources
+\\192.168.0.107\sourcecode\sfdelivery_azure\backoffice\obj\Debug\SfDeliverTracking.Form5.resources
+\\192.168.0.107\sourcecode\sfdelivery_azure\backoffice\obj\Debug\SfDeliverTracking.Form6.resources
+\\192.168.0.107\sourcecode\sfdelivery_azure\backoffice\obj\Debug\SfDeliverTracking.Properties.Resources.resources
+\\192.168.0.107\sourcecode\sfdelivery_azure\backoffice\obj\Debug\SfDeliverTracking.csproj.GenerateResource.Cache
+\\192.168.0.107\sourcecode\sfdelivery_azure\backoffice\obj\Debug\SfDeliverTracking.TrustInfo.xml
+\\192.168.0.107\sourcecode\sfdelivery_azure\backoffice\obj\Debug\SfDeliverTracking.exe.manifest
+\\192.168.0.107\sourcecode\sfdelivery_azure\backoffice\obj\Debug\SfDeliverTracking.application
+\\192.168.0.107\SourceCode\WebApp\SfDelveryTracking\sfdelivery_azure\backoffice\bin\Debug\SfDeliverTracking.exe.config
+\\192.168.0.107\SourceCode\WebApp\SfDelveryTracking\sfdelivery_azure\backoffice\obj\Debug\SfDeliverTracking.exe
+\\192.168.0.107\SourceCode\WebApp\SfDelveryTracking\sfdelivery_azure\backoffice\obj\Debug\SfDeliverTracking.pdb

@@ -1,0 +1,97 @@
+﻿Start Schedule At :4/30/2016 9:30:00 AM
+Process 1292 of 1292
+Delivery201604 Created (2364)
+DeliveryDetails201604 Created (62543)
+Delivery201604 Get! (2364)
+DeliveryDetails201604 Get! (62143)
+Diff Header=2
+Delivery201604_1.json Created!
+Delivery201604 No data deleted!
+Diff Detail=400
+DeliveryDetails201604_1.json Created!
+DeliveryDetails201604_2.json Created!
+DeliveryDetails201604_3.json Created!
+DeliveryDetails201604_4.json Created!
+DeliveryDetails201604_5.json Created!
+DeliveryDetails201604_6.json Created!
+DeliveryDetails201604_7.json Created!
+DeliveryDetails201604_8.json Created!
+DeliveryDetails201604 No data deleted!
+Delivery201603 Created (1999)
+DeliveryDetails201603 Created (54370)
+Delivery201603 Get! (1999)
+DeliveryDetails201603 Get! (54370)
+Diff Header=0
+Delivery201603 No data deleted!
+Diff Detail=0
+DeliveryDetails201603 No data deleted!
+Delivery201602 Created (2240)
+DeliveryDetails201602 Created (62819)
+Delivery201602 Get! (2240)
+DeliveryDetails201602 Get! (62819)
+Diff Header=0
+Delivery201602 No data deleted!
+Diff Detail=0
+DeliveryDetails201602 No data deleted!
+Complete!->File Delivery201604_1.json uploaded
+Complete!->File DeliveryDetails201604_1.json uploaded
+Complete!->File DeliveryDetails201604_2.json uploaded
+Complete!->File DeliveryDetails201604_3.json uploaded
+Complete!->File DeliveryDetails201604_4.json uploaded
+Complete!->File DeliveryDetails201604_5.json uploaded
+Complete!->File DeliveryDetails201604_6.json uploaded
+Complete!->File DeliveryDetails201604_7.json uploaded
+Complete!->File DeliveryDetails201604_8.json uploaded
+Completed! Delivery201604 files=1 rec=2 add=0,update=2
+
+Error:The underlying connection was closed: The connection was closed unexpectedly.
+Completed! Delivery201603 files=0 rec=0 add=0,update=0
+
+Completed! DeliveryDetails201603 files=0 rec=0 add=0,update=0
+
+Completed! Delivery201602 files=0 rec=0 add=0,update=0
+
+Completed! DeliveryDetails201602 files=0 rec=0 add=0,update=0
+
+End Schedule At :4/30/2016 9:31:35 AM
+Start Schedule At :4/30/2016 10:00:00 AM
+Process 1292 of 1292
+Delivery201604 Created (2370)
+DeliveryDetails201604 Created (62676)
+Delivery201604 Get! (2370)
+DeliveryDetails201604 Get! (62676)
+Diff Header=1
+Delivery201604_1.json Created!
+Delivery201604 No data deleted!
+Diff Detail=0
+DeliveryDetails201604 No data deleted!
+Delivery201603 Created (1999)
+DeliveryDetails201603 Created (54370)
+Delivery201603 Get! (1999)
+DeliveryDetails201603 Get! (54370)
+Diff Header=0
+Delivery201603 No data deleted!
+Diff Detail=0
+DeliveryDetails201603 No data deleted!
+Delivery201602 Created (2240)
+DeliveryDetails201602 Created (62819)
+Delivery201602 Get! (2240)
+DeliveryDetails201602 Get! (62819)
+Diff Header=0
+Delivery201602 No data deleted!
+Diff Detail=0
+DeliveryDetails201602 No data deleted!
+Complete!->File Delivery201604_1.json uploaded
+Completed! Delivery201604 files=1 rec=1 add=0,update=1
+
+Completed! DeliveryDetails201604 files=0 rec=0 add=0,update=0
+
+Completed! Delivery201603 files=0 rec=0 add=0,update=0
+
+Completed! DeliveryDetails201603 files=0 rec=0 add=0,update=0
+
+Completed! Delivery201602 files=0 rec=0 add=0,update=0
+
+Completed! DeliveryDetails201602 files=0 rec=0 add=0,update=0
+
+End Schedule At :4/30/2016 10:00:54 AM

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="IService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://tracking.sfaerosoft.com/IService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://tracking.sfaerosoft.com/IService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDataExchange_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_ShowData_InputMessage">
+    <wsdl:part name="parameters" element="tns:ShowData" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_ShowData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ShowDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_GetDataXML_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataXML" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_GetDataXML_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_QueryDataXML_InputMessage">
+    <wsdl:part name="parameters" element="tns:QueryDataXML" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_QueryDataXML_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryDataXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_QueryDataJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:QueryDataJSON" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_QueryDataJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryDataJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_RemoveDataXML_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveDataXML" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_RemoveDataXML_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveDataXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_ProcessDataXML_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessDataXML" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_ProcessDataXML_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessDataXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_GetXMLFileList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetXMLFileList" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_GetXMLFileList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetXMLFileListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_GetDataJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataJSON" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_GetDataJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_ProcessDataJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessDataJSON" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_ProcessDataJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessDataJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_GetDeliveryDataXML_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeliveryDataXML" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_GetDeliveryDataXML_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeliveryDataXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_GetCustomerListXML_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerListXML" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_GetCustomerListXML_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerListXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_GetDeliveryInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeliveryInfo" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_GetDeliveryInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeliveryInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_UpdateDeliveryInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDeliveryInfo" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_UpdateDeliveryInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDeliveryInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_WriteDataUpdate_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteDataUpdate" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_WriteDataUpdate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteDataUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_UpdateData_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateData" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_UpdateData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_ClearDataJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearDataJSON" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_ClearDataJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearDataJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_OpenDataForupdate_InputMessage">
+    <wsdl:part name="parameters" element="tns:OpenDataForupdate" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_OpenDataForupdate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OpenDataForupdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_CloseDataForupdate_InputMessage">
+    <wsdl:part name="parameters" element="tns:CloseDataForupdate" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_CloseDataForupdate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CloseDataForupdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_ReadDataForupdate_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReadDataForupdate" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_ReadDataForupdate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReadDataForupdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_GetDelivery_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDelivery" />
+  </wsdl:message>
+  <wsdl:message name="IDataExchange_GetDelivery_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeliveryResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IDataExchange">
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataExchange/Login" message="tns:IDataExchange_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataExchange/LoginResponse" message="tns:IDataExchange_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ShowData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataExchange/ShowData" message="tns:IDataExchange_ShowData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataExchange/ShowDataResponse" message="tns:IDataExchange_ShowData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataXML">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataExchange/GetDataXML" message="tns:IDataExchange_GetDataXML_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataExchange/GetDataXMLResponse" message="tns:IDataExchange_GetDataXML_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryDataXML">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataExchange/QueryDataXML" message="tns:IDataExchange_QueryDataXML_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataExchange/QueryDataXMLResponse" message="tns:IDataExchange_QueryDataXML_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryDataJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataExchange/QueryDataJSON" message="tns:IDataExchange_QueryDataJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataExchange/QueryDataJSONResponse" message="tns:IDataExchange_QueryDataJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveDataXML">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataExchange/RemoveDataXML" message="tns:IDataExchange_RemoveDataXML_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataExchange/RemoveDataXMLResponse" message="tns:IDataExchange_RemoveDataXML_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessDataXML">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataExchange/ProcessDataXML" message="tns:IDataExchange_ProcessDataXML_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataExchange/ProcessDataXMLResponse" message="tns:IDataExchange_ProcessDataXML_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetXMLFileList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataExchange/GetXMLFileList" message="tns:IDataExchange_GetXMLFileList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataExchange/GetXMLFileListResponse" message="tns:IDataExchange_GetXMLFileList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataExchange/GetDataJSON" message="tns:IDataExchange_GetDataJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataExchange/GetDataJSONResponse" message="tns:IDataExchange_GetDataJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessDataJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataExchange/ProcessDataJSON" message="tns:IDataExchange_ProcessDataJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataExchange/ProcessDataJSONResponse" message="tns:IDataExchange_ProcessDataJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeliveryDataXML">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataExchange/GetDeliveryDataXML" message="tns:IDataExchange_GetDeliveryDataXML_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataExchange/GetDeliveryDataXMLResponse" message="tns:IDataExchange_GetDeliveryDataXML_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerListXML">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataExchange/GetCustomerListXML" message="tns:IDataExchange_GetCustomerListXML_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataExchange/GetCustomerListXMLResponse" message="tns:IDataExchange_GetCustomerListXML_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeliveryInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataExchange/GetDeliveryInfo" message="tns:IDataExchange_GetDeliveryInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataExchange/GetDeliveryInfoResponse" message="tns:IDataExchange_GetDeliveryInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDeliveryInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataExchange/UpdateDeliveryInfo" message="tns:IDataExchange_UpdateDeliveryInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataExchange/UpdateDeliveryInfoResponse" message="tns:IDataExchange_UpdateDeliveryInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteDataUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataExchange/WriteDataUpdate" message="tns:IDataExchange_WriteDataUpdate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataExchange/WriteDataUpdateResponse" message="tns:IDataExchange_WriteDataUpdate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataExchange/UpdateData" message="tns:IDataExchange_UpdateData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataExchange/UpdateDataResponse" message="tns:IDataExchange_UpdateData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearDataJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataExchange/ClearDataJSON" message="tns:IDataExchange_ClearDataJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataExchange/ClearDataJSONResponse" message="tns:IDataExchange_ClearDataJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OpenDataForupdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataExchange/OpenDataForupdate" message="tns:IDataExchange_OpenDataForupdate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataExchange/OpenDataForupdateResponse" message="tns:IDataExchange_OpenDataForupdate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CloseDataForupdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataExchange/CloseDataForupdate" message="tns:IDataExchange_CloseDataForupdate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataExchange/CloseDataForupdateResponse" message="tns:IDataExchange_CloseDataForupdate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadDataForupdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataExchange/ReadDataForupdate" message="tns:IDataExchange_ReadDataForupdate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataExchange/ReadDataForupdateResponse" message="tns:IDataExchange_ReadDataForupdate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDelivery">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataExchange/GetDelivery" message="tns:IDataExchange_GetDelivery_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataExchange/GetDeliveryResponse" message="tns:IDataExchange_GetDelivery_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IDataExchange" type="tns:IDataExchange">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/IDataExchange/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowData">
+      <soap:operation soapAction="http://tempuri.org/IDataExchange/ShowData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataXML">
+      <soap:operation soapAction="http://tempuri.org/IDataExchange/GetDataXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryDataXML">
+      <soap:operation soapAction="http://tempuri.org/IDataExchange/QueryDataXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryDataJSON">
+      <soap:operation soapAction="http://tempuri.org/IDataExchange/QueryDataJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveDataXML">
+      <soap:operation soapAction="http://tempuri.org/IDataExchange/RemoveDataXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessDataXML">
+      <soap:operation soapAction="http://tempuri.org/IDataExchange/ProcessDataXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetXMLFileList">
+      <soap:operation soapAction="http://tempuri.org/IDataExchange/GetXMLFileList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataJSON">
+      <soap:operation soapAction="http://tempuri.org/IDataExchange/GetDataJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessDataJSON">
+      <soap:operation soapAction="http://tempuri.org/IDataExchange/ProcessDataJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeliveryDataXML">
+      <soap:operation soapAction="http://tempuri.org/IDataExchange/GetDeliveryDataXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerListXML">
+      <soap:operation soapAction="http://tempuri.org/IDataExchange/GetCustomerListXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeliveryInfo">
+      <soap:operation soapAction="http://tempuri.org/IDataExchange/GetDeliveryInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDeliveryInfo">
+      <soap:operation soapAction="http://tempuri.org/IDataExchange/UpdateDeliveryInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteDataUpdate">
+      <soap:operation soapAction="http://tempuri.org/IDataExchange/WriteDataUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateData">
+      <soap:operation soapAction="http://tempuri.org/IDataExchange/UpdateData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearDataJSON">
+      <soap:operation soapAction="http://tempuri.org/IDataExchange/ClearDataJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpenDataForupdate">
+      <soap:operation soapAction="http://tempuri.org/IDataExchange/OpenDataForupdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloseDataForupdate">
+      <soap:operation soapAction="http://tempuri.org/IDataExchange/CloseDataForupdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadDataForupdate">
+      <soap:operation soapAction="http://tempuri.org/IDataExchange/ReadDataForupdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDelivery">
+      <soap:operation soapAction="http://tempuri.org/IDataExchange/GetDelivery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IService">
+    <wsdl:port name="BasicHttpBinding_IDataExchange" binding="tns:BasicHttpBinding_IDataExchange">
+      <soap:address location="http://tracking.sfaerosoft.com/IService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

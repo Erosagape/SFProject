@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SfDeliveryTrackingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="DeliverPlaces">
+          <Key>
+            <PropertyRef Name="DeliverPlaceId" />
+          </Key>
+          <Property Name="DeliverPlaceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DeliverPlaceCode" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="DeliverPlaceName" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="DeliverPlaceAddress" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DeliveryOrders">
+          <Key>
+            <PropertyRef Name="DeliverOrderId" />
+          </Key>
+          <Property Name="DeliverOrderId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DeliverOrderDate" Type="datetime" Nullable="false" />
+          <Property Name="DeliverQty" Type="int" Nullable="false" />
+          <Property Name="TotalInv" Type="int" Nullable="false" />
+          <Property Name="TotalBox" Type="int" Nullable="false" />
+          <Property Name="TotalBundle" Type="int" Nullable="false" />
+          <Property Name="TotalSack" Type="int" Nullable="false" />
+          <Property Name="DeliveryDate" Type="datetime" Nullable="false" />
+          <Property Name="StaffName" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="SalesOrderId" Type="int" Nullable="false" />
+          <Property Name="DeliverPlaceId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SalesOrders">
+          <Key>
+            <PropertyRef Name="SalesOrderId" />
+          </Key>
+          <Property Name="SalesOrderId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SalesOrderNo" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="SalesOrderDate" Type="datetime" Nullable="false" />
+          <Property Name="SalesQty" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CustomerId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Staffs">
+          <Key>
+            <PropertyRef Name="StaffID" />
+          </Key>
+          <Property Name="StaffID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StaffName" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="StaffPosition" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_DeliverPlaceDeliveryOrder">
+          <End Role="DeliverPlaces" Type="Self.DeliverPlaces" Multiplicity="1" />
+          <End Role="DeliveryOrders" Type="Self.DeliveryOrders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DeliverPlaces">
+              <PropertyRef Name="DeliverPlaceId" />
+            </Principal>
+            <Dependent Role="DeliveryOrders">
+              <PropertyRef Name="DeliverPlaceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DeliverPlaceSalesOrder">
+          <End Role="DeliverPlaces" Type="Self.DeliverPlaces" Multiplicity="1" />
+          <End Role="SalesOrders" Type="Self.SalesOrders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DeliverPlaces">
+              <PropertyRef Name="DeliverPlaceId" />
+            </Principal>
+            <Dependent Role="SalesOrders">
+              <PropertyRef Name="CustomerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SalesOrderDeliveryOrder">
+          <End Role="SalesOrders" Type="Self.SalesOrders" Multiplicity="1" />
+          <End Role="DeliveryOrders" Type="Self.DeliveryOrders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SalesOrders">
+              <PropertyRef Name="SalesOrderId" />
+            </Principal>
+            <Dependent Role="DeliveryOrders">
+              <PropertyRef Name="SalesOrderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SfDeliveryTrackingModelStoreContainer">
+          <EntitySet Name="DeliverPlaces" EntityType="Self.DeliverPlaces" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DeliveryOrders" EntityType="Self.DeliveryOrders" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SalesOrders" EntityType="Self.SalesOrders" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Staffs" EntityType="Self.Staffs" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_DeliverPlaceDeliveryOrder" Association="Self.FK_DeliverPlaceDeliveryOrder">
+            <End Role="DeliverPlaces" EntitySet="DeliverPlaces" />
+            <End Role="DeliveryOrders" EntitySet="DeliveryOrders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DeliverPlaceSalesOrder" Association="Self.FK_DeliverPlaceSalesOrder">
+            <End Role="DeliverPlaces" EntitySet="DeliverPlaces" />
+            <End Role="SalesOrders" EntitySet="SalesOrders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SalesOrderDeliveryOrder" Association="Self.FK_SalesOrderDeliveryOrder">
+            <End Role="SalesOrders" EntitySet="SalesOrders" />
+            <End Role="DeliveryOrders" EntitySet="DeliveryOrders" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SfDeliveryTrackingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="DeliverPlace">
+          <Key>
+            <PropertyRef Name="DeliverPlaceId" />
+          </Key>
+          <Property Name="DeliverPlaceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DeliverPlaceCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DeliverPlaceName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DeliverPlaceAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="DeliveryOrders" Relationship="Self.FK_DeliverPlaceDeliveryOrder" FromRole="DeliverPlaces" ToRole="DeliveryOrders" />
+          <NavigationProperty Name="SalesOrders" Relationship="Self.FK_DeliverPlaceSalesOrder" FromRole="DeliverPlaces" ToRole="SalesOrders" />
+        </EntityType>
+        <EntityType Name="DeliveryOrder">
+          <Key>
+            <PropertyRef Name="DeliverOrderId" />
+          </Key>
+          <Property Name="DeliverOrderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DeliverOrderDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DeliverQty" Type="Int32" Nullable="false" />
+          <Property Name="TotalInv" Type="Int32" Nullable="false" />
+          <Property Name="TotalBox" Type="Int32" Nullable="false" />
+          <Property Name="TotalBundle" Type="Int32" Nullable="false" />
+          <Property Name="TotalSack" Type="Int32" Nullable="false" />
+          <Property Name="DeliveryDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="StaffName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SalesOrderId" Type="Int32" Nullable="false" />
+          <Property Name="DeliverPlaceId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="DeliverPlace" Relationship="Self.FK_DeliverPlaceDeliveryOrder" FromRole="DeliveryOrders" ToRole="DeliverPlaces" />
+          <NavigationProperty Name="SalesOrder" Relationship="Self.FK_SalesOrderDeliveryOrder" FromRole="DeliveryOrders" ToRole="SalesOrders" />
+        </EntityType>
+        <EntityType Name="SalesOrder">
+          <Key>
+            <PropertyRef Name="SalesOrderId" />
+          </Key>
+          <Property Name="SalesOrderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SalesOrderNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SalesOrderDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="SalesQty" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CustomerId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="DeliverPlace" Relationship="Self.FK_DeliverPlaceSalesOrder" FromRole="SalesOrders" ToRole="DeliverPlaces" />
+          <NavigationProperty Name="DeliveryOrders" Relationship="Self.FK_SalesOrderDeliveryOrder" FromRole="SalesOrders" ToRole="DeliveryOrders" />
+        </EntityType>
+        <EntityType Name="Staff">
+          <Key>
+            <PropertyRef Name="StaffID" />
+          </Key>
+          <Property Name="StaffID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StaffName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="StaffPosition" Type="SfDeliveryTrackingModel.StaffPosition" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_DeliverPlaceDeliveryOrder">
+          <End Role="DeliverPlaces" Type="Self.DeliverPlace" Multiplicity="1" />
+          <End Role="DeliveryOrders" Type="Self.DeliveryOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DeliverPlaces">
+              <PropertyRef Name="DeliverPlaceId" />
+            </Principal>
+            <Dependent Role="DeliveryOrders">
+              <PropertyRef Name="DeliverPlaceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DeliverPlaceSalesOrder">
+          <End Role="DeliverPlaces" Type="Self.DeliverPlace" Multiplicity="1" />
+          <End Role="SalesOrders" Type="Self.SalesOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DeliverPlaces">
+              <PropertyRef Name="DeliverPlaceId" />
+            </Principal>
+            <Dependent Role="SalesOrders">
+              <PropertyRef Name="CustomerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SalesOrderDeliveryOrder">
+          <End Role="SalesOrders" Type="Self.SalesOrder" Multiplicity="1" />
+          <End Role="DeliveryOrders" Type="Self.DeliveryOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SalesOrders">
+              <PropertyRef Name="SalesOrderId" />
+            </Principal>
+            <Dependent Role="DeliveryOrders">
+              <PropertyRef Name="SalesOrderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SfDeliveryTrackingEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DeliverPlaces" EntityType="Self.DeliverPlace" />
+          <EntitySet Name="DeliveryOrders" EntityType="Self.DeliveryOrder" />
+          <EntitySet Name="SalesOrders" EntityType="Self.SalesOrder" />
+          <EntitySet Name="Staffs" EntityType="Self.Staff" />
+          <AssociationSet Name="FK_DeliverPlaceDeliveryOrder" Association="Self.FK_DeliverPlaceDeliveryOrder">
+            <End Role="DeliverPlaces" EntitySet="DeliverPlaces" />
+            <End Role="DeliveryOrders" EntitySet="DeliveryOrders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DeliverPlaceSalesOrder" Association="Self.FK_DeliverPlaceSalesOrder">
+            <End Role="DeliverPlaces" EntitySet="DeliverPlaces" />
+            <End Role="SalesOrders" EntitySet="SalesOrders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SalesOrderDeliveryOrder" Association="Self.FK_SalesOrderDeliveryOrder">
+            <End Role="SalesOrders" EntitySet="SalesOrders" />
+            <End Role="DeliveryOrders" EntitySet="DeliveryOrders" />
+          </AssociationSet>
+        </EntityContainer>
+        <EnumType Name="StaffPosition">
+          <Member Name="Driver" />
+          <Member Name="Worker" />
+        </EnumType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SfDeliveryTrackingModelStoreContainer" CdmEntityContainer="SfDeliveryTrackingEntities">
+          <EntitySetMapping Name="DeliverPlaces">
+            <EntityTypeMapping TypeName="SfDeliveryTrackingModel.DeliverPlace">
+              <MappingFragment StoreEntitySet="DeliverPlaces">
+                <ScalarProperty Name="DeliverPlaceId" ColumnName="DeliverPlaceId" />
+                <ScalarProperty Name="DeliverPlaceCode" ColumnName="DeliverPlaceCode" />
+                <ScalarProperty Name="DeliverPlaceName" ColumnName="DeliverPlaceName" />
+                <ScalarProperty Name="DeliverPlaceAddress" ColumnName="DeliverPlaceAddress" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DeliveryOrders">
+            <EntityTypeMapping TypeName="SfDeliveryTrackingModel.DeliveryOrder">
+              <MappingFragment StoreEntitySet="DeliveryOrders">
+                <ScalarProperty Name="DeliverOrderId" ColumnName="DeliverOrderId" />
+                <ScalarProperty Name="DeliverOrderDate" ColumnName="DeliverOrderDate" />
+                <ScalarProperty Name="DeliverQty" ColumnName="DeliverQty" />
+                <ScalarProperty Name="TotalInv" ColumnName="TotalInv" />
+                <ScalarProperty Name="TotalBox" ColumnName="TotalBox" />
+                <ScalarProperty Name="TotalBundle" ColumnName="TotalBundle" />
+                <ScalarProperty Name="TotalSack" ColumnName="TotalSack" />
+                <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+                <ScalarProperty Name="StaffName" ColumnName="StaffName" />
+                <ScalarProperty Name="SalesOrderId" ColumnName="SalesOrderId" />
+                <ScalarProperty Name="DeliverPlaceId" ColumnName="DeliverPlaceId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SalesOrders">
+            <EntityTypeMapping TypeName="SfDeliveryTrackingModel.SalesOrder">
+              <MappingFragment StoreEntitySet="SalesOrders">
+                <ScalarProperty Name="SalesOrderId" ColumnName="SalesOrderId" />
+                <ScalarProperty Name="SalesOrderNo" ColumnName="SalesOrderNo" />
+                <ScalarProperty Name="SalesOrderDate" ColumnName="SalesOrderDate" />
+                <ScalarProperty Name="SalesQty" ColumnName="SalesQty" />
+                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Staffs">
+            <EntityTypeMapping TypeName="SfDeliveryTrackingModel.Staff">
+              <MappingFragment StoreEntitySet="Staffs">
+                <ScalarProperty Name="StaffID" ColumnName="StaffID" />
+                <ScalarProperty Name="StaffName" ColumnName="StaffName" />
+                <ScalarProperty Name="StaffPosition" ColumnName="StaffPosition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

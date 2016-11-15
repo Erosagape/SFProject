@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<NewDataSet>
+  <Table>
+    <customer>181019</customer>
+    <CustomerName>เฮียหลี</CustomerName>
+  </Table>
+  <Table>
+    <customer>481015</customer>
+    <CustomerName>แฮปปี้ชูส์</CustomerName>
+  </Table>
+  <Table>
+    <customer>351023</customer>
+    <CustomerName>แฮปปี้ชูส์</CustomerName>
+  </Table>
+  <Table>
+    <customer>101322</customer>
+    <CustomerName>แฮปปี้เดย์</CustomerName>
+  </Table>
+  <Table>
+    <customer>351019</customer>
+    <CustomerName>โฮมชูส์</CustomerName>
+  </Table>
+</NewDataSet>

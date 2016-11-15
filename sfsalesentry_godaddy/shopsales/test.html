@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+</head>
+
+<body>
+    <!-- Start of first page: #one -->
+    <div data-role="page" id="one">
+
+        <div data-role="header">
+            <h1>Aerosoft Sales-Entry System</h1>
+        </div><!-- /header -->
+
+        <div data-role="content">
+            <h2>ทดสอบ</h2>
+
+            <h3>แสดงผลเพจภายใน:</h3>
+            <p><a href="Default.aspx" data-role="button">ล็อกอิน</a></p>
+            <p><a href="#two" data-role="button">เพจที่สอง</a></p>
+            <p><a href="#popup" data-role="button" data-rel="dialog" data-transition="pop">แสดงเพจป๊อปอัพ</a></p>
+        </div><!-- /content -->
+
+        <div data-role="footer" data-theme="d">
+            <h4>Develop by Puttipong Kongpoung,IT Department</h4>
+        </div><!-- /footer -->
+    </div><!-- /page one -->
+    <!-- Start of second page: #two -->
+    <div data-role="page" id="two" data-theme="a">
+
+        <div data-role="header">
+            <h1>เพจที่สอง</h1>
+        </div><!-- /header -->
+
+        <div data-role="content" data-theme="a">
+            <h2>Welcome</h2>
+            <p><a href="#one" data-direction="reverse" data-role="button" data-theme="b">กลับไปเพจแรก</a></p>
+
+        </div><!-- /content -->
+
+        <div data-role="footer">
+            <h4>Develop by PK</h4>
+        </div><!-- /footer -->
+    </div><!-- /page two -->
+    <!-- Start of third page: #popup -->
+    <div data-role="page" id="popup">
+
+        <div data-role="header" data-theme="e">
+            <h1>เพจที่สาม</h1>
+        </div><!-- /header -->
+
+        <div data-role="content" data-theme="d">
+            <h2>ไดอะล็อก</h2>            
+            <p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">กลับไปเพจแรก</a></p>
+        </div><!-- /content -->
+
+        <div data-role="footer">
+            <h4>Develop by PK</h4>
+        </div><!-- /footer -->
+    </div>
+</body>
+</html>

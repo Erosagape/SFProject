@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F693267B-061F-4547-A265-A26ED91D7167}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>shopsales</RootNamespace>
+    <AssemblyName>shopsales</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+    <ApplicationInsightsResourceId />
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v15.2.Service, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v15.2.Web, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="HtmlRenderer, Version=1.5.0.5, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\HtmlRenderer.Core.1.5.0.5\lib\net40-client\HtmlRenderer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HtmlRenderer.PdfSharp, Version=1.5.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\HtmlRenderer.PdfSharp.1.5.0.6\lib\net40-client\HtmlRenderer.PdfSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.8.0.2\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PdfSharp, Version=1.32.3057.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>packages\PDFsharp.1.32.3057.0\lib\net20\PdfSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PdfSharp.Charting, Version=1.32.3057.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>packages\PDFsharp.1.32.3057.0\lib\net20\PdfSharp.Charting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="addGoods.aspx" />
+    <Content Include="AddModel.aspx" />
+    <Content Include="addshop.aspx" />
+    <Content Include="addstore.aspx" />
+    <Content Include="adduser.aspx" />
+    <Content Include="bg.png" />
+    <Content Include="CreateGoods.aspx" />
+    <Content Include="dailyreport.aspx" />
+    <Content Include="goods.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="gpx.aspx" />
+    <Content Include="gpxtest.aspx" />
+    <Content Include="editsales.aspx" />
+    <Content Include="fileadmin.aspx" />
+    <Content Include="index.html" />
+    <Content Include="line.png" />
+    <Content Include="lineit.png" />
+    <Content Include="listgoods.aspx" />
+    <Content Include="liststore.aspx" />
+    <Content Include="listuser.aspx" />
+    <Content Include="logo.png" />
+    <Content Include="mailsetup.xml" />
+    <Content Include="masterfile.aspx" />
+    <Content Include="menu.aspx" />
+    <Content Include="report.aspx" />
+    <Content Include="RequestStock.aspx" />
+    <Content Include="salesentry.aspx" />
+    <Content Include="ITest.svc" />
+    <Content Include="CreateSales.aspx" />
+    <Content Include="savereport.aspx" />
+    <Content Include="selectgoods.aspx" />
+    <Content Include="StockView.aspx" />
+    <Content Include="test.aspx" />
+    <Content Include="test.html" />
+    <Content Include="AddRequest.aspx" />
+    <Content Include="SendStock.aspx" />
+    <Content Include="testdx.aspx" />
+    <Content Include="testemail.aspx" />
+    <Content Include="UploadExcel.aspx" />
+    <Content Include="viewTempData.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="xmlquery.aspx" />
+    <Content Include="xmlreport.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addGoods.aspx.cs">
+      <DependentUpon>addGoods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addGoods.aspx.designer.cs">
+      <DependentUpon>addGoods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddModel.aspx.cs">
+      <DependentUpon>AddModel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddModel.aspx.designer.cs">
+      <DependentUpon>AddModel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addshop.aspx.cs">
+      <DependentUpon>addshop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addshop.aspx.designer.cs">
+      <DependentUpon>addshop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addstore.aspx.cs">
+      <DependentUpon>addstore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addstore.aspx.designer.cs">
+      <DependentUpon>addstore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adduser.aspx.cs">
+      <DependentUpon>adduser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adduser.aspx.designer.cs">
+      <DependentUpon>adduser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AppClass\ClsTemplate.cs" />
+    <Compile Include="AppClass\ClsData.cs" />
+    <Compile Include="AppClass\ClsSessionUser.cs" />
+    <Compile Include="CreateGoods.aspx.cs">
+      <DependentUpon>CreateGoods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateGoods.aspx.designer.cs">
+      <DependentUpon>CreateGoods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AppClass\ClsUtil.cs" />
+    <Compile Include="dailyreport.aspx.cs">
+      <DependentUpon>dailyreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dailyreport.aspx.designer.cs">
+      <DependentUpon>dailyreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gpx.aspx.cs">
+      <DependentUpon>gpx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gpx.aspx.designer.cs">
+      <DependentUpon>gpx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gpxtest.aspx.cs">
+      <DependentUpon>gpxtest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gpxtest.aspx.designer.cs">
+      <DependentUpon>gpxtest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editsales.aspx.cs">
+      <DependentUpon>editsales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editsales.aspx.designer.cs">
+      <DependentUpon>editsales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fileadmin.aspx.cs">
+      <DependentUpon>fileadmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fileadmin.aspx.designer.cs">
+      <DependentUpon>fileadmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ITest.cs" />
+    <Compile Include="listgoods.aspx.cs">
+      <DependentUpon>listgoods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="listgoods.aspx.designer.cs">
+      <DependentUpon>listgoods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="liststore.aspx.cs">
+      <DependentUpon>liststore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="liststore.aspx.designer.cs">
+      <DependentUpon>liststore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="listuser.aspx.cs">
+      <DependentUpon>listuser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="listuser.aspx.designer.cs">
+      <DependentUpon>listuser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="masterfile.aspx.cs">
+      <DependentUpon>masterfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masterfile.aspx.designer.cs">
+      <DependentUpon>masterfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menu.aspx.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menu.aspx.designer.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="report.aspx.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="report.aspx.designer.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="report_stock.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report_stock.Designer.cs">
+      <DependentUpon>report_stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RequestStock.aspx.cs">
+      <DependentUpon>RequestStock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RequestStock.aspx.designer.cs">
+      <DependentUpon>RequestStock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="salesentry.aspx.cs">
+      <DependentUpon>salesentry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="salesentry.aspx.designer.cs">
+      <DependentUpon>salesentry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ITest.svc.cs">
+      <DependentUpon>ITest.svc</DependentUpon>
+    </Compile>
+    <Compile Include="CreateSales.aspx.cs">
+      <DependentUpon>CreateSales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateSales.aspx.designer.cs">
+      <DependentUpon>CreateSales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="selectgoods.aspx.cs">
+      <DependentUpon>selectgoods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="selectgoods.aspx.designer.cs">
+      <DependentUpon>selectgoods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sumreport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sumreport.Designer.cs">
+      <DependentUpon>sumreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="salesreport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="salesreport.Designer.cs">
+      <DependentUpon>salesreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="savereport.aspx.cs">
+      <DependentUpon>savereport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="savereport.aspx.designer.cs">
+      <DependentUpon>savereport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StockView.aspx.cs">
+      <DependentUpon>StockView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockView.aspx.designer.cs">
+      <DependentUpon>StockView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddRequest.aspx.cs">
+      <DependentUpon>AddRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddRequest.aspx.designer.cs">
+      <DependentUpon>AddRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SendStock.aspx.cs">
+      <DependentUpon>SendStock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SendStock.aspx.designer.cs">
+      <DependentUpon>SendStock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testdx.aspx.cs">
+      <DependentUpon>testdx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testdx.aspx.designer.cs">
+      <DependentUpon>testdx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testemail.aspx.cs">
+      <DependentUpon>testemail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testemail.aspx.designer.cs">
+      <DependentUpon>testemail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UploadExcel.aspx.cs">
+      <DependentUpon>UploadExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UploadExcel.aspx.designer.cs">
+      <DependentUpon>UploadExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewTempData.aspx.cs">
+      <DependentUpon>viewTempData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewTempData.aspx.designer.cs">
+      <DependentUpon>viewTempData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xmlquery.aspx.cs">
+      <DependentUpon>xmlquery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xmlquery.aspx.designer.cs">
+      <DependentUpon>xmlquery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xmlreport.aspx.cs">
+      <DependentUpon>xmlreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xmlreport.aspx.designer.cs">
+      <DependentUpon>xmlreport.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Service References\Application Insights\ConnectedService.json" />
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\sfaerosoft.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="report_stock.resx">
+      <DependentUpon>report_stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sumreport.resx">
+      <DependentUpon>sumreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salesreport.resx">
+      <DependentUpon>salesreport.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51550</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51550/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Connection>
+  <Connect>
+    <Server>PUTTIPONG-PC\SQLEXPRESS</Server>
+    <User>sa</User>
+    <Password>4780</Password>
+    <Database>SfSalesShopMall</Database>
+  </Connect>
+  <Connect>
+    <Server>192.168.0.38</Server>
+    <User>prm1</User>
+    <Password>2ndLogin</Password>
+    <Database>SfSalesShopMall</Database>
+  </Connect>
+</Connection>

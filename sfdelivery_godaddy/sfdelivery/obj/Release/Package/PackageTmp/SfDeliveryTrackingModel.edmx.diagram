@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="163f3f52b20a48f9871ed0e22c2ecf25" Name="Diagram1">
+        <EntityTypeShape EntityType="SfDeliveryTrackingModel.DeliverPlace" Width="1.5" PointX="2.875" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SfDeliveryTrackingModel.DeliveryOrder" Width="1.5" PointX="5.25" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SfDeliveryTrackingModel.SalesOrder" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SfDeliveryTrackingModel.Staff" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="SfDeliveryTrackingModel.FK_DeliverPlaceDeliveryOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="SfDeliveryTrackingModel.FK_DeliverPlaceSalesOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="SfDeliveryTrackingModel.FK_SalesOrderDeliveryOrder" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

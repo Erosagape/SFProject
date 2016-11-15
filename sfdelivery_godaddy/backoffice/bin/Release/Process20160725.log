@@ -1,0 +1,72 @@
+﻿Start Schedule At :7/25/2016 5:00:00 PM
+Process 1323 of 1323
+Delivery201607 Created (1623)
+DeliveryDetails201607 Created (49101)
+Delivery201607 Get! (1623)
+DeliveryDetails201607 Get! (48501)
+Diff Header=12
+Delivery201607_1.json Created!
+Delivery201607 No data deleted!
+Diff Detail=600
+DeliveryDetails201607_1.json Created!
+DeliveryDetails201607_2.json Created!
+DeliveryDetails201607_3.json Created!
+DeliveryDetails201607_4.json Created!
+DeliveryDetails201607_5.json Created!
+DeliveryDetails201607_6.json Created!
+DeliveryDetails201607_7.json Created!
+DeliveryDetails201607_8.json Created!
+DeliveryDetails201607_9.json Created!
+DeliveryDetails201607_10.json Created!
+DeliveryDetails201607_11.json Created!
+DeliveryDetails201607_12.json Created!
+DeliveryDetails201607 No data deleted!
+Delivery201606 Created (2351)
+DeliveryDetails201606 Created (77202)
+Delivery201606 Get! (2351)
+DeliveryDetails201606 Get! (77202)
+Diff Header=0
+Delivery201606 No data deleted!
+Diff Detail=0
+DeliveryDetails201606 No data deleted!
+Delivery201605 Created (2407)
+DeliveryDetails201605 Created (77082)
+Delivery201605 Get! (2407)
+DeliveryDetails201605 Get! (77082)
+Diff Header=0
+Delivery201605 No data deleted!
+Diff Detail=0
+DeliveryDetails201605 No data deleted!
+Complete!->File Delivery201607_1.json uploaded
+Complete!->File DeliveryDetails201607_1.json uploaded
+Complete!->File DeliveryDetails201607_10.json uploaded
+Complete!->File DeliveryDetails201607_11.json uploaded
+Complete!->File DeliveryDetails201607_12.json uploaded
+Complete!->File DeliveryDetails201607_2.json uploaded
+Complete!->File DeliveryDetails201607_3.json uploaded
+Complete!->File DeliveryDetails201607_4.json uploaded
+Complete!->File DeliveryDetails201607_5.json uploaded
+Complete!->File DeliveryDetails201607_6.json uploaded
+Complete!->File DeliveryDetails201607_7.json uploaded
+Complete!->File DeliveryDetails201607_8.json uploaded
+Complete!->File DeliveryDetails201607_9.json uploaded
+Open Delivery201607:Delivery201607 Opened!
+Read Delivery201607_1.json:Completed! Delivery201607_1 files=1 rec=12 add=0,update=12
+Read DeliveryDetails201607_1.json:ERROR:Cannot find column [ID_Detail].
+Read DeliveryDetails201607_10.json:ERROR:Cannot find column [ID_Detail].
+Save Delivery201607:Delivery201607 Updated!
+Open DeliveryDetails201607:DeliveryDetails201607 Opened!
+Read DeliveryDetails201607_11.json:Completed! DeliveryDetails201607_11 files=1 rec=50 add=50,update=0
+Read DeliveryDetails201607_12.json:Completed! DeliveryDetails201607_12 files=1 rec=50 add=50,update=0
+Read DeliveryDetails201607_2.json:Completed! DeliveryDetails201607_2 files=1 rec=50 add=50,update=0
+Save DeliveryDetails201607:DeliveryDetails201607 Updated!
+Open DeliveryDetails201607:DeliveryDetails201607 Opened!
+Read DeliveryDetails201607_3.json:Completed! DeliveryDetails201607_3 files=1 rec=50 add=50,update=0
+Read DeliveryDetails201607_4.json:Completed! DeliveryDetails201607_4 files=1 rec=50 add=50,update=0
+Read DeliveryDetails201607_5.json:Completed! DeliveryDetails201607_5 files=1 rec=50 add=50,update=0
+Save DeliveryDetails201607:DeliveryDetails201607 Updated!
+Open DeliveryDetails201607:DeliveryDetails201607 Opened!
+Read DeliveryDetails201607_6.json:Completed! DeliveryDetails201607_6 files=1 rec=50 add=50,update=0
+Read DeliveryDetails201607_7.json:Completed! DeliveryDetails201607_7 files=1 rec=50 add=50,update=0
+RRROR:The content type text/html of the response message does not match the content type of the binding (text/xml; charset=utf-8). If using a custom encoder, be sure that the IsContentTypeSupported method is implemented properly. The first 13 bytes of the response were: '<HTML></HTML>'.
+End Schedule At :7/25/2016 5:05:39 PM

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NewDataSet>
+  <Table>
+    <FileName>Goods</FileName>
+    <FileDesc>Products</FileDesc>
+    <TableName>xGoods</TableName>
+  </Table>
+  <Table>
+    <FileName>Color</FileName>
+    <FileDesc>Products Color</FileDesc>
+    <TableName>ShoeColor</TableName>
+  </Table>
+  <Table>
+    <FileName>ShoeType</FileName>
+    <FileDesc>Products Type</FileDesc>
+    <TableName>ShoeType</TableName>
+  </Table>
+  <Table>
+    <FileName>ShoeCategory</FileName>
+    <FileDesc>Products Kind</FileDesc>
+    <TableName>ProductKind</TableName>
+  </Table>
+  <Table>
+    <FileName>ShoeGroup</FileName>
+    <FileDesc>Products Group</FileDesc>
+    <TableName>ProductGroup</TableName>
+  </Table>
+  <Table>
+    <FileName>SalesType</FileName>
+    <FileDesc>Sales Type</FileDesc>
+    <TableName>SaleType</TableName>
+  </Table>
+  <Table>
+    <FileName>CustomerGroup</FileName>
+    <FileDesc>Customer Group</FileDesc>
+    <TableName>xCustomerGroup</TableName>
+  </Table>
+  <Table>
+    <FileName>Customer</FileName>
+    <FileDesc>Points of Sales</FileDesc>
+    <TableName>xCustomer</TableName>
+  </Table>
+  <Table>
+    <FileName>listuser</FileName>
+    <FileDesc>Staff</FileDesc>
+    <TableName>xStaff</TableName>
+  </Table>
+  <Table>
+    <FileName>ShoeModel</FileName>
+    <FileDesc>Shoe Model</FileDesc>
+    <TableName>ShoeModel</TableName>
+  </Table>
+  <Table>
+    <FileName>ShoeMold</FileName>
+    <FileDesc>Shoe Mold</FileDesc>
+    <TableName>ShoeMold</TableName>
+  </Table>
+  <Table>
+    <FileName>ShoeSize</FileName>
+    <FileDesc>Shoe Sizes</FileDesc>
+    <TableName>ShoeSize</TableName>
+  </Table>
+</NewDataSet>

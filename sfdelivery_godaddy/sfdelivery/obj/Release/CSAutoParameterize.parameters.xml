@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="SfDeliveryTrackingEntities-Web.config Connection String" description="SfDeliveryTrackingEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/SfDeliveryTrackingModel.csdl|res://*/SfDeliveryTrackingModel.ssdl|res://*/SfDeliveryTrackingModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=PUTTIPONG-PC\SQLEXPRESS;initial catalog=SfDeliveryTracking;persist security info=True;user id=sa;password=4780;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Work\\SFProject\\Webapps\\sfdelivery_godaddy\\sfdelivery\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SfDeliveryTrackingEntities']/@connectionString" />
+  </parameter>
+</parameters>

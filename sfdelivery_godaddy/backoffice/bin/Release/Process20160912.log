@@ -1,0 +1,370 @@
+﻿Start Schedule At :12/09/2016 09:00:00
+Process 1505 of 1505
+Delivery201609 Created (551)
+Delivery201609 Get! (467)
+Diff Header=100
+Delivery201609_1.json Created!
+Delivery201609_2.json Created!
+Delivery201609 No data deleted!
+Delivery201608 Created (2158)
+Delivery201608 Get! (2306)
+Diff Header=58
+Delivery201608_1.json Created!
+Delivery201608_2.json Created!
+Delivery201607 Created (2112)
+Delivery201607 Get! (3045)
+Diff Header=2
+Delivery201607_1.json Created!
+Complete!->File Delivery201607_1.json uploaded
+Complete!->File Delivery201608_1.json uploaded
+Complete!->File Delivery201608_2.json uploaded
+Complete!->File Delivery201609_1.json uploaded
+Complete!->File Delivery201609_2.json uploaded
+Open Delivery201607:Delivery201607 Opened!
+Read Delivery201607_1.json:Completed! Delivery201607_1 files=1 rec=2 add=0,update=0
+Read Delivery201608_1.json:Completed! Delivery201608_1 files=1 rec=50 add=0,update=0
+Read Delivery201608_2.json:Completed! Delivery201608_2 files=1 rec=8 add=0,update=0
+Read Delivery201609_1.json:Completed! Delivery201609_1 files=1 rec=50 add=0,update=0
+Read Delivery201609_2.json:Completed! Delivery201609_2 files=1 rec=50 add=0,update=0
+Save Delivery201607:Delivery201607 Updated!
+End Schedule At :12/09/2016 09:00:14
+Start Schedule At :12/09/2016 09:30:00
+Process 1505 of 1505
+Delivery201609 Created (560)
+Delivery201609 Get! (467)
+Diff Header=112
+Delivery201609_1.json Created!
+Delivery201609_2.json Created!
+Delivery201609_3.json Created!
+Delivery201609 No data deleted!
+Delivery201608 Created (2158)
+Delivery201608 Get! (2306)
+Diff Header=58
+Delivery201608_1.json Created!
+Delivery201608_2.json Created!
+Delivery201607 Created (2112)
+Delivery201607 Get! (3045)
+Diff Header=2
+Delivery201607_1.json Created!
+Complete!->File Delivery201607_1.json uploaded
+Complete!->File Delivery201608_1.json uploaded
+Complete!->File Delivery201608_2.json uploaded
+Complete!->File Delivery201609_1.json uploaded
+Complete!->File Delivery201609_2.json uploaded
+Complete!->File Delivery201609_3.json uploaded
+Open Delivery201607:Delivery201607 Opened!
+Read Delivery201607_1.json:Completed! Delivery201607_1 files=1 rec=2 add=0,update=0
+Read Delivery201608_1.json:Completed! Delivery201608_1 files=1 rec=50 add=0,update=0
+Read Delivery201608_2.json:Completed! Delivery201608_2 files=1 rec=8 add=0,update=0
+Read Delivery201609_1.json:Completed! Delivery201609_1 files=1 rec=50 add=0,update=1
+Read Delivery201609_2.json:Completed! Delivery201609_2 files=1 rec=50 add=0,update=8
+Save Delivery201607:Delivery201607 Updated!
+Open Delivery201609:Delivery201609 Opened!
+Read Delivery201609_3.json:Completed! Delivery201609_3 files=1 rec=12 add=9,update=3
+Save Delivery201609:Delivery201609 Updated!
+End Schedule At :12/09/2016 09:30:15
+Start Schedule At :12/09/2016 10:00:00
+Process 1505 of 1505
+Delivery201609 Created (560)
+Delivery201609 Get! (476)
+Diff Header=104
+Delivery201609_1.json Created!
+Delivery201609_2.json Created!
+Delivery201609_3.json Created!
+Delivery201609 No data deleted!
+Delivery201608 Created (2158)
+Delivery201608 Get! (2306)
+Diff Header=58
+Delivery201608_1.json Created!
+Delivery201608_2.json Created!
+Delivery201607 Created (2112)
+Delivery201607 Get! (3045)
+Diff Header=2
+Delivery201607_1.json Created!
+Complete!->File Delivery201607_1.json uploaded
+Complete!->File Delivery201608_1.json uploaded
+Complete!->File Delivery201608_2.json uploaded
+Complete!->File Delivery201609_1.json uploaded
+Complete!->File Delivery201609_2.json uploaded
+Complete!->File Delivery201609_3.json uploaded
+Open Delivery201607:Delivery201607 Opened!
+Read Delivery201607_1.json:Completed! Delivery201607_1 files=1 rec=2 add=0,update=0
+Read Delivery201608_1.json:Completed! Delivery201608_1 files=1 rec=50 add=0,update=0
+Read Delivery201608_2.json:Completed! Delivery201608_2 files=1 rec=8 add=0,update=0
+Read Delivery201609_1.json:Completed! Delivery201609_1 files=1 rec=50 add=0,update=0
+Read Delivery201609_2.json:Completed! Delivery201609_2 files=1 rec=50 add=0,update=5
+Save Delivery201607:Delivery201607 Updated!
+Open Delivery201609:Delivery201609 Opened!
+Read Delivery201609_3.json:Completed! Delivery201609_3 files=1 rec=4 add=0,update=4
+Save Delivery201609:Delivery201609 Updated!
+End Schedule At :12/09/2016 10:00:19
+Start Schedule At :12/09/2016 10:30:00
+Process 1505 of 1505
+Delivery201609 Created (563)
+Delivery201609 Get! (476)
+Diff Header=110
+Delivery201609_1.json Created!
+Delivery201609_2.json Created!
+Delivery201609_3.json Created!
+Delivery201609 No data deleted!
+Delivery201608 Created (2158)
+Delivery201608 Get! (2306)
+Diff Header=58
+Delivery201608_1.json Created!
+Delivery201608_2.json Created!
+Delivery201607 Created (2112)
+Delivery201607 Get! (3045)
+Diff Header=2
+Delivery201607_1.json Created!
+Complete!->File Delivery201607_1.json uploaded
+Complete!->File Delivery201608_1.json uploaded
+Complete!->File Delivery201608_2.json uploaded
+Complete!->File Delivery201609_1.json uploaded
+Complete!->File Delivery201609_2.json uploaded
+Complete!->File Delivery201609_3.json uploaded
+Open Delivery201607:Delivery201607 Opened!
+Read Delivery201607_1.json:Completed! Delivery201607_1 files=1 rec=2 add=0,update=0
+Read Delivery201608_1.json:Completed! Delivery201608_1 files=1 rec=50 add=0,update=0
+Read Delivery201608_2.json:Completed! Delivery201608_2 files=1 rec=8 add=0,update=0
+Read Delivery201609_1.json:Completed! Delivery201609_1 files=1 rec=50 add=0,update=1
+Read Delivery201609_2.json:Completed! Delivery201609_2 files=1 rec=50 add=1,update=1
+Save Delivery201607:Delivery201607 Updated!
+Open Delivery201609:Delivery201609 Opened!
+Read Delivery201609_3.json:Completed! Delivery201609_3 files=1 rec=10 add=3,update=7
+Save Delivery201609:Delivery201609 Updated!
+End Schedule At :12/09/2016 10:30:30
+Start Schedule At :12/09/2016 11:00:00
+Process 1505 of 1505
+Delivery201609 Created (566)
+Delivery201609 Get! (479)
+Diff Header=105
+Delivery201609_1.json Created!
+Delivery201609_2.json Created!
+Delivery201609_3.json Created!
+Delivery201609 No data deleted!
+Delivery201608 Created (2158)
+Delivery201608 Get! (2306)
+Diff Header=58
+Delivery201608_1.json Created!
+Delivery201608_2.json Created!
+Delivery201607 Created (2112)
+Delivery201607 Get! (3046)
+Diff Header=2
+Delivery201607_1.json Created!
+Complete!->File Delivery201607_1.json uploaded
+Complete!->File Delivery201608_1.json uploaded
+Complete!->File Delivery201608_2.json uploaded
+Complete!->File Delivery201609_1.json uploaded
+Complete!->File Delivery201609_2.json uploaded
+Complete!->File Delivery201609_3.json uploaded
+Open Delivery201607:Delivery201607 Opened!
+Read Delivery201607_1.json:Completed! Delivery201607_1 files=1 rec=2 add=0,update=0
+Read Delivery201608_1.json:Completed! Delivery201608_1 files=1 rec=50 add=0,update=0
+Read Delivery201608_2.json:Completed! Delivery201608_2 files=1 rec=8 add=0,update=0
+Read Delivery201609_1.json:Completed! Delivery201609_1 files=1 rec=50 add=0,update=0
+Read Delivery201609_2.json:Completed! Delivery201609_2 files=1 rec=50 add=0,update=1
+Save Delivery201607:Delivery201607 Updated!
+Open Delivery201609:Delivery201609 Opened!
+Read Delivery201609_3.json:Completed! Delivery201609_3 files=1 rec=5 add=3,update=2
+Save Delivery201609:Delivery201609 Updated!
+End Schedule At :12/09/2016 11:00:32
+Start Schedule At :12/09/2016 11:30:00
+Process 1505 of 1505
+Delivery201609 Created (572)
+Delivery201609 Get! (482)
+Diff Header=106
+Delivery201609_1.json Created!
+Delivery201609_2.json Created!
+Delivery201609_3.json Created!
+Delivery201609 No data deleted!
+Delivery201608 Created (2158)
+Delivery201608 Get! (2306)
+Diff Header=58
+Delivery201608_1.json Created!
+Delivery201608_2.json Created!
+Delivery201607 Created (2112)
+Delivery201607 Get! (3046)
+Diff Header=2
+Delivery201607_1.json Created!
+Complete!->File Delivery201607_1.json uploaded
+Complete!->File Delivery201608_1.json uploaded
+Complete!->File Delivery201608_2.json uploaded
+Complete!->File Delivery201609_1.json uploaded
+Complete!->File Delivery201609_2.json uploaded
+Complete!->File Delivery201609_3.json uploaded
+Open Delivery201607:Delivery201607 Opened!
+Read Delivery201607_1.json:Completed! Delivery201607_1 files=1 rec=2 add=0,update=0
+Read Delivery201608_1.json:Completed! Delivery201608_1 files=1 rec=50 add=0,update=0
+Read Delivery201608_2.json:Completed! Delivery201608_2 files=1 rec=8 add=0,update=0
+Read Delivery201609_1.json:Completed! Delivery201609_1 files=1 rec=50 add=0,update=0
+Read Delivery201609_2.json:Completed! Delivery201609_2 files=1 rec=50 add=0,update=0
+Save Delivery201607:Delivery201607 Updated!
+Open Delivery201609:Delivery201609 Opened!
+Read Delivery201609_3.json:Completed! Delivery201609_3 files=1 rec=6 add=6,update=0
+Save Delivery201609:Delivery201609 Updated!
+End Schedule At :12/09/2016 11:30:27
+Start Schedule At :12/09/2016 12:00:00
+Process 1505 of 1505
+Delivery201609 Created (573)
+Delivery201609 Get! (488)
+Diff Header=106
+Delivery201609_1.json Created!
+Delivery201609_2.json Created!
+Delivery201609_3.json Created!
+Delivery201609 No data deleted!
+Delivery201608 Created (2158)
+Delivery201608 Get! (2306)
+Diff Header=58
+Delivery201608_1.json Created!
+Delivery201608_2.json Created!
+Delivery201607 Created (2112)
+Delivery201607 Get! (3046)
+Diff Header=2
+Delivery201607_1.json Created!
+Complete!->File Delivery201607_1.json uploaded
+Complete!->File Delivery201608_1.json uploaded
+Complete!->File Delivery201608_2.json uploaded
+Complete!->File Delivery201609_1.json uploaded
+Complete!->File Delivery201609_2.json uploaded
+Complete!->File Delivery201609_3.json uploaded
+Open Delivery201607:Delivery201607 Opened!
+Read Delivery201607_1.json:Completed! Delivery201607_1 files=1 rec=2 add=0,update=0
+Read Delivery201608_1.json:Completed! Delivery201608_1 files=1 rec=50 add=0,update=0
+Read Delivery201608_2.json:Completed! Delivery201608_2 files=1 rec=8 add=0,update=0
+Read Delivery201609_1.json:Completed! Delivery201609_1 files=1 rec=50 add=0,update=0
+Read Delivery201609_2.json:Completed! Delivery201609_2 files=1 rec=50 add=4,update=0
+Save Delivery201607:Delivery201607 Updated!
+Open Delivery201609:Delivery201609 Opened!
+Read Delivery201609_3.json:Completed! Delivery201609_3 files=1 rec=6 add=3,update=3
+Save Delivery201609:Delivery201609 Updated!
+End Schedule At :12/09/2016 12:00:23
+Start Schedule At :12/09/2016 12:30:00
+Process 1505 of 1505
+Delivery201609 Created (573)
+Delivery201609 Get! (491)
+Diff Header=100
+Delivery201609_1.json Created!
+Delivery201609_2.json Created!
+Delivery201609 No data deleted!
+Delivery201608 Created (2158)
+Delivery201608 Get! (2306)
+Diff Header=58
+Delivery201608_1.json Created!
+Delivery201608_2.json Created!
+Delivery201607 Created (2112)
+Delivery201607 Get! (3050)
+Diff Header=2
+Delivery201607_1.json Created!
+Complete!->File Delivery201607_1.json uploaded
+Complete!->File Delivery201608_1.json uploaded
+Complete!->File Delivery201608_2.json uploaded
+Complete!->File Delivery201609_1.json uploaded
+Complete!->File Delivery201609_2.json uploaded
+Open Delivery201607:Delivery201607 Opened!
+Read Delivery201607_1.json:Completed! Delivery201607_1 files=1 rec=2 add=0,update=0
+Read Delivery201608_1.json:Completed! Delivery201608_1 files=1 rec=50 add=0,update=0
+Read Delivery201608_2.json:Completed! Delivery201608_2 files=1 rec=8 add=0,update=0
+Read Delivery201609_1.json:Completed! Delivery201609_1 files=1 rec=50 add=0,update=0
+Read Delivery201609_2.json:Completed! Delivery201609_2 files=1 rec=50 add=0,update=0
+Save Delivery201607:Delivery201607 Updated!
+End Schedule At :12/09/2016 12:30:21
+Start Schedule At :12/09/2016 13:30:00
+Process 1505 of 1505
+Delivery201609 Created (582)
+Delivery201609 Get! (491)
+Diff Header=109
+Delivery201609_1.json Created!
+Delivery201609_2.json Created!
+Delivery201609_3.json Created!
+Delivery201609 No data deleted!
+Delivery201608 Created (2158)
+Delivery201608 Get! (2306)
+Diff Header=58
+Delivery201608_1.json Created!
+Delivery201608_2.json Created!
+Delivery201607 Created (2112)
+Delivery201607 Get! (3050)
+Diff Header=2
+Delivery201607_1.json Created!
+Complete!->File Delivery201607_1.json uploaded
+Complete!->File Delivery201608_1.json uploaded
+Complete!->File Delivery201608_2.json uploaded
+Complete!->File Delivery201609_1.json uploaded
+Complete!->File Delivery201609_2.json uploaded
+Complete!->File Delivery201609_3.json uploaded
+Open Delivery201607:Delivery201607 Opened!
+Read Delivery201607_1.json:Completed! Delivery201607_1 files=1 rec=2 add=0,update=0
+Read Delivery201608_1.json:Completed! Delivery201608_1 files=1 rec=50 add=0,update=0
+Read Delivery201608_2.json:Completed! Delivery201608_2 files=1 rec=8 add=0,update=0
+Read Delivery201609_1.json:Completed! Delivery201609_1 files=1 rec=50 add=0,update=0
+Read Delivery201609_2.json:Completed! Delivery201609_2 files=1 rec=50 add=2,update=0
+Save Delivery201607:Delivery201607 Updated!
+Open Delivery201609:Delivery201609 Opened!
+Read Delivery201609_3.json:Completed! Delivery201609_3 files=1 rec=9 add=7,update=2
+Save Delivery201609:Delivery201609 Updated!
+End Schedule At :12/09/2016 13:30:37
+Start Schedule At :12/09/2016 14:00:00
+Process 1505 of 1505
+Delivery201609 Created (582)
+Delivery201609 Get! (498)
+Diff Header=105
+Delivery201609_1.json Created!
+Delivery201609_2.json Created!
+Delivery201609_3.json Created!
+Delivery201609 No data deleted!
+Delivery201608 Created (2158)
+Delivery201608 Get! (2306)
+Diff Header=62
+Delivery201608_1.json Created!
+Delivery201608_2.json Created!
+Delivery201607 Created (2112)
+Delivery201607 Get! (3052)
+Diff Header=5
+Delivery201607_1.json Created!
+Complete!->File Delivery201607_1.json uploaded
+Complete!->File Delivery201608_1.json uploaded
+Complete!->File Delivery201608_2.json uploaded
+Complete!->File Delivery201609_1.json uploaded
+Complete!->File Delivery201609_2.json uploaded
+Complete!->File Delivery201609_3.json uploaded
+Open Delivery201607:Delivery201607 Opened!
+Read Delivery201607_1.json:Completed! Delivery201607_1 files=1 rec=5 add=0,update=3
+Read Delivery201608_1.json:Completed! Delivery201608_1 files=1 rec=50 add=0,update=1
+Read Delivery201608_2.json:Completed! Delivery201608_2 files=1 rec=12 add=3,update=0
+Read Delivery201609_1.json:Completed! Delivery201609_1 files=1 rec=50 add=0,update=0
+Read Delivery201609_2.json:Completed! Delivery201609_2 files=1 rec=50 add=0,update=2
+Save Delivery201607:Delivery201607 Updated!
+Open Delivery201609:Delivery201609 Opened!
+Read Delivery201609_3.json:Completed! Delivery201609_3 files=1 rec=5 add=0,update=5
+Save Delivery201609:Delivery201609 Updated!
+End Schedule At :12/09/2016 14:00:25
+Start Schedule At :12/09/2016 14:30:00
+Process 1505 of 1505
+Delivery201609 Created (582)
+Delivery201609 Get! (498)
+Diff Header=100
+Delivery201609_1.json Created!
+Delivery201609_2.json Created!
+Delivery201609 No data deleted!
+Delivery201608 Created (2158)
+Delivery201608 Get! (2306)
+Diff Header=62
+Delivery201608_1.json Created!
+Delivery201608_2.json Created!
+Delivery201607 Created (2112)
+Delivery201607 Get! (3055)
+Diff Header=5
+Delivery201607_1.json Created!
+Complete!->File Delivery201607_1.json uploaded
+Complete!->File Delivery201608_1.json uploaded
+Complete!->File Delivery201608_2.json uploaded
+Complete!->File Delivery201609_1.json uploaded
+Complete!->File Delivery201609_2.json uploaded
+Open Delivery201607:Delivery201607 Opened!
+Read Delivery201607_1.json:Completed! Delivery201607_1 files=1 rec=5 add=0,update=3
+Read Delivery201608_1.json:Completed! Delivery201608_1 files=1 rec=50 add=0,update=1
+Read Delivery201608_2.json:Completed! Delivery201608_2 files=1 rec=12 add=0,update=3
+Read Delivery201609_1.json:Completed! Delivery201609_1 files=1 rec=50 add=0,update=1
+Read Delivery201609_2.json:Completed! Delivery201609_2 files=1 rec=50 add=0,update=1
+Save Delivery201607:Delivery201607 Updated!
+End Schedule At :12/09/2016 14:30:23

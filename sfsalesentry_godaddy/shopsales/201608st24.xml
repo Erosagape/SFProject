@@ -1,0 +1,282 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <Table>
+    <OID>1</OID>
+    <ModelCode>A0801</ModelCode>
+    <Color>แดง</Color>
+    <SizeNo>35</SizeNo>
+    <StockType>0</StockType>
+    <TransactionState>STI</TransactionState>
+    <TransactionType>เติมสินค้าปกติ</TransactionType>
+    <StockDate>2016-08-26</StockDate>
+    <ProdCatName>รองเท้าแตะหญิง</ProdCatName>
+    <GoodsCode>A0801RD350</GoodsCode>
+    <ProdQty>2</ProdQty>
+    <StockQty>0</StockQty>
+    <TagPrice>0</TagPrice>
+    <GPx>0</GPx>
+    <DiscountRate>0</DiscountRate>
+    <ShareDiscount>0</ShareDiscount>
+    <Cal>1</Cal>
+    <SalesIn>0</SalesIn>
+    <SalesOut>0</SalesOut>
+    <UPriceIn>NaN</UPriceIn>
+    <UPriceOut>NaN</UPriceOut>
+    <StockIn>NaN</StockIn>
+    <StockOut>NaN</StockOut>
+    <TransactionDate>2016-08-26</TransactionDate>
+    <RefNo>STI2016080240001</RefNo>
+    <TransactionBy>WM001</TransactionBy>
+    <ApproveCode />
+    <ConfirmCode />
+    <AcceptCode>ADM003</AcceptCode>
+  </Table>
+  <Table>
+    <OID>2</OID>
+    <ModelCode>A0801</ModelCode>
+    <Color>แดง</Color>
+    <SizeNo>36</SizeNo>
+    <StockType>0</StockType>
+    <TransactionState>STI</TransactionState>
+    <TransactionType>เติมสินค้าปกติ</TransactionType>
+    <StockDate>2016-08-26</StockDate>
+    <ProdCatName>รองเท้าแตะหญิง</ProdCatName>
+    <GoodsCode>A0801RD360</GoodsCode>
+    <ProdQty>2</ProdQty>
+    <StockQty>0</StockQty>
+    <TagPrice>0</TagPrice>
+    <GPx>0</GPx>
+    <DiscountRate>0</DiscountRate>
+    <ShareDiscount>0</ShareDiscount>
+    <Cal>1</Cal>
+    <SalesIn>0</SalesIn>
+    <SalesOut>0</SalesOut>
+    <UPriceIn>NaN</UPriceIn>
+    <UPriceOut>NaN</UPriceOut>
+    <StockIn>NaN</StockIn>
+    <StockOut>NaN</StockOut>
+    <TransactionDate>2016-08-26</TransactionDate>
+    <RefNo>STI2016080240002</RefNo>
+    <TransactionBy>WM001</TransactionBy>
+    <ApproveCode />
+    <ConfirmCode />
+    <AcceptCode>ADM003</AcceptCode>
+  </Table>
+  <Table>
+    <OID>3</OID>
+    <ModelCode>A0801</ModelCode>
+    <Color>แดง</Color>
+    <SizeNo>37</SizeNo>
+    <StockType>0</StockType>
+    <TransactionState>STI</TransactionState>
+    <TransactionType>เติมสินค้าปกติ</TransactionType>
+    <StockDate>2016-08-26</StockDate>
+    <ProdCatName>รองเท้าแตะหญิง</ProdCatName>
+    <GoodsCode>A0801RD370</GoodsCode>
+    <ProdQty>2</ProdQty>
+    <StockQty>0</StockQty>
+    <TagPrice>0</TagPrice>
+    <GPx>0</GPx>
+    <DiscountRate>0</DiscountRate>
+    <ShareDiscount>0</ShareDiscount>
+    <Cal>1</Cal>
+    <SalesIn>0</SalesIn>
+    <SalesOut>0</SalesOut>
+    <UPriceIn>NaN</UPriceIn>
+    <UPriceOut>NaN</UPriceOut>
+    <StockIn>NaN</StockIn>
+    <StockOut>NaN</StockOut>
+    <TransactionDate>2016-08-26</TransactionDate>
+    <RefNo>STI2016080240003</RefNo>
+    <TransactionBy>WM001</TransactionBy>
+    <ApproveCode />
+    <ConfirmCode />
+    <AcceptCode>ADM003</AcceptCode>
+  </Table>
+  <Table>
+    <OID>4</OID>
+    <ModelCode>A0801</ModelCode>
+    <Color>แดง</Color>
+    <SizeNo>38</SizeNo>
+    <StockType>0</StockType>
+    <TransactionState>STI</TransactionState>
+    <TransactionType>เติมสินค้าปกติ</TransactionType>
+    <StockDate>2016-08-26</StockDate>
+    <ProdCatName>รองเท้าแตะหญิง</ProdCatName>
+    <GoodsCode>A0801RD380</GoodsCode>
+    <ProdQty>2</ProdQty>
+    <StockQty>0</StockQty>
+    <TagPrice>0</TagPrice>
+    <GPx>0</GPx>
+    <DiscountRate>0</DiscountRate>
+    <ShareDiscount>0</ShareDiscount>
+    <Cal>1</Cal>
+    <SalesIn>0</SalesIn>
+    <SalesOut>0</SalesOut>
+    <UPriceIn>NaN</UPriceIn>
+    <UPriceOut>NaN</UPriceOut>
+    <StockIn>NaN</StockIn>
+    <StockOut>NaN</StockOut>
+    <TransactionDate>2016-08-26</TransactionDate>
+    <RefNo>STI2016080240004</RefNo>
+    <TransactionBy>WM001</TransactionBy>
+    <ApproveCode />
+    <ConfirmCode />
+    <AcceptCode>ADM003</AcceptCode>
+  </Table>
+  <Table>
+    <OID>5</OID>
+    <ModelCode>A0801</ModelCode>
+    <Color>แดง</Color>
+    <SizeNo>39</SizeNo>
+    <StockType>0</StockType>
+    <TransactionState>STI</TransactionState>
+    <TransactionType>เติมสินค้าปกติ</TransactionType>
+    <StockDate>2016-08-26</StockDate>
+    <ProdCatName>รองเท้าแตะหญิง</ProdCatName>
+    <GoodsCode>A0801RD390</GoodsCode>
+    <ProdQty>1</ProdQty>
+    <StockQty>0</StockQty>
+    <TagPrice>0</TagPrice>
+    <GPx>0</GPx>
+    <DiscountRate>0</DiscountRate>
+    <ShareDiscount>0</ShareDiscount>
+    <Cal>1</Cal>
+    <SalesIn>0</SalesIn>
+    <SalesOut>0</SalesOut>
+    <UPriceIn>NaN</UPriceIn>
+    <UPriceOut>NaN</UPriceOut>
+    <StockIn>NaN</StockIn>
+    <StockOut>NaN</StockOut>
+    <TransactionDate>2016-08-26</TransactionDate>
+    <RefNo>STI2016080240005</RefNo>
+    <TransactionBy>WM001</TransactionBy>
+    <ApproveCode />
+    <ConfirmCode />
+    <AcceptCode>ADM003</AcceptCode>
+  </Table>
+  <Table>
+    <OID>6</OID>
+    <ModelCode>A0801</ModelCode>
+    <Color>แดง</Color>
+    <SizeNo>40</SizeNo>
+    <StockType>0</StockType>
+    <TransactionState>STI</TransactionState>
+    <TransactionType>เติมสินค้าปกติ</TransactionType>
+    <StockDate>2016-08-26</StockDate>
+    <ProdCatName>รองเท้าแตะหญิง</ProdCatName>
+    <GoodsCode>A0801RD400</GoodsCode>
+    <ProdQty>1</ProdQty>
+    <StockQty>0</StockQty>
+    <TagPrice>0</TagPrice>
+    <GPx>0</GPx>
+    <DiscountRate>0</DiscountRate>
+    <ShareDiscount>0</ShareDiscount>
+    <Cal>1</Cal>
+    <SalesIn>0</SalesIn>
+    <SalesOut>0</SalesOut>
+    <UPriceIn>NaN</UPriceIn>
+    <UPriceOut>NaN</UPriceOut>
+    <StockIn>NaN</StockIn>
+    <StockOut>NaN</StockOut>
+    <TransactionDate>2016-08-26</TransactionDate>
+    <RefNo>STI2016080240006</RefNo>
+    <TransactionBy>WM001</TransactionBy>
+    <ApproveCode />
+    <ConfirmCode />
+    <AcceptCode>ADM003</AcceptCode>
+  </Table>
+  <Table>
+    <OID>7</OID>
+    <ModelCode>A0801</ModelCode>
+    <Color>แดง</Color>
+    <SizeNo>41</SizeNo>
+    <StockType>0</StockType>
+    <TransactionState>STI</TransactionState>
+    <TransactionType>เติมสินค้าปกติ</TransactionType>
+    <StockDate>2016-08-26</StockDate>
+    <ProdCatName>รองเท้าแตะหญิง</ProdCatName>
+    <GoodsCode>A0801RD410</GoodsCode>
+    <ProdQty>1</ProdQty>
+    <StockQty>0</StockQty>
+    <TagPrice>0</TagPrice>
+    <GPx>0</GPx>
+    <DiscountRate>0</DiscountRate>
+    <ShareDiscount>0</ShareDiscount>
+    <Cal>1</Cal>
+    <SalesIn>0</SalesIn>
+    <SalesOut>0</SalesOut>
+    <UPriceIn>NaN</UPriceIn>
+    <UPriceOut>NaN</UPriceOut>
+    <StockIn>NaN</StockIn>
+    <StockOut>NaN</StockOut>
+    <TransactionDate>2016-08-26</TransactionDate>
+    <RefNo>STI2016080240007</RefNo>
+    <TransactionBy>WM001</TransactionBy>
+    <ApproveCode />
+    <ConfirmCode />
+    <AcceptCode>ADM003</AcceptCode>
+  </Table>
+  <Table>
+    <OID>8</OID>
+    <ModelCode />
+    <Color />
+    <SizeNo />
+    <StockType>0</StockType>
+    <TransactionState>PCR</TransactionState>
+    <TransactionType>สั่งสินค้า One Price</TransactionType>
+    <StockDate />
+    <ProdCatName>รองเท้าแตะชาย</ProdCatName>
+    <GoodsCode />
+    <ProdQty>2</ProdQty>
+    <StockQty>0</StockQty>
+    <TagPrice>0</TagPrice>
+    <GPx>0</GPx>
+    <DiscountRate>0</DiscountRate>
+    <ShareDiscount>0</ShareDiscount>
+    <Cal>0</Cal>
+    <SalesIn>0</SalesIn>
+    <SalesOut>0</SalesOut>
+    <UPriceIn>0</UPriceIn>
+    <UPriceOut>0</UPriceOut>
+    <StockIn>0</StockIn>
+    <StockOut>0</StockOut>
+    <TransactionDate>2016-08-26</TransactionDate>
+    <RefNo>STI2016080240008</RefNo>
+    <TransactionBy>WM001</TransactionBy>
+    <ApproveCode />
+    <ConfirmCode />
+    <AcceptCode />
+  </Table>
+  <Table>
+    <OID>9</OID>
+    <ModelCode />
+    <Color />
+    <SizeNo />
+    <StockType>0</StockType>
+    <TransactionState>PCR</TransactionState>
+    <TransactionType>สั่งสินค้า One Price</TransactionType>
+    <StockDate />
+    <ProdCatName>รองเท้าแตะหญิง</ProdCatName>
+    <GoodsCode />
+    <ProdQty>2</ProdQty>
+    <StockQty>0</StockQty>
+    <TagPrice>0</TagPrice>
+    <GPx>0</GPx>
+    <DiscountRate>0</DiscountRate>
+    <ShareDiscount>0</ShareDiscount>
+    <Cal>0</Cal>
+    <SalesIn>0</SalesIn>
+    <SalesOut>0</SalesOut>
+    <UPriceIn>0</UPriceIn>
+    <UPriceOut>0</UPriceOut>
+    <StockIn>0</StockIn>
+    <StockOut>0</StockOut>
+    <TransactionDate>2016-08-26</TransactionDate>
+    <RefNo>STI2016080240009</RefNo>
+    <TransactionBy>WM001</TransactionBy>
+    <ApproveCode />
+    <ConfirmCode />
+    <AcceptCode />
+  </Table>
+</DocumentElement>

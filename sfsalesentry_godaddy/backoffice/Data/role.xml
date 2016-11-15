@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NewDataSet>
+  <Table>
+    <id>0</id>
+    <rolename>Admin</rolename>    
+  </Table>
+  <Table>
+    <id>1</id>
+    <rolename>PC</rolename>
+  </Table>
+  <Table>
+    <id>2</id>
+    <rolename>Supervisor</rolename>
+  </Table>
+</NewDataSet>

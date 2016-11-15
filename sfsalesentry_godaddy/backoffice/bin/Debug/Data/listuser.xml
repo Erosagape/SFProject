@@ -1,0 +1,289 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <oid>4</oid>
+    <id>0101</id>
+    <name>ประคอง สมบุญ</name>
+    <password>1234</password>
+    <store>Diana</store>
+    <branch>Hatyai</branch>
+    <department>Ladies Shoes</department>
+    <shopid>1</shopid>
+    <role>1</role>
+  </Table>
+  <Table>
+    <oid>5</oid>
+    <id>0201</id>
+    <name>จารุณี เพชรรังษึ</name>
+    <password>1234</password>
+    <store>The mall</store>
+    <branch>Thapa</branch>
+    <department>Ladies Shoe</department>
+    <shopid>2</shopid>
+    <role>1</role>
+  </Table>
+  <Table>
+    <oid>6</oid>
+    <id>0301</id>
+    <name>จันทิมา จานผักแว่น</name>
+    <password>1234</password>
+    <store>The mall</store>
+    <branch>Korat</branch>
+    <department>Ladies Shoe</department>
+    <shopid>3</shopid>
+    <role>1</role>
+  </Table>
+  <Table>
+    <oid>7</oid>
+    <id>0401</id>
+    <name>บุญมี จันที</name>
+    <password>1234</password>
+    <store>Robinson</store>
+    <branch>Srinakarin</branch>
+    <department>Ladies Shoe</department>
+    <shopid>4</shopid>
+    <role>1</role>
+  </Table>
+  <Table>
+    <oid>8</oid>
+    <id>0501</id>
+    <name>PC งามวงศ์วาน</name>
+    <password>1234</password>
+    <store>Sportmall</store>
+    <branch>Ngamwongwarn</branch>
+    <department>Sport Fashion</department>
+    <shopid>5</shopid>
+    <role>1</role>
+  </Table>
+  <Table>
+    <oid>9</oid>
+    <id>0601</id>
+    <name>นทืี ประเสริฐสังข์</name>
+    <password>1234</password>
+    <store>Robinson</store>
+    <branch>Roi Et</branch>
+    <department>Ladies Shoe</department>
+    <shopid>6</shopid>
+    <role>1</role>
+  </Table>
+  <Table>
+    <oid>10</oid>
+    <id>0701</id>
+    <name>PC เมกาบางนา</name>
+    <password>1234</password>
+    <store>Robinson</store>
+    <branch>Mega Bangna</branch>
+    <department>Sport Fashion</department>
+    <shopid>7</shopid>
+    <role>1</role>
+  </Table>
+  <Table>
+    <oid>11</oid>
+    <id>0801</id>
+    <name>สุรศักดิ์ จิโรจน์วงศ์</name>
+    <password>1234</password>
+    <store>Outlet mall</store>
+    <branch>Pattaya</branch>
+    <department>Ladies Shoes</department>
+    <shopid>8</shopid>
+    <role>1</role>
+  </Table>
+  <Table>
+    <oid>12</oid>
+    <id>0901</id>
+    <name>วรพจน์ ธีระนันท์</name>
+    <password>1234</password>
+    <store>Outlet mall</store>
+    <branch>Cha am</branch>
+    <department>Ladies Shoes</department>
+    <shopid>9</shopid>
+    <role>1</role>
+  </Table>
+  <Table>
+    <oid>13</oid>
+    <id>1001</id>
+    <name>ธิติมา กุลวงษ์</name>
+    <password>1234</password>
+    <store>Outlet mall</store>
+    <branch>Samui</branch>
+    <department>Ladies Shoes</department>
+    <shopid>10</shopid>
+    <role>1</role>
+  </Table>
+  <Table>
+    <oid>14</oid>
+    <id>1101</id>
+    <name>นิชาภา สุวรรณรัตน์</name>
+    <password>1234</password>
+    <store>Outlet mall</store>
+    <branch>Phuket</branch>
+    <department>Ladies Shoes</department>
+    <shopid>11</shopid>
+    <role>1</role>
+  </Table>
+  <Table>
+    <oid>15</oid>
+    <id>1201</id>
+    <name>PC บางแค</name>
+    <password>1234</password>
+    <store>The mall</store>
+    <branch>Bangkae</branch>
+    <department>Sport Fashion</department>
+    <shopid>13</shopid>
+    <role>1</role>
+  </Table>
+  <Table>
+    <oid>16</oid>
+    <id>1301</id>
+    <name>คุณหนุ่ม ฉะเชิงเทรา</name>
+    <password>1234</password>
+    <store>Robinson</store>
+    <branch>Chachoengsao</branch>
+    <department>Sport Fashion</department>
+    <shopid>14</shopid>
+    <role>2</role>
+  </Table>
+  <Table>
+    <oid>17</oid>
+    <id>1401</id>
+    <name>คุณโยเย แม่สอด</name>
+    <password>1234</password>
+    <store>Robinson</store>
+    <branch>Mae-sod</branch>
+    <department>Sport Fashion</department>
+    <shopid>15</shopid>
+    <role>2</role>
+  </Table>
+  <Table>
+    <oid>18</oid>
+    <id>1501</id>
+    <name>วินุดา ตุ้มปี</name>
+    <password>1234</password>
+    <store>Robinson</store>
+    <branch>Srisamarn</branch>
+    <department>Sport Fashion</department>
+    <shopid>16</shopid>
+    <role>1</role>
+  </Table>
+  <Table>
+    <oid>19</oid>
+    <id>1601</id>
+    <name>คุณมิ้น ระยอง</name>
+    <password>1234</password>
+    <store>Robinson</store>
+    <branch>Rayong</branch>
+    <department>Sport Fashion</department>
+    <shopid>17</shopid>
+    <role>2</role>
+  </Table>
+  <Table>
+    <oid>20</oid>
+    <id>1602</id>
+    <name>เหมียว ระยอง</name>
+    <password>1234</password>
+    <store>Robinson</store>
+    <branch>Rayong</branch>
+    <department>Sport Fashion</department>
+    <shopid>17</shopid>
+    <role>1</role>
+  </Table>
+  <Table>
+    <oid>21</oid>
+    <id>1701</id>
+    <name>คุณนิด พระรามเก้า</name>
+    <password>1234</password>
+    <store>Robinson</store>
+    <branch>Rama 9</branch>
+    <department>Sport Fashion</department>
+    <shopid>18</shopid>
+    <role>2</role>
+  </Table>
+  <Table>
+    <oid>22</oid>
+    <id>1801</id>
+    <name>อริศา พุทธเมฒ</name>
+    <password>1234</password>
+    <store>Robinson</store>
+    <branch>Lampang</branch>
+    <department>Sport Fashion</department>
+    <shopid>19</shopid>
+    <role>1</role>
+  </Table>
+  <Table>
+    <oid>23</oid>
+    <id>1901</id>
+    <name>ณัฐพล ลื่นภูเขียว</name>
+    <password>1234</password>
+    <store>Robinson</store>
+    <branch>Saraburi</branch>
+    <department>Sport Fashion</department>
+    <shopid>20</shopid>
+    <role>1</role>
+  </Table>
+  <Table>
+    <oid>24</oid>
+    <id>2001</id>
+    <name>วัชราภรณ์ จุณศิริ</name>
+    <password>1234</password>
+    <store>Robinson</store>
+    <branch>Chieng Mai</branch>
+    <department>Sport Fashion</department>
+    <shopid>21</shopid>
+    <role>1</role>
+  </Table>
+  <Table>
+    <oid>25</oid>
+    <id>2101</id>
+    <name>ปราโมช มะสังหลง</name>
+    <password>1234</password>
+    <store>Robinson</store>
+    <branch>Chonburi</branch>
+    <department>Sport Fashion</department>
+    <shopid>22</shopid>
+    <role>1</role>
+  </Table>
+  <Table>
+    <oid>26</oid>
+    <id>2201</id>
+    <name>สมฤดี เงินจันทร์</name>
+    <password>1234</password>
+    <store>Robinson</store>
+    <branch>Ratchaburi</branch>
+    <department>Shoes</department>
+    <shopid>23</shopid>
+    <role>1</role>
+  </Table>
+  <Table>
+    <oid>1</oid>
+    <id>Admin</id>
+    <name>ADMINISTRATOR</name>
+    <password>admin.summit</password>
+    <store>Aerosoft</store>
+    <branch>Head office</branch>
+    <department>TEST</department>
+    <shopid>0</shopid>
+    <role>0</role>
+  </Table>
+  <Table>
+    <oid>2</oid>
+    <id>Puttipong.K</id>
+    <name>พุทธิพงษ์ คงพ่วง</name>
+    <password>4780</password>
+    <store>Aerosoft</store>
+    <branch>Head office</branch>
+    <department>IT</department>
+    <shopid>0</shopid>
+    <role>0</role>
+  </Table>
+  <Table>
+    <oid>3</oid>
+    <id>TEST</id>
+    <name>TEST USER</name>
+    <password>1234</password>
+    <store>Aerosoft</store>
+    <branch>Head office</branch>
+    <department>TEST</department>
+    <shopid>0</shopid>
+    <role>2</role>
+  </Table>
+</NewDataSet>

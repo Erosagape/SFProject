@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9ca02bb5-f91e-4383-a49a-b181ee4dd96e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://pc.sfaerosoft.com/ITest.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ITest2.xsd" MetadataType="Schema" ID="0b82269f-c707-4236-b766-0943112e5d03" SourceId="1" SourceUrl="http://pc.sfaerosoft.com/ITest.svc?xsd=xsd0" />
+    <MetadataFile FileName="IService1.wsdl" MetadataType="Wsdl" ID="ab38691c-8beb-40b7-a09f-de68eb02f54c" SourceId="1" SourceUrl="http://pc.sfaerosoft.com/ITest.svc?wsdl" />
+    <MetadataFile FileName="ITest21.xsd" MetadataType="Schema" ID="6056774d-96d1-4cd7-80b9-20b4029e2b70" SourceId="1" SourceUrl="http://pc.sfaerosoft.com/ITest.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
