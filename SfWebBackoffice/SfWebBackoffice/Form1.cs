@@ -1061,10 +1061,15 @@ namespace SfWebBackoffice
                     {
                         UploadDeliveryData_GoDaddy();
                     }
+                    if ((DateTime.Now.Hour == 9))
+                    {
+                        SendDailyReport();
+                    }
                     timer1.Enabled = true;
                     Listbox1.Items.Add("Finish Schedule at " + DateTime.Now.ToString("yyyy-MM-dd"));
                 }
             }
+
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -1074,7 +1079,104 @@ namespace SfWebBackoffice
 
         private void button4_Click(object sender, EventArgs e)
         {
+            SendDailyReport();
 
+        }
+        private void SendDailyReport()
+        {
+            Listbox1.Items.Add("START Send Emal: " + DateTime.Now);
+            Application.DoEvents();
+            try
+            {
+                if (radioButton1.Checked)
+                {
+                    SendEmail_Azure(DateTime.UtcNow.AddHours(7).AddDays(-1).ToString("yyyy-MM-dd"));
+                }
+                else
+                {
+                    SendEmail_GoDaddy(DateTime.UtcNow.AddHours(7).AddDays(-1).ToString("yyyy-MM-dd"));
+                }
+            }
+            catch (Exception ex)
+            {
+                Listbox1.Items.Add("ERROR : " + ex.Message);
+            }
+            Listbox1.Items.Add("FINISHED Send Emal: " + DateTime.Now);
+            Application.DoEvents();
+        }
+        private string SendMail(string ondate,string message,DataTable maillist)
+        {
+            string msg = "";
+            try
+            {
+                CEMail.NewEmail();
+                DataTable dt = maillist;
+                foreach (DataRow dr in dt.Rows)
+                {
+                    string mailto = dr[0].ToString();
+                    //string mailto = "littlepuppet123@gmail.com";
+                    CEMail.NewEmail();
+                    CEMail.MailHost = "smtpout.secureserver.net";
+                    CEMail.MailPort = 25;
+                    CEMail.MailFrom = "puttipong@summitsf.co.th";
+                    CEMail.isSSL = false;
+                    CEMail.MailTo.Add(mailto);
+                    CEMail.MailPassword = "04071980";
+                    CEMail.MailSubject = "[AutoMail] รายงานประจำวันที่ " + ondate;
+                    CEMail.MailBody = message;
+                    CEMail.isBodyHTML = true;
+                    CEMail.SendEmail();
+                    msg += "Send to " + mailto + " Complete; ";                    
+                }
+            }
+            catch (Exception e)
+            {
+                msg= "ERROR : " + e.Message;
+            }
+            return msg;
+        }
+        private void SendEmail_GoDaddy(string onDate)
+        {
+            using (SalesEntryGoDaddy.DataExchangeClient svc=new SalesEntryGoDaddy.DataExchangeClient())
+            {
+                string msg1 = svc.GetDailyReport(0, "Daily", onDate);
+                Listbox1.Items.Add(msg1);
+                Application.DoEvents();
+                string msg2 = svc.GetDailyReport(1, "Daily", onDate);
+                Listbox1.Items.Add(msg2);
+                Application.DoEvents();
+
+                ClsXML xml = new ClsXML();
+                string xmlstr = svc.GetDataXML("maillist");
+                DataTable dt=xml.Datatable(xmlstr);
+                string msg3=SendMail(onDate, msg1 + Environment.NewLine + msg2, dt);
+                Listbox1.Items.Add(msg3);
+                Application.DoEvents();
+            }
+        }
+        private void SendEmail_Azure(string onDate)
+        {
+            using (SalesEntryAzure.DataExchangeClient svc = new SalesEntryAzure.DataExchangeClient())
+            {
+                string msg1 = svc.GetDailyReport(0, "Daily", onDate);
+                Listbox1.Items.Add(msg1);
+                Application.DoEvents();
+                string msg2 = svc.GetDailyReport(1, "Daily", onDate);
+                Listbox1.Items.Add(msg2);
+                Application.DoEvents();
+
+                ClsXML xml = new ClsXML();
+                string xmlstr = svc.GetDataXML("maillist");
+                DataTable dt = xml.Datatable(xmlstr);
+
+                string body = "เรียนผู้ที่เกี่ยวข้อง<br/>";
+                body += "<br/>" + msg1 + "<br/>" + msg2 + "<br/><br/>ขอแสดงความนับถือ";
+
+                string msg3=SendMail(onDate, body, dt);
+                Listbox1.Items.Add(msg3);
+                Application.DoEvents();
+
+            }
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 namespace SfWebBackoffice
 {
@@ -1238,6 +1239,60 @@ namespace SfWebBackoffice
             {
                 list.Add(str);
             };
+        }
+    }
+
+    public static class CEMail
+    {
+        public static string MailFrom { get; set; }
+        public static List<string> MailTo { get; set; }
+        public static string MailHost { get; set; }
+        public static string MailPassword { get; set; }
+        public static bool isSSL { get; set; }
+        public static bool isBodyHTML { get; set; }
+        public static string MailSubject { get; set; }
+        public static string MailBody { get; set; }
+        public static int MailPort { get; set; }
+        public static void NewEmail()
+        {
+            MailFrom = "";
+            MailTo = new List<string>();
+            MailHost = "";
+            MailPassword = "";
+            isSSL = false;
+            isBodyHTML = true;
+            MailSubject = "";
+            MailBody = "";
+            MailPort = 25;
+        }
+        public static string SendEmail()
+        {
+            string msg = "";
+            try
+            {
+                SmtpClient mailClient = new SmtpClient(MailHost, MailPort);
+                mailClient.DeliveryMethod = SmtpDeliveryMethod.Network;
+                mailClient.EnableSsl = isSSL;
+                mailClient.Credentials = new System.Net.NetworkCredential(MailFrom, MailPassword);
+
+                MailMessage mail = new MailMessage();
+                mail.IsBodyHtml = isBodyHTML;
+                mail.From = new MailAddress(MailFrom);
+                foreach (string toaddr in MailTo)
+                {
+                    mail.To.Add(toaddr);
+                }
+                mail.Body = MailBody;
+                mail.Subject = MailSubject;
+
+                mailClient.Send(mail);
+                msg = "Complete! Sent Successfully";
+            }
+            catch (Exception ex)
+            {
+                msg = "ERROR ->" + ex.Message;
+            }
+            return msg;
         }
     }
 }
