@@ -103,3 +103,6 @@ C:\Work\SFProject\Webapps\sfsalesentry_godaddy\backoffice\obj\Debug\shopsales_to
 C:\Work\SFProject\Webapps\sfsalesentry_godaddy\backoffice\obj\Debug\shopsales_tools.application
 C:\Work\SFProject\Webapps\sfsalesentry_godaddy\backoffice\obj\Debug\shopsales_tools.exe
 C:\Work\SFProject\Webapps\sfsalesentry_godaddy\backoffice\obj\Debug\shopsales_tools.pdb
+D:\SFProject\sfsalesentry_godaddy\backoffice\bin\Debug\shopsales_tools.exe.config
+D:\SFProject\sfsalesentry_godaddy\backoffice\obj\Debug\shopsales_tools.exe
+D:\SFProject\sfsalesentry_godaddy\backoffice\obj\Debug\shopsales_tools.pdb
