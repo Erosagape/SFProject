@@ -44,3 +44,6 @@ C:\Work\SFProject\Winapps\SfWebBackoffice\SfWebBackoffice\obj\Release\SfWebBacko
 C:\Work\SFProject\Winapps\SfWebBackoffice\SfWebBackoffice\obj\Release\SfWebBackoffice.application
 C:\Work\SFProject\Winapps\SfWebBackoffice\SfWebBackoffice\obj\Release\SfWebBackoffice.exe
 C:\Work\SFProject\Winapps\SfWebBackoffice\SfWebBackoffice\obj\Release\SfWebBackoffice.pdb
+D:\SFProject\SfWebBackoffice\SfWebBackoffice\bin\Release\SfWebBackoffice.exe.config
+D:\SFProject\SfWebBackoffice\SfWebBackoffice\obj\Release\SfWebBackoffice.exe
+D:\SFProject\SfWebBackoffice\SfWebBackoffice\obj\Release\SfWebBackoffice.pdb

@@ -234,14 +234,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SfWebBackoffice.exe" size="64496">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SfWebBackoffice.exe" size="63472">
       <assemblyIdentity name="SfWebBackoffice" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>0+Z8E5gsaSu6RQISl0hBOg88HZqMlwdDrNUe+Q8o+HQ=</dsig:DigestValue>
+        <dsig:DigestValue>+wa5VWnq9KcDbDItSEdvfSWFcizkQps74b9UxYXsJS0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
