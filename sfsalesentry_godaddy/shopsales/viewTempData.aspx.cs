@@ -29,16 +29,18 @@ namespace shopsales
         {
             DataTable sales = ClsData.NewSalesData(new DataSet());
             DataTable tb = (DataTable)Session["tbExcel"];
+            int rowid = 0;
             foreach (DataRow dr in tb.Rows)
             {
                 try
                 {
+                    rowid++;
                     string fname = GetXMLFileName(dr);
                     DataTable dt = ClsData.GetSalesData(MapPath("~/" + fname));
                     if (dt.Columns.Count > 0)
                     {                        
                         string sdate = Convert.ToDateTime(dr["salesDate"]).ToString("yyyy-MM-dd");
-                        string oid = dr["shopno"] + "_" + sdate.Replace("-","") +"_"+ ClsData.GetGoodsCode(dr["ModelCode"].ToString(), dr["ColorCode"].ToString(), dr["SizeNo"].ToString()); 
+                        string oid = dr["shopno"] + "_" + sdate.Replace("-","") +"_"+ ClsData.GetGoodsCode(dr["ModelCode"].ToString(), dr["ColorCode"].ToString(), dr["SizeNo"].ToString()) + "_" + rowid; 
                         DataRow r = ClsData.QueryData(dt, "OID='" + oid + "'");
                         r["OID"] = oid;
                         r["salesDate"] = sdate;
@@ -56,7 +58,8 @@ namespace shopsales
                         r["prodGroup"] = shoe["ProdGroupName"];
                         r["SizeNo"] = dr["sizeNo"];
                         r["salesQty"] = dr["salesQty"];
-                        r["TagPrice"] = shoe["stdSellPrice"];
+                        //r["TagPrice"] = shoe["stdSellPrice"];
+                        r["TagPrice"] = dr["TagPrice"];
                         Double rate = Convert.ToDouble(0 + dr["discountRate"].ToString()) / 100;
                         Double baseprice = Convert.ToDouble(0 + r["TagPrice"].ToString());
                         Double discprice = Convert.ToDouble(0 + r["TagPrice"].ToString()) * rate;
@@ -65,7 +68,7 @@ namespace shopsales
                         r["shopName"] = dr["shopname"];
                         r["entryBy"] = dr["salesBy"];
                         r["remark"] = "";
-                        r["lastupdate"] = ClsUtil.GetCurrentTHDate().ToString();
+                        r["lastupdate"] = DateTime.Now.AddHours(7).ToString();
 
                         var sharediscount = "0.00";
                         var gpx = "100";
@@ -99,7 +102,7 @@ namespace shopsales
             }
             return sales;
         }
-        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+                protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

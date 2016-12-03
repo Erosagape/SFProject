@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
   <parameter name="IIS Web Application Name" description="" value="aerosoft" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Work\\SFProject\\Webapps\\sfsalesentry_azure\\shopsales\\obj\\Release\\Package\\PackageTmp$" />
-    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Work\\SFProject\\Webapps\\sfsalesentry_azure\\shopsales\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\SFProject\\sfsalesentry_azure\\shopsales\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\SFProject\\sfsalesentry_azure\\shopsales\\obj\\Release\\Package\\PackageTmp$" />
   </parameter>
   <parameter name="xpf.printing-Web.config Connection String" description="" value="xpoprovider=MSSqlServer;data source=(localdb)\mssqllocaldb;attachdbfilename=|DataDirectory|\ReportService.mdf;integrated security=True;connect timeout=120" tags="">
-    <parameterEntry kind="XmlFile" scope="C:\\Work\\SFProject\\Webapps\\sfsalesentry_azure\\shopsales\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='xpf.printing']/@connectionString" />
+    <parameterEntry kind="XmlFile" scope="D:\\SFProject\\sfsalesentry_azure\\shopsales\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='xpf.printing']/@connectionString" />
   </parameter>
 </parameters>

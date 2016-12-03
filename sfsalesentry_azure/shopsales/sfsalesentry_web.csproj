@@ -122,7 +122,9 @@
     <Content Include="liststore.aspx" />
     <Content Include="listuser.aspx" />
     <Content Include="logo.png" />
-    <Content Include="mailsetup.xml" />
+    <Content Include="mailsetup.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="masterfile.aspx" />
     <Content Include="menu.aspx" />
     <Content Include="report.aspx" />
