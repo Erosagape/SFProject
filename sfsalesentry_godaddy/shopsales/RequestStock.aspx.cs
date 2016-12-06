@@ -44,8 +44,8 @@ namespace shopsales
                             ASPxGridView1.Columns[i].SetColVisible(false);
                         }
                         ASPxGridView1.Columns[8].SetColVisible(true);
-                        cboProdType.Items.Add("สินค้าปกติ");
-                        cboProdType.Items.Add("สินค้า One Price");
+                        cboProdType.Items.Add("Normal Order");
+                        cboProdType.Items.Add("One Price");
                         btnConfirm.Visible = false;
                         Session["cApp"] = cApp;
                       }

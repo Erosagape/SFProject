@@ -1,18 +1,21 @@
-<?xml version="1.0" standalone="yes"?>
+﻿<?xml version="1.0" standalone="yes"?>
 <NewDataSet>
   <Table>
     <OID>1</OID>
     <Code>001</Code>
-    <Description>ขายปกติ</Description>
+    <Description>Normal</Description>
+    <Description2>ขายปกติ</Description2>
   </Table>
   <Table>
     <OID>2</OID>
     <Code>002</Code>
     <Description>One Price</Description>
+    <Description2>One Price</Description2>
   </Table>
   <Table>
     <OID>3</OID>
     <Code>003</Code>
-    <Description>ส่วนลด</Description>
+    <Description>Discount</Description>
+    <Description2>ส่วนลด</Description2>
   </Table>
 </NewDataSet>

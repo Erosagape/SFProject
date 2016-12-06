@@ -49,7 +49,7 @@ namespace shopsales
             }
             else
             {
-                lblMessage.Text = "คนอื่นกำลังใช้อยู่..กรุณาลองใหม่สักครู่";
+                lblMessage.Text = "Data is Locked.. Please try again later";
             }
         }
         protected void LoadData(string oid)
@@ -89,11 +89,11 @@ namespace shopsales
                     dt.WriteXml(MapPath("~/CustomerGroup.xml"));
                     ClsData.LoadShopGroup(cboOID, "CustGroupNameTh", "OID", true);
                     cboOID.SelectedValue = oid;
-                    lblMessage.Text = "บันทึกข้อมูลเรียบร้อย";
+                    lblMessage.Text = "Save Completed!";
                 }
                 else
                 {
-                    lblMessage.Text = "ไม่สามารถติดต่อกับฐานข้อมูลได้..กรุณารอสักครู่";
+                    lblMessage.Text = "Can not save..Please check";
                 }
             }
             catch (Exception ex)

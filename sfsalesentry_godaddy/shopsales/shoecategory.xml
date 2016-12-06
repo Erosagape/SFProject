@@ -1,28 +1,33 @@
-<?xml version="1.0" standalone="yes"?>
+﻿<?xml version="1.0" standalone="yes"?>
 <NewDataSet>
   <Table>
     <ProdCatID>1</ProdCatID>
     <ProdCatCode>-- </ProdCatCode>
-    <ProdCatName>ไม่ระบุ</ProdCatName>
+    <ProdCatName2>ไม่ระบุ</ProdCatName2>
+    <ProdCatName>N/A</ProdCatName>
   </Table>
   <Table>
     <ProdCatID>2</ProdCatID>
     <ProdCatCode>S01</ProdCatCode>
-    <ProdCatName>รองเท้าแตะแบบสวม</ProdCatName>
+    <ProdCatName2>รองเท้าแตะแบบสวม</ProdCatName2>
+    <ProdCatName>Flat Shoes</ProdCatName>
   </Table>
   <Table>
     <ProdCatID>3</ProdCatID>
     <ProdCatCode>S02</ProdCatCode>
-    <ProdCatName>รองเท้าแตะหูหนีบ</ProdCatName>
+    <ProdCatName2>รองเท้าแตะหูหนีบ</ProdCatName2>
+    <ProdCatName>Slipers</ProdCatName>
   </Table>
   <Table>
     <ProdCatID>4</ProdCatID>
     <ProdCatCode>S03</ProdCatCode>
-    <ProdCatName>รองเท้าแตะรัดส้น</ProdCatName>
+    <ProdCatName2>รองเท้าแตะรัดส้น</ProdCatName2>
+    <ProdCatName>Sandals</ProdCatName>
   </Table>
   <Table>
     <ProdCatID>5</ProdCatID>
     <ProdCatCode>C01</ProdCatCode>
-    <ProdCatName>รองเท้าผ้าใบ</ProdCatName>
+    <ProdCatName2>รองเท้าผ้าใบ</ProdCatName2>
+    <ProdCatName>Canvas Shoes</ProdCatName>
   </Table>
 </NewDataSet>

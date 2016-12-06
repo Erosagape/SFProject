@@ -19,10 +19,10 @@
         <table>
             <tr>
                 <td>
-                    ปี
+                    Year
                 </td>
                 <td>
-                    เดือน
+                    Month
                 </td>
             </tr>
             <tr>
@@ -51,7 +51,7 @@
         <table>
             <tr>
                 <td>
-                    ดูการเคลื่อนไหวตามรุ่น : <asp:DropDownList ID="cboGoods" runat="server"></asp:DropDownList>
+                    View By Model : <asp:DropDownList ID="cboGoods" runat="server"></asp:DropDownList>
                 </td>
                 <td>
                     <asp:Button ID="btnProcess" runat="server" Text="Show" OnClick="btnProcess_Click"/>

@@ -22,7 +22,7 @@
     <table>
     <tr>
     <td>
-        <asp:Label ID="Label1" runat="server" Text="ลำดับที่"></asp:Label>
+        <asp:Label ID="Label1" runat="server" Text="ID"></asp:Label>
     </td>
     <td>
         <asp:DropDownList ID="cboOID" runat="server" AutoPostBack="True" OnSelectedIndexChanged="cboOID_SelectedIndexChanged"></asp:DropDownList>       
@@ -30,7 +30,7 @@
     </tr>
     <tr>
     <td>
-        <asp:Label ID="Label2" runat="server" Text="รหัสห้าง"></asp:Label>
+        <asp:Label ID="Label2" runat="server" Text="Group Code"></asp:Label>
     </td>
     <td>
         <asp:TextBox ID="txtCustGroupCode" runat="server"></asp:TextBox>        
@@ -38,7 +38,7 @@
     </tr>
     <tr>
     <td>
-        <asp:Label ID="Label3" runat="server" Text="ชื่อจุดขาย"></asp:Label>
+        <asp:Label ID="Label3" runat="server" Text="Group Name"></asp:Label>
     </td>
     <td>
         <asp:TextBox ID="txtCustGroupNameTh" runat="server"></asp:TextBox>        
@@ -54,7 +54,7 @@
     </tr>
     <tr>
     <td>
-        <asp:Label ID="Label4" runat="server" Text="หมายเหตุ"></asp:Label>
+        <asp:Label ID="Label4" runat="server" Text="Remark"></asp:Label>
     </td>
     <td>
         <asp:TextBox ID="txtRemark" runat="server"></asp:TextBox>        

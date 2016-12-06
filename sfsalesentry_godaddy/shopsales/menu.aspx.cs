@@ -254,7 +254,7 @@ namespace shopsales
             if (shopid != "")
             {
                 cboShop.Visible = false;
-                lblShop.Text = shopname + " สาขา " + branch;
+                lblShop.Text = shopname + " Branch " + branch;
             }
             else
             {
@@ -275,7 +275,7 @@ namespace shopsales
                 //สิทธิ์ 1 Staff แก้ยอดกับคีย์ยอดขายไม่ได้
                 //สิทธิ์ 2 Supervisor ทำได้หมดยกเว้นเพิ่ม Master Files
                 cboShop.Visible = true;
-                lblShop.Text = "เลือกสาขา :";
+                lblShop.Text = "Select POS :";
                 txtsalesDate.Enabled = true;
                 if (!IsPostBack) cboShop.SelectedValue = cApp.shop_id;
                 if (roleid != "0")

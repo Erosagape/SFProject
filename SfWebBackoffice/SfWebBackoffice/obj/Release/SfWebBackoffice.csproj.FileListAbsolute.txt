@@ -45,12 +45,6 @@ C:\Work\SFProject\Winapps\SfWebBackoffice\SfWebBackoffice\obj\Release\SfWebBacko
 C:\Work\SFProject\Winapps\SfWebBackoffice\SfWebBackoffice\obj\Release\SfWebBackoffice.exe
 C:\Work\SFProject\Winapps\SfWebBackoffice\SfWebBackoffice\obj\Release\SfWebBackoffice.pdb
 D:\SFProject\SfWebBackoffice\SfWebBackoffice\bin\Release\SfWebBackoffice.exe.config
-D:\SFProject\SfWebBackoffice\SfWebBackoffice\obj\Release\SfWebBackoffice.exe
-D:\SFProject\SfWebBackoffice\SfWebBackoffice\obj\Release\SfWebBackoffice.pdb
-D:\SFProject\SfWebBackoffice\SfWebBackoffice\obj\Release\SfWebBackoffice.csprojResolveAssemblyReference.cache
-D:\SFProject\SfWebBackoffice\SfWebBackoffice\obj\Release\SfWebBackoffice.frmBackupData.resources
-D:\SFProject\SfWebBackoffice\SfWebBackoffice\obj\Release\SfWebBackoffice.Properties.Resources.resources
-D:\SFProject\SfWebBackoffice\SfWebBackoffice\obj\Release\SfWebBackoffice.csproj.GenerateResource.Cache
 D:\SFProject\SfWebBackoffice\SfWebBackoffice\bin\Release\Connect.xml
 D:\SFProject\SfWebBackoffice\SfWebBackoffice\bin\Release\SfWebBackoffice.exe.manifest
 D:\SFProject\SfWebBackoffice\SfWebBackoffice\bin\Release\SfWebBackoffice.application
@@ -76,5 +70,11 @@ D:\SFProject\SfWebBackoffice\SfWebBackoffice\bin\Release\de\DevExpress.Utils.v15
 D:\SFProject\SfWebBackoffice\SfWebBackoffice\bin\Release\es\DevExpress.Utils.v15.2.resources.dll
 D:\SFProject\SfWebBackoffice\SfWebBackoffice\bin\Release\ja\DevExpress.Utils.v15.2.resources.dll
 D:\SFProject\SfWebBackoffice\SfWebBackoffice\bin\Release\ru\DevExpress.Utils.v15.2.resources.dll
+D:\SFProject\SfWebBackoffice\SfWebBackoffice\obj\Release\SfWebBackoffice.csprojResolveAssemblyReference.cache
+D:\SFProject\SfWebBackoffice\SfWebBackoffice\obj\Release\SfWebBackoffice.frmBackupData.resources
+D:\SFProject\SfWebBackoffice\SfWebBackoffice\obj\Release\SfWebBackoffice.Properties.Resources.resources
+D:\SFProject\SfWebBackoffice\SfWebBackoffice\obj\Release\SfWebBackoffice.csproj.GenerateResource.Cache
 D:\SFProject\SfWebBackoffice\SfWebBackoffice\obj\Release\SfWebBackoffice.exe.manifest
 D:\SFProject\SfWebBackoffice\SfWebBackoffice\obj\Release\SfWebBackoffice.application
+D:\SFProject\SfWebBackoffice\SfWebBackoffice\obj\Release\SfWebBackoffice.exe
+D:\SFProject\SfWebBackoffice\SfWebBackoffice\obj\Release\SfWebBackoffice.pdb

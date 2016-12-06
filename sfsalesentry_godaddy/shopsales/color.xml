@@ -1,773 +1,773 @@
-<?xml version="1.0" standalone="yes"?>
+﻿<?xml version="1.0" standalone="yes"?>
 <NewDataSet>
   <Table>
     <ColId>75</ColId>
     <ColNameInit>NY</ColNameInit>
-    <ColTH>กรม</ColTH>
-    <ColEN>NAVY</ColEN>
+    <ColEN>กรม</ColEN>
+    <ColTH>NAVY</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>74</ColId>
     <ColNameInit>NN</ColNameInit>
-    <ColTH>กรม/กรม</ColTH>
-    <ColEN>NAVY/NAVY</ColEN>
+    <ColEN>กรม/กรม</ColEN>
+    <ColTH>NAVY/NAVY</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>73</ColId>
     <ColNameInit>NK</ColNameInit>
-    <ColTH>กรม/ครีม</ColTH>
-    <ColEN>NAVY/CREAM</ColEN>
+    <ColEN>กรม/ครีม</ColEN>
+    <ColTH>NAVY/CREAM</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>114</ColId>
     <ColNameInit>NH</ColNameInit>
-    <ColTH>กรม/เทา</ColTH>
-    <ColEN>NAVY+GREY</ColEN>
+    <ColEN>กรม/เทา</ColEN>
+    <ColTH>NAVY+GREY</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>42</ColId>
     <ColNameInit>DR</ColNameInit>
-    <ColTH>กุหลาบแห้ง</ColTH>
-    <ColEN>DUSTYROSE</ColEN>
+    <ColEN>กุหลาบแห้ง</ColEN>
+    <ColTH>DUSTYROSE</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>107</ColId>
     <ColNameInit>WT</ColNameInit>
-    <ColTH>ขาว</ColTH>
-    <ColEN>WHITE</ColEN>
+    <ColEN>ขาว</ColEN>
+    <ColTH>WHITE</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>108</ColId>
     <ColNameInit>WW</ColNameInit>
-    <ColTH>ขาว/ขาว</ColTH>
-    <ColEN>WHITE/WHITE</ColEN>
+    <ColEN>ขาว/ขาว</ColEN>
+    <ColTH>WHITE/WHITE</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>105</ColId>
     <ColNameInit>WB</ColNameInit>
-    <ColTH>ขาว/ดำ</ColTH>
-    <ColEN>WHITE/BLACK</ColEN>
+    <ColEN>ขาว/ดำ</ColEN>
+    <ColTH>WHITE/BLACK</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>48</ColId>
     <ColNameInit>GN</ColNameInit>
-    <ColTH>เขียว</ColTH>
-    <ColEN>GREEN</ColEN>
+    <ColEN>เขียว</ColEN>
+    <ColTH>GREEN</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>102</ColId>
     <ColNameInit>UH</ColNameInit>
-    <ColTH>เขียว/เทา</ColTH>
-    <ColEN>GREEN/GREY</ColEN>
+    <ColEN>เขียว/เทา</ColEN>
+    <ColTH>GREEN/GREY</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>43</ColId>
     <ColNameInit>FG</ColNameInit>
-    <ColTH>เขียวตอง</ColTH>
-    <ColEN>F.GREEN</ColEN>
+    <ColEN>เขียวตอง</ColEN>
+    <ColTH>F.GREEN</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>36</ColId>
     <ColNameInit>CR</ColNameInit>
-    <ColTH>ครีม</ColTH>
-    <ColEN>CREAM</ColEN>
+    <ColEN>ครีม</ColEN>
+    <ColTH>CREAM</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>63</ColId>
     <ColNameInit>KU</ColNameInit>
-    <ColTH>ครีม/เขียว</ColTH>
-    <ColEN>CREAM/GREEN</ColEN>
+    <ColEN>ครีม/เขียว</ColEN>
+    <ColTH>CREAM/GREEN</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>59</ColId>
     <ColNameInit>KK</ColNameInit>
-    <ColTH>ครีม/ครีม</ColTH>
-    <ColEN>CREAM/CREAM</ColEN>
+    <ColEN>ครีม/ครีม</ColEN>
+    <ColTH>CREAM/CREAM</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>60</ColId>
     <ColNameInit>KP</ColNameInit>
-    <ColTH>ครีม/ชมพู่</ColTH>
-    <ColEN>CREAM/PINK</ColEN>
+    <ColEN>ครีม/ชมพู่</ColEN>
+    <ColTH>CREAM/PINK</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>34</ColId>
     <ColNameInit>CB</ColNameInit>
-    <ColTH>ครีม/ดำ</ColTH>
-    <ColEN>CREAM/BLACK</ColEN>
+    <ColEN>ครีม/ดำ</ColEN>
+    <ColTH>CREAM/BLACK</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>55</ColId>
     <ColNameInit>KA</ColNameInit>
-    <ColTH>ครีม/ตาล</ColTH>
-    <ColEN>CREAM/BROWN</ColEN>
+    <ColEN>ครีม/ตาล</ColEN>
+    <ColTH>CREAM/BROWN</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>58</ColId>
     <ColNameInit>KH</ColNameInit>
-    <ColTH>ครีม/เทา</ColTH>
-    <ColEN>CREAM/GREY</ColEN>
+    <ColEN>ครีม/เทา</ColEN>
+    <ColTH>CREAM/GREY</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>62</ColId>
     <ColNameInit>KT</ColNameInit>
-    <ColTH>ครีม/แทน</ColTH>
-    <ColEN>CREAM/TAN</ColEN>
+    <ColEN>ครีม/แทน</ColEN>
+    <ColTH>CREAM/TAN</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>65</ColId>
     <ColNameInit>KX</ColNameInit>
-    <ColTH>ครีม/ฟ้า</ColTH>
-    <ColEN>CREAM/BLUE</ColEN>
+    <ColEN>ครีม/ฟ้า</ColEN>
+    <ColTH>CREAM/BLUE</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>64</ColId>
     <ColNameInit>KV</ColNameInit>
-    <ColTH>ครีม/ม่วง</ColTH>
-    <ColEN>CREAM/VIOLET</ColEN>
+    <ColEN>ครีม/ม่วง</ColEN>
+    <ColTH>CREAM/VIOLET</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>66</ColId>
     <ColNameInit>KY</ColNameInit>
-    <ColTH>ครีม/เหลือง</ColTH>
-    <ColEN>CREAM/YELLOW</ColEN>
+    <ColEN>ครีม/เหลือง</ColEN>
+    <ColTH>CREAM/YELLOW</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>39</ColId>
     <ColNameInit>DC</ColNameInit>
-    <ColTH>ครีมเข้ม</ColTH>
-    <ColEN>DARKCREAM</ColEN>
+    <ColEN>ครีมเข้ม</ColEN>
+    <ColTH>DARKCREAM</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>68</ColId>
     <ColNameInit>LC</ColNameInit>
-    <ColTH>ครีมอ่อน</ColTH>
-    <ColEN>LIGHTCREAM</ColEN>
+    <ColEN>ครีมอ่อน</ColEN>
+    <ColTH>LIGHTCREAM</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>35</ColId>
     <ColNameInit>CM</ColNameInit>
-    <ColTH>คาราเมล</ColTH>
-    <ColEN>CARAMEL</ColEN>
+    <ColEN>คาราเมล</ColEN>
+    <ColTH>CARAMEL</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>93</ColId>
     <ColNameInit>SL</ColNameInit>
-    <ColTH>เงิน</ColTH>
-    <ColEN>SILVER</ColEN>
+    <ColEN>เงิน</ColEN>
+    <ColTH>SILVER</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>92</ColId>
     <ColNameInit>SH</ColNameInit>
-    <ColTH>เงิน/ดำ</ColTH>
-    <ColEN>SILVER/BLACK</ColEN>
+    <ColEN>เงิน/ดำ</ColEN>
+    <ColTH>SILVER/BLACK</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>80</ColId>
     <ColNameInit>PK</ColNameInit>
-    <ColTH>ชมพู</ColTH>
-    <ColEN>PINK</ColEN>
+    <ColEN>ชมพู</ColEN>
+    <ColTH>PINK</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>81</ColId>
     <ColNameInit>PP</ColNameInit>
-    <ColTH>ชมพู/ชมพู</ColTH>
-    <ColEN>PINK/PINK</ColEN>
+    <ColEN>ชมพู/ชมพู</ColEN>
+    <ColTH>PINK/PINK</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>79</ColId>
     <ColNameInit>PB</ColNameInit>
-    <ColTH>ชมพู/ดำ</ColTH>
-    <ColEN>PINK/BLACK</ColEN>
+    <ColEN>ชมพู/ดำ</ColEN>
+    <ColTH>PINK/BLACK</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>82</ColId>
     <ColNameInit>PS</ColNameInit>
-    <ColTH>ชมพูอ่อน</ColTH>
-    <ColEN>SOFTPINK</ColEN>
+    <ColEN>ชมพูอ่อน</ColEN>
+    <ColTH>SOFTPINK</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>83</ColId>
     <ColNameInit>QB</ColNameInit>
-    <ColTH>ชมพูอ่อน/ดำ</ColTH>
-    <ColEN>SOFTPINK/BLACK</ColEN>
+    <ColEN>ชมพูอ่อน/ดำ</ColEN>
+    <ColTH>SOFTPINK/BLACK</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>84</ColId>
     <ColNameInit>QR</ColNameInit>
-    <ColTH>ชมพูอ่อน/แดง</ColTH>
-    <ColEN>SOFTPINK/RED</ColEN>
+    <ColEN>ชมพูอ่อน/แดง</ColEN>
+    <ColTH>SOFTPINK/RED</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>40</ColId>
     <ColNameInit>DL</ColNameInit>
-    <ColTH>ดัสตี้โรส/ดำ</ColTH>
-    <ColEN>DUSTYROSE/BLACK</ColEN>
+    <ColEN>ดัสตี้โรส/ดำ</ColEN>
+    <ColTH>DUSTYROSE/BLACK</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>41</ColId>
     <ColNameInit>DP</ColNameInit>
-    <ColTH>ดัสตี้โรส/แดง</ColTH>
-    <ColEN>DUSTYROSE/RED</ColEN>
+    <ColEN>ดัสตี้โรส/แดง</ColEN>
+    <ColTH>DUSTYROSE/RED</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>20</ColId>
     <ColNameInit>BK</ColNameInit>
-    <ColTH>ดำ</ColTH>
-    <ColEN>BLACK</ColEN>
+    <ColEN>ดำ</ColEN>
+    <ColTH>BLACK</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>23</ColId>
     <ColNameInit>BN</ColNameInit>
-    <ColTH>ดำ/กรม</ColTH>
-    <ColEN>BLACK/NAVY</ColEN>
+    <ColEN>ดำ/กรม</ColEN>
+    <ColTH>BLACK/NAVY</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>29</ColId>
     <ColNameInit>BU</ColNameInit>
-    <ColTH>ดำ/เขียว</ColTH>
-    <ColEN>BLACK/GREEN</ColEN>
+    <ColEN>ดำ/เขียว</ColEN>
+    <ColTH>BLACK/GREEN</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>13</ColId>
     <ColNameInit>BC</ColNameInit>
-    <ColTH>ดำ/ครีม</ColTH>
-    <ColEN>BLACK/CREAM</ColEN>
+    <ColEN>ดำ/ครีม</ColEN>
+    <ColTH>BLACK/CREAM</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>27</ColId>
     <ColNameInit>BS</ColNameInit>
-    <ColTH>ดำ/เงิน</ColTH>
-    <ColEN>BLACK/SILVER</ColEN>
+    <ColEN>ดำ/เงิน</ColEN>
+    <ColTH>BLACK/SILVER</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>25</ColId>
     <ColNameInit>BP</ColNameInit>
-    <ColTH>ดำ/ชมพู</ColTH>
-    <ColEN>BLACK/PINK</ColEN>
+    <ColEN>ดำ/ชมพู</ColEN>
+    <ColTH>BLACK/PINK</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>12</ColId>
     <ColNameInit>BB</ColNameInit>
-    <ColTH>ดำ/ดำ</ColTH>
-    <ColEN>BLACK/BLACK</ColEN>
+    <ColEN>ดำ/ดำ</ColEN>
+    <ColTH>BLACK/BLACK</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>14</ColId>
     <ColNameInit>BD</ColNameInit>
-    <ColTH>ดำ/แดง</ColTH>
-    <ColEN>BLACK/RED</ColEN>
+    <ColEN>ดำ/แดง</ColEN>
+    <ColTH>BLACK/RED</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>11</ColId>
     <ColNameInit>BA</ColNameInit>
-    <ColTH>ดำ/ตาล</ColTH>
-    <ColEN>BLACK/BROWN</ColEN>
+    <ColEN>ดำ/ตาล</ColEN>
+    <ColTH>BLACK/BROWN</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>16</ColId>
     <ColNameInit>BF</ColNameInit>
-    <ColTH>ดำ/ทอง</ColTH>
-    <ColEN>BLACK/GOLD</ColEN>
+    <ColEN>ดำ/ทอง</ColEN>
+    <ColTH>BLACK/GOLD</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>18</ColId>
     <ColNameInit>BH</ColNameInit>
-    <ColTH>ดำ/เทา</ColTH>
-    <ColEN>BLACK/GREY</ColEN>
+    <ColEN>ดำ/เทา</ColEN>
+    <ColTH>BLACK/GREY</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>28</ColId>
     <ColNameInit>BT</ColNameInit>
-    <ColTH>ดำ/แทน</ColTH>
-    <ColEN>BLACK/TAN</ColEN>
+    <ColEN>ดำ/แทน</ColEN>
+    <ColTH>BLACK/TAN</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>31</ColId>
     <ColNameInit>BX</ColNameInit>
-    <ColTH>ดำ/ฟ้า</ColTH>
-    <ColEN>BLACK/BLUE</ColEN>
+    <ColEN>ดำ/ฟ้า</ColEN>
+    <ColTH>BLACK/BLUE</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>30</ColId>
     <ColNameInit>BV</ColNameInit>
-    <ColTH>ดำ/ม่วง</ColTH>
-    <ColEN>BLACK/VIOLET</ColEN>
+    <ColEN>ดำ/ม่วง</ColEN>
+    <ColTH>BLACK/VIOLET</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>22</ColId>
     <ColNameInit>BM</ColNameInit>
-    <ColTH>ดำ/ไวน์</ColTH>
-    <ColEN>BLACK/WINE</ColEN>
+    <ColEN>ดำ/ไวน์</ColEN>
+    <ColTH>BLACK/WINE</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>19</ColId>
     <ColNameInit>BJ</ColNameInit>
-    <ColTH>ดำ/ส้ม</ColTH>
-    <ColEN>BLACK/ORANGE</ColEN>
+    <ColEN>ดำ/ส้ม</ColEN>
+    <ColTH>BLACK/ORANGE</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>32</ColId>
     <ColNameInit>BY</ColNameInit>
-    <ColTH>ดำ/เหลือง</ColTH>
-    <ColEN>BLACK/YELLOW</ColEN>
+    <ColEN>ดำ/เหลือง</ColEN>
+    <ColTH>BLACK/YELLOW</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>24</ColId>
     <ColNameInit>BO</ColNameInit>
-    <ColTH>ดำ/โอรส</ColTH>
-    <ColEN>BLACK/OROSE</ColEN>
+    <ColEN>ดำ/โอรส</ColEN>
+    <ColTH>BLACK/OROSE</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>86</ColId>
     <ColNameInit>RD</ColNameInit>
-    <ColTH>แดง</ColTH>
-    <ColEN>RED</ColEN>
+    <ColEN>แดง</ColEN>
+    <ColTH>RED</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>85</ColId>
     <ColNameInit>RB</ColNameInit>
-    <ColTH>แดง/ดำ</ColTH>
-    <ColEN>RED/BLACK</ColEN>
+    <ColEN>แดง/ดำ</ColEN>
+    <ColTH>RED/BLACK</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>88</ColId>
     <ColNameInit>RR</ColNameInit>
-    <ColTH>แดง/แดง</ColTH>
-    <ColEN>RED/RED</ColEN>
+    <ColEN>แดง/แดง</ColEN>
+    <ColTH>RED/RED</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>87</ColId>
     <ColNameInit>RH</ColNameInit>
-    <ColTH>แดง/เทา</ColTH>
-    <ColEN>RED/GREY</ColEN>
+    <ColEN>แดง/เทา</ColEN>
+    <ColTH>RED/GREY</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>26</ColId>
     <ColNameInit>BR</ColNameInit>
-    <ColTH>ตาล</ColTH>
-    <ColEN>BROWN</ColEN>
+    <ColEN>ตาล</ColEN>
+    <ColTH>BROWN</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>5</ColId>
     <ColNameInit>AK</ColNameInit>
-    <ColTH>ตาล/ครีม</ColTH>
-    <ColEN>BROWN/CREAM</ColEN>
+    <ColEN>ตาล/ครีม</ColEN>
+    <ColTH>BROWN/CREAM</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>3</ColId>
     <ColNameInit>AB</ColNameInit>
-    <ColTH>ตาล/ดำ</ColTH>
-    <ColEN>BROWN/BLACK</ColEN>
+    <ColEN>ตาล/ดำ</ColEN>
+    <ColTH>BROWN/BLACK</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>2</ColId>
     <ColNameInit>AA</ColNameInit>
-    <ColTH>ตาล/ตาล</ColTH>
-    <ColEN>BROWN/BROWN</ColEN>
+    <ColEN>ตาล/ตาล</ColEN>
+    <ColTH>BROWN/BROWN</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>4</ColId>
     <ColNameInit>AG</ColNameInit>
-    <ColTH>ตาล/ทอง</ColTH>
-    <ColEN>BROWN/GOLD</ColEN>
+    <ColEN>ตาล/ทอง</ColEN>
+    <ColTH>BROWN/GOLD</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>9</ColId>
     <ColNameInit>AT</ColNameInit>
-    <ColTH>ตาล/แทน</ColTH>
-    <ColEN>BROWN/TAN</ColEN>
+    <ColEN>ตาล/แทน</ColEN>
+    <ColTH>BROWN/TAN</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>38</ColId>
     <ColNameInit>DB</ColNameInit>
-    <ColTH>ตาลเข้ม</ColTH>
-    <ColEN>DARKBROWN</ColEN>
+    <ColEN>ตาลเข้ม</ColEN>
+    <ColTH>DARKBROWN</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>67</ColId>
     <ColNameInit>LB</ColNameInit>
-    <ColTH>ตาลอ่อน</ColTH>
-    <ColEN>SOFTBROWN</ColEN>
+    <ColEN>ตาลอ่อน</ColEN>
+    <ColTH>SOFTBROWN</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>70</ColId>
     <ColNameInit>LT</ColNameInit>
-    <ColTH>ตาลอ่อน/แทน</ColTH>
-    <ColEN>SOFTBROWN/TAN</ColEN>
+    <ColEN>ตาลอ่อน/แทน</ColEN>
+    <ColTH>SOFTBROWN/TAN</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>91</ColId>
     <ColNameInit>SD</ColNameInit>
-    <ColTH>ทราย</ColTH>
-    <ColEN>SAND</ColEN>
+    <ColEN>ทราย</ColEN>
+    <ColTH>SAND</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>47</ColId>
     <ColNameInit>GL</ColNameInit>
-    <ColTH>ทอง</ColTH>
-    <ColEN>GOLD</ColEN>
+    <ColEN>ทอง</ColEN>
+    <ColTH>GOLD</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>117</ColId>
     <ColNameInit>GB</ColNameInit>
-    <ColTH>ทอง/ดำ</ColTH>
-    <ColEN>GOLD/BLACK</ColEN>
+    <ColEN>ทอง/ดำ</ColEN>
+    <ColTH>GOLD/BLACK</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>45</ColId>
     <ColNameInit>GA</ColNameInit>
-    <ColTH>ทอง/ตาล</ColTH>
-    <ColEN>GOLD/BROWN</ColEN>
+    <ColEN>ทอง/ตาล</ColEN>
+    <ColTH>GOLD/BROWN</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>37</ColId>
     <ColNameInit>CU</ColNameInit>
-    <ColTH>ทองแดง</ColTH>
-    <ColEN>COPPER</ColEN>
+    <ColEN>ทองแดง</ColEN>
+    <ColTH>COPPER</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>113</ColId>
     <ColNameInit>ZZ</ColNameInit>
-    <ColTH>ทุกสี</ColTH>
-    <ColEN>AllColor</ColEN>
+    <ColEN>ทุกสี</ColEN>
+    <ColTH>AllColor</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>46</ColId>
     <ColNameInit>GE</ColNameInit>
-    <ColTH>เทา</ColTH>
-    <ColEN>GREY</ColEN>
+    <ColEN>เทา</ColEN>
+    <ColTH>GREY</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>49</ColId>
     <ColNameInit>HB</ColNameInit>
-    <ColTH>เทา/ดำ</ColTH>
-    <ColEN>GREY/BLACK</ColEN>
+    <ColEN>เทา/ดำ</ColEN>
+    <ColTH>GREY/BLACK</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>50</ColId>
     <ColNameInit>HH</ColNameInit>
-    <ColTH>เทา/เทา</ColTH>
-    <ColEN>GREY/GREY</ColEN>
+    <ColEN>เทา/เทา</ColEN>
+    <ColTH>GREY/GREY</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>51</ColId>
     <ColNameInit>HY</ColNameInit>
-    <ColTH>เทา/เหลือง</ColTH>
-    <ColEN>GREY/YELLOW</ColEN>
+    <ColEN>เทา/เหลือง</ColEN>
+    <ColTH>GREY/YELLOW</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>69</ColId>
     <ColNameInit>LG</ColNameInit>
-    <ColTH>เทาอ่อน</ColTH>
-    <ColEN>LIGHTGREY</ColEN>
+    <ColEN>เทาอ่อน</ColEN>
+    <ColTH>LIGHTGREY</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>97</ColId>
     <ColNameInit>TN</ColNameInit>
-    <ColTH>แทน</ColTH>
-    <ColEN>TAN</ColEN>
+    <ColEN>แทน</ColEN>
+    <ColTH>TAN</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>96</ColId>
     <ColNameInit>TK</ColNameInit>
-    <ColTH>แทน/ครีม</ColTH>
-    <ColEN>TAN/CREAM</ColEN>
+    <ColEN>แทน/ครีม</ColEN>
+    <ColTH>TAN/CREAM</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>98</ColId>
     <ColNameInit>TP</ColNameInit>
-    <ColTH>แทน/ชมพู</ColTH>
-    <ColEN>TAN/PINK</ColEN>
+    <ColEN>แทน/ชมพู</ColEN>
+    <ColTH>TAN/PINK</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>95</ColId>
     <ColNameInit>TB</ColNameInit>
-    <ColTH>แทน/ดำ</ColTH>
-    <ColEN>TAN/BLACK</ColEN>
+    <ColEN>แทน/ดำ</ColEN>
+    <ColTH>TAN/BLACK</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>94</ColId>
     <ColNameInit>TA</ColNameInit>
-    <ColTH>แทน/ตาล</ColTH>
-    <ColEN>TAN/BROWN</ColEN>
+    <ColEN>แทน/ตาล</ColEN>
+    <ColTH>TAN/BROWN</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>115</ColId>
     <ColNameInit>TG</ColNameInit>
-    <ColTH>แทน/เบจ</ColTH>
-    <ColEN>TAN+BEIGE</ColEN>
+    <ColEN>แทน/เบจ</ColEN>
+    <ColTH>TAN+BEIGE</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>100</ColId>
     <ColNameInit>TX</ColNameInit>
-    <ColTH>แทน/ฟ้า</ColTH>
-    <ColEN>TAN/BLUE</ColEN>
+    <ColEN>แทน/ฟ้า</ColEN>
+    <ColTH>TAN/BLUE</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>101</ColId>
     <ColNameInit>TY</ColNameInit>
-    <ColTH>แทน/เหลือง</ColTH>
-    <ColEN>TAN/YELLOW</ColEN>
+    <ColEN>แทน/เหลือง</ColEN>
+    <ColTH>TAN/YELLOW</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>89</ColId>
     <ColNameInit>RY</ColNameInit>
-    <ColTH>น้ำเงิน</ColTH>
-    <ColEN>ROYALBLUE</ColEN>
+    <ColEN>น้ำเงิน</ColEN>
+    <ColTH>ROYALBLUE</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>72</ColId>
     <ColNameInit>NB</ColNameInit>
-    <ColTH>น้ำเงิน/ดำ</ColTH>
-    <ColEN>NAVY/BLK</ColEN>
+    <ColEN>น้ำเงิน/ดำ</ColEN>
+    <ColTH>NAVY/BLK</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>33</ColId>
     <ColNameInit>BZ</ColNameInit>
-    <ColTH>บรอนซ์</ColTH>
-    <ColEN>BRONZE</ColEN>
+    <ColEN>บรอนซ์</ColEN>
+    <ColTH>BRONZE</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>44</ColId>
     <ColNameInit>FU</ColNameInit>
-    <ColTH>บานเย็น</ColTH>
-    <ColEN>FUSIA</ColEN>
+    <ColEN>บานเย็น</ColEN>
+    <ColTH>FUSIA</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>17</ColId>
     <ColNameInit>BG</ColNameInit>
-    <ColTH>เบจ</ColTH>
-    <ColEN>BEIGE</ColEN>
+    <ColEN>เบจ</ColEN>
+    <ColTH>BEIGE</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>15</ColId>
     <ColNameInit>BE</ColNameInit>
-    <ColTH>ฟ้า</ColTH>
-    <ColEN>BLUE</ColEN>
+    <ColEN>ฟ้า</ColEN>
+    <ColTH>BLUE</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>111</ColId>
     <ColNameInit>XU</ColNameInit>
-    <ColTH>ฟ้า/เขียว</ColTH>
-    <ColEN>BLUE/GREEN</ColEN>
+    <ColEN>ฟ้า/เขียว</ColEN>
+    <ColTH>BLUE/GREEN</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>109</ColId>
     <ColNameInit>XB</ColNameInit>
-    <ColTH>ฟ้า/ดำ</ColTH>
-    <ColEN>BLUE/BLACK</ColEN>
+    <ColEN>ฟ้า/ดำ</ColEN>
+    <ColTH>BLUE/BLACK</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>110</ColId>
     <ColNameInit>XH</ColNameInit>
-    <ColTH>ฟ้า/เทา</ColTH>
-    <ColEN>BLUE/GREY</ColEN>
+    <ColEN>ฟ้า/เทา</ColEN>
+    <ColTH>BLUE/GREY</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>99</ColId>
     <ColNameInit>TQ</ColNameInit>
-    <ColTH>ฟ้าเขียว</ColTH>
-    <ColEN>TURQUOISE</ColEN>
+    <ColEN>ฟ้าเขียว</ColEN>
+    <ColTH>TURQUOISE</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>21</ColId>
     <ColNameInit>BL</ColNameInit>
-    <ColTH>ฟ้าอ่อน</ColTH>
-    <ColEN>LIGHTBLUE</ColEN>
+    <ColEN>ฟ้าอ่อน</ColEN>
+    <ColTH>LIGHTBLUE</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>90</ColId>
     <ColNameInit>SB</ColNameInit>
-    <ColTH>ฟ้าอ่อน-S</ColTH>
-    <ColEN>S-BLUE</ColEN>
+    <ColEN>ฟ้าอ่อน-S</ColEN>
+    <ColTH>S-BLUE</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>103</ColId>
     <ColNameInit>VL</ColNameInit>
-    <ColTH>ม่วง</ColTH>
-    <ColEN>VIOLET</ColEN>
+    <ColEN>ม่วง</ColEN>
+    <ColTH>VIOLET</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>104</ColId>
     <ColNameInit>VV</ColNameInit>
-    <ColTH>ม่วง/ม่วง</ColTH>
-    <ColEN>VIOLET/VIOLET</ColEN>
+    <ColEN>ม่วง/ม่วง</ColEN>
+    <ColTH>VIOLET/VIOLET</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>116</ColId>
     <ColNameInit>MU</ColNameInit>
-    <ColTH>มัลติ</ColTH>
-    <ColEN>MULTI</ColEN>
+    <ColEN>มัลติ</ColEN>
+    <ColTH>MULTI</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>71</ColId>
     <ColNameInit>MT</ColNameInit>
-    <ColTH>เมทาลิค</ColTH>
-    <ColEN>METALLIC</ColEN>
+    <ColEN>เมทาลิค</ColEN>
+    <ColTH>METALLIC</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>1</ColId>
     <ColNameInit>--</ColNameInit>
-    <ColTH>ไม่ระบุ</ColTH>
     <ColEN>ไม่ระบุ</ColEN>
+    <ColTH>ไม่ระบุ</ColTH>
     <ColTypeID />
   </Table>
   <Table>
     <ColId>106</ColId>
     <ColNameInit>WI</ColNameInit>
-    <ColTH>เลือดหมู</ColTH>
-    <ColEN>WINE</ColEN>
+    <ColEN>เลือดหมู</ColEN>
+    <ColTH>WINE</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>76</ColId>
     <ColNameInit>OR</ColNameInit>
-    <ColTH>ส้ม</ColTH>
-    <ColEN>ORANGE</ColEN>
+    <ColEN>ส้ม</ColEN>
+    <ColTH>ORANGE</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>54</ColId>
     <ColNameInit>JB</ColNameInit>
-    <ColTH>ส้ม/ดำ</ColTH>
-    <ColEN>ORANGE/BLACK</ColEN>
+    <ColEN>ส้ม/ดำ</ColEN>
+    <ColTH>ORANGE/BLACK</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
   <Table>
     <ColId>112</ColId>
     <ColNameInit>YL</ColNameInit>
-    <ColTH>เหลือง</ColTH>
-    <ColEN>YELLOW</ColEN>
+    <ColEN>เหลือง</ColEN>
+    <ColTH>YELLOW</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>77</ColId>
     <ColNameInit>OS</ColNameInit>
-    <ColTH>โอลด์โรส</ColTH>
-    <ColEN>OROSE</ColEN>
+    <ColEN>โอลด์โรส</ColEN>
+    <ColTH>OROSE</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>78</ColId>
     <ColNameInit>OT</ColNameInit>
-    <ColTH>โอวัลติน</ColTH>
-    <ColEN>OVANTINE</ColEN>
+    <ColEN>โอวัลติน</ColEN>
+    <ColTH>OVANTINE</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>53</ColId>
     <ColNameInit>IV</ColNameInit>
-    <ColTH>ไอโวรี่</ColTH>
-    <ColEN>IVORY</ColEN>
+    <ColEN>ไอโวรี่</ColEN>
+    <ColTH>IVORY</ColTH>
     <ColTypeID>M</ColTypeID>
   </Table>
   <Table>
     <ColId>52</ColId>
     <ColNameInit>IB</ColNameInit>
-    <ColTH>ไอโวรี่/ดำ</ColTH>
-    <ColEN>IVORY/BLACK</ColEN>
+    <ColEN>ไอโวรี่/ดำ</ColEN>
+    <ColTH>IVORY/BLACK</ColTH>
     <ColTypeID>S</ColTypeID>
   </Table>
 </NewDataSet>

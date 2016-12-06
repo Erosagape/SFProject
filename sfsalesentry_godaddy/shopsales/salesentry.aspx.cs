@@ -50,7 +50,7 @@ namespace shopsales
                 {
                     txtDate.Enabled = true;
                 }
-                lblHead.Text = shopname + " สาขา " + branch.ToString();
+                lblHead.Text = shopname + " Branch " + branch.ToString();
                 lblMessage.Text = "Ready";
                 if (!IsPostBack)
                 {
@@ -82,34 +82,34 @@ namespace shopsales
             Double p = 0;
             if (Double.TryParse(txtsalesBuyPrice.Text, out p) == false)
             {
-                str = "ราคาขายต้องเป็นตัวเลข";
+                str = "Price Must Be Number";
             }
             if (Double.TryParse(txtsalesQty.Text, out p) == false)
             {
-                str = "จำนวนต้องเป็นตัวเลข";
+                str = "Quantity Must Be Number";
             }
             if (Double.TryParse(txtsalesTagPrice.Text, out p) == false)
             {
                 if(cbosalesType.SelectedValue!="2")
                 {
-                    str = "ราคาป้ายต้องเป็นตัวเลข";
+                    str = "Tag Price Must Be Number";
                 }
             }
             if (Double.TryParse(txtSize.Text, out p) == false)
             {
-                str = "ชนาดต้องเป็นตัวเลข";
+                str = "Size Must Be Number";
             }
             if (txtsalesDiscountPerc.Visible ==true)
             {
                 if (Double.TryParse(txtsalesDiscountPerc.Text, out p) == false)
                 {
-                    str = "ส่วนลดต้องเป็นตัวเลข";
+                    str = "Discount Must Be Number";
                 }
                 else
                 {
                     if (p < 0)
                     {
-                        str = "ส่วนลดต้องเป็นตัวเลขมากกว่าหรือเท่ากับ 0";
+                        str = "Discount Must Be greater than Zero";
                     }
                 }
             }
@@ -193,7 +193,7 @@ namespace shopsales
                     }
                     else
                     {
-                        err = "ไม่สามารถสร้างข้อมูลได้";
+                        err = "Can not save";
                     }
                 }
             }
@@ -219,13 +219,13 @@ namespace shopsales
                         {
                             txtsalesTagPrice.Text = txtsalesBuyPrice.Text;
                         }
-                        lblMessage.Text = "คุณกำลังทำรายการ " + txtGoods.Value.ToString() + "<br/>" + " ประเภทการขาย=" + cbosalesType.SelectedItem.Text + " ส่วนลด=" + cApp.iif(txtsalesDiscountPerc.Text == "", "0", txtsalesDiscountPerc.Text) + cApp.iif(chkDiscouht.Checked == false, "%", "บาท") + "<br/>จำนวน " + txtsalesQty.Text + " ราคาป้าย " + txtsalesTagPrice.Text + " ยอดขายวันที่ " + txtDate.Text;
+                        lblMessage.Text = "You are select " + txtGoods.Value.ToString() + "<br/>" + " Type=" + cbosalesType.SelectedItem.Text + " Disc=" + cApp.iif(txtsalesDiscountPerc.Text == "", "0", txtsalesDiscountPerc.Text) + cApp.iif(chkDiscouht.Checked == false, "%", " THB") + "<br/>QTY " + txtsalesQty.Text + " Price " + txtsalesTagPrice.Text + " Date " + txtDate.Text;
                     }
                     else
                     {
                         ShowTagPrice(false);
                         EnableData(false);
-                        lblMessage.Text = "ไม่พบข้อมูล (Code) =" + code;
+                        lblMessage.Text = "Not Found Code =" + code;
                     }
                     txtProdCat.Value = "";
                     txtProdType.Value = "";
@@ -237,7 +237,7 @@ namespace shopsales
                     string GoodsName = Request.Form[txtSearch.UniqueID];
                     if (GoodsName != dr["GoodsName"].ToString() && GoodsName != "")
                     {
-                        lblMessage.Text = "ไม่พบข้อมูล (Name) =" + GoodsName;
+                        lblMessage.Text = "Not Found Name =" + GoodsName;
                         //EnableData(false);
                         GoodsName = ClsData.GetGoodsName(txtModel.Text,cboColor.SelectedValue.ToString(),txtSize.Text,true);
                         txtGoods.Value = GoodsName;
@@ -270,14 +270,14 @@ namespace shopsales
                             txtsalesBuyPrice.Enabled = true;
                         }
                         CalculateDiscount();
-                        lblMessage.Text = "คุณกำลังทำรายการ " + txtGoods.Value.ToString() + "<br/>" + " ประเภทการขาย=" + cbosalesType.SelectedItem.Text + " ส่วนลด=" + cApp.iif(txtsalesDiscountPerc.Text == "", "0", txtsalesDiscountPerc.Text) + cApp.iif(chkDiscouht.Checked == false, "%", "บาท") + "<br/>จำนวน " + txtsalesQty.Text + " ราคาป้าย " + txtsalesTagPrice.Text + " ยอดขายวันที่ " + txtDate.Text;
+                        lblMessage.Text = "You select " + txtGoods.Value.ToString() + "<br/>" + " Type=" + cbosalesType.SelectedItem.Text + " Disc=" + cApp.iif(txtsalesDiscountPerc.Text == "", "0", txtsalesDiscountPerc.Text) + cApp.iif(chkDiscouht.Checked == false, "%", "THB") + "<br/>Qty " + txtsalesQty.Text + " Price " + txtsalesTagPrice.Text + " Date " + txtDate.Text;
 
                     }
                 }
             }
             else
             {
-                lblMessage.Text = "กรุณาเลือกสินค้า";
+                lblMessage.Text = "Please select goods";
                 ClearData();
             }
 
@@ -399,7 +399,7 @@ namespace shopsales
                     string msg = SaveDataXML(key);
                     if (msg == "OK")
                     {
-                        lblMessage.Text = "บันทึกข้อมูลเรียบร้อย => " + key;
+                        lblMessage.Text = "Save Completed => " + key;
                         btnSave.Enabled = false;
                         ClearData();
                         //ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('บันทีกข้อมูลเรียบร้อย " + key + "');", true);
@@ -413,7 +413,7 @@ namespace shopsales
                 }
                 else
                 {
-                    lblMessage.Text = "มีคนใช้งานข้อมูลอยู่... กรุณารอสักครู่";
+                    lblMessage.Text = "Data is locked,try again later";
                 }
             }
         }

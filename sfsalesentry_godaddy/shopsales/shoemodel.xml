@@ -1,5 +1,17 @@
-<?xml version="1.0" standalone="yes"?>
+﻿<?xml version="1.0" standalone="yes"?>
 <DocumentElement>
+  <Table>
+    <SMId>3421</SMId>
+    <SMCode>SL0434</SMCode>
+    <Model />
+    <Mold>DW04</Mold>
+    <MoldId>115</MoldId>
+    <SSId>4</SSId>
+    <STId>6</STId>
+    <ProdCatId>5</ProdCatId>
+    <MinSize>35</MinSize>
+    <MaxSize>45</MaxSize>
+  </Table>
   <Table>
     <SMId>1</SMId>
     <SMCode>0001</SMCode>
@@ -6234,11 +6246,11 @@
     <Model>B6102</Model>
     <Mold>B61</Mold>
     <MoldId>223</MoldId>
-    <SSId>4</SSId>
+    <SSId>3</SSId>
     <STId>4</STId>
     <ProdCatId>3</ProdCatId>
-    <MinSize>35</MinSize>
-    <MaxSize>45</MaxSize>
+    <MinSize>28</MinSize>
+    <MaxSize>38</MaxSize>
   </Table>
   <Table>
     <SMId>3415</SMId>
@@ -8353,6 +8365,18 @@
     <MaxSize>45</MaxSize>
   </Table>
   <Table>
+    <SMId>3420</SMId>
+    <SMCode>1399</SMCode>
+    <Model>DW0325</Model>
+    <Mold>DW03</Mold>
+    <MoldId>114</MoldId>
+    <SSId>4</SSId>
+    <STId>6</STId>
+    <ProdCatId>2</ProdCatId>
+    <MinSize>35</MinSize>
+    <MaxSize>41</MaxSize>
+  </Table>
+  <Table>
     <SMId>668</SMId>
     <SMCode>0668</SMCode>
     <Model>DW0401</Model>
@@ -8459,6 +8483,18 @@
     <ProdCatId>5</ProdCatId>
     <MinSize>39</MinSize>
     <MaxSize>44</MaxSize>
+  </Table>
+  <Table>
+    <SMId>3419</SMId>
+    <SMCode>1398</SMCode>
+    <Model>DW0433</Model>
+    <Mold>DW04</Mold>
+    <MoldId>115</MoldId>
+    <SSId>4</SSId>
+    <STId>6</STId>
+    <ProdCatId>2</ProdCatId>
+    <MinSize>35</MinSize>
+    <MaxSize>41</MaxSize>
   </Table>
   <Table>
     <SMId>674</SMId>
@@ -16429,6 +16465,18 @@
     <MaxSize>45</MaxSize>
   </Table>
   <Table>
+    <SMId>3418</SMId>
+    <SMCode>1397</SMCode>
+    <Model>S4702</Model>
+    <Mold>S47</Mold>
+    <MoldId>245</MoldId>
+    <SSId>4</SSId>
+    <STId>3</STId>
+    <ProdCatId>2</ProdCatId>
+    <MinSize>35</MinSize>
+    <MaxSize>45</MaxSize>
+  </Table>
+  <Table>
     <SMId>1317</SMId>
     <SMCode>1317</SMCode>
     <Model>S4801</Model>
@@ -16741,15 +16789,75 @@
     <MaxSize>45</MaxSize>
   </Table>
   <Table>
-    <SMId>3418</SMId>
-    <SMCode>1397</SMCode>
-    <Model>S4702</Model>
-    <Mold>S47</Mold>
-    <MoldId>245</MoldId>
+    <SMId>3423</SMId>
+    <SMCode>1</SMCode>
+    <Model>SL0405</Model>
+    <Mold>ไม่ระบุ</Mold>
+    <MoldId>1</MoldId>
+    <SSId>1</SSId>
+    <STId>6</STId>
+    <ProdCatId>5</ProdCatId>
+    <MinSize>0</MinSize>
+    <MaxSize>0</MaxSize>
+  </Table>
+  <Table>
+    <SMId>3426</SMId>
+    <SMCode>1</SMCode>
+    <Model>SL0414</Model>
+    <Mold>ไม่ระบุ</Mold>
+    <MoldId>1</MoldId>
+    <SSId>1</SSId>
+    <STId>6</STId>
+    <ProdCatId>5</ProdCatId>
+    <MinSize>0</MinSize>
+    <MaxSize>0</MaxSize>
+  </Table>
+  <Table>
+    <SMId>3425</SMId>
+    <SMCode>1</SMCode>
+    <Model>SL0420</Model>
+    <Mold>ไม่ระบุ</Mold>
+    <MoldId>1</MoldId>
+    <SSId>1</SSId>
+    <STId>6</STId>
+    <ProdCatId>5</ProdCatId>
+    <MinSize>0</MinSize>
+    <MaxSize>0</MaxSize>
+  </Table>
+  <Table>
+    <SMId>3422</SMId>
+    <SMCode>1</SMCode>
+    <Model>SL0434</Model>
+    <Mold>DW04</Mold>
+    <MoldId>115</MoldId>
     <SSId>4</SSId>
-    <STId>3</STId>
-    <ProdCatId>2</ProdCatId>
+    <STId>6</STId>
+    <ProdCatId>5</ProdCatId>
     <MinSize>35</MinSize>
     <MaxSize>45</MaxSize>
+  </Table>
+  <Table>
+    <SMId>3424</SMId>
+    <SMCode>1</SMCode>
+    <Model>SM0101</Model>
+    <Mold>ไม่ระบุ</Mold>
+    <MoldId>1</MoldId>
+    <SSId>1</SSId>
+    <STId>5</STId>
+    <ProdCatId>5</ProdCatId>
+    <MinSize>0</MinSize>
+    <MaxSize>0</MaxSize>
+  </Table>
+  <Table>
+    <SMId>3427</SMId>
+    <SMCode>1</SMCode>
+    <Model>SL0302</Model>
+    <Mold>N/A</Mold>
+    <MoldId>1</MoldId>
+    <SSId>1</SSId>
+    <STId>6</STId>
+    <ProdCatId>5</ProdCatId>
+    <MinSize>0</MinSize>
+    <MaxSize>0</MaxSize>
   </Table>
 </DocumentElement>

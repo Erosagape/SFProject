@@ -25,7 +25,7 @@
     <table>
     <tr>
     <td>
-        <asp:Label ID="Label1" runat="server" Text="ลำดับที่"></asp:Label>
+        <asp:Label ID="Label1" runat="server" Text="ID"></asp:Label>
     </td>
     <td>
         <asp:DropDownList ID="cboOID" runat="server" AutoPostBack="True" OnSelectedIndexChanged="cboOID_SelectedIndexChanged"></asp:DropDownList>       
@@ -33,7 +33,7 @@
     </tr>
     <tr>
     <td>
-        <asp:Label ID="Label2" runat="server" Text="รหัสจุดขาย"></asp:Label>
+        <asp:Label ID="Label2" runat="server" Text="POS ID"></asp:Label>
     </td>
     <td>
         <asp:TextBox ID="txtCustCode" runat="server"></asp:TextBox>        
@@ -41,7 +41,7 @@
     </tr>
     <tr>
     <td>
-        <asp:Label ID="Label3" runat="server" Text="ชื่อจุดขาย"></asp:Label>
+        <asp:Label ID="Label3" runat="server" Text="POS Name"></asp:Label>
     </td>
     <td>
         <asp:TextBox ID="txtCustName" runat="server"></asp:TextBox>        
@@ -49,7 +49,7 @@
     </tr>
     <tr>
     <td>
-        <asp:LinkButton ID="LinkButton1" OnClick="LinkButton1_Click" runat="server">กลุ่มห้างร้าน</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton1" OnClick="LinkButton1_Click" runat="server">Group</asp:LinkButton>
     </td>
     <td>
         <asp:DropDownList ID="cboShopName" runat="server"></asp:DropDownList>
@@ -57,7 +57,7 @@
     </tr>
     <tr>
     <td>
-        <asp:Label ID="Label4" runat="server" Text="สาขา"></asp:Label>
+        <asp:Label ID="Label4" runat="server" Text="Branch"></asp:Label>
     </td>
     <td>
         <asp:TextBox ID="txtBranch" runat="server"></asp:TextBox>        
@@ -73,7 +73,7 @@
     </tr>
     <tr>
         <td class="auto-style1">
-            <asp:Label ID="Label6" runat="server" Text="แชร์ส่วนลด (%)"></asp:Label>
+            <asp:Label ID="Label6" runat="server" Text="Share Discount (%)"></asp:Label>
         </td>
         <td class="auto-style1">
             <asp:TextBox ID="txtShareDiscount" runat="server" TextMode="number"></asp:TextBox>        

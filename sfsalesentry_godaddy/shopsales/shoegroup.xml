@@ -1,13 +1,15 @@
-<?xml version="1.0" standalone="yes"?>
+﻿<?xml version="1.0" standalone="yes"?>
 <NewDataSet>
   <Table>
     <OID>1</OID>
     <GroupID>SH01</GroupID>
-    <GroupName>รองเท้าแตะ</GroupName>
+    <GroupName2>รองเท้าแตะ</GroupName2>
+    <GroupName>Flipper</GroupName>
   </Table>
   <Table>
     <OID>2</OID>
     <GroupID>CA01</GroupID>
-    <GroupName>รองเท้าผ้าใบ</GroupName>
+    <GroupName2>รองเท้าผ้าใบ</GroupName2>
+    <GroupName>Canvas Shoe</GroupName>
   </Table>
 </NewDataSet>

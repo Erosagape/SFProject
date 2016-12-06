@@ -95,31 +95,31 @@ namespace shopsales
             Double p = 0;
             if (Double.TryParse(txtSalesPrice.Text, out p) == false)
             {
-                str = "ราคาขายต้องเป็นตัวเลข";
+                str = "Sales Type Must be Number";
             }
             if (Double.TryParse(txtSalesQty.Text, out p) == false)
             {
-                str = "จำนวนต้องเป็นตัวเลข";
+                str = "Quantity Must be Number";
             }
             if (Double.TryParse(txtTagPrice.Text, out p) == false)
             {
-                str = "ราคาป้ายต้องเป็นตัวเลข";
+                str = "Tag Price Must be Number";
             }
             if (Double.TryParse(txtSizeNo.Text, out p) == false)
             {
-                str = "ชนาดต้องเป็นตัวเลข";
+                str = "Size Must be Number";
             }
             if (txtSaleType.Text == "2")
             {
                 if (Double.TryParse(txtDiscountRate.Text, out p) == false)
                 {
-                    str = "ส่วนลดต้องเป็นตัวเลข";
+                    str = "Discount Rate Must be Number";
                 }
                 else
                 {
                     if (p < 0)
                     {
-                        str = "ส่วนลดต้องเป็นตัวเลขมากกว่าหรือเท่ากับ 0";
+                        str = "Discount Rate Must be greater than Zero";
                     }
                 }
             }
@@ -239,7 +239,6 @@ namespace shopsales
                 dt.WriteXml(filename);
             }
             return SearchData();
-
         }
     }
 }

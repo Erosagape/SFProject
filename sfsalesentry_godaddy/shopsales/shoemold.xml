@@ -1,4 +1,4 @@
-<?xml version="1.0" standalone="yes"?>
+﻿<?xml version="1.0" standalone="yes"?>
 <DocumentElement>
   <Table>
     <MoldId>219</MoldId>
@@ -745,6 +745,12 @@
     <runno>115</runno>
   </Table>
   <Table>
+    <MoldId>246</MoldId>
+    <MoldCode>1</MoldCode>
+    <MoldName>DW08</MoldName>
+    <runno>1</runno>
+  </Table>
+  <Table>
     <MoldId>238</MoldId>
     <MoldCode>0232</MoldCode>
     <MoldName>DW09</MoldName>
@@ -1423,6 +1429,12 @@
     <runno>204</runno>
   </Table>
   <Table>
+    <MoldId>245</MoldId>
+    <MoldCode>1</MoldCode>
+    <MoldName>S47</MoldName>
+    <runno>1</runno>
+  </Table>
+  <Table>
     <MoldId>206</MoldId>
     <MoldCode>205</MoldCode>
     <MoldName>S48</MoldName>
@@ -1461,12 +1473,12 @@
   <Table>
     <MoldId>1</MoldId>
     <MoldCode>-</MoldCode>
-    <MoldName>ไม่ระบุ</MoldName>
+    <MoldName>N/A</MoldName>
   </Table>
   <Table>
-    <MoldId>245</MoldId>
+    <MoldId>247</MoldId>
     <MoldCode>1</MoldCode>
-    <MoldName>S47</MoldName>
+    <MoldName />
     <runno>1</runno>
   </Table>
 </DocumentElement>

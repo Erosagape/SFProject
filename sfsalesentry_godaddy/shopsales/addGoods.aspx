@@ -19,16 +19,14 @@
     <table>
     <tr>
         <td>
-            <asp:Label ID="Label1" runat="server" Text="แบบ/รุ่น"></asp:Label>
-        </td>
+            Model</td>
         <td>
             <asp:TextBox ID="txtModelName" runat="server"></asp:TextBox>            
         </td>
     </tr>
     <tr>
         <td>
-            <asp:Label ID="Label2" runat="server" Text="สี"></asp:Label>
-        </td>
+            Color</td>
         <td>
             <asp:DropDownList ID="cboColNameTh" runat="server" AutoPostBack ="true" OnSelectedIndexChanged="cboColNameTh_SelectedIndexChanged"></asp:DropDownList>
         </td>
@@ -59,7 +57,7 @@
     <table>
     <tr>
         <td>
-            <asp:Label ID="Label4" runat="server" Text="รหัสสินค้า"></asp:Label>
+            <asp:Label ID="Label4" runat="server" Text="Goods Code"></asp:Label>
         </td>
         <td>
             <asp:TextBox ID="txtGoodsCode" runat="server"></asp:TextBox>
@@ -67,7 +65,7 @@
     </tr>
     <tr>
         <td>
-            <asp:Label ID="Label5" runat="server" Text="ชื่อสินค้า"></asp:Label>
+            <asp:Label ID="Label5" runat="server" Text="Goods Name"></asp:Label>
         </td>
         <td>
             <asp:TextBox ID="txtGoodsName" runat="server"></asp:TextBox>
@@ -75,7 +73,7 @@
     </tr>
     <tr>
         <td>
-            สี <asp:TextBox ID="txtColNameInit" runat="server" Width="52px"></asp:TextBox>
+            Color <asp:TextBox ID="txtColNameInit" runat="server" Width="52px"></asp:TextBox>
         </td>
         <td>
             <asp:TextBox ID="txtColNameTh" runat="server"></asp:TextBox>
@@ -84,7 +82,7 @@
     </tr>
     <tr>
         <td>
-            <asp:Label ID="Label8" runat="server" Text="กลุ่มสินค้า"></asp:Label>
+            <asp:Label ID="Label8" runat="server" Text="Group"></asp:Label>
         </td>
         <td>
             <asp:DropDownList ID="cboGroupCode" runat="server" ></asp:DropDownList>
@@ -92,7 +90,7 @@
     </tr>
     <tr>
         <td>
-            <asp:Label ID="Label6" runat="server" Text="ชนิดสินค้า"></asp:Label>
+            <asp:Label ID="Label6" runat="server" Text="Type"></asp:Label>
         </td>
         <td>
             <asp:DropDownList ID="cboSTcode" runat="server" AutoPostBack="True" OnSelectedIndexChanged="cboSTcode_SelectedIndexChanged"></asp:DropDownList>
@@ -100,7 +98,7 @@
     </tr>
     <tr>
         <td>
-            <asp:Label ID="Label7" runat="server" Text="ประเภทสินค้า"></asp:Label>
+            <asp:Label ID="Label7" runat="server" Text="Kind"></asp:Label>
         </td>
         <td>
             <asp:DropDownList ID="cboProdCatCode" runat="server" AutoPostBack="True" OnSelectedIndexChanged="cboProdCatCode_SelectedIndexChanged"></asp:DropDownList>
@@ -109,7 +107,7 @@
     </tr>
     <tr>
         <td>
-            <asp:Label ID="Label9" runat="server" Text="ราคาป้าย"></asp:Label>
+            <asp:Label ID="Label9" runat="server" Text="Tag Price"></asp:Label>
         </td>
         <td>
             <asp:TextBox ID="txtStdSellPrice" runat="server"></asp:TextBox>
@@ -140,7 +138,7 @@
         </td>
     </tr>
     </table>
-        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" >ปรับปรุงข้อมูลยอดขาย</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" >Adjust Sales Data</asp:LinkButton>
     </div>
     </form>
     <div data-role="footer" data-theme="d">

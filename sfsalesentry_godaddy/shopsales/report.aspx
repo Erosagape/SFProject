@@ -31,7 +31,7 @@
         <table>
             <tr>
                 <td>
-                    <asp:Label ID="lblCustGroup" runat="server" Text="เลือกห้างร้าน"></asp:Label></td>
+                    <asp:Label ID="lblCustGroup" runat="server" Text="Select "></asp:Label></td>
                 <td>
                     <asp:DropDownList ID="cboCustGroup" runat="server"/>
                 </td>
@@ -53,13 +53,13 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Label8" runat="server" Text="ปี"></asp:Label>
+                    <asp:Label ID="Label8" runat="server" Text="Year "></asp:Label>
                 </td>
                 <td>
                     <asp:TextBox ID="txtYear" runat="server" Width="115px"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:Label ID="Label9" runat="server" Text="เดือน"></asp:Label>
+                    <asp:Label ID="Label9" runat="server" Text="Month "></asp:Label>
                 </td>
                 <td>
                     <asp:DropDownList ID="cboMonth" runat="server" AutoPostBack="True" OnSelectedIndexChanged="cboMonth_SelectedIndexChanged"></asp:DropDownList>
@@ -101,11 +101,11 @@
             </tr>
             <tr>
                 <td class="auto-style1">                    
-                    รูปแบบรายงาน
+                    Report Type
                 <td class="auto-style1">
-                    <asp:CheckBox ID="ChkSummaryOnly" runat="server" Text="แบบสรุป"/></td>
+                    <asp:CheckBox ID="ChkSummaryOnly" runat="server" Text="Summary"/></td>
                 <td class="auto-style1">                                        
-                    รวมยอดตาม
+                    Summary By
                     </td>
                 <td class="auto-style1">
                     <asp:DropDownList ID="cboSumType" runat="server"></asp:DropDownList></td>

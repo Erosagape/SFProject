@@ -474,7 +474,7 @@ namespace shopsales
                 DataRow dr = dt.NewRow();
                 dr[0] = "-";
                 dr[1] = "000";
-                dr[2] = "ไม่ระบุ";
+                dr[2] = "N/A";
                 dt.Rows.InsertAt(dr, 0);
             }
             return dt;
@@ -488,7 +488,7 @@ namespace shopsales
             {
                 DataRow dr = dt.NewRow();
                 dr[0] = "";
-                dr[3] = "{สร้างใหม่}";
+                dr[3] = "{New Record}";
                 dt.Rows.InsertAt(dr, 0);
             }
             DataView dv = dt.DefaultView;
@@ -536,7 +536,7 @@ namespace shopsales
             DataRow dr = dt.NewRow();
             dr[0] = "0";
             dr[1] = "-";
-            dr[2] = "ไม่ระบุ";
+            dr[2] = "N/A";
             dt.Rows.InsertAt(dr, 0);
             return dt;
         }
@@ -549,7 +549,7 @@ namespace shopsales
             {
                 DataRow dr = dt.NewRow();
                 dr[0] = "";
-                dr[2] = "{สร้างใหม่}";
+                dr[2] = "{New Record}";
                 dt.Rows.InsertAt(dr, 0);
             }
             DataView dv = dt.DefaultView;
@@ -661,12 +661,12 @@ namespace shopsales
                 if (changeBlank == true)
                 {
                     dr[1] = "";
-                    dr[2] = "{ไม่ระบุ}";
+                    dr[2] = "{N/A}";
                 }
                 else
                 {
                     dr[1] = "(New)";
-                    dr[2] = "{สร้างใหม่}";
+                    dr[2] = "{New Record}";
                 }
                 dt.Rows.InsertAt(dr, 0);
             }
@@ -692,7 +692,7 @@ namespace shopsales
                         DataRow dr = rs.Rows[0];
                         dr[0] = "-";
                         dr[1] = "{All}";
-                        dr[2] = "(ไม่ระบุ)";
+                        dr[2] = "(N/A)";
                     }
                 }
                 foreach (DataRow dr in dt.Select("GroupID IN('" + groupid + "')"))

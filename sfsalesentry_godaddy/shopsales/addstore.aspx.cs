@@ -44,7 +44,7 @@ namespace shopsales
             }
             else
             {
-                lblMessage.Text = "มีคนกำลังแก้ไขข้อมูลอยู่..กรุณารอสักครู่";
+                lblMessage.Text = "Data is locked, Try again later!";
             }
         }
         protected void btnBack_Click(object sender, EventArgs e)
@@ -110,11 +110,11 @@ namespace shopsales
                     dt.WriteXml(MapPath("~/Customer.xml"));
                     ClsData.LoadShop(cboOID, "custname", "oid", true);
                     cboOID.SelectedValue = oid;
-                    lblMessage.Text = "บันทึกข้อมูลเรียบร้อย";
+                    lblMessage.Text = "Save Complete!";
                 }
                 else
                 {
-                    lblMessage.Text = "ไม่สามารถบันทึกข้อมูลในขณะนี้..กรุณาลองใหม่";
+                    lblMessage.Text = "Can not save ,Please check data";
                 }
             }
             catch (Exception ex)

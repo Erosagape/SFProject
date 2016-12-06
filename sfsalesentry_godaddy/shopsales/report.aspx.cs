@@ -37,13 +37,13 @@ namespace shopsales
                 if (cboSumType.Items.Count == 0) ClsData.LoadReportType(cboSumType,cApp.user_role);
                 if(cboMonth.DataTextField =="")
                 {
-                    ClsData.LoadMonth(cboMonth, "MonthNameTH", "MonthID");
+                    ClsData.LoadMonth(cboMonth, "MonthNameEN", "MonthID");
                     txtYear.Text = ClsUtil.GetCurrentTHDate().Year.ToString();
                     cboMonth.SelectedIndex = 0;
                 }
                 if (cApp.user_role!="1")
                 {
-                    lblShop.Text = "เลือกจุดขาย";
+                    lblShop.Text = "Choose POS";
                     cboShop.Visible = true;
                     if(cboShop.DataTextField=="")
                     {
@@ -55,7 +55,7 @@ namespace shopsales
                 }
                 else
                 {
-                    lblShop.Text = cApp.shop_name + " สาขา " + cApp.shop_branch;
+                    lblShop.Text = cApp.shop_name + " Branch " + cApp.shop_branch;
                     cboShop.Visible = false;
                     shopid = cApp.shop_id;
                     btnPrint.Visible =false;
@@ -180,57 +180,57 @@ namespace shopsales
             if (txtDateF.Text !="")
             {
                 str += "salesDate>='" + txtDateF.Text + "'";
-                cliteria += "ตั้งแต่วันที่ขาย=" + txtDateF.Text + " ";
+                cliteria += "From Date=" + txtDateF.Text + " ";
             }
             if (txtDateT.Text != "")
             {
                 if (str != "") str += " AND ";
                 str += "salesDate<='" + txtDateT.Text + "'";
-                cliteria += "จนถึงวันที่ขาย=" + txtDateT.Text + " ";
+                cliteria += "To Date=" + txtDateT.Text + " ";
             }
             if (txtModel.Text !="")
             {
                 if (str != "") str += " AND ";
                 str += "ModelCode='" + txtModel.Text + "'";
-                cliteria += "รุ่น=" + txtModel.Text + " ";
+                cliteria += "Model=" + txtModel.Text + " ";
             }
             if (txtColor.Text != "")
             {
                 if (str != "") str += " AND ";
                 str += "(ColorName ='" + txtColor.Text + "' or ColorCode='" + txtColor.Text + "')";
-                cliteria += "สี=" + txtColor.Text + " ";
+                cliteria += "Color=" + txtColor.Text + " ";
             }
             if (txtSize.Text != "")
             {
                 if (str != "") str += " AND ";
                 str += "SizeNo='" + txtSize.Text + "'";
-                cliteria += "ขนาด=" + txtSize.Text + " ";
+                cliteria += "Size=" + txtSize.Text + " ";
             }
             if (cboShoeType.SelectedIndex>0)
             {
                 if (str != "") str += " AND ";
                 str += "prodType='" + cboShoeType.SelectedValue.ToString() + "'";
-                cliteria += "สินค้า=" + cboShoeType.SelectedItem.Text + " ";
+                cliteria += "Type=" + cboShoeType.SelectedItem.Text + " ";
             }
             if (cbosalesType.SelectedIndex>0)
             {
                 if (str != "") str += " AND ";
                 str += "salesType='" + cbosalesType.SelectedValue.ToString() + "'";
-                cliteria += "จัดรายการ=" + cbosalesType.SelectedItem.Text + " ";
+                cliteria += "Promotion=" + cbosalesType.SelectedItem.Text + " ";
             }
             if (cboprodGroup.SelectedIndex > 0)
             {
                 if (str != "") str += " AND ";
                 str += "prodGroup='" + cboprodGroup.SelectedItem.Text + "'";
-                cliteria += "ประเภท=" + cboprodGroup.SelectedItem.Text + " ";
+                cliteria += "Group=" + cboprodGroup.SelectedItem.Text + " ";
             }
             if(cboShop.SelectedIndex>0)
             {
-                cliteria += "จุดขาย=" + cboShop.SelectedItem.Text + " ";
+                cliteria += "POS=" + cboShop.SelectedItem.Text + " ";
             }
             if (cboCustGroup.SelectedIndex > 0)
             {
-                cliteria += "กลุ่ม=" + cboCustGroup.SelectedItem.Text + " ";
+                cliteria += "Group=" + cboCustGroup.SelectedItem.Text + " ";
             }
             if(AddWhere !="")
             {
@@ -239,13 +239,13 @@ namespace shopsales
             }
             if(cboSumType.SelectedIndex>=2)
             {
-                cliteria += "ยอดสะสม " + GetDiffMonth();
+                cliteria += "Accumulate " + GetDiffMonth();
             }
             return str;
         }
         private string GetDiffMonth()
         {
-            string str = "ไม่ระบุ";
+            string str = "N/A";
             int diff = 0;            
             try
             {
@@ -262,7 +262,7 @@ namespace shopsales
                 diff = (dend - dstart) + 1;
                 if(diff>0)
                 {
-                    str = diff + " เดือน";
+                    str = diff + " Months";
                 }
             }
             finally
@@ -302,7 +302,7 @@ namespace shopsales
             }
             catch(Exception ex)
             {
-                Response.Write("ไม่สามารถเรียกรายงานได้ " + ex.Message);
+                Response.Write("Cannot Show Report " + ex.Message);
             }
         }
         protected void cboShop_SelectedIndexChanged(object sender, EventArgs e)
@@ -427,7 +427,7 @@ namespace shopsales
             }
             catch (Exception ex)
             {
-                Response.Write("ไม่สามารถเรียกรายงานได้ " + ex.Message);
+                Response.Write("Cannot Show Report " + ex.Message);
             }
         }
     }

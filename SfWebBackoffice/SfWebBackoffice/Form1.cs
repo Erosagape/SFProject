@@ -24,6 +24,7 @@ namespace SfWebBackoffice
         {
             textBox2.Text = "web_salesentry";
             textBox3.Text = "web_delivery";
+            this.Text = this.Text + " (" + this.ProductVersion + ") ";
         }
         private string DownloadSalesEntryData_GoDaddy()
         {

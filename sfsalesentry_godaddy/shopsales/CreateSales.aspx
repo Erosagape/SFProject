@@ -34,7 +34,7 @@
             <SortedDescendingCellStyle BackColor="#CAC9C9" />
             <SortedDescendingHeaderStyle BackColor="#00547E" />
         </asp:GridView>
-        <asp:Button ID="btnBack" runat="server" Text="กลับเมนูหลัก" OnClick="btnBack_Click" />
+        <asp:Button ID="btnBack" runat="server" Text="Return to Menu" OnClick="btnBack_Click" />
         <asp:Label ID="lblMessage" runat="server" Text="Label"></asp:Label>
     </form>
     </div>

@@ -41,14 +41,14 @@ namespace shopsales
                     }
                     //txtYear.Text = DateTime.Now.Year.ToString("0000");
                     //txtMonth.Text = DateTime.Now.Month.ToString("00");
-                    cboStatus.Items.Add("PC สั่งของ");
-                    cboStatus.Items.Add("ตรวจสอบแล้ว");
-                    cboStatus.Items.Add("อนุมัติส่งของแล้ว");
-                    cboStatus.Items.Add("ยืนยันรับสินค้าแล้ว");
-                    cboStatus.Items.Add("ทั้งหมด");
+                    cboStatus.Items.Add("PC Order");
+                    cboStatus.Items.Add("Order Received");
+                    cboStatus.Items.Add("Approved Delivery");
+                    cboStatus.Items.Add("Confirm Delivery");
+                    cboStatus.Items.Add("All");
 
-                    cboType.Items.Add("สินค้าปกติ");
-                    cboType.Items.Add("สินค้า One Price");
+                    cboType.Items.Add("Normal Order");
+                    cboType.Items.Add("One Price");
                     //ClsData.LoadProdType(cboTypeProduct);
                     txtDate.Text = cApp.working_date;
                     LoadGrid();

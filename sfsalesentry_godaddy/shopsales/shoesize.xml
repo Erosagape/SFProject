@@ -1,9 +1,9 @@
-<?xml version="1.0" standalone="yes"?>
+﻿<?xml version="1.0" standalone="yes"?>
 <NewDataSet>
   <Table>
     <SSId>1</SSId>
     <SSCode>--</SSCode>
-    <SSName>ไม่ระบุ</SSName>
+    <SSName>N/A</SSName>
     <MinSize>0</MinSize>
     <MaxSize>0</MaxSize>
     <SStep>0</SStep>

@@ -41,7 +41,7 @@
                 </td>
                 <td></td>
                 <td>
-                    <asp:LinkButton ID="LinkButton2" OnClick="LinkButton2_Click" runat="server">เพิ่มรุ่นสินค้าใหม่</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton2" OnClick="LinkButton2_Click" runat="server">Add New Model</asp:LinkButton>
                 </td>
             </tr>
             <tr>
