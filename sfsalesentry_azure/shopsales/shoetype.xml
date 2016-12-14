@@ -32,14 +32,14 @@
     <stID>5</stID>
     <STCode>005</STCode>
     <STName>รองเท้าผ้าใบชาย</STName>
-    <STName2>Canvas Men</STName2>
+    <STName2>Sneaker Men</STName2>
     <GroupOID>2</GroupOID>
   </Table>
   <Table>
     <stID>6</stID>
     <STCode>006</STCode>
     <STName>รองเท้าผ้าใบหญิง</STName>
-    <STName2>Canvas Women</STName2>
+    <STName2>Sneaker Women</STName2>
     <GroupOID>2</GroupOID>
   </Table>
 </NewDataSet>

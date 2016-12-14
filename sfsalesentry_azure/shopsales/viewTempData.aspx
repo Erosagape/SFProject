@@ -9,6 +9,14 @@
 <body>
     <form id="form1" runat="server">
     <div>
+        Export Session ID :
+        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        <asp:Button ID="Button2" runat="server" Text="Refresh" OnClick="Button2_Click" />
+        <br />        
+        Filter :
+        <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+        </asp:DropDownList>
+        <br />
     
         <asp:Button ID="Button1" runat="server" Text="Process" OnClick="Button1_Click" />
         <asp:Label ID="Label1" runat="server" Text="Ready"></asp:Label>

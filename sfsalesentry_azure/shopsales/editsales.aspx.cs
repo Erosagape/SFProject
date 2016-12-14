@@ -123,14 +123,13 @@ namespace shopsales
                     }
                 }
             }
-
             return str;
         }
         private string GetFileName()
         {
             if (txtOID.Text != "")
             {
-                return txtOID.Text.Split('_')[0] + "_" + txtOID.Text.Split('_')[1].Substring(0,6) + "_" + cApp.user_id;
+                return txtOID.Text.Split('_')[0] + "_" + txtOID.Text.Split('_')[1].Substring(0,6) + "_" + txtOID.Text.Split('_')[2];
             }
             return ClsData.GetSalesFileName(txtOID.Text, cApp.shop_id, txtSaleDate.Text, cApp.user_id);
         }

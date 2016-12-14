@@ -11,12 +11,27 @@
 <body>
     <form id="form1" runat="server">
     <div>
+        Sheet Name :
+        <asp:TextBox ID="TextBox1" runat="server">Template</asp:TextBox>
+        Data Name :
+        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
         </div>
-        <dx:ASPxUploadControl ID="ASPxUploadControl1" runat="server" OnFileUploadComplete="ASPxUploadControl1_FileUploadComplete" ShowProgressPanel="True" ShowUploadButton="True" Theme="PlasticBlue" UploadMode="Auto" UploadStorage="FileSystem" Width="280px" AutoStartUpload="True">
+        <dx:ASPxUploadControl ID="ASPxUploadControl1" ClientInstanceName="uc" runat="server" OnFileUploadComplete="ASPxUploadControl1_FileUploadComplete" ShowProgressPanel="True" ShowUploadButton="True" Theme="PlasticBlue" UploadMode="Auto" UploadStorage="FileSystem" Width="280px" AutoStartUpload="True" OnFilesUploadComplete="ASPxUploadControl1_FilesUploadComplete" >
+            <ClientSideEvents FileUploadComplete="function(s, e) {
+                /*
+                var separator = '|';
+                if(e.callbackData.indexOf('redirect') != -1) {
+                    var url = e.callbackData.split(separator)[1];
+                    document.location.href = url;
+                }
+                */
+                alert('Complete! ' + e.callbackData);
+            }" />
             <AdvancedModeSettings EnableDragAndDrop="True">
             </AdvancedModeSettings>
         </dx:ASPxUploadControl>
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="View Data" />
+        <asp:Label ID="Label1" runat="server" Text="Ready"></asp:Label>
         <br />
     </form>
 </body>

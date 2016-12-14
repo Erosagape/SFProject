@@ -409,7 +409,7 @@ namespace shopsales
             this.filename = fname;
             this.sheetname = sheet;
         }
-        public DataTable QueryDataTable()
+        public DataTable QueryDataTable(string sql)
         {
             DataTable dt = new DataTable();
             if (string.IsNullOrWhiteSpace(this.filename))
@@ -422,6 +422,7 @@ namespace shopsales
                 if(finfo.Exists)
                 {
                     dt = new DataTable();
+                    dt.TableName = sheetname;
                     using (var cls = new System.Data.OleDb.OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + filename + @";Extended Properties=""Excel 8.0;HDR=YES;IMEX=1;"""))
                     {
                         cls.Open();
@@ -430,7 +431,7 @@ namespace shopsales
                         {
                             sname = finfo.Name.Split('.')[0].Trim();
                         }
-                        System.Data.OleDb.OleDbDataAdapter da = new System.Data.OleDb.OleDbDataAdapter(@"select * from [" + sname + @"$]",cls);
+                        System.Data.OleDb.OleDbDataAdapter da = new System.Data.OleDb.OleDbDataAdapter(sql,cls);
                         da.Fill(dt);
                         cls.Close();
                     }

@@ -73,6 +73,7 @@ namespace shopsales
                 txtCustCode.Text = dr["Custcode"].ToString();
                 txtCustName.Text = dr["CustName"].ToString();
                 cboShopName.SelectedValue = dr["GroupID"].ToString();
+                txtShopName.Text = dr["ShopName"].ToString();
                 txtBranch.Text = dr["Branch"].ToString();
                 txtGPx.Text = (Convert.ToDouble(dr["GPx"].ToString()) * 100).ToString();
                 txtShareDiscount.Text = (Convert.ToDouble(dr["ShareDiscount"].ToString()) * 100).ToString();
@@ -83,6 +84,7 @@ namespace shopsales
                 txtCustName.Text = "";
                 cboShopName.SelectedIndex = -1;
                 txtBranch.Text = "";
+                txtShopName.Text = "";
                 txtGPx.Text = "0";
                 txtShareDiscount.Text = "0";
             }
@@ -100,7 +102,7 @@ namespace shopsales
                     dr["OID"] = oid;
                     dr["CustCode"] = txtCustCode.Text;
                     dr["CustName"] = txtCustName.Text;
-                    dr["ShopName"] = cboShopName.SelectedItem.Text;
+                    dr["ShopName"] = txtShopName.Text;
                     dr["Branch"] = txtBranch.Text;
                     dr["GroupID"] = cboShopName.SelectedValue.ToString();
                     dr["GPx"] = Convert.ToDouble(txtGPx.Text) / 100;

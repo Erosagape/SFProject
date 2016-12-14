@@ -108,9 +108,6 @@
     <Content Include="bg.png" />
     <Content Include="CreateGoods.aspx" />
     <Content Include="dailyreport.aspx" />
-    <Content Include="goods.xml">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="gpx.aspx" />
     <Content Include="gpxtest.aspx" />
     <Content Include="editsales.aspx" />
@@ -122,9 +119,6 @@
     <Content Include="liststore.aspx" />
     <Content Include="listuser.aspx" />
     <Content Include="logo.png" />
-    <Content Include="mailsetup.xml">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="masterfile.aspx" />
     <Content Include="menu.aspx" />
     <Content Include="report.aspx" />
@@ -141,6 +135,7 @@
     <Content Include="SendStock.aspx" />
     <Content Include="testdx.aspx" />
     <Content Include="testemail.aspx" />
+    <Content Include="downloaddata.aspx" />
     <Content Include="UploadExcel.aspx" />
     <Content Include="viewTempData.aspx" />
     <Content Include="Web.config">
@@ -372,6 +367,13 @@
     </Compile>
     <Compile Include="testemail.aspx.designer.cs">
       <DependentUpon>testemail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="downloaddata.aspx.cs">
+      <DependentUpon>downloaddata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="downloaddata.aspx.designer.cs">
+      <DependentUpon>downloaddata.aspx</DependentUpon>
     </Compile>
     <Compile Include="UploadExcel.aspx.cs">
       <DependentUpon>UploadExcel.aspx</DependentUpon>

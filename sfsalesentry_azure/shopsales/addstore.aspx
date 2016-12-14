@@ -57,6 +57,14 @@
     </tr>
     <tr>
     <td>
+        <asp:Label ID="Label7" runat="server" Text="ชื่อกลุ่ม"></asp:Label>
+    </td>
+    <td>
+        <asp:TextBox ID="txtShopName" runat="server"></asp:TextBox>        
+    </td>
+    </tr>
+    <tr>
+    <td>
         <asp:Label ID="Label4" runat="server" Text="สาขา"></asp:Label>
     </td>
     <td>

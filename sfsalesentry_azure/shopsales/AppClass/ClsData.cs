@@ -140,7 +140,7 @@ namespace shopsales
             {
                 if (months.Contains(file.Name.Split('_')[1].ToString()))
                 {
-                    lst.Add(new XMLFileList() { filename = file.Name.ToLower(), filesize = file.Length.ToString(), modifieddate = file.LastWriteTime.AddHours(7).ToString("yyyy/MM/dd HH:mm") });
+                    lst.Add(new XMLFileList() { filename = file.Name.ToLower(), filesize = file.Length, modifieddate = file.LastWriteTime.AddHours(7) });
                 }
             }
             lst.OrderBy(s => s.filename);
@@ -152,15 +152,27 @@ namespace shopsales
             DirectoryInfo dir = new System.IO.DirectoryInfo(GetPath());
             foreach (FileInfo file in dir.GetFiles(filter + ".xml"))
             {
-                lst.Add(new XMLFileList() { filename = file.Name.ToLower(), filesize = file.Length.ToString(), modifieddate = file.LastWriteTime.AddHours(7).ToString("yyyy/MM/dd HH:mm") });
+                lst.Add(new XMLFileList() { filename = file.Name.ToLower(), filesize = file.Length, modifieddate = file.LastWriteTime.AddHours(7) });
             }
             lst.OrderBy(s => s.filename);
             return lst;
         }
-        public static DataTable XMLTableData(string filterstr = "*")
+        public static DataTable XMLTableData(string filterstr = "*",string orderby="")
         {
             DataTable dt = GetXMLTableList(filterstr).ToDataTable();
-            return dt;
+            switch (orderby)
+            {
+                case "date":
+                    dt.DefaultView.Sort = "modifieddate DESC";
+                    break;
+                case "size":
+                    dt.DefaultView.Sort = "filesize DESC";
+                    break;
+                default:
+                    dt.DefaultView.Sort = "filename";
+                    break;
+            }
+            return dt.DefaultView.ToTable();
         }
         public static string ExportToXMLFile(string filename, DataTable dt)
         {
@@ -408,6 +420,7 @@ namespace shopsales
         public static int DeleteDataXML(string dataname, string cliteria)
         {
             int i = 0;
+            int c = 0;
             errMessage = "";
             try
             {
@@ -415,6 +428,7 @@ namespace shopsales
                 string fname = GetPath() + dataname + ".xml";
                 ds.ReadXml(fname.ToUpper());
                 DataTable dt = ds.Tables[0];
+                c = dt.Rows.Count;
                 DataRow[] dr = ds.Tables[0].Select(cliteria);
                 foreach (DataRow r in dr)
                 {
@@ -422,6 +436,11 @@ namespace shopsales
                     i++;
                 }
                 dt.WriteXml(GetPath() + dataname.ToLower() + ".xml");
+                dt.Dispose();
+                if(c==i)
+                {
+                    System.IO.File.Delete(GetPath() + dataname.ToLower() + ".xml");
+                }
             }
             catch (Exception ex)
             {
@@ -781,6 +800,7 @@ namespace shopsales
         }
         public static DataRow ShoeDataByCode(string code)
         {
+            DataRow dr = ShoeData().NewRow();
             try
             {
                 DataRow row = FilterData("Goods", "GoodsCode", code).Rows[0];
@@ -788,7 +808,7 @@ namespace shopsales
             }
             catch
             {
-                return ShoeData().NewRow();
+                return dr;
             }
 
         }
@@ -1171,6 +1191,28 @@ namespace shopsales
             }
             return dt;
         }
+        public static bool SaveLogData(string module,string user,string action,string desc,string timestamp,string typelog,string callfrom,string message)
+        {
+            try
+            {
+                var log = new System.IO.StreamWriter(ClsData.GetPath() + "\\Log_" + typelog + "_" + user + ".txt",true,UTF8Encoding.UTF8);
+                string logstr = "module:" + module + ";";
+                logstr += "user:" + user + ";";
+                logstr += "action:" + action + ";";
+                logstr += "description:" + desc + ";";
+                logstr += "timestamp:" + timestamp + ";";
+                logstr += "type:" + typelog + ";";
+                logstr += "from:" + callfrom + ";";
+                logstr += "message:" + message + ";";
+                log.WriteLine(logstr);
+                log.Close();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
         public static DataTable NewReportSales(DataSet ds)
         {
             DataTable dt = new DataTable();
@@ -1438,40 +1480,97 @@ namespace shopsales
             }
             return msg;
         }
-        public static void CalculateSalesGP(DataRow r, DataRow row, string fldSalesIn, string fldGpx, bool recal = false)
+        public static string CreateSalesData(DataTable dt, string sessionid)
         {
-            double discrate = 0;
-            double gpx = 1;
-            double salesin = 0;
-            double salesamt = 0;
-            string shopid = row["OID"].ToString().Substring(0, row["OID"].ToString().IndexOf("_"));
-            string salesType = row["salesType"].ToString();
+            string xmlname = sessionid;
+            int i = 0;
             try
             {
-
-                salesamt = (Convert.ToDouble(row["salesQty"]) * Convert.ToDouble(row["TagPrice"]));
-                //if one-price 
-                if (row["salesType"].ToString().Equals("2")) //one price
+                //dt.DefaultView.Sort = "shopno,salesDate,modelcode,colorcode,sizeno";
+                DataTable tb = NewSalesData(new DataSet());
+                foreach (DataRow dr in dt.Rows)
                 {
-                    salesamt = (Convert.ToDouble(row["salesQty"]) * Convert.ToDouble(row["salesPrice"]));
-                }
-                else
-                {
-                    if (row["salesType"].ToString().Equals("3")) //discount
+                    i++;
+                    DataRow r = tb.NewRow();
+                    string sdate = Convert.ToDateTime(dr["salesDate"]).ToString("yyyy-MM-dd");
+                    string oid = dr["shopno"] + "_" + sdate.Replace("-", "") + "_" + dr["SalesBy"].ToString() + "_" + ClsData.GetGoodsCode(dr["ModelCode"].ToString(), dr["ColorCode"].ToString(), dr["SizeNo"].ToString()) + "_" + dr["salesType"].ToString() + "_" + i;
+                    r["OID"] = oid;
+                    r["salesDate"] = sdate;
+                    r["salesType"] = dr["salesType"];
+                    r["discountRate"] = dr["discountRate"];
+                    string GoodsCode = dr["ModelCode"].ToString() + dr["ColorCode"].ToString() + (Convert.ToInt32(dr["SizeNo"].ToString()) * 10).ToString();
+                    var shoe = ShoeDataByCode(GoodsCode);
+                    if (shoe["oid"].ToString() != "")
                     {
-                        try { discrate = Convert.ToDouble(row["discountRate"]) / 100; } catch { }
-                        salesamt = (Convert.ToDouble(row["salesQty"]) * Convert.ToDouble(row["salesPrice"]));
+                        r["prodID"] = shoe["OID"];
+                        r["prodName"] = shoe["GoodsName"];
+                        r["ColorName"] = shoe["colNameTh"];
+                        r["prodCat"] = shoe["ProdCatCode"];
+                        r["prodType"] = shoe["STId"];
+                        r["prodGroup"] = shoe["ProdGroupName"];
                     }
+                    else
+                    {
+                        r["prodID"] = "0";
+                        r["prodName"] = dr["ModelCode"].ToString() + " " + dr["ColorNameTH"].ToString() + " " + dr["SizeNo"].ToString();
+                        r["ColorName"] = dr["ColorNameTh"].ToString();
+                        r["prodCat"] = "";
+                        r["prodType"] = "";
+                        r["prodGroup"] = "";
+                    }
+                    r["ModelCode"] = dr["ModelCode"];
+                    r["ColorCode"] = dr["ColorCode"];
+                    r["SizeNo"] = dr["sizeNo"];
+                    r["salesQty"] = dr["salesQty"];
+
+                    r["TagPrice"] = dr["TagPrice"];
+                    Double rate = Convert.ToDouble(0 + dr["discountRate"].ToString()) / 100;
+                    Double baseprice = Convert.ToDouble(0 + r["TagPrice"].ToString());
+                    Double discprice = Convert.ToDouble(0 + r["TagPrice"].ToString()) * rate;
+                    r["salesPrice"] = (baseprice - discprice).ToString();
+                    r["shopName"] = dr["shopname"];
+                    r["entryBy"] = dr["salesBy"];
+                    r["remark"] = r["remark"].ToString();
+                    r["lastupdate"] = DateTime.Now.AddHours(7).ToString();
+
+                    var sharediscount = "0.00";
+                    var gpx = "100";
+                    //load gpx And sharediscount
+                    double discrate = 0;
+                    if (r["salesType"].ToString().Equals("3"))
+                    {
+                        try { discrate = Convert.ToDouble(dr["discountRate"]) / 100; } catch { }
+                    }
+                    //find gpx from promotion data
+                    Promotion p = ClsData.GetPromotionByDate(sdate, dr["salesType"].ToString(), dr["shopNo"].ToString(), discrate);
+                    if (p != null)
+                    {
+                        gpx = (p.GPRate() * 100).ToString();
+                        sharediscount = p.ShareDiscount.ToString();
+                    }
+                    r["ShareDiscount"] = sharediscount;
+                    r["Gpx"] = gpx;
+                    r["note"] = sessionid;
+                    r["postFlag"] = "N";
+                    tb.Rows.Add(r);
                 }
-                //if discount by price
-                if (row["note"].ToString().IndexOf("ส่วนลดเงินสด") >= 0)
-                {
-                    discrate = 0;
-                    salesamt = (Convert.ToDouble(row["salesQty"]) * Convert.ToDouble(row["salesPrice"]));
-                    salesType = "1";
-                }
+                tb.WriteXml(GetPath() + "\\" + sessionid + ".xml");
+            }
+            catch(Exception e)
+            {
+                xmlname = "";
+                SaveLogData("UploadExcel", "SYSTEM", "ADDROW " + i, e.Message, DateTime.UtcNow.AddHours(7).ToString("yyyyMMddHHMM"), "ERR", "ClsData", "CreateSalesData");
+            }
+            return xmlname;
+        }
+        public static void CalculateSalesGP(DataRow r, DataRow row, string fldSalesIn, string fldGpx, bool recal = false)
+        {
+            double gpx = 1;
+            double salesin = 0;
+            try
+            {
                 gpx = Convert.ToDouble(row["GPx"]);
-                salesin = salesamt * (gpx / 100);
+                salesin = (Convert.ToDouble(row["salesQty"]) * Convert.ToDouble(row["TagPrice"])) * (gpx / 100);
             }
             catch
             {
@@ -1479,9 +1578,37 @@ namespace shopsales
             }
             if (recal == true)
             {
+                double discrate = 0; //อัตราส่วนลด
+                double salesamt = 0; //ยอดขาย
+                string shopid = row["OID"].ToString().Substring(0, row["OID"].ToString().IndexOf("_"));
+                string salesType = row["salesType"].ToString(); //ประเภทการขาย
+                //เบื้องต้น ยอดขายจะมาจาก ราคาป้าย คูณ จำนวน
+                salesamt = (Convert.ToDouble(row["salesQty"]) * Convert.ToDouble(row["TagPrice"]));
+                //if one-price  จะเอามาจากราคาขายที่ user ระบุ
+                if (row["salesType"].ToString().Equals("2")) //one price
+                {
+                    salesamt = (Convert.ToDouble(row["salesQty"]) * Convert.ToDouble(row["salesPrice"]));
+                }
+                else
+                {
+                    //กรณีส่วนลด จะเอายอดขายหลังจากหักส่วนลดแล้ว
+                    if (row["salesType"].ToString().Equals("3")) //discount
+                    {
+                        try { discrate = Convert.ToDouble(row["discountRate"]) / 100; } catch { }
+                        //กรณีส่วนลดเงินสด ให้คิดส่วนแบ่งจากราคาหลังหักส่วนลดเงินสดแล้ว
+                        if (row["note"].ToString().IndexOf("ส่วนลดเงินสด") >= 0)
+                        {
+                            discrate = 0;
+                            salesType = "1";
+                            salesamt = (Convert.ToDouble(row["salesQty"]) * Convert.ToDouble(row["salesPrice"]));
+                        }
+                    }
+                }
+                //หาข้อมูลโปรโมชั่น
                 Promotion p = GetPromotionByDate(row["salesDate"].ToString(), salesType, shopid, discrate);
                 if (p != null)
                 {
+                    //ถ้ามี ก็คำนวณ GPx ได้เลย
                     gpx = p.GPRate() * 100;
                     try { salesin = CalculateSalesIn(salesamt, p); } catch { }
                 }
@@ -2944,6 +3071,7 @@ namespace shopsales
                 cbo.Items.Add("จำนวนขายตามวันที่");
                 cbo.Items.Add("ยอดขายรายไตรมาส");
                 cbo.Items.Add("ยอดขายรายปี");
+                cbo.Items.Add("ยอดขายรายเดือน");
             }
         }
         public static void LoadProdType(DropDownList cbo)

@@ -147,7 +147,10 @@ namespace shopsales
             {
                 dt = ClsData.GetReportByYearly( txtYear.Text, custgroup, shopid, GetCliteria(isYearly:true), ChkSummaryOnly.Checked);
             }
+            if(cboSumType.SelectedIndex==6)
+            {
 
+            }
             shopid = id;            
             ViewState["ReportSales"] = dt;
             return dt;

@@ -9,9 +9,9 @@ namespace shopsales
     //ประเภทการคำนวณส่วนแบ่งห้าง
     public enum CalGPType
     {
-        NotShareDiscount = 0, //ไม่แชร์ส่วนลด
+        AverageDiscount = 0, //ไม่แชร์ส่วนลด
         ShareDiscount = 1, //แชร์ส่วนลด
-        TakeDiscount = 2 //บริษัทรับภาระส่วนลดเอง
+        CompanyTakeDiscount = 2 //บริษัทรับภาระส่วนลดเอง
     }
     //ประเภทรายงานสรุป
     public enum ReportPeriod
@@ -141,8 +141,8 @@ namespace shopsales
     public class XMLFileList
     {
         public string filename { get; set; }
-        public string modifieddate { get; set; }
-        public string filesize { get; set; }
+        public DateTime modifieddate { get; set; }
+        public long filesize { get; set; }
     }
     //โครงสร้างข้อมูลการจัดรายการ
     public class Promotion

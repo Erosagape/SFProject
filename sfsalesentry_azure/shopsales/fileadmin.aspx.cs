@@ -20,12 +20,12 @@ namespace shopsales
             if (!IsPostBack)
             {
                 txtFilter.Text = "*";
-                ShowXMLFiles(txtFilter.Text);
+                ShowXMLFiles(txtFilter.Text,DropDownList1.SelectedValue.ToString());
             }
         }
-        void ShowXMLFiles(string filter)
+        void ShowXMLFiles(string filter,string orderby)
         {
-            DataTable dt = ClsData.XMLTableData(filter);
+            DataTable dt = ClsData.XMLTableData(filter,orderby);
             ListBox1.DataSource = dt;
             ListBox1.DataTextField = "filename";
             ListBox1.DataValueField = "filename";
@@ -50,7 +50,7 @@ namespace shopsales
             if (ListBox1.Text != "")
             {
                 System.IO.File.Delete(MapPath("~/" + ListBox1.Text));
-                ShowXMLFiles(txtFilter.Text);
+                ShowXMLFiles(txtFilter.Text,DropDownList1.SelectedValue.ToString());
             }
         }
 
@@ -68,7 +68,7 @@ namespace shopsales
 
         protected void Button5_Click(object sender, EventArgs e)
         {
-            ShowXMLFiles(txtFilter.Text);
+            ShowXMLFiles(txtFilter.Text,DropDownList1.SelectedValue.ToString());
         }
 
         protected void Button6_Click(object sender, EventArgs e)
@@ -81,6 +81,11 @@ namespace shopsales
         {
             GridView1.DataSource = ClsData.GetDataXML("LoginHistory");
             GridView1.DataBind();
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ShowXMLFiles(txtFilter.Text, DropDownList1.SelectedValue.ToString());
         }
     }
 }
