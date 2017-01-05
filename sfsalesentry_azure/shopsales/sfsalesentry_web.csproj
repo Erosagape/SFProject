@@ -106,8 +106,13 @@
     <Content Include="addstore.aspx" />
     <Content Include="adduser.aspx" />
     <Content Include="bg.png" />
+    <Content Include="countertype.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="CreateGoods.aspx" />
+    <Content Include="customer.xml" />
     <Content Include="dailyreport.aspx" />
+    <Content Include="employee.xml" />
     <Content Include="gpx.aspx" />
     <Content Include="gpxtest.aspx" />
     <Content Include="editsales.aspx" />
@@ -126,6 +131,9 @@
     <Content Include="salesentry.aspx" />
     <Content Include="ITest.svc" />
     <Content Include="CreateSales.aspx" />
+    <Content Include="saleszone.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="savereport.aspx" />
     <Content Include="selectgoods.aspx" />
     <Content Include="StockView.aspx" />

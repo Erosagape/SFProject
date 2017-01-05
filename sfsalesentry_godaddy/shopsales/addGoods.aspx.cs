@@ -53,18 +53,18 @@ namespace shopsales
                     }
                     else
                     {
-                        lblMessage.Text = "Can not save new Data.. Please Check";
+                        lblMessage.Text = "ไม่สามารถบันทึกข้อมูลได้..กรุณาปิดเพจแล้วเข้าใหม่";
                     }
                     ClsData.UnlockDataTable("Goods", cApp.session_id);
                 }
                 else
                 {
-                    lblMessage.Text = "Can not save.. data is locked";
+                    lblMessage.Text = "ไม่สามารถบันทึกข้อมูลได้.. มีคนใช้งานอยุ่";
                 }
             }
             else
             {
-                lblMessage.Text = "Data not complete.. Please check";
+                lblMessage.Text = "กรุณากรอกข้อมูลให้ครบถ้วน";
             }
         }
         protected void LoadTable()
@@ -218,7 +218,7 @@ namespace shopsales
                 UpdateModel(r);
                 if (r.RowState == DataRowState.Detached) dtGoods.Rows.Add(r);
                 dtGoods.WriteXml(MapPath("~/Goods.xml"));
-                lblMessage.Text = "Save Complete!";
+                lblMessage.Text = "บันทึกข้อมูลเรียบร้อย";
             }
             catch(Exception ex)
             {

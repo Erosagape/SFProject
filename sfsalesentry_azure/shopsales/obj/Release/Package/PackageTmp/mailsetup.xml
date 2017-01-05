@@ -1,8 +1,0 @@
-<?xml version="1.0" standalone="yes"?>
-<MailSetup>
-  <host>smtpout.secureserver.net </host>
-  <port>25</port>
-  <account>puttipong@summitsf.co.th</account>
-  <password>04071980</password>
-  <ssl>0</ssl>
-</MailSetup>

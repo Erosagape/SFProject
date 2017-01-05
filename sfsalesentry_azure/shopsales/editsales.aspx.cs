@@ -192,6 +192,11 @@ namespace shopsales
                 txtNote.Text = data["note"].ToString();
                 txtShareDiscount.Text = data["sharediscount"].ToString();
                 txtGPX.Text = data["gpx"].ToString();
+                txtCounterType.Text = data["CounterType"].ToString();
+                txtArea.Text = data["Area"].ToString();
+                txtzoneCode.Text = data["zoneCode"].ToString();
+                txtsalesCode.Text = data["salesCode"].ToString();
+                txtsupCode.Text = data["supCode"].ToString();
                 //txtShareDiscount.Text = data["sharediscount"].ToString();
             }
             else
@@ -232,7 +237,12 @@ namespace shopsales
                 data["note"] = txtNote.Text;
                 data["sharediscount"] = txtShareDiscount.Text;
                 data["gpx"] = txtGPX.Text;
-                data["entryby"] = cApp.user_id + " - " + cApp.user_name;
+                data["entryby"] = cApp.user_id.ToUpper();
+                data["CounterType"] = txtCounterType.Text;
+                data["Area"] = txtArea.Text;
+                data["zoneCode"] = txtzoneCode.Text;
+                data["salesCode"] = txtsalesCode.Text;
+                data["supCode"] = txtsupCode.Text;
                 data["postflag"] = "N";
                 if (data.RowState == DataRowState.Detached) dt.Rows.Add(data);
                 dt.WriteXml(filename);

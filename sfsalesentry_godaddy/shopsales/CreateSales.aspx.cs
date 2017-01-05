@@ -27,8 +27,8 @@ namespace shopsales
                 if (!IsPostBack)
                 {
                     LoadCustomer();
-                    txtYear.Text = ClsUtil.GetCurrentTHDate().Year.ToString("0000");
-                    txtMonth.Text = ClsUtil.GetCurrentTHDate().Month.ToString("00");
+                    txtYear.Text = DateTime.Now.Year.ToString("0000");
+                    txtMonth.Text = DateTime.Now.Month.ToString("00");
                 }
             }
             else

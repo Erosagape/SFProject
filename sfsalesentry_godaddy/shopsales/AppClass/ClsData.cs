@@ -140,7 +140,7 @@ namespace shopsales
             {
                 if (months.Contains(file.Name.Split('_')[1].ToString()))
                 {
-                    lst.Add(new XMLFileList() { filename = file.Name.ToLower(), filesize = file.Length.ToString(), modifieddate = ClsUtil.GetTHDate(file.LastWriteTime).ToString("yyyy/MM/dd HH:mm") });
+                    lst.Add(new XMLFileList() { filename = file.Name.ToLower(), filesize = file.Length, modifieddate = file.LastWriteTime.AddHours(7) });
                 }
             }
             lst.OrderBy(s => s.filename);
@@ -152,15 +152,30 @@ namespace shopsales
             DirectoryInfo dir = new System.IO.DirectoryInfo(GetPath());
             foreach (FileInfo file in dir.GetFiles(filter + ".xml"))
             {
-                lst.Add(new XMLFileList() { filename = file.Name.ToLower(), filesize = file.Length.ToString(), modifieddate = ClsUtil.GetTHDate(file.LastWriteTime).ToString("yyyy/MM/dd HH:mm") });
+                if(file.Length>100)
+                {
+                    lst.Add(new XMLFileList() { filename = file.Name.ToLower(), filesize = file.Length, modifieddate = file.LastWriteTime.AddHours(7) });
+                }
             }
             lst.OrderBy(s => s.filename);
             return lst;
         }
-        public static DataTable XMLTableData(string filterstr = "*")
+        public static DataTable XMLTableData(string filterstr = "*",string orderby="")
         {
             DataTable dt = GetXMLTableList(filterstr).ToDataTable();
-            return dt;
+            switch (orderby)
+            {
+                case "date":
+                    dt.DefaultView.Sort = "modifieddate DESC";
+                    break;
+                case "size":
+                    dt.DefaultView.Sort = "filesize DESC";
+                    break;
+                default:
+                    dt.DefaultView.Sort = "filename";
+                    break;
+            }
+            return dt.DefaultView.ToTable();
         }
         public static string ExportToXMLFile(string filename, DataTable dt)
         {
@@ -408,6 +423,7 @@ namespace shopsales
         public static int DeleteDataXML(string dataname, string cliteria)
         {
             int i = 0;
+            int c = 0;
             errMessage = "";
             try
             {
@@ -415,6 +431,7 @@ namespace shopsales
                 string fname = GetPath() + dataname + ".xml";
                 ds.ReadXml(fname.ToUpper());
                 DataTable dt = ds.Tables[0];
+                c = dt.Rows.Count;
                 DataRow[] dr = ds.Tables[0].Select(cliteria);
                 foreach (DataRow r in dr)
                 {
@@ -422,6 +439,11 @@ namespace shopsales
                     i++;
                 }
                 dt.WriteXml(GetPath() + dataname.ToLower() + ".xml");
+                dt.Dispose();
+                if(c==i)
+                {
+                    System.IO.File.Delete(GetPath() + dataname.ToLower() + ".xml");
+                }
             }
             catch (Exception ex)
             {
@@ -474,7 +496,7 @@ namespace shopsales
                 DataRow dr = dt.NewRow();
                 dr[0] = "-";
                 dr[1] = "000";
-                dr[2] = "N/A";
+                dr[2] = "ไม่ระบุ";
                 dt.Rows.InsertAt(dr, 0);
             }
             return dt;
@@ -488,7 +510,7 @@ namespace shopsales
             {
                 DataRow dr = dt.NewRow();
                 dr[0] = "";
-                dr[3] = "{New Record}";
+                dr[3] = "{สร้างใหม่}";
                 dt.Rows.InsertAt(dr, 0);
             }
             DataView dv = dt.DefaultView;
@@ -536,9 +558,84 @@ namespace shopsales
             DataRow dr = dt.NewRow();
             dr[0] = "0";
             dr[1] = "-";
-            dr[2] = "N/A";
+            dr[2] = "ไม่ระบุ";
             dt.Rows.InsertAt(dr, 0);
             return dt;
+        }
+        public static DataTable ProvinceData()
+        {
+            DataSet dtZone = new DataSet();
+            dtZone.ReadXml(GetPath() + "saleszone.xml");
+            DataTable dt = dtZone.Tables[0].Copy();
+            DataRow dr = dt.NewRow();
+            dr[0] = "0";
+            dr[1] = "-";
+            dr[2] = "ไม่ระบุ";
+            dt.Rows.InsertAt(dr, 0);
+            return dt;
+        }
+        public static IEnumerable<string> salesZoneData(string fldname)
+        {
+            DataSet dtZone = new DataSet();
+            dtZone.ReadXml(GetPath() + "saleszone.xml");
+            DataTable dt = dtZone.Tables[0].Copy();
+            var tb = (from DataRow r in dt.AsEnumerable()
+                      select r.Field<string>(fldname)).ToList().Distinct();
+            return tb;
+        }
+        public static List<string> RegionData(bool nosplit=false)
+        {
+            List<string> lst = new List<string>();
+            foreach(string item in salesZoneData("region"))
+            {
+                if (nosplit)
+                {
+                    if(lst.IndexOf(item)<0) lst.Add(item);
+                }
+                else
+                {
+                    if(item.IndexOf("-") >= 0)
+                    {
+                        if (lst.IndexOf((item + "-").Split('-')[0]) < 0)  lst.Add((item + "-").Split('-')[0]);
+                        continue;
+                    }
+                    lst.Add(item);
+                }
+            }
+            return lst;
+        }
+        public static DataTable CounterTypeData(bool foradd =false)
+        {
+            DataSet dtCounter = new DataSet();
+            dtCounter.ReadXml(GetPath() + "countertype.xml");
+            DataTable dt = dtCounter.Tables[0].Copy();
+            if (foradd)
+            {
+                DataRow dr = dt.NewRow();
+                dr[0] = "0";
+                dr[1] = "ไม่ระบุ";
+                dr[2] = "N/A";
+                dt.Rows.InsertAt(dr, 0);
+            }
+            return dt;
+
+        }
+        public static DataTable EmployeeData(string position,bool foradd=false)
+        {
+            DataSet dtEmp = new DataSet();
+            dtEmp.ReadXml(GetPath() + "employee.xml");
+            DataTable dt = dtEmp.Tables[0].Copy();
+            dt.DefaultView.RowFilter = "[Position]='"+position+"'";
+            DataTable tb = dt.DefaultView.ToTable();
+            if (foradd)
+            {
+                DataRow dr = tb.NewRow();
+                dr[0] = "0";
+                dr[1] = "ไม่ระบุ";
+                dr[2] = "N/A";
+                tb.Rows.InsertAt(dr, 0);
+            }
+            return tb;
         }
         public static DataTable ShoeModelData(bool addNew = false)
         {
@@ -549,7 +646,7 @@ namespace shopsales
             {
                 DataRow dr = dt.NewRow();
                 dr[0] = "";
-                dr[2] = "{New Record}";
+                dr[2] = "{สร้างใหม่}";
                 dt.Rows.InsertAt(dr, 0);
             }
             DataView dv = dt.DefaultView;
@@ -661,12 +758,12 @@ namespace shopsales
                 if (changeBlank == true)
                 {
                     dr[1] = "";
-                    dr[2] = "{N/A}";
+                    dr[2] = "{ไม่ระบุ}";
                 }
                 else
                 {
                     dr[1] = "(New)";
-                    dr[2] = "{New Record}";
+                    dr[2] = "{สร้างใหม่}";
                 }
                 dt.Rows.InsertAt(dr, 0);
             }
@@ -692,7 +789,7 @@ namespace shopsales
                         DataRow dr = rs.Rows[0];
                         dr[0] = "-";
                         dr[1] = "{All}";
-                        dr[2] = "(N/A)";
+                        dr[2] = "(ไม่ระบุ)";
                     }
                 }
                 foreach (DataRow dr in dt.Select("GroupID IN('" + groupid + "')"))
@@ -781,6 +878,7 @@ namespace shopsales
         }
         public static DataRow ShoeDataByCode(string code)
         {
+            DataRow dr = ShoeData().NewRow();
             try
             {
                 DataRow row = FilterData("Goods", "GoodsCode", code).Rows[0];
@@ -788,7 +886,7 @@ namespace shopsales
             }
             catch
             {
-                return ShoeData().NewRow();
+                return dr;
             }
 
         }
@@ -1045,6 +1143,22 @@ namespace shopsales
             dt.Columns.Add("GrandTotal");
             return dt;
         }
+        public static DataTable NewReportByShopGroup(string custgroup="")
+        {
+            DataTable dt = new DataTable();
+            dt.TableName = "Table";
+            dt.Columns.Add(new DataColumn() { ColumnName="DataName",DataType=Type.GetType("System.String") } );
+            var list = from g in ClsData.ShopGroupData(custgroup).AsEnumerable()
+                       select new {
+                           GroupName = g.Field<string>("CustGroupNameTh") +"(" + g.Field<string>("oid" +")")
+                       };
+            foreach (string lst in list.Select(e=>e.GroupName).ToList<string>())
+            {
+                dt.Columns.Add(new DataColumn() { ColumnName = lst, DataType = Type.GetType("System.Double") });
+            }
+            dt.Columns.Add(new DataColumn() { ColumnName = "Total", DataType = Type.GetType("System.Double") });
+            return dt;
+        }
         public static DataTable NewReportByPeriod(string yy, ReportPeriod period)
         {
             DataTable dt = new DataTable();
@@ -1167,9 +1281,36 @@ namespace shopsales
                 dt.Columns.Add("ShareDiscount");
                 dt.Columns.Add("GPx");
                 dt.Columns.Add("note");
+                dt.Columns.Add("CounterType");
+                dt.Columns.Add("salesCode");
+                dt.Columns.Add("supCode");
+                dt.Columns.Add("Area");
+                dt.Columns.Add("zoneCode");
                 dt.Columns.Add("postFlag");
             }
             return dt;
+        }
+        public static bool SaveLogData(string module,string user,string action,string desc,string timestamp,string typelog,string callfrom,string message)
+        {
+            try
+            {
+                var log = new System.IO.StreamWriter(ClsData.GetPath() + "\\Log_" + typelog + "_" + user + ".txt",true,UTF8Encoding.UTF8);
+                string logstr = "module:" + module + ";";
+                logstr += "user:" + user + ";";
+                logstr += "action:" + action + ";";
+                logstr += "description:" + desc + ";";
+                logstr += "timestamp:" + timestamp + ";";
+                logstr += "type:" + typelog + ";";
+                logstr += "from:" + callfrom + ";";
+                logstr += "message:" + message + ";";
+                log.WriteLine(logstr);
+                log.Close();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
         public static DataTable NewReportSales(DataSet ds)
         {
@@ -1198,6 +1339,11 @@ namespace shopsales
             dt.Columns.Add("note");
             dt.Columns.Add("RowID");
             dt.Columns.Add("CalGPX");
+            dt.Columns.Add("CounterType");
+            dt.Columns.Add("salesCode");
+            dt.Columns.Add("supCode");
+            dt.Columns.Add("Area");
+            dt.Columns.Add("zoneCode");
             return dt;
         }
         public static DataTable NewProductRequest(bool forapprove = false, bool hideCode = false)
@@ -1440,38 +1586,12 @@ namespace shopsales
         }
         public static void CalculateSalesGP(DataRow r, DataRow row, string fldSalesIn, string fldGpx, bool recal = false)
         {
-            double discrate = 0;
             double gpx = 1;
             double salesin = 0;
-            double salesamt = 0;
-            string shopid = row["OID"].ToString().Substring(0, row["OID"].ToString().IndexOf("_"));
-            string salesType = row["salesType"].ToString();
             try
             {
-
-                salesamt = (Convert.ToDouble(row["salesQty"]) * Convert.ToDouble(row["TagPrice"]));
-                //if one-price 
-                if (row["salesType"].ToString().Equals("2")) //one price
-                {
-                    salesamt = (Convert.ToDouble(row["salesQty"]) * Convert.ToDouble(row["salesPrice"]));
-                }
-                else
-                {
-                    if (row["salesType"].ToString().Equals("3")) //discount
-                    {
-                        try { discrate = Convert.ToDouble(row["discountRate"]) / 100; } catch { }
-                        salesamt = (Convert.ToDouble(row["salesQty"]) * Convert.ToDouble(row["salesPrice"]));
-                    }
-                }
-                //if discount by price
-                if (row["note"].ToString().IndexOf("ส่วนลดเงินสด") >= 0)
-                {
-                    discrate = 0;
-                    salesamt = (Convert.ToDouble(row["salesQty"]) * Convert.ToDouble(row["salesPrice"]));
-                    salesType = "1";
-                }
                 gpx = Convert.ToDouble(row["GPx"]);
-                salesin = salesamt * (gpx / 100);
+                salesin = (Convert.ToDouble(row["salesQty"]) * Convert.ToDouble(row["TagPrice"])) * (gpx / 100);
             }
             catch
             {
@@ -1479,9 +1599,37 @@ namespace shopsales
             }
             if (recal == true)
             {
+                double discrate = 0; //อัตราส่วนลด
+                double salesamt = 0; //ยอดขาย
+                string shopid = row["OID"].ToString().Substring(0, row["OID"].ToString().IndexOf("_"));
+                string salesType = row["salesType"].ToString(); //ประเภทการขาย
+                //เบื้องต้น ยอดขายจะมาจาก ราคาป้าย คูณ จำนวน
+                salesamt = (Convert.ToDouble(row["salesQty"]) * Convert.ToDouble(row["TagPrice"]));
+                //if one-price  จะเอามาจากราคาขายที่ user ระบุ
+                if (row["salesType"].ToString().Equals("2")) //one price
+                {
+                    salesamt = (Convert.ToDouble(row["salesQty"]) * Convert.ToDouble(row["salesPrice"]));
+                }
+                else
+                {
+                    //กรณีส่วนลด จะเอายอดขายหลังจากหักส่วนลดแล้ว
+                    if (row["salesType"].ToString().Equals("3")) //discount
+                    {
+                        try { discrate = Convert.ToDouble(row["discountRate"]) / 100; } catch { }
+                        //กรณีส่วนลดเงินสด ให้คิดส่วนแบ่งจากราคาหลังหักส่วนลดเงินสดแล้ว
+                        if (row["note"].ToString().IndexOf("ส่วนลดเงินสด") >= 0)
+                        {
+                            discrate = 0;
+                            salesType = "1";
+                            salesamt = (Convert.ToDouble(row["salesQty"]) * Convert.ToDouble(row["salesPrice"]));
+                        }
+                    }
+                }
+                //หาข้อมูลโปรโมชั่น
                 Promotion p = GetPromotionByDate(row["salesDate"].ToString(), salesType, shopid, discrate);
                 if (p != null)
                 {
+                    //ถ้ามี ก็คำนวณ GPx ได้เลย
                     gpx = p.GPRate() * 100;
                     try { salesin = CalculateSalesIn(salesamt, p); } catch { }
                 }
@@ -1557,6 +1705,11 @@ namespace shopsales
                 CalculateSalesGP(r, s, "SalesIn", "CalGPX", calGP);
                 try { r["remark"] = s["remark"]; } catch { }
                 try { r["note"] = s["note"]; } catch { }
+                try { r["salesCode"] = s["salesCode"]; } catch { }
+                try { r["supCode"] = s["supCode"]; } catch { }
+                try { r["Area"] = s["Area"]; } catch { }
+                try { r["zoneCode"] = s["zoneCode"]; } catch { }
+                try { r["CounterType"] = s["CounterType"]; } catch { }
             }
             catch (Exception ex)
             {
@@ -1741,7 +1894,7 @@ namespace shopsales
                 }
             }
             data.Rows.Add(row);
-        }
+        }        
         public static void LoadReportDataByPOS(string datefrom, string dateto, DataTable data, string idshop, string shopname, string cliteria, bool sumonly)
         {
             string startYearMonth = datefrom.Substring(0, 7).Replace("-", "");
@@ -1776,7 +1929,7 @@ namespace shopsales
                 startVar = Convert.ToInt32(strYear.ToString() + "" + strMonth.ToString());
             }
             DataRow sumrow = data.NewRow();
-            sumrow["salesDate"] = ClsUtil.GetCurrentTHDate().ToString("yyyy-MM-dd");
+            sumrow["salesDate"] = DateTime.Now.ToString("yyyy-MM-dd");
             sumrow["Model"] = "รวม " + shopname;
             if (totalqty > 0)
             {
@@ -2485,6 +2638,11 @@ namespace shopsales
             dt.Columns[15].ColumnName = ("บันทึก");
             dt.Columns[16].ColumnName = ("Row ID");
             dt.Columns[17].ColumnName = ("สัมประสิทธิ์");
+            dt.Columns[18].ColumnName = ("เค้าท์เตอร์");
+            dt.Columns[19].ColumnName = ("พนักงานขาย");
+            dt.Columns[20].ColumnName = ("Supervisor");
+            dt.Columns[21].ColumnName = ("ภาค");
+            dt.Columns[22].ColumnName = ("เขตการขาย");
         }
         public static string GetFieldCaption(string fld)
         {
@@ -2894,6 +3052,23 @@ namespace shopsales
         {
             LoadCombo(ShoeModelData(foradd),cbo, fldshow, fldval);
         }
+        public static void LoadProvince(DropDownList cbo,string fldshow,string fldval,bool foradd=false)
+        {
+            LoadCombo(ProvinceData(), cbo, fldshow, fldval);
+        }
+        public static void LoadCounterType(DropDownList cbo, string fldshow, string fldval, bool foradd = false)
+        {
+            LoadCombo(CounterTypeData(foradd), cbo, fldshow, fldval);
+        }
+        public static void LoadArea(DropDownList cbo)
+        {
+            cbo.Items.Clear();
+            cbo.Items.Add("ไม่ระบุ");
+            foreach(var item in RegionData())
+            {
+                cbo.Items.Add(item);
+            }
+        }
         public static void LoadShopGroup(DropDownList cbo,string fldshow,string fldval,bool foradd=false)
         {
             LoadCombo(CustomerGroupData(foradd), cbo, fldshow, fldval);
@@ -2929,6 +3104,10 @@ namespace shopsales
         {
             LoadCombo(GetCalGPType(),cbo, fldshow, fldval);
         }
+        public static void LoadEmployee(DropDownList cbo,string filter,string fldshow,string fldval,bool foradd=false)
+        {
+            LoadCombo(EmployeeData(filter,foradd), cbo, fldshow, fldval);
+        }
         public static void LoadMonth(DropDownList cbo,string fldshow,string fldval)
         {
             LoadCombo(GetMonth(), cbo, fldshow, fldval);
@@ -2944,6 +3123,7 @@ namespace shopsales
                 cbo.Items.Add("จำนวนขายตามวันที่");
                 cbo.Items.Add("ยอดขายรายไตรมาส");
                 cbo.Items.Add("ยอดขายรายปี");
+                cbo.Items.Add("ยอดขายตามรุ่น");
             }
         }
         public static void LoadProdType(DropDownList cbo)

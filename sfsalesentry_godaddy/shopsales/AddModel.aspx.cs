@@ -107,7 +107,7 @@ namespace shopsales
                 }
                 if (oid == "")
                 {
-                    msg = "Cannot create Data";
+                    msg = "ไม่สามารถบันทึกข้อมูลได้";
                 }
                 else
                 {
@@ -132,7 +132,7 @@ namespace shopsales
                     dt.WriteXml(MapPath("~/ShoeModel.xml"));
                     ClsData.LoadModel(cboOID, "Model", "SMId");
                     cboOID.SelectedValue = oid;
-                    msg = "Save Complete!";
+                    msg = "บันทึกข้อมูลเรียบร้อย";
                 }
             }
             catch (Exception ex)

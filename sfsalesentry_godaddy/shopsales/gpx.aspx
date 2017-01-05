@@ -8,16 +8,16 @@
 </head>
 <body>
     <div data-role="header">
-        <h1>&nbsp;GPX Master File</h1>
+        <h1>ข้อมูลมาตรฐาน GPX</h1>
     </div>
     <hr />
     <div>
         <form id="form1" runat="server">
             <asp:Panel ID="Panel1" runat="server">
-                Select Group <asp:DropDownList ID="cboGroupCode" runat="server" AutoPostBack="True" OnSelectedIndexChanged="cboGroupCode_SelectedIndexChanged"></asp:DropDownList>
+            เลือกห้างร้าน <asp:DropDownList ID="cboGroupCode" runat="server" AutoPostBack="True" OnSelectedIndexChanged="cboGroupCode_SelectedIndexChanged"></asp:DropDownList>
             <br />
-            <asp:Button ID="btnAddNew" runat="server" Text="Add Data" OnClick="btnAddNew_Click" />
-            <asp:Button ID="btnUpdate" runat="server" Text="Adjust Sales" OnClick="btnUpdate_Click" />
+            <asp:Button ID="btnAddNew" runat="server" Text="เพิ่มข้อมูล" OnClick="btnAddNew_Click" />
+            <asp:Button ID="btnUpdate" runat="server" Text="ปรับปรุงยอดขาย" OnClick="btnUpdate_Click" />
             <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" OnRowCommand="GridView1_RowCommand">
             <Columns>
                 <asp:TemplateField HeaderText="View">
@@ -38,19 +38,19 @@
                 <SortedDescendingCellStyle BackColor="#D4DFE1" />
                 <SortedDescendingHeaderStyle BackColor="#15524A" />
             </asp:GridView>
-                <asp:Button ID="btnBack" runat="server" Text="Return to Menu" OnClick="btnBack_Click" />
+                <asp:Button ID="btnBack" runat="server" Text="กลับไปเมนูหนัก" OnClick="btnBack_Click" />
                 <asp:Label ID="lblReady" runat="server" Text="Ready"></asp:Label>
             </asp:Panel>
             <asp:PlaceHolder ID="PlaceHolder1" runat="server">
-                <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" />
-                <asp:Button ID="btnClear" runat="server" Text="Clear" OnClick="btnClear_Click"/>
-                <asp:Button ID="btnCopy" runat="server" Text="Add by Copy" OnClick="btnCopy_Click" />
+                <asp:Button ID="btnSave" runat="server" Text="บันทึกข้อมูล" OnClick="btnSave_Click" />
+                <asp:Button ID="btnClear" runat="server" Text="ล้างหน้าจอ" OnClick="btnClear_Click"/>
+                <asp:Button ID="btnCopy" runat="server" Text="เพิ่มข้อมูลใหม่" OnClick="btnCopy_Click" />
                 <asp:Label ID="lblMessage" runat="server" Text="Ready"></asp:Label>
                 <hr />
                 <table>
                     <tr>
                         <td>
-                            <asp:Label ID="Label9" runat="server" Text="For"></asp:Label>
+                            <asp:Label ID="Label9" runat="server" Text="สำหรับ"></asp:Label>
                         </td>
                         <td>
                             <asp:Label ID="lblShopName" runat="server" Text=""></asp:Label>
@@ -58,7 +58,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <asp:Label ID="Label1" runat="server" Text="Start Date"></asp:Label>
+                            <asp:Label ID="Label1" runat="server" Text="วันที่เริ่มต้น"></asp:Label>
                         </td>
                         <td>
                             <asp:TextBox ID="txtStartDate" runat="server" TextMode="date"></asp:TextBox>
@@ -66,7 +66,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <asp:Label ID="Label2" runat="server" Text="End Date"></asp:Label>
+                            <asp:Label ID="Label2" runat="server" Text="วันที่สิ้นสุด"></asp:Label>
                         </td>
                         <td>
                             <asp:TextBox ID="txtEndDate" runat="server" TextMode="date"></asp:TextBox>
@@ -74,7 +74,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <asp:Label ID="Label3" runat="server" Text="Sales Type"></asp:Label>
+                            <asp:Label ID="Label3" runat="server" Text="ประเภทการขาย"></asp:Label>
                         </td>
                         <td>
                             <asp:DropDownList ID="cboSalesType" runat="server"></asp:DropDownList>
@@ -82,7 +82,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <asp:Label ID="Label4" runat="server" Text="GPX Rate"></asp:Label>
+                            <asp:Label ID="Label4" runat="server" Text="อัตรา GPX"></asp:Label>
                         </td>
                         <td>
                             <asp:TextBox ID="txtGPxRate" runat="server"></asp:TextBox>
@@ -90,7 +90,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <asp:Label ID="Label8" runat="server" Text="Discount Rate"></asp:Label>
+                            <asp:Label ID="Label8" runat="server" Text="อัตราส่วนลด"></asp:Label>
                         </td>
                         <td>
                             <asp:TextBox ID="txtDiscountRate" runat="server"></asp:TextBox>
@@ -98,7 +98,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <asp:Label ID="Label5" runat="server" Text="Share Discount Rate"></asp:Label>
+                            <asp:Label ID="Label5" runat="server" Text="อัตราแชร์ส่วนลด"></asp:Label>
                         </td>
                         <td>
                             <asp:TextBox ID="txtShareDiscount" runat="server"></asp:TextBox>
@@ -106,7 +106,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <asp:Label ID="Label11" runat="server" Text="Method"></asp:Label>
+                            <asp:Label ID="Label11" runat="server" Text="วิธีคำนวน"></asp:Label>
                         </td>
                         <td>
                             <asp:DropDownList ID="cboCalType" runat="server"></asp:DropDownList>
@@ -114,21 +114,21 @@
                     </tr>
                     <tr>
                         <td>
-                            <asp:Label ID="Label10" runat="server" Text="GP Cal"></asp:Label>
+                            <asp:Label ID="Label10" runat="server" Text="สัมประสิทธิ์"></asp:Label>
                         </td>
                         <td>
                             <asp:TextBox ID="txtGPCal" runat="server"></asp:TextBox>
                         </td>
                         <td>
-                            <asp:Button ID="btnCal" runat="server" Text="Calculate" OnClick="btnCal_Click" />
+                            <asp:Button ID="btnCal" runat="server" Text="คำนวณ" OnClick="btnCal_Click" />
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <asp:Label ID="Label6" runat="server" Text="Status"></asp:Label>
+                            <asp:Label ID="Label6" runat="server" Text="สถานะ"></asp:Label>
                         </td>
                         <td>
-                            <asp:CheckBox ID="chkActive" runat="server" Text="Active" />
+                            <asp:CheckBox ID="chkActive" runat="server" Text="ใช้งาน" />
                         </td>
                     </tr>
                     <tr>
@@ -140,7 +140,7 @@
                         </td>
                     </tr>
                 </table>
-                <asp:Button ID="btnHide" runat="server" Text="Back to List" OnClick="btnHide_Click" />
+                <asp:Button ID="btnHide" runat="server" Text="กลับไปหน้าจอค้นหา" OnClick="btnHide_Click" />
             </asp:PlaceHolder>     
         </form>
     </div>

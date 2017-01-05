@@ -18,7 +18,7 @@
         </div><!-- /header -->
         <div data-role="ui-content"> 
             <p>
-<b><asp:Label ID="lblShop" runat="server" Text="Select POS :"></asp:Label></b>
+<b><asp:Label ID="lblShop" runat="server" Text="Sales of Shop :"></asp:Label></b>
 <asp:DropDownList ID="cboShop" runat="server" AutoPostBack="true" EnableViewState="true" OnSelectedIndexChanged="cboShop_SelectedIndexChanged"></asp:DropDownList>           
                 </p>
             <hr />
@@ -29,13 +29,13 @@
                 <asp:TextBox ID="txtsalesDate" TextMode="Date" runat="server" Enabled="false"></asp:TextBox>
                 </td></tr>
             </table>
-            <asp:Button ID="btnSales" runat="server" Text="Sales Entry" OnClick="btnSales_Click" Font-Bold="True" ForeColor="Green" />
-            <asp:Button ID="btnReport" runat="server" Text="Sales Report" OnClick="btnReport_Click" Font-Bold="True" ForeColor="Green" />            
-            <asp:Button ID="btnRequestStock" runat="server" Text="Request Order" Font-Bold="True" ForeColor="Green" OnClick="btnRequestStock_Click" />
-            <asp:Button ID="btnAddStock" runat="server" Text="Receive Order" Font-Bold="True" ForeColor="Blue" OnClick="btnAddStock_Click" />            
-            <asp:Button ID="btnEdit" runat ="server" Text="Edit Sales" OnClick="btnEdit_Click" Font-Bold="True" ForeColor="Blue" />            
-            <asp:Button ID="btnMasterMenu" runat="server" Text="Master File" OnClick="btnMasterMenu_Click" Font-Bold="True" ForeColor="Blue" />
-            <asp:Button ID="btnLogout" runat="server" Text="Log out" OnClick="btnLogout_Click" Font-Bold="True" ForeColor="Red"/>
+            <asp:Button ID="btnSales" runat="server" Text="บันทึกยอดขาย" OnClick="btnSales_Click" Font-Bold="True" ForeColor="Green" />
+            <asp:Button ID="btnReport" runat="server" Text="รายงานยอดขาย" OnClick="btnReport_Click" Font-Bold="True" ForeColor="Green" />            
+            <asp:Button ID="btnRequestStock" runat="server" Text="บันทึกการสั่งสินค้า" Font-Bold="True" ForeColor="Green" OnClick="btnRequestStock_Click" />
+            <asp:Button ID="btnAddStock" runat="server" Text="บันทึกการส่งสินค้า" Font-Bold="True" ForeColor="Blue" OnClick="btnAddStock_Click" />            
+            <asp:Button ID="btnEdit" runat ="server" Text="แก้ไขยอดขาย" OnClick="btnEdit_Click" Font-Bold="True" ForeColor="Blue" />            
+            <asp:Button ID="btnMasterMenu" runat="server" Text="ข้อมูลมาตรฐาน" OnClick="btnMasterMenu_Click" Font-Bold="True" ForeColor="Blue" />
+            <asp:Button ID="btnLogout" runat="server" Text="ออกจากระบบ" OnClick="btnLogout_Click" Font-Bold="True" ForeColor="Red"/>
         </div>
         <div data-role="footer" data-theme="d">
             <h4><asp:Label ID="lblheader" runat="server" Text="Copyrights 2015 : Summit footwears co.,ltd"></asp:Label></h4>

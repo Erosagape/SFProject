@@ -50,13 +50,13 @@ namespace shopsales
                 ClsData.LockDataTable("listuser", cApp.session_id);
                 if (SaveData() == true)
                 {
-                    lblMessage.Text = "Save " + txtID.Text + " Complete";
+                    lblMessage.Text = "บันทึกข้อมูล " + txtID.Text + " เรียบร้อย";
                 }
                 ClsData.UnlockDataTable("listuser", cApp.session_id);
             }
             else
             {
-                lblMessage.Text = "Data is locked,Please try again later";
+                lblMessage.Text = "ไม่สามารถบันทึกข้อมูลได้..มีคนใช้งานอยู่";
             }
         }
         protected void btnBack_Click(object sender, EventArgs e)

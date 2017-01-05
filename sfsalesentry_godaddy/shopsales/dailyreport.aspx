@@ -10,14 +10,14 @@
     <form id="form1" runat="server">
     <div>
         <asp:Calendar ID="Calendar1" runat="server" OnSelectionChanged="Calendar1_SelectionChanged"></asp:Calendar>
-        At Date <asp:TextBox ID="txtDate" runat="server"></asp:TextBox>
+        ณ วันที่ <asp:TextBox ID="txtDate" runat="server"></asp:TextBox>
     <table>
         <tr>
             <td>
-                <asp:Button ID="Button1" runat="server" Text="Calculate" OnClick="Button1_Click" />
+                <asp:Button ID="Button1" runat="server" Text="คำนวณ" OnClick="Button1_Click" />
             </td>
             <td>
-                Summary value
+                สรุปยอดขาย
             </td>
             <td>
                 <asp:TextBox ID="TextBox1" runat="server" Width="535px"></asp:TextBox>
@@ -25,10 +25,10 @@
         </tr>
         <tr>
             <td>
-                <asp:Button ID="Button2" runat="server" Text="Calculate" OnClick="Button2_Click" />
+                <asp:Button ID="Button2" runat="server" Text="คำนวณ" OnClick="Button2_Click" />
             </td>
             <td>
-                Summary volume
+                สรุปจำนวนขาย
             </td>
             <td>
                 <asp:TextBox ID="TextBox2" runat="server" Width="535px"></asp:TextBox>
@@ -36,7 +36,7 @@
         </tr>
     </table>
         <hr />
-        <asp:Button ID="Button4" runat="server" Text="Calculate All" OnClick="Button4_Click" />
+        <asp:Button ID="Button4" runat="server" Text="Calculate" OnClick="Button4_Click" />
         <asp:Button ID="Button3" runat="server" Text="Send E-Mail" OnClick="Button3_Click" />
         <asp:Label ID="lblMessage" runat="server" Text="Ready"></asp:Label>
     </div>

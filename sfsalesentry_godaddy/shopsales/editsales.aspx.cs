@@ -95,42 +95,41 @@ namespace shopsales
             Double p = 0;
             if (Double.TryParse(txtSalesPrice.Text, out p) == false)
             {
-                str = "Sales Type Must be Number";
+                str = "ราคาขายต้องเป็นตัวเลข";
             }
             if (Double.TryParse(txtSalesQty.Text, out p) == false)
             {
-                str = "Quantity Must be Number";
+                str = "จำนวนต้องเป็นตัวเลข";
             }
             if (Double.TryParse(txtTagPrice.Text, out p) == false)
             {
-                str = "Tag Price Must be Number";
+                str = "ราคาป้ายต้องเป็นตัวเลข";
             }
             if (Double.TryParse(txtSizeNo.Text, out p) == false)
             {
-                str = "Size Must be Number";
+                str = "ชนาดต้องเป็นตัวเลข";
             }
             if (txtSaleType.Text == "2")
             {
                 if (Double.TryParse(txtDiscountRate.Text, out p) == false)
                 {
-                    str = "Discount Rate Must be Number";
+                    str = "ส่วนลดต้องเป็นตัวเลข";
                 }
                 else
                 {
                     if (p < 0)
                     {
-                        str = "Discount Rate Must be greater than Zero";
+                        str = "ส่วนลดต้องเป็นตัวเลขมากกว่าหรือเท่ากับ 0";
                     }
                 }
             }
-
             return str;
         }
         private string GetFileName()
         {
             if (txtOID.Text != "")
             {
-                return txtOID.Text.Split('_')[0] + "_" + txtOID.Text.Split('_')[1].Substring(0,6) + "_" + cApp.user_id;
+                return txtOID.Text.Split('_')[0] + "_" + txtOID.Text.Split('_')[1].Substring(0,6) + "_" + txtOID.Text.Split('_')[2];
             }
             return ClsData.GetSalesFileName(txtOID.Text, cApp.shop_id, txtSaleDate.Text, cApp.user_id);
         }
@@ -193,6 +192,11 @@ namespace shopsales
                 txtNote.Text = data["note"].ToString();
                 txtShareDiscount.Text = data["sharediscount"].ToString();
                 txtGPX.Text = data["gpx"].ToString();
+                txtCounterType.Text = data["CounterType"].ToString();
+                txtArea.Text = data["Area"].ToString();
+                txtzoneCode.Text = data["zoneCode"].ToString();
+                txtsalesCode.Text = data["salesCode"].ToString();
+                txtsupCode.Text = data["supCode"].ToString();
                 //txtShareDiscount.Text = data["sharediscount"].ToString();
             }
             else
@@ -229,16 +233,22 @@ namespace shopsales
                 data["prodType"] = txtprodType.Text;
                 data["prodCat"] = txtprodCat.Text;
                 data["prodGroup"] = txtprodGroup.Text;
-                data["lastupdate"] = ClsUtil.GetCurrentTHDate().ToString();
+                data["lastupdate"] = DateTime.Now.AddHours(7).ToString();
                 data["note"] = txtNote.Text;
                 data["sharediscount"] = txtShareDiscount.Text;
                 data["gpx"] = txtGPX.Text;
-                data["entryby"] = cApp.user_id + " - " + cApp.user_name;
+                data["entryby"] = cApp.user_id.ToUpper();
+                data["CounterType"] = txtCounterType.Text;
+                data["Area"] = txtArea.Text;
+                data["zoneCode"] = txtzoneCode.Text;
+                data["salesCode"] = txtsalesCode.Text;
+                data["supCode"] = txtsupCode.Text;
                 data["postflag"] = "N";
                 if (data.RowState == DataRowState.Detached) dt.Rows.Add(data);
                 dt.WriteXml(filename);
             }
             return SearchData();
+
         }
     }
 }

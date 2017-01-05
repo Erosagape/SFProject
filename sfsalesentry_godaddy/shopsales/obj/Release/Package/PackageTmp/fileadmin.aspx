@@ -11,6 +11,11 @@
     <div>
         <asp:TextBox ID="txtFilter" runat="server"></asp:TextBox>
         <asp:Button ID="Button5" runat="server" OnClick="Button5_Click" Text="Refresh" />
+        <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+            <asp:ListItem Value="date">Modified Date</asp:ListItem>
+            <asp:ListItem Value="size">File Size</asp:ListItem>
+            <asp:ListItem Selected="True" Value="name">File Name</asp:ListItem>
+        </asp:DropDownList>
         <br />
         <asp:ListBox ID="ListBox1" runat="server" Height="313px" Width="575px"></asp:ListBox>
     </div>
@@ -36,7 +41,7 @@
         <asp:Button ID="Button4" runat="server" Text="Clear Locked Table" Width="110px" OnClick="Button4_Click" />
 
         <p>
-        <asp:Button ID="Button7" runat="server" Text="View User Login" OnClick="Button7_Click" Width="192px" />
+        <asp:Button ID="Button7" runat="server" Text="View User Login" OnClick="Button7_Click" Width="93px" />
         </p>
 
     </form>

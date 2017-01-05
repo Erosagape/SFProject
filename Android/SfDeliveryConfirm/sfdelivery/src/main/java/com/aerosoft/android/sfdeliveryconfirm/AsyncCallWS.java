@@ -179,6 +179,7 @@ public class AsyncCallWS extends AsyncTask<String, Void, Void> {
     @Override
     protected void onPreExecute() {
         resultText="";
+
         success=false;
     }
     @Override

@@ -20,6 +20,11 @@ namespace shopsales
         private string prodid = "";
         private string sharediscount = "";
         private string gpx = "";
+        private int countertype = 0;
+        private string area = "";
+        private string zonecode = "";
+        private string supcode = "";
+        private string salescode = "";
         private ClsSessionUser cApp = new ClsSessionUser();
         private static List<string> LOV_Goods = new List<string>();
         private static DataTable dtShoe;
@@ -40,6 +45,10 @@ namespace shopsales
                 branch = cApp.shop_branch;
                 shopid = cApp.shop_id;
                 note = cApp.shop_note;
+                area = cApp.shop_areacode;
+                supcode = cApp.shop_supcode;
+                salescode = cApp.shop_salescode;
+                zonecode = cApp.shop_zonecode;
                 lblUsername.Text = "Welcome " + cApp.user_name;                
                 if (txtDate.Text == "") txtDate.Text = salesdate;
                 if (cApp.user_role != "0")
@@ -50,7 +59,10 @@ namespace shopsales
                 {
                     txtDate.Enabled = true;
                 }
-                lblHead.Text = shopname + " Branch " + branch.ToString();
+                if (cbosalesType.DataTextField == "") ClsData.LoadSaleType(cbosalesType, "Description", "OID");
+                if (cboColor.DataTextField == "") ClsData.LoadShoeColor(cboColor, "ColTh", "ColNameInit");
+                if (cboCounterType.DataTextField == "") ClsData.LoadCounterType(cboCounterType, "CounterName", "OID");
+                lblHead.Text = shopname + " สาขา " + branch.ToString();
                 lblMessage.Text = "Ready";
                 if (!IsPostBack)
                 {
@@ -58,9 +70,9 @@ namespace shopsales
                     txtsalesDiscountPerc.Visible = false;
                     //goods
                     LoadGoods();
+     
                 }
-                if (cbosalesType.DataTextField == "") ClsData.LoadSaleType(cbosalesType, "Description", "OID");
-                if (cboColor.DataTextField == "") ClsData.LoadShoeColor(cboColor, "ColTh", "ColNameInit");
+                countertype = cboCounterType.SelectedIndex;
             }
             else
             {
@@ -82,34 +94,34 @@ namespace shopsales
             Double p = 0;
             if (Double.TryParse(txtsalesBuyPrice.Text, out p) == false)
             {
-                str = "Price Must Be Number";
+                str = "ราคาขายต้องเป็นตัวเลข";
             }
             if (Double.TryParse(txtsalesQty.Text, out p) == false)
             {
-                str = "Quantity Must Be Number";
+                str = "จำนวนต้องเป็นตัวเลข";
             }
             if (Double.TryParse(txtsalesTagPrice.Text, out p) == false)
             {
                 if(cbosalesType.SelectedValue!="2")
                 {
-                    str = "Tag Price Must Be Number";
+                    str = "ราคาป้ายต้องเป็นตัวเลข";
                 }
             }
             if (Double.TryParse(txtSize.Text, out p) == false)
             {
-                str = "Size Must Be Number";
+                str = "ชนาดต้องเป็นตัวเลข";
             }
             if (txtsalesDiscountPerc.Visible ==true)
             {
                 if (Double.TryParse(txtsalesDiscountPerc.Text, out p) == false)
                 {
-                    str = "Discount Must Be Number";
+                    str = "ส่วนลดต้องเป็นตัวเลข";
                 }
                 else
                 {
                     if (p < 0)
                     {
-                        str = "Discount Must Be greater than Zero";
+                        str = "ส่วนลดต้องเป็นตัวเลขมากกว่าหรือเท่ากับ 0";
                     }
                 }
             }
@@ -150,10 +162,10 @@ namespace shopsales
                         dr["salesQty"] = txtsalesQty.Text;
                         dr["TagPrice"] = txtsalesTagPrice.Text;
                         dr["salesPrice"] = txtsalesBuyPrice.Text;
-                        dr["shopName"] = shopname + branch;
+                        dr["shopName"] = shopname;
                         dr["entryBy"] = entryby.ToUpper();
                         dr["remark"] = txtsalesRemark.Text;
-                        dr["lastupdate"] = ClsUtil.GetCurrentTHDate().ToString();
+                        dr["lastupdate"] = DateTime.Now.AddHours(7).ToString();
                         gpx = "100";
                         sharediscount ="0.00";
                         if (chkDiscouht.Checked == true)
@@ -183,17 +195,22 @@ namespace shopsales
                                 sharediscount = p.ShareDiscount.ToString();
                             }
                         }
+                        dr["postFlag"] = "N";
                         dr["ShareDiscount"] = sharediscount;
                         dr["Gpx"] = gpx;
                         dr["note"] = note;
-                        dr["postFlag"] = "N";
+                        dr["CounterType"] = cboCounterType.SelectedItem.Text;
+                        dr["Area"] = area;
+                        dr["zoneCode"] = zonecode;
+                        dr["supCode"] = supcode;
+                        dr["salesCode"] = salescode;
                         if (dr.RowState == DataRowState.Detached) dt.Rows.Add(dr);
                         dt.WriteXml(MapPath("~/" + cApp.GetXMLFileName(txtDate.Text)));
                         err = "OK";
                     }
                     else
                     {
-                        err = "Can not save";
+                        err = "ไม่สามารถสร้างข้อมูลได้";
                     }
                 }
             }
@@ -219,13 +236,13 @@ namespace shopsales
                         {
                             txtsalesTagPrice.Text = txtsalesBuyPrice.Text;
                         }
-                        lblMessage.Text = "You are select " + txtGoods.Value.ToString() + "<br/>" + " Type=" + cbosalesType.SelectedItem.Text + " Disc=" + cApp.iif(txtsalesDiscountPerc.Text == "", "0", txtsalesDiscountPerc.Text) + cApp.iif(chkDiscouht.Checked == false, "%", " THB") + "<br/>QTY " + txtsalesQty.Text + " Price " + txtsalesTagPrice.Text + " Date " + txtDate.Text;
+                        lblMessage.Text = GetCurrentData();
                     }
                     else
                     {
                         ShowTagPrice(false);
                         EnableData(false);
-                        lblMessage.Text = "Not Found Code =" + code;
+                        lblMessage.Text = "ไม่พบข้อมูล (Code) =" + code;
                     }
                     txtProdCat.Value = "";
                     txtProdType.Value = "";
@@ -237,7 +254,7 @@ namespace shopsales
                     string GoodsName = Request.Form[txtSearch.UniqueID];
                     if (GoodsName != dr["GoodsName"].ToString() && GoodsName != "")
                     {
-                        lblMessage.Text = "Not Found Name =" + GoodsName;
+                        lblMessage.Text = "ไม่พบข้อมูล (Name) =" + GoodsName;
                         //EnableData(false);
                         GoodsName = ClsData.GetGoodsName(txtModel.Text,cboColor.SelectedValue.ToString(),txtSize.Text,true);
                         txtGoods.Value = GoodsName;
@@ -251,7 +268,6 @@ namespace shopsales
                         txtModel.Text = dr["ModelName"].ToString();
                         cboColor.SelectedValue = dr["ColNameInit"].ToString();
                         txtSize.Text = dr["SizeNo"].ToString();
-
                         txtProdCat.Value = dr["ProdCatId"].ToString();
                         txtProdType.Value = dr["STId"].ToString();
                         txtProdGroup.Value = dr["prodGroupName"].ToString();
@@ -270,14 +286,14 @@ namespace shopsales
                             txtsalesBuyPrice.Enabled = true;
                         }
                         CalculateDiscount();
-                        lblMessage.Text = "You select " + txtGoods.Value.ToString() + "<br/>" + " Type=" + cbosalesType.SelectedItem.Text + " Disc=" + cApp.iif(txtsalesDiscountPerc.Text == "", "0", txtsalesDiscountPerc.Text) + cApp.iif(chkDiscouht.Checked == false, "%", "THB") + "<br/>Qty " + txtsalesQty.Text + " Price " + txtsalesTagPrice.Text + " Date " + txtDate.Text;
+                        lblMessage.Text = GetCurrentData();
 
                     }
                 }
             }
             else
             {
-                lblMessage.Text = "Please select goods";
+                lblMessage.Text = "กรุณาเลือกสินค้า";
                 ClearData();
             }
 
@@ -317,6 +333,10 @@ namespace shopsales
 
 
         }
+        protected string GetCurrentData()
+        {
+            return "คุณกำลังทำรายการ" + cboCounterType.SelectedItem.Text + " สินค้า " + txtGoods.Value.ToString() + "<br/>" + " ประเภทการขาย=" + cbosalesType.SelectedItem.Text + " ส่วนลด=" + cApp.iif(txtsalesDiscountPerc.Text == "", "0", txtsalesDiscountPerc.Text) + cApp.iif(chkDiscouht.Checked == false, "%", "บาท") + "<br/>จำนวน " + txtsalesQty.Text + " ราคาป้าย " + txtsalesTagPrice.Text + " ยอดขายวันที่ " + txtDate.Text;
+        }
         protected void ClearData()
         {
             txtGoods.Value = "";
@@ -330,6 +350,7 @@ namespace shopsales
             txtProdCat.Value = "";
             txtSize.Text = "";
             txtProdGroup.Value = "";
+            cboCounterType.SelectedIndex = 0;
         }
         protected void ShowTagPrice(bool state)
         {
@@ -399,7 +420,7 @@ namespace shopsales
                     string msg = SaveDataXML(key);
                     if (msg == "OK")
                     {
-                        lblMessage.Text = "Save Completed => " + key;
+                        lblMessage.Text = "บันทึกข้อมูลเรียบร้อย => " + key;
                         btnSave.Enabled = false;
                         ClearData();
                         //ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('บันทีกข้อมูลเรียบร้อย " + key + "');", true);
@@ -413,7 +434,7 @@ namespace shopsales
                 }
                 else
                 {
-                    lblMessage.Text = "Data is locked,try again later";
+                    lblMessage.Text = "มีคนใช้งานข้อมูลอยู่... กรุณารอสักครู่";
                 }
             }
         }
@@ -495,6 +516,12 @@ namespace shopsales
             txtGoods.Value = ClsData.GetGoodsName(txtModel.Text, cboColor.SelectedValue.ToString(), txtSize.Text, true);
             txtOID.Value = ClsData.GetGoodsCode(txtModel.Text, cboColor.SelectedValue.ToString(), txtSize.Text, true); 
             LoadProducts(txtOID.Value);
+        }
+
+        protected void cboCounterType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            countertype = cboCounterType.SelectedIndex;
+            lblMessage.Text = GetCurrentData();
         }
     }
 }

@@ -69,7 +69,7 @@ namespace shopsales
             TextBox1.Text = svc.GetDailyReport(0, "Daily", ondate);
             TextBox1.Text += Environment.NewLine+ svc.GetDailyReport(1, "Daily", ondate); 
         }
-
+/*
         protected void Button6_Click(object sender, EventArgs e)
         {
             List<XMLFileList> lists = ClsData.GetXMLTableList("*20161*adm002*");
@@ -97,7 +97,7 @@ namespace shopsales
 
             }
         }
-
+*/
         protected void Button8_Click(object sender, EventArgs e)
         {
             string msg = "";
@@ -114,18 +114,95 @@ namespace shopsales
 
         protected void Button9_Click(object sender, EventArgs e)
         {
-            DataTable dt = ClsData.NewSalesData(new DataSet());
-            var files = ClsData.GetXMLTableList("*_*_*");
-            foreach (XMLFileList file in files)
+            CExcel xls = new CExcel(ClsData.GetPath() + "StockBalance.xls", "Stock");
+            DataTable tb=xls.QueryDataTable("select * from [Stock$]");
+            DataTable dt = new DataTable();
+            dt.TableName = "Stock";
+            dt.Columns.Add("Model", Type.GetType("System.String"));
+            dt.Columns.Add("ColorCode", Type.GetType("System.String"));
+            dt.Columns.Add("ColorName", Type.GetType("System.String"));
+            dt.Columns.Add("Size", Type.GetType("System.String"));
+            dt.Columns.Add("Qty", Type.GetType("System.Double"));
+            dt.Columns.Add("Unit", Type.GetType("System.String"));
+            dt.Columns.Add("Bldg", Type.GetType("System.String"));
+            dt.Columns.Add("Floor", Type.GetType("System.String"));
+            dt.Columns.Add("Location", Type.GetType("System.String"));
+            int row = 0;
+            foreach (DataRow dr in tb.Rows)
             {
-                DataTable tb = ClsData.GetSalesData(ClsData.GetPath() + @"\\" + file.filename);
-                foreach (DataRow dr in tb.Rows)
+                for (int i = 0; i <= 10; i++)
                 {
-                    dt.ImportRow(dr);
+                    row++;
+                    try
+                    {
+                        DataRow r = dt.NewRow();
+                        r["Model"] = dr["Model"].ToString();
+                        r["ColorCode"] = dr["Code"].ToString();
+                        r["ColorName"] = dr["ColorName"].ToString();
+                        var sz = Convert.ToDouble(dr["SizeBegin"].ToString()) + (Convert.ToDouble(dr["Step"].ToString()) * i);
+                        r["Size"] = sz.ToString();
+                        double qty = 0;
+                        double.TryParse(dr["S" + i.ToString()].ToString(), out qty);
+                        r["Qty"] = qty;
+                        r["Unit"] = dr["Packing"].ToString();
+                        r["Bldg"] = dr["bld"].ToString();
+                        r["Floor"] = dr["floor"].ToString();
+                        r["Location"] = dr["loc"].ToString();
+                        dt.Rows.Add(r);
+                    }
+                    catch(Exception ex)
+                    {
+                        Response.Write("ROW=" + row + " ERR="+ ex.Message);
+                    }
                 }
             }
-            Label1.Text = "Complete!";
-            dt.WriteXml("TempReport.xml");
+            dt.WriteXml(ClsData.GetPath() + "temp.xml");
+            Response.Write("Total row = " + row);
+        }
+
+        protected void Button6_Click(object sender, EventArgs e)
+        {
+            string msg = "Total Files Process {0}";
+            string oid = "";
+            string area = "";
+            string zone = "";
+            string sup = "";
+            string sale = "";
+            string countertype = "เค้าท์เตอร์ปกติ";
+            int fcount = 0;
+            foreach (XMLFileList lst in ClsData.GetXMLTableList("*_*_*"))
+            {
+                if (oid != lst.filename.Split('_')[0])
+                {
+                    oid = lst.filename.Split('_')[0];
+                    area = "";
+                    zone = "";
+                    sup = "";
+                    sale = "";
+                    
+                    DataRow[] s = ClsData.ShopData().Select("OID='" + oid + "'");
+                    foreach(DataRow r in s)
+                    {
+                        area = r["area"].ToString();
+                        zone = r["zone"].ToString();
+                        sale = r["salescode"].ToString();
+                        sup = r["supcode"].ToString();
+                    }
+                }
+                string fname = lst.filename.Replace(".xml", "");
+                DataTable dt = ClsData.GetSalesData(ClsData.GetPath() + fname+ ".xml");
+                if( dt.Rows.Count>0)
+                {
+                    if (dt.Columns.IndexOf("Area") < 0) dt.Columns.Add(new DataColumn("Area") { DefaultValue = area });
+                    if (dt.Columns.IndexOf("zoneCode") < 0) dt.Columns.Add(new DataColumn("zoneCode") { DefaultValue = zone });
+                    if (dt.Columns.IndexOf("salesCode") < 0) dt.Columns.Add(new DataColumn("salesCode") { DefaultValue = sale });
+                    if (dt.Columns.IndexOf("supCode") < 0) dt.Columns.Add(new DataColumn("supCode") { DefaultValue = sup });
+                    if (dt.Columns.IndexOf("CounterType") < 0) dt.Columns.Add(new DataColumn("CounterTYpe") { DefaultValue = countertype });
+                }                
+                dt.WriteXml(ClsData.GetPath() + fname + ".xml");
+                fcount++;
+            }
+            Label1.Text = string.Format(msg,fcount);
         }
     }
 }

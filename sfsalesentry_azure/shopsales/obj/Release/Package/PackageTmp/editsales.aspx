@@ -145,6 +145,14 @@
         </tr>
         <tr>
         <td>
+        <asp:Label ID="Label20" runat="server" Text="เค้าท์เตอร์"></asp:Label>
+        </td>
+        <td>
+        <asp:TextBox ID="txtCounterType" runat="server" Width="268px"></asp:TextBox>
+        </td>
+        </tr>
+        <tr>
+        <td>
         <asp:Label ID="Label13" runat="server" Text="หมายเหตุ"></asp:Label>
         </td>
         <td>
@@ -177,14 +185,6 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Label17" runat="server" Text="บันทึก"></asp:Label>
-                </td>
-                <td>
-                    <asp:TextBox ID="txtNote" runat="server"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td>
                     <asp:Label ID="Label18" runat="server" Text="% แชร์ส่วนลด"></asp:Label>
                 </td>
                 <td>
@@ -197,6 +197,46 @@
                 </td>
                 <td>
                     <asp:TextBox ID="txtGPX" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="Label17" runat="server" Text="บันทึก"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="txtNote" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="Label21" runat="server" Text="ประจำภาค"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="txtArea" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="Label22" runat="server" Text="เขตการขาย"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="txtzoneCode" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="Label23" runat="server" Text="พนักงานขาย"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="txtsalesCode" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="Label24" runat="server" Text="PC supervisor"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="txtsupCode" runat="server"></asp:TextBox>
                 </td>
             </tr>
         </table>

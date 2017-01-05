@@ -65,12 +65,20 @@
         </b>   <hr />
         <table>
         <tr><td>
-        <asp:Label ID="lblSalesDate" runat="server" Text="Sales Date" Font-Bold="True" ForeColor="Green"></asp:Label>
+        <asp:Label ID="lblSalesDate" runat="server" Text="วันที่ขาย" Font-Bold="True" ForeColor="Green"></asp:Label>
         </td><td>            
         <asp:TextBox ID="txtDate" TextMode="Date" runat="server" Width="163px" Font-Bold="True" ForeColor="Green" Enabled="false"></asp:TextBox>
         </td></tr>
+        <tr>
+            <td>
+                <asp:Label ID="Label5" runat="server" Text="เค้าท์เตอร์ขาย"></asp:Label>
+            </td>
+            <td>
+                <asp:DropDownList ID="cboCounterType" runat="server" AutoPostBack="true" OnSelectedIndexChanged="cboCounterType_SelectedIndexChanged"></asp:DropDownList>
+            </td>
+        </tr>
         <tr><td>
-        <asp:Label ID="Label1" runat="server" Text="Search Goods"></asp:Label>        
+        <asp:Label ID="Label1" runat="server" Text="ค้นหาสินค้า"></asp:Label>        
         </td><td>
                     <asp:TextBox ID="txtSearch" runat="server" Height="22px" Width="162px" />  
         </td><td>
@@ -78,7 +86,7 @@
         </td></tr>
         <tr>
             <td>
-            <asp:HyperLink ID="linkAddGoods" runat="server" NavigateUrl="~/addGoods.aspx">Add Goods</asp:HyperLink>    
+            <asp:HyperLink ID="linkAddGoods" runat="server" NavigateUrl="~/addGoods.aspx">เพิ่มสินค้า</asp:HyperLink>    
             </td><td>
                 <asp:HiddenField ID="txtGoods" runat="server" />        
                 <asp:HiddenField ID="txtOID" runat="server" />        
@@ -101,12 +109,12 @@
             </tr>
         </table>                
         <table>
-        <tr><td><asp:Label ID="Label7" runat="server" Text="Sales Type" Font-Bold="True" ForeColor="Blue"></asp:Label></td>
+        <tr><td><asp:Label ID="Label7" runat="server" Text="ประเภทการขาย" Font-Bold="True" ForeColor="Blue"></asp:Label></td>
         <td>
         <asp:DropDownList ID="cbosalesType" runat="server" AutoPostBack="true" OnSelectedIndexChanged="cbosalesType_SelectedIndexChanged" Width="187px" Font-Bold="True" ForeColor="Blue"></asp:DropDownList>    
         </td></tr>
         <tr><td>
-            <asp:CheckBox ID="chkDiscouht" Text="Cash Discount" runat="server" Visible="False" />
+            <asp:CheckBox ID="chkDiscouht" Text="ลดเงินสด" runat="server" Visible="False" />
         </td><td>
         <asp:TextBox ID="txtsalesDiscountPerc" runat="server" TextMode="Number" Width="52px" Font-Bold="True" ForeColor="Blue"></asp:TextBox>
         </td>
@@ -114,32 +122,32 @@
                 &nbsp;</td>
         </tr>
         <tr><td>
-        <asp:Label ID="Label3" runat="server" Text="Model" Font-Bold="True" ForeColor="#CC0000"></asp:Label>
+        <asp:Label ID="Label3" runat="server" Text="รุ่น/แบบ" Font-Bold="True" ForeColor="#CC0000"></asp:Label>
         </td><td>
         <asp:TextBox ID="txtModel" runat="server" Width="188px" Font-Bold="True" ForeColor="#CC0000" />
         </td></tr>
         <tr><td>
-        <asp:Label ID="Label10" runat="server" Text="color" Font-Bold="True" ForeColor="Red"></asp:Label>
+        <asp:Label ID="Label10" runat="server" Text="สี" Font-Bold="True" ForeColor="Red"></asp:Label>
         </td><td>        
         <asp:DropDownList ID="cboColor" runat="server" Font-Bold="True" ForeColor="Red"></asp:DropDownList>        
         </td></tr>
         <tr><td>                
-        <asp:Label ID="Label2" runat="server" Text="Size" Font-Bold="True" ForeColor="Red"></asp:Label>
+        <asp:Label ID="Label2" runat="server" Text="ขนาด Size" Font-Bold="True" ForeColor="Red"></asp:Label>
         </td><td>        
         <asp:TextBox ID="txtSize" TextMode="Number" runat="server" Width="67px" Font-Bold="True" ForeColor="Red"></asp:TextBox>        
         </td></tr>
         <tr><td class="auto-style1">
-        <asp:Label ID="lblTagPrice" runat="server" Text="Tag Price" Font-Bold="True" ForeColor="Blue" Visible="False"></asp:Label>
+        <asp:Label ID="lblTagPrice" runat="server" Text="ราคาป้าย" Font-Bold="True" ForeColor="Blue" Visible="False"></asp:Label>
         </td><td class="auto-style1">
         <asp:TextBox ID="txtsalesTagPrice" runat="server" Width="99px" Font-Bold="True" ForeColor="Blue" Enabled="False" Visible="False"></asp:TextBox>        
         </td></tr>
         <tr><td class="auto-style1">
-        <asp:Label ID="Label6" runat="server" Text="Sales Price" Font-Bold="True" ForeColor="Red"></asp:Label>
+        <asp:Label ID="Label6" runat="server" Text="ราคาขาย" Font-Bold="True" ForeColor="Red"></asp:Label>
         </td><td class="auto-style1">
         <asp:TextBox ID="txtsalesBuyPrice" runat="server" Width="76px" Font-Bold="True" ForeColor="Red" Enabled="false"></asp:TextBox>
         </td></tr>
         <tr><td>
-        <asp:Label ID="Label4" runat="server" Text="Qty"></asp:Label>
+        <asp:Label ID="Label4" runat="server" Text="จำนวน"></asp:Label>
         </td>
         <td>
         <asp:TextBox ID="txtsalesQty" TextMode="Number" Text="1" runat="server" Width="68px"></asp:TextBox>
@@ -148,7 +156,7 @@
         </td>
         </tr>
         <tr><td>
-        <asp:Label ID="Label9" runat="server" Text="Note"></asp:Label>
+        <asp:Label ID="Label9" runat="server" Text="หมายเหตุ"></asp:Label>
         </td><td>
         <asp:TextBox ID="txtsalesRemark"  runat="server" Width="216px"></asp:TextBox>
         </td></tr>

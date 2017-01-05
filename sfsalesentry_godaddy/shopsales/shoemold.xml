@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" standalone="yes"?>
+<?xml version="1.0" standalone="yes"?>
 <DocumentElement>
   <Table>
     <MoldId>219</MoldId>
@@ -1473,7 +1473,7 @@
   <Table>
     <MoldId>1</MoldId>
     <MoldCode>-</MoldCode>
-    <MoldName>N/A</MoldName>
+    <MoldName>ไม่ระบุ</MoldName>
   </Table>
   <Table>
     <MoldId>247</MoldId>

@@ -11,10 +11,10 @@
 <body>
     <form id="form1" runat="server">
     <div>
+        <asp:DropDownList ID="cboCounter" runat="server"></asp:DropDownList>
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
         Sheet Name :
         <asp:TextBox ID="TextBox1" runat="server">Template</asp:TextBox>
-        Data Name :
-        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
         </div>
         <dx:ASPxUploadControl ID="ASPxUploadControl1" ClientInstanceName="uc" runat="server" OnFileUploadComplete="ASPxUploadControl1_FileUploadComplete" ShowProgressPanel="True" ShowUploadButton="True" Theme="PlasticBlue" UploadMode="Auto" UploadStorage="FileSystem" Width="280px" AutoStartUpload="True" OnFilesUploadComplete="ASPxUploadControl1_FilesUploadComplete" >
             <ClientSideEvents FileUploadComplete="function(s, e) {
@@ -25,13 +25,33 @@
                     document.location.href = url;
                 }
                 */
-                alert('Complete! ' + e.callbackData);
+                alert('Upload Complete! ' + e.callbackData);
+                var txt=document.getElementById('TextBox2');
+                txt.value=e.callbackData;
+                var btn=document.getElementById('Button1');
+                btn.disabled=false;
             }" />
             <AdvancedModeSettings EnableDragAndDrop="True">
             </AdvancedModeSettings>
         </dx:ASPxUploadControl>
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="View Data" />
-        <asp:Label ID="Label1" runat="server" Text="Ready"></asp:Label>
+        <asp:Timer ID="Timer1" runat="server" Interval ="1000" Enabled="false" OnTick="Timer1_Tick"></asp:Timer>
+        <br />
+        Data File Name :
+        <asp:TextBox ID="TextBox2" runat="server" Enabled="false"></asp:TextBox>
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Always">
+            <ContentTemplate>
+                <asp:UpdateProgress ID="UpdateProgress1" runat="server">
+                    <ProgressTemplate>
+                        Processing ... Please wait
+                    </ProgressTemplate>
+                </asp:UpdateProgress>
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="View Data" />                
+                <asp:Label ID="Label1" runat="server" Text="Ready"></asp:Label>
+            </ContentTemplate>
+            <Triggers>
+                <asp:AsyncPostBackTrigger ControlID="Timer1" EventName="Tick" />
+            </Triggers>
+        </asp:UpdatePanel>
         <br />
     </form>
 </body>

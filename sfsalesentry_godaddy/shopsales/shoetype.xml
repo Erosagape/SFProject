@@ -1,45 +1,45 @@
-﻿<?xml version="1.0" standalone="yes"?>
+<?xml version="1.0" standalone="yes"?>
 <NewDataSet>
   <Table>
     <stID>1</stID>
     <STCode>--</STCode>
-    <STName>N/A</STName>
-    <STName2>N/A</STName2>
-    <GroupOID/>
+    <STName>ไม่ระบุ</STName>
+    <STName2 />
+    <GroupOID />
   </Table>
   <Table>
     <stID>2</stID>
     <STCode>001</STCode>
-    <STName2>รองเท้าแตะชาย</STName2>
-    <STName>Men Flipper</STName>
+    <STName>รองเท้าแตะชาย</STName>
+    <STName2>Men Flipper</STName2>
     <GroupOID>1</GroupOID>
   </Table>
   <Table>
     <stID>3</stID>
     <STCode>002</STCode>
-    <STName2>รองเท้าแตะหญิง</STName2>
-    <STName>Women Flipper</STName>
+    <STName>รองเท้าแตะหญิง</STName>
+    <STName2>Women Flipper</STName2>
     <GroupOID>1</GroupOID>
   </Table>
   <Table>
     <stID>4</stID>
     <STCode>003</STCode>
-    <STName2>รองเท้าแตะเด็ก</STName2>
-    <STName>Boy-Girl Flipper</STName>
+    <STName>รองเท้าแตะเด็ก</STName>
+    <STName2>Boy-Girl Flipper</STName2>
     <GroupOID>1</GroupOID>
   </Table>
   <Table>
     <stID>5</stID>
     <STCode>005</STCode>
-    <STName2>รองเท้าผ้าใบชาย</STName2>
-    <STName>Sneaker Men</STName>
+    <STName>รองเท้าผ้าใบชาย</STName>
+    <STName2>Sneaker Men</STName2>
     <GroupOID>2</GroupOID>
   </Table>
   <Table>
     <stID>6</stID>
     <STCode>006</STCode>
-    <STName2>รองเท้าผ้าใบหญิง</STName2>
-    <STName>Sneaker Women</STName>
+    <STName>รองเท้าผ้าใบหญิง</STName>
+    <STName2>Sneaker Women</STName2>
     <GroupOID>2</GroupOID>
   </Table>
 </NewDataSet>

@@ -54,7 +54,7 @@
         </table>    
         <table>
         <tr><td>
-        <asp:Label ID="lblSalesDate" runat="server" Text="Sales Date" Font-Bold="True" ForeColor="Red"></asp:Label>
+        <asp:Label ID="lblSalesDate" runat="server" Text="วันที่ขาย" Font-Bold="True" ForeColor="Red"></asp:Label>
         </td><td>            
         <asp:TextBox ID="txtSaleDate" TextMode="date" runat="server" Width="137px"></asp:TextBox>
         </td></tr>
@@ -67,13 +67,13 @@
         </tr>
         <tr>
         <td>
-        <asp:Label ID="Label2" runat="server" Text="Model " Font-Bold="True" ForeColor="Red"></asp:Label>      
+        <asp:Label ID="Label2" runat="server" Text="รุ่น " Font-Bold="True" ForeColor="Red"></asp:Label>      
         </td>
         <td>
         <asp:TextBox ID="txtModelCode" runat="server" Width="122px"></asp:TextBox>
         </td></tr>
         <tr><td>
-        <asp:Label ID="Label11" runat="server" Text="Goods Name"></asp:Label>      
+        <asp:Label ID="Label11" runat="server" Text="ชื่อสินค้า"></asp:Label>      
         </td><td>
         <asp:TextBox ID="txtProductName" runat ="server" Width="255px"></asp:TextBox>
         </td>
@@ -88,7 +88,7 @@
         </tr>
         <tr>
         <td>
-        <asp:Label ID="Label12" runat="server" Text="Color Name" Font-Bold="True" ForeColor="Red"></asp:Label>
+        <asp:Label ID="Label12" runat="server" Text="สี" Font-Bold="True" ForeColor="Red"></asp:Label>
         </td>
         <td>        
         <asp:TextBox ID="txtColorName" runat="server" Width="122px"></asp:TextBox>
@@ -96,7 +96,7 @@
         </tr>
         <tr>
         <td>
-        <asp:Label ID="Label4" runat="server" Text="Size" Font-Bold="True" ForeColor="Red"></asp:Label>
+        <asp:Label ID="Label4" runat="server" Text="ขนาด Size" Font-Bold="True" ForeColor="Red"></asp:Label>
         </td>
         <td>
         <asp:TextBox ID="txtSizeNo" runat="server" Width="73px"></asp:TextBox>
@@ -104,16 +104,16 @@
         </tr>
         <tr>
         <td>
-        <asp:Label ID="Label5" runat="server" Text="Sales Type"></asp:Label>
+        <asp:Label ID="Label5" runat="server" Text="ประเภทขาย"></asp:Label>
         </td>
         <td>
         <asp:TextBox ID="txtSaleType" runat="server" Width="59px" ></asp:TextBox>
-             (1=No Discount 2=One Price 3=Discount)
+             (1=ไม่ลด 2=One Price 3=ส่วนลด)
         </td>
         </tr>
         <tr>
         <td>
-        <asp:Label ID="Label6" runat="server" Text="Discount Rate "></asp:Label>
+        <asp:Label ID="Label6" runat="server" Text="อัตราส่วนลด  "></asp:Label>
         </td>
         <td>
         <asp:TextBox ID="txtDiscountRate" runat="server" Width="58px"></asp:TextBox>
@@ -121,7 +121,7 @@
         </tr>
         <tr>
         <td>
-        <asp:Label ID="Label7" runat="server" Text="Quantity "></asp:Label>
+        <asp:Label ID="Label7" runat="server" Text="จำนวนขาย "></asp:Label>
         </td>
         <td>
         <asp:TextBox ID="txtSalesQty" runat="server" Width="73px"></asp:TextBox>
@@ -129,7 +129,7 @@
         </tr>
         <tr>
         <td>
-        <asp:Label ID="Label8" runat="server" Text="Tag Price"></asp:Label>
+        <asp:Label ID="Label8" runat="server" Text="ราคาตามป้าย"></asp:Label>
         </td>
         <td>
         <asp:TextBox ID="txtTagPrice" runat="server" Width="100px"></asp:TextBox>
@@ -137,7 +137,7 @@
         </tr>
         <tr>
         <td>
-        <asp:Label ID="Label9" runat="server" Text=" Sales Price "></asp:Label>
+        <asp:Label ID="Label9" runat="server" Text="   ราคาขาย  "></asp:Label>
         </td>
         <td>
         <asp:TextBox ID="txtSalesPrice" runat="server" Width="101px"></asp:TextBox>
@@ -145,7 +145,15 @@
         </tr>
         <tr>
         <td>
-        <asp:Label ID="Label13" runat="server" Text="Remark"></asp:Label>
+        <asp:Label ID="Label20" runat="server" Text="เค้าท์เตอร์"></asp:Label>
+        </td>
+        <td>
+        <asp:TextBox ID="txtCounterType" runat="server" Width="268px"></asp:TextBox>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <asp:Label ID="Label13" runat="server" Text="หมายเหตุ"></asp:Label>
         </td>
         <td>
         <asp:TextBox ID="txtRemark" runat="server" Width="268px"></asp:TextBox>
@@ -153,7 +161,7 @@
         </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Label14" runat="server" Text="Type"></asp:Label>
+                    <asp:Label ID="Label14" runat="server" Text="ประเภท"></asp:Label>
                 </td>
                 <td>
                     <asp:TextBox ID="txtprodType" runat="server"></asp:TextBox>
@@ -161,7 +169,7 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Label15" runat="server" Text="Kind"></asp:Label>
+                    <asp:Label ID="Label15" runat="server" Text="ชนิดสินค้า"></asp:Label>
                 </td>
                 <td>
                     <asp:TextBox ID="txtprodCat" runat="server"></asp:TextBox>
@@ -169,7 +177,7 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Label16" runat="server" Text="Group"></asp:Label>
+                    <asp:Label ID="Label16" runat="server" Text="กลุ่มสินค้า"></asp:Label>
                 </td>
                 <td>
                     <asp:TextBox ID="txtprodGroup" runat="server"></asp:TextBox>
@@ -177,15 +185,7 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Label17" runat="server" Text="Save"></asp:Label>
-                </td>
-                <td>
-                    <asp:TextBox ID="txtNote" runat="server"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <asp:Label ID="Label18" runat="server" Text="% Share Discount"></asp:Label>
+                    <asp:Label ID="Label18" runat="server" Text="% แชร์ส่วนลด"></asp:Label>
                 </td>
                 <td>
                     <asp:TextBox ID="txtShareDiscount" runat="server"></asp:TextBox>
@@ -197,6 +197,46 @@
                 </td>
                 <td>
                     <asp:TextBox ID="txtGPX" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="Label17" runat="server" Text="บันทึก"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="txtNote" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="Label21" runat="server" Text="ประจำภาค"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="txtArea" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="Label22" runat="server" Text="เขตการขาย"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="txtzoneCode" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="Label23" runat="server" Text="พนักงานขาย"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="txtsalesCode" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="Label24" runat="server" Text="PC supervisor"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="txtsupCode" runat="server"></asp:TextBox>
                 </td>
             </tr>
         </table>

@@ -100,6 +100,34 @@
                 </td>
             </tr>
             <tr>
+                <td>
+                    <asp:Label ID="Label10" runat="server" Text="Counter"></asp:Label>
+                </td>
+                <td>
+                    <asp:DropDownList ID="cboCounter" runat="server"></asp:DropDownList>
+                </td>
+                <td>
+                    <asp:Label ID="Label11" runat="server" Text="Area"></asp:Label>
+                </td>
+                <td>
+                    <asp:DropDownList ID="cboArea" runat="server"></asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="Label12" runat="server" Text="Sales"></asp:Label>
+                </td>
+                <td>
+                    <asp:DropDownList ID="cboSalesCode" runat="server"></asp:DropDownList>
+                </td>
+                <td>
+                    <asp:Label ID="Label13" runat="server" Text="Supervisor"></asp:Label>
+                </td>
+                <td>
+                    <asp:DropDownList ID="cboSupCode" runat="server"></asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
                 <td class="auto-style1">                    
                     รูปแบบรายงาน
                 <td class="auto-style1">

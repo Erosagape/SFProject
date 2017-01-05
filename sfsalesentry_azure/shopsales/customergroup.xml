@@ -1,6 +1,13 @@
 <?xml version="1.0" standalone="yes"?>
 <DocumentElement>
   <Table>
+    <OID>15</OID>
+    <CustGroupCode>ST</CustGroupCode>
+    <CustGroupNameEng />
+    <CustGroupNameTh> สหไทย</CustGroupNameTh>
+    <Remark />
+  </Table>
+  <Table>
     <OID>1</OID>
     <CustGroupCode>M</CustGroupCode>
     <CustGroupNameEng>The Mall</CustGroupNameEng>
@@ -64,6 +71,13 @@
     <Remark />
   </Table>
   <Table>
+    <OID>16</OID>
+    <CustGroupCode>TK</CustGroupCode>
+    <CustGroupNameEng />
+    <CustGroupNameTh>ตะกั่วป่า</CustGroupNameTh>
+    <Remark />
+  </Table>
+  <Table>
     <OID>9</OID>
     <CustGroupCode>RP</CustGroupCode>
     <CustGroupNameEng>Roi Et Plaza</CustGroupNameEng>
@@ -99,10 +113,10 @@
     <Remark>ออก Event งานต่างๆ</Remark>
   </Table>
   <Table>
-    <OID>15</OID>
-    <CustGroupCode>ST</CustGroupCode>
+    <OID>17</OID>
+    <CustGroupCode>SS</CustGroupCode>
     <CustGroupNameEng />
-    <CustGroupNameTh> สหไทย</CustGroupNameTh>
+    <CustGroupNameTh>สินทรัพย์ทอง</CustGroupNameTh>
     <Remark />
   </Table>
 </DocumentElement>

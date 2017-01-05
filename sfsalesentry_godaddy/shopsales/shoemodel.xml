@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" standalone="yes"?>
+<?xml version="1.0" standalone="yes"?>
 <DocumentElement>
   <Table>
     <SMId>3421</SMId>
@@ -16852,7 +16852,7 @@
     <SMId>3427</SMId>
     <SMCode>1</SMCode>
     <Model>SL0302</Model>
-    <Mold>N/A</Mold>
+    <Mold>ไม่ระบุ</Mold>
     <MoldId>1</MoldId>
     <SSId>1</SSId>
     <STId>6</STId>

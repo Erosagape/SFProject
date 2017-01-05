@@ -20,6 +20,7 @@ namespace shopsales
             ViewState["RefUrl"] = "liststore.aspx";
             if (cboOID.DataTextField == "") ClsData.LoadShop(cboOID, "custname", "oid", true);
             if (cboShopName.DataTextField == "") ClsData.LoadShopGroup(cboShopName, "CustGroupNameTh", "OID");
+            if (cboProvince.DataTextField == "") ClsData.LoadProvince(cboProvince, "ProvinceName", "ProvinceCode");
             if(!IsPostBack)
             {
                 if (Request.QueryString.Count > 0)
@@ -77,6 +78,12 @@ namespace shopsales
                 txtBranch.Text = dr["Branch"].ToString();
                 txtGPx.Text = (Convert.ToDouble(dr["GPx"].ToString()) * 100).ToString();
                 txtShareDiscount.Text = (Convert.ToDouble(dr["ShareDiscount"].ToString()) * 100).ToString();
+                cboProvince.SelectedIndex = cboProvince.Items.IndexOf(cboProvince.Items.FindByText(dr["Province"].ToString()));
+                txtSalesCode.Text = dr["salesCode"].ToString();
+                txtSupcode.Text = dr["SupCode"].ToString();
+                txtArea.Text = dr["Area"].ToString();
+                txtZone.Text = dr["Zone"].ToString();
+                
             }
             else
             {
@@ -87,6 +94,11 @@ namespace shopsales
                 txtShopName.Text = "";
                 txtGPx.Text = "0";
                 txtShareDiscount.Text = "0";
+                cboProvince.SelectedIndex = -1;
+                txtSalesCode.Text = "";
+                txtSupcode.Text = "";
+                txtArea.Text = "";
+                txtZone.Text = "";
             }
             //txtGPx.Text = dr["GPx"].ToString();
         }
@@ -107,6 +119,11 @@ namespace shopsales
                     dr["GroupID"] = cboShopName.SelectedValue.ToString();
                     dr["GPx"] = Convert.ToDouble(txtGPx.Text) / 100;
                     dr["ShareDiscount"] = Convert.ToDouble(txtShareDiscount.Text) / 100;
+                    dr["Province"] = cboProvince.SelectedItem.Text;
+                    dr["salesCode"] = txtSalesCode.Text;
+                    dr["Area"] = txtArea.Text;
+                    dr["Zone"] = txtZone.Text;
+                    dr["SupCode"] = txtSupcode.Text;
                     //dr["GPx"] = txtGPx.Text;
                     if (dr.RowState == DataRowState.Detached) dt.Rows.Add(dr);
                     dt.WriteXml(MapPath("~/Customer.xml"));
@@ -124,6 +141,20 @@ namespace shopsales
                 lblMessage.Text = ex.Message;
             }
 
+        }
+
+        protected void cboProvince_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var p = cboProvince.SelectedValue.ToString();
+            using (DataTable dt = ClsData.ProvinceData())
+            {
+                foreach(DataRow dr in dt.Select("ProvinceCode='" + p + "'"))
+                {
+                    txtArea.Text = (dr["region"].ToString() + "-").Split('-')[0];
+                    txtSalesCode.Text = dr["salesCode"].ToString();
+                    txtZone.Text = dr["zoneCode"].ToString();
+                }
+            }
         }
     }
 }

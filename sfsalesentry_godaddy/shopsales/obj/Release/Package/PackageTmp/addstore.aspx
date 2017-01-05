@@ -57,6 +57,14 @@
     </tr>
     <tr>
     <td>
+        <asp:Label ID="Label7" runat="server" Text="ชื่อกลุ่ม"></asp:Label>
+    </td>
+    <td>
+        <asp:TextBox ID="txtShopName" runat="server"></asp:TextBox>        
+    </td>
+    </tr>
+    <tr>
+    <td>
         <asp:Label ID="Label4" runat="server" Text="สาขา"></asp:Label>
     </td>
     <td>
@@ -77,6 +85,46 @@
         </td>
         <td class="auto-style1">
             <asp:TextBox ID="txtShareDiscount" runat="server" TextMode="number"></asp:TextBox>        
+        </td>
+    </tr>
+    <tr>
+        <td class="auto-style1">
+            <asp:Label ID="Label8" runat="server" Text="จังหวัด"></asp:Label>
+        </td>
+        <td class="auto-style1">
+            <asp:DropDownList ID="cboProvince" runat="server" AutoPostBack="true" OnSelectedIndexChanged="cboProvince_SelectedIndexChanged"></asp:DropDownList>
+        </td>
+    </tr>
+    <tr>
+        <td class="auto-style1">
+            <asp:Label ID="Label9" runat="server" Text="รหัส Sales"></asp:Label>
+        </td>
+        <td class="auto-style1">
+            <asp:TextBox ID="txtSalesCode" runat="server"></asp:TextBox>
+        </td>
+    </tr>
+    <tr>
+        <td class="auto-style1">
+            <asp:Label ID="Label10" runat="server" Text="Supervisor"></asp:Label>
+        </td>
+        <td class="auto-style1">
+            <asp:TextBox ID="txtSupcode" runat="server"></asp:TextBox>
+        </td>
+    </tr>
+    <tr>
+        <td class="auto-style1">
+            <asp:Label ID="Label11" runat="server" Text="Area"></asp:Label>
+        </td>
+        <td class="auto-style1">
+            <asp:TextBox ID="txtArea" runat="server"></asp:TextBox>
+        </td>
+    </tr>
+    <tr>
+        <td class="auto-style1">
+            <asp:Label ID="Label12" runat="server" Text="รหัส Zone"></asp:Label>
+        </td>
+        <td class="auto-style1">
+            <asp:TextBox ID="txtZone" runat="server"></asp:TextBox>
         </td>
     </tr>
     <tr>

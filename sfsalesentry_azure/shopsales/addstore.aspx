@@ -88,6 +88,46 @@
         </td>
     </tr>
     <tr>
+        <td class="auto-style1">
+            <asp:Label ID="Label8" runat="server" Text="จังหวัด"></asp:Label>
+        </td>
+        <td class="auto-style1">
+            <asp:DropDownList ID="cboProvince" runat="server" AutoPostBack="true" OnSelectedIndexChanged="cboProvince_SelectedIndexChanged"></asp:DropDownList>
+        </td>
+    </tr>
+    <tr>
+        <td class="auto-style1">
+            <asp:Label ID="Label9" runat="server" Text="รหัส Sales"></asp:Label>
+        </td>
+        <td class="auto-style1">
+            <asp:TextBox ID="txtSalesCode" runat="server"></asp:TextBox>
+        </td>
+    </tr>
+    <tr>
+        <td class="auto-style1">
+            <asp:Label ID="Label10" runat="server" Text="Supervisor"></asp:Label>
+        </td>
+        <td class="auto-style1">
+            <asp:TextBox ID="txtSupcode" runat="server"></asp:TextBox>
+        </td>
+    </tr>
+    <tr>
+        <td class="auto-style1">
+            <asp:Label ID="Label11" runat="server" Text="Area"></asp:Label>
+        </td>
+        <td class="auto-style1">
+            <asp:TextBox ID="txtArea" runat="server"></asp:TextBox>
+        </td>
+    </tr>
+    <tr>
+        <td class="auto-style1">
+            <asp:Label ID="Label12" runat="server" Text="รหัส Zone"></asp:Label>
+        </td>
+        <td class="auto-style1">
+            <asp:TextBox ID="txtZone" runat="server"></asp:TextBox>
+        </td>
+    </tr>
+    <tr>
     <td>
         <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" />
     </td>

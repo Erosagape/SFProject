@@ -20,8 +20,8 @@ namespace shopsales
                 {
                     ClsData.LoadShop(cboCust, "custname", "oid");
                     ClsData.LoadModel(cboGoods, "Model", "Model");
-                    txtYear.Text = ClsUtil.GetCurrentTHDate().Year.ToString("0000");
-                    txtMonth.Text = ClsUtil.GetCurrentTHDate().Month.ToString("00");
+                    txtYear.Text = DateTime.Now.Year.ToString("0000");
+                    txtMonth.Text = DateTime.Now.Month.ToString("00");
                 }
             }
             else

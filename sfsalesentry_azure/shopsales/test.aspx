@@ -36,10 +36,8 @@
         </p>
         <p>
             <asp:Button ID="Button4" runat="server" Text="ล้างข้อมูลไฟล์ Temp" Width="125px" OnClick="Button4_Click" />
-            <asp:Button ID="Button6" runat="server" Text="Check Wrong Data" Width="155px" OnClick="Button6_Click" />
-            <asp:Button ID="Button7" runat="server" Text="Delete Wrong Data" OnClick="Button7_Click" />
             <asp:Button ID="Button8" runat="server" Text="ล้างไฟล์ว่างเปล่า" OnClick="Button8_Click" />
-            <asp:Button ID="Button9" runat="server" Text="merge files" OnClick="Button9_Click" />
+            <asp:Button ID="Button6" runat="server" Text="ปรับปรุงโครงสร้าง 2017" OnClick="Button6_Click" />
         </p>
     </form>
 </body>

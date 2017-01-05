@@ -16,7 +16,7 @@
             var confirm_value = document.createElement("INPUT");
             confirm_value.type = "hidden";
             confirm_value.name = "confirm_value";
-            if (confirm("Saving Data,Confirm?")) {
+            if (confirm("กรุณายืนยันการทำรายการนี้")) {
                 confirm_value.value = "Yes";
             } else {
                 confirm_value.value = "No";
@@ -63,14 +63,14 @@
         <table>
             <tr>
                 <td>
-                    Stock Date : 
+                    ประจำวันที่ : 
             <asp:TextBox ID="txtDate" runat="server" TextMode="date"></asp:TextBox>
                 </td>
                 <td>
-            <asp:Button ID="btnShow" runat="server" Text="Show" OnClick="btnShow_Click" style="height: 26px" />
+            <asp:Button ID="btnShow" runat="server" Text="แสดงข้อมูล" OnClick="btnShow_Click" style="height: 26px" />
                 </td>
                 <td>
-            <asp:CheckBox ID="chkShowAll" runat="server" Text="Show All" AutoPostBack="true" OnCheckedChanged="chkShowAll_CheckedChanged" />
+            <asp:CheckBox ID="chkShowAll" runat="server" Text="แสดงทั้งหมด" AutoPostBack="true" OnCheckedChanged="chkShowAll_CheckedChanged" />
                 </td>
             </tr>                
             <tr>
@@ -78,10 +78,10 @@
         <asp:DropDownList ID="cboStatus" runat="server" AutoPostBack="true" OnSelectedIndexChanged="cboStatus_SelectedIndexChanged" ></asp:DropDownList>
                 </td>
                 <td>
-            <asp:Button ID="btnEdit" runat="server" Text="Normal Order" OnClick="btnEdit_Click" style="height: 26px" />
+            <asp:Button ID="btnEdit" runat="server" Text="ดูสินค้าปกติ" OnClick="btnEdit_Click" style="height: 26px" />
                 </td>
                 <td>
-            <asp:Button ID="btnEdit2" runat="server" Text="One Price" OnClick="btnEdit2_Click" style="height: 26px" />
+            <asp:Button ID="btnEdit2" runat="server" Text="ดูสินค้า One Price" OnClick="btnEdit2_Click" style="height: 26px" />
                 </td>
             </tr>
             </table>
@@ -102,21 +102,21 @@
                     <asp:DropDownList ID="cboType" runat="server" AutoPostBack="true" OnSelectedIndexChanged="cboType_SelectedIndexChanged" ></asp:DropDownList>
                         </td>
                         <td>
-                            <asp:Button ID="btnCheck" runat="server" Text="Check Price" OnClick="btnCheck_Click" />
+                            <asp:Button ID="btnCheck" runat="server" Text="ตรวจสอบราคา" OnClick="btnCheck_Click" />
                         </td>
                         <td>                            
-                            <asp:Button ID="btnApprove" runat="server" Text="Approve" OnClick="btnApprove_Click" />
+                            <asp:Button ID="btnApprove" runat="server" Text="อนุมัติรายการ" OnClick="btnApprove_Click" />
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <asp:Label ID="Label1" runat="server" Text="Expected Delivery"></asp:Label>
+                            <asp:Label ID="Label1" runat="server" Text="วันที่ส่งของ"></asp:Label>
                         </td>
                         <td>
                             <asp:TextBox ID="txtStockDate" runat="server" TextMode="date" ></asp:TextBox>
                         </td>
                         <td>
-                            <asp:Button ID="btnSetDate" runat="server" Text="Set Delivery" OnClick="btnSetDate_Click"  />
+                            <asp:Button ID="btnSetDate" runat="server" Text="กำหนดวันส่งของ" OnClick="btnSetDate_Click"  />
                         </td>
                     </tr>
                 </table>
@@ -125,19 +125,19 @@
                 <table>
                     <tr>
                         <td>
-                            <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" />
+                            <asp:Button ID="btnSave" runat="server" Text="บันทึกรายการ" OnClick="btnSave_Click" />
                         </td>
                         <td>
-                            <asp:Button ID="btnAdd" runat="server" Text="Add" OnClick="btnAdd_Click" />
+                            <asp:Button ID="btnAdd" runat="server" Text="เพิ่มรายการ" OnClick="btnAdd_Click" />
                         </td>
                         <td>
                             <asp:Label ID="lblMessage" runat="server" Text="Ready"></asp:Label>
                         </td>
                     </tr>
                 </table>
-            <asp:Button ID="btnHide" runat="server" Text="Back to list" OnClick="btnHide_Click"/>
+            <asp:Button ID="btnHide" runat="server" Text="ย้อนกลับหน้ารายการ" OnClick="btnHide_Click"/>
             </asp:PlaceHolder>
-            <asp:Button ID="btnBack" runat="server" Text="Return To menu" OnClick="btnBack_Click" />
+            <asp:Button ID="btnBack" runat="server" Text="กลับสู่เมนูหลัก" OnClick="btnBack_Click" />
         </form>
     </div>
     <div data-role="footer" data-theme="d">

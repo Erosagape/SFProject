@@ -17,12 +17,12 @@
     </div><!-- /header -->
     <form id="form1" runat="server" data-ajax="false">
     <div data-role="ui-content"> 
-        <asp:Button ID="btnStore" runat="server" Text="Shop and POS" OnClick="btnStore_Click" Font-Bold="True" ForeColor="Blue"/>
-        <asp:Button ID="btnStaff" runat="server" Text="Staff" OnClick="btnStaff_Click" Font-Bold="True" ForeColor="Blue"/>
-        <asp:Button ID="btnProduct" runat="server" Text="Goods" OnClick="btnProduct_Click" Font-Bold="True" ForeColor="Green"/>    
-        <asp:Button ID="btnStockReport" runat="server" Text="Report Stock" OnClick="btnStockReport_Click" Visible="false" />
-        <asp:Button ID="btnGPx" runat="server" Text="GPX" OnClick="btnGPx_Click" />
-        <asp:Button ID="btnBack" runat="server" Text="Back to Main menu" OnClick="btnBack_Click" Font-Bold="True" ForeColor="Red"/>
+        <asp:Button ID="btnStore" runat="server" Text="ข้อมูลจุดขาย" OnClick="btnStore_Click" Font-Bold="True" ForeColor="Blue"/>
+        <asp:Button ID="btnStaff" runat="server" Text="ข้อมูลพนักงานขาย" OnClick="btnStaff_Click" Font-Bold="True" ForeColor="Blue"/>
+        <asp:Button ID="btnProduct" runat="server" Text="ข้อมูลสินค้า" OnClick="btnProduct_Click" Font-Bold="True" ForeColor="Green"/>    
+        <asp:Button ID="btnStockReport" runat="server" Text="รายงานการเคลื่อนไหวสินค้า" OnClick="btnStockReport_Click" Visible="false" />
+        <asp:Button ID="btnGPx" runat="server" Text="ข้อมูล GPX" OnClick="btnGPx_Click" />
+        <asp:Button ID="btnBack" runat="server" Text="กลับสู่เมนูหลัก" OnClick="btnBack_Click" Font-Bold="True" ForeColor="Red"/>
     </div>
     </form>
     <div data-role="footer" data-theme="d">

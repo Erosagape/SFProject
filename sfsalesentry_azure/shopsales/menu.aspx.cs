@@ -19,6 +19,10 @@ namespace shopsales
         private string branch = "";
         private string roleid = "";
         private string workdate = "";
+        private string area = "";
+        private string salescode = "";
+        private string supcode = "";
+        private string zonecode = "";
         private ClsSessionUser cApp = new ClsSessionUser();
         private string displayText = "Please Log-in";
         private bool IsPostLogin = false;
@@ -128,6 +132,10 @@ namespace shopsales
             shopgroup = cApp.shop_group;
             shopsharedisc = cApp.share_discount;
             shopgpx = cApp.gpx_rate;
+            zonecode = cApp.shop_zonecode;
+            area = cApp.shop_areacode;
+            salescode = cApp.shop_salescode;
+            supcode = cApp.shop_supcode;
         }
         protected void SaveSessionValue()
         {
@@ -144,6 +152,10 @@ namespace shopsales
             cApp.shop_group = shopgroup;
             cApp.gpx_rate = shopgpx;
             cApp.share_discount = shopsharedisc;
+            cApp.shop_areacode = area;
+            cApp.shop_salescode = salescode;
+            cApp.shop_supcode = supcode;
+            cApp.shop_zonecode = zonecode;
             if (userName != "" && IsPostLogin == true)
             {
                 cApp.SaveLogin(Request.Browser.IsMobileDevice);
@@ -185,6 +197,10 @@ namespace shopsales
             shopnote = "";
             shopgpx = "";
             shopsharedisc = "";
+            area = "";
+            salescode = "";
+            supcode = "";
+            zonecode = "";
             foreach (DataRow r in dr)
             {
                 fullname = r["custname"].ToString();
@@ -192,6 +208,10 @@ namespace shopsales
                 branch = r["branch"].ToString();
                 shopgpx = r["GPx"].ToString();
                 shopsharedisc = r["ShareDiscount"].ToString();
+                area = r["area"].ToString();
+                salescode = r["salescode"].ToString();
+                supcode = r["supcode"].ToString();
+                zonecode = r["zone"].ToString();
                 DataRow[] rows = ClsData.CustomerGroupData().Select("OID='" + r["GroupID"].ToString() + "'");
                 foreach (DataRow row in rows)
                 {
@@ -306,6 +326,10 @@ namespace shopsales
             shopnote = "";
             shopgpx = "";
             shopsharedisc = "";
+            salescode = "";
+            supcode = "";
+            area = "";
+            zonecode = "";
         }
     }
 }

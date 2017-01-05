@@ -41,7 +41,7 @@
         <asp:Button ID="Button4" runat="server" Text="Clear Locked Table" Width="110px" OnClick="Button4_Click" />
 
         <p>
-        <asp:Button ID="Button7" runat="server" Text="View User Login" OnClick="Button7_Click" Width="192px" />
+        <asp:Button ID="Button7" runat="server" Text="View User Login" OnClick="Button7_Click" Width="93px" />
         </p>
 
     </form>

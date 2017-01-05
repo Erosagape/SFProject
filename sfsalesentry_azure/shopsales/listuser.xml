@@ -720,4 +720,76 @@
     <role>1</role>
     <shopgroup>6</shopgroup>
   </Table>
+  <Table>
+    <oid>65</oid>
+    <id>OLPC006</id>
+    <name>นางสาวโสภา สุภาพ</name>
+    <password>OKB00</password>
+    <store>เอ้าท์เล็ทมอลล์</store>
+    <branch>กระบี่</branch>
+    <department />
+    <shopid>74</shopid>
+    <role>1</role>
+    <shopgroup>3</shopgroup>
+  </Table>
+  <Table>
+    <oid>66</oid>
+    <id>MPC003</id>
+    <name>นางสาวสุเนตรา วันเพ็ญ</name>
+    <password>MBH00</password>
+    <store>เดอะมอลล์</store>
+    <branch>บลูพ็อตหัวหิน</branch>
+    <department />
+    <shopid>73</shopid>
+    <role>1</role>
+    <shopgroup>1</shopgroup>
+  </Table>
+  <Table>
+    <oid>67</oid>
+    <id>RPC023</id>
+    <name>นายนัฐวุฒิ  เชียงไข่แก้ว</name>
+    <password>RSK00</password>
+    <store>โรบินสัน</store>
+    <branch>สกลนคร</branch>
+    <department />
+    <shopid>78</shopid>
+    <role>1</role>
+    <shopgroup>2</shopgroup>
+  </Table>
+  <Table>
+    <oid>68</oid>
+    <id>LOC004</id>
+    <name>นางสาวอุไรวรรณ สุทธิวงษา</name>
+    <password>LFAL00</password>
+    <store>แฟรี่</store>
+    <branch>ขอนแก่น</branch>
+    <department />
+    <shopid>57</shopid>
+    <role>1</role>
+    <shopgroup />
+  </Table>
+  <Table>
+    <oid>69</oid>
+    <id>RPC024</id>
+    <name>นายธนากร ทองสิทธิ์</name>
+    <password>RPJ00</password>
+    <store>โรบินสัน</store>
+    <branch>ปราจีนบุรี</branch>
+    <department />
+    <shopid>50</shopid>
+    <role>1</role>
+    <shopgroup />
+  </Table>
+  <Table>
+    <oid>0</oid>
+    <id>IMPORTED</id>
+    <name>Temp user for Imported Data</name>
+    <password>vb,rviN9</password>
+    <store>Aerosoft</store>
+    <branch>Head office</branch>
+    <department>IT</department>
+    <shopid />
+    <role>3</role>
+    <shopgroup />
+  </Table>
 </DocumentElement>

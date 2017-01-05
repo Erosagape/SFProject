@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" standalone="yes"?>
+<?xml version="1.0" standalone="yes"?>
 <DocumentElement>
   <Table>
     <oid>1</oid>
@@ -13,6 +13,102 @@
     <shopgroup />
   </Table>
   <Table>
+    <oid>4</oid>
+    <id>DPC001</id>
+    <name>นายประครอง สมบุญ</name>
+    <password>DHY00</password>
+    <store>ไดอาน่า</store>
+    <branch>หาดใหญ่</branch>
+    <department>Ladies Shoes</department>
+    <shopid>2</shopid>
+    <role>1</role>
+    <shopgroup>4</shopgroup>
+  </Table>
+  <Table>
+    <oid>5</oid>
+    <id>MPC001</id>
+    <name>น.ส.จารุณี เพชรรังษึ</name>
+    <password>MTP00</password>
+    <store>เดอะมอลล์</store>
+    <branch>ท่าพระ</branch>
+    <department>Ladies Shoe</department>
+    <shopid>3</shopid>
+    <role>1</role>
+    <shopgroup>1</shopgroup>
+  </Table>
+  <Table>
+    <oid>6</oid>
+    <id>MPC002</id>
+    <name>น.ส.จันทิมา จานผักแว่น</name>
+    <password>MKR00</password>
+    <store>เดอะมอลล์</store>
+    <branch>โคราช</branch>
+    <department>Ladies Shoe</department>
+    <shopid>4</shopid>
+    <role>1</role>
+    <shopgroup>1</shopgroup>
+  </Table>
+  <Table>
+    <oid>12</oid>
+    <id>OLPC001</id>
+    <name>น.ส.ณิชาภา สุวรรณรัตน์</name>
+    <password>OPK00</password>
+    <store>เอ้าท์เล็ทมอลล์</store>
+    <branch>ภูเก็ต</branch>
+    <department>Ladies Shoes</department>
+    <shopid>12</shopid>
+    <role>1</role>
+    <shopgroup>3</shopgroup>
+  </Table>
+  <Table>
+    <oid>11</oid>
+    <id>OLPC002</id>
+    <name>น.ส.ฐิติมา กุลวงษ์</name>
+    <password>OSM00</password>
+    <store>เอ้าท์เล็ทมอลล์</store>
+    <branch>สมุย</branch>
+    <department>Ladies Shoes</department>
+    <shopid>11</shopid>
+    <role>1</role>
+    <shopgroup>3</shopgroup>
+  </Table>
+  <Table>
+    <oid>10</oid>
+    <id>OLPC003</id>
+    <name>นายวรพจน์ ธีระนันท์</name>
+    <password>OCA00</password>
+    <store>เอ้าท์เล็ทมอลล์</store>
+    <branch>ชะอำ</branch>
+    <department>Ladies Shoes</department>
+    <shopid>10</shopid>
+    <role>1</role>
+    <shopgroup>3</shopgroup>
+  </Table>
+  <Table>
+    <oid>9</oid>
+    <id>OLPC004</id>
+    <name>นายสุรศักดิ์ จิโรจน์วงศ์</name>
+    <password>OPY00</password>
+    <store>เอ้าท์เล็ทมอลล์</store>
+    <branch>พัทยา</branch>
+    <department>Ladies Shoes</department>
+    <shopid>9</shopid>
+    <role>1</role>
+    <shopgroup>3</shopgroup>
+  </Table>
+  <Table>
+    <oid>23</oid>
+    <id>OTPC001</id>
+    <name>PC Event</name>
+    <password>OTPC00</password>
+    <store>อื่นๆ</store>
+    <branch />
+    <department />
+    <shopid>24</shopid>
+    <role>1</role>
+    <shopgroup>7</shopgroup>
+  </Table>
+  <Table>
     <oid>2</oid>
     <id>WM001</id>
     <name>พุทธิพงษ์ คงพ่วง</name>
@@ -22,6 +118,678 @@
     <department>Web Master</department>
     <shopid>1</shopid>
     <role>0</role>
+    <shopgroup />
+  </Table>
+  <Table>
+    <oid>7</oid>
+    <id>RPC001</id>
+    <name>นายบุญมี จันที</name>
+    <password>RSR00</password>
+    <store>โรบินสัน</store>
+    <branch>ศรีนครินทร์</branch>
+    <department>Ladies Shoe</department>
+    <shopid>5</shopid>
+    <role>1</role>
+    <shopgroup>2</shopgroup>
+  </Table>
+  <Table>
+    <oid>8</oid>
+    <id>RPC002</id>
+    <name>นายนที ประเสริฐสังข์</name>
+    <password>RRT00</password>
+    <store>โรบินสัน</store>
+    <branch>ร้อยเอ็ด</branch>
+    <department>Ladies Shoe</department>
+    <shopid>7</shopid>
+    <role>1</role>
+    <shopgroup>2</shopgroup>
+  </Table>
+  <Table>
+    <oid>20</oid>
+    <id>RPC003</id>
+    <name />
+    <password>RCM00</password>
+    <store>โรบินสัน</store>
+    <branch>เชียงใหม่</branch>
+    <department>Sport Fashion</department>
+    <shopid>21</shopid>
+    <role>1</role>
+    <shopgroup>2</shopgroup>
+  </Table>
+  <Table>
+    <oid>21</oid>
+    <id>RPC004</id>
+    <name>นายสุกัลย์ สืบแก้ว</name>
+    <password>RCB00</password>
+    <store>โรบินสัน</store>
+    <branch>ชลบุรี</branch>
+    <department>Sport Fashion</department>
+    <shopid>22</shopid>
+    <role>1</role>
+    <shopgroup>2</shopgroup>
+  </Table>
+  <Table>
+    <oid>19</oid>
+    <id>RPC005</id>
+    <name>นายเกรียงไกร สมหานึก</name>
+    <password>RSB00</password>
+    <store>โรบินสัน</store>
+    <branch>สระบุรี</branch>
+    <department>Sport Fashion</department>
+    <shopid>20</shopid>
+    <role>1</role>
+    <shopgroup>2</shopgroup>
+  </Table>
+  <Table>
+    <oid>17</oid>
+    <id>RPC006</id>
+    <name>นายธยุชัย เรืองสังข์</name>
+    <password>RR900</password>
+    <store>โรบินสัน</store>
+    <branch>พระราม 9</branch>
+    <department>Sport Fashion</department>
+    <shopid>18</shopid>
+    <role>1</role>
+    <shopgroup>2</shopgroup>
+  </Table>
+  <Table>
+    <oid>22</oid>
+    <id>RPC007</id>
+    <name>นางสาวสมฤดี เงินจันทร์</name>
+    <password>RRB00</password>
+    <store>โรบินสัน</store>
+    <branch>ราชบุรี</branch>
+    <department>Shoes</department>
+    <shopid>23</shopid>
+    <role>1</role>
+    <shopgroup>2</shopgroup>
+  </Table>
+  <Table>
+    <oid>18</oid>
+    <id>RPC008</id>
+    <name>นางสาวอริศา พุทธเมฒ</name>
+    <password>RLP00</password>
+    <store>โรบินสัน</store>
+    <branch>ลำปาง</branch>
+    <department>Sport Fashion</department>
+    <shopid>19</shopid>
+    <role>1</role>
+    <shopgroup>2</shopgroup>
+  </Table>
+  <Table>
+    <oid>15</oid>
+    <id>RPC009</id>
+    <name>นายคณาวุฒิ อยู่สำราญ</name>
+    <password>RSM00</password>
+    <store>โรบินสัน</store>
+    <branch>ศรีสมาน</branch>
+    <department>Sport Fashion</department>
+    <shopid>16</shopid>
+    <role>1</role>
+    <shopgroup>2</shopgroup>
+  </Table>
+  <Table>
+    <oid>16</oid>
+    <id>RPC010</id>
+    <name>นางสาวสุรางคนา จิตรธรรม</name>
+    <password>RRY00</password>
+    <store>โรบินสัน</store>
+    <branch>ระยอง</branch>
+    <department>Sport Fashion</department>
+    <shopid>17</shopid>
+    <role>1</role>
+    <shopgroup>2</shopgroup>
+  </Table>
+  <Table>
+    <oid>13</oid>
+    <id>RPC011</id>
+    <name>นายดนัย อ่อนน้อม</name>
+    <password>RCC00</password>
+    <store>โรบินสัน</store>
+    <branch>ฉะเชิงเทรา</branch>
+    <department>Sport Fashion</department>
+    <shopid>14</shopid>
+    <role>1</role>
+    <shopgroup>2</shopgroup>
+  </Table>
+  <Table>
+    <oid>14</oid>
+    <id>RPC012</id>
+    <name>นายภานรินทร์ อิสรินทร์</name>
+    <password>RMS00</password>
+    <store>โรบินสัน</store>
+    <branch>แม่สอด</branch>
+    <department>Sport Fashion</department>
+    <shopid>15</shopid>
+    <role>1</role>
+    <shopgroup>2</shopgroup>
+  </Table>
+  <Table>
+    <oid>24</oid>
+    <id>RPC013</id>
+    <name>นางสาวสุภัชสร เทียมราช</name>
+    <password>RBR00</password>
+    <store>โรบินสัน</store>
+    <branch>บางรัก</branch>
+    <department />
+    <shopid>8</shopid>
+    <role>1</role>
+    <shopgroup>2</shopgroup>
+  </Table>
+  <Table>
+    <oid>25</oid>
+    <id>SMPC001</id>
+    <name>นางปภาดา ณ นคร</name>
+    <password>SMEM00</password>
+    <store>สปอร์ตมอลล์</store>
+    <branch>เอ็มควอเทียร์</branch>
+    <department />
+    <shopid>6</shopid>
+    <role>1</role>
+    <shopgroup>5</shopgroup>
+  </Table>
+  <Table>
+    <oid>26</oid>
+    <id>SWPC001</id>
+    <name>นางสาววิสุทธโสม พิศงาม</name>
+    <password>SWPD00</password>
+    <store>สปอร์ตเวิล์ด</store>
+    <branch>พาราไดซ์พาร์ค</branch>
+    <department>Sport Fashion</department>
+    <shopid>25</shopid>
+    <role>1</role>
+    <shopgroup>6</shopgroup>
+  </Table>
+  <Table>
+    <oid>27</oid>
+    <id>ADM001</id>
+    <name>นาง รัตนา เทพรักษ์</name>
+    <password>KOBB00</password>
+    <store>Aerosoft</store>
+    <branch>Head Office</branch>
+    <department>Administation Office</department>
+    <shopid>1</shopid>
+    <role>2</role>
+    <shopgroup />
+  </Table>
+  <Table>
+    <oid>30</oid>
+    <id>SUP001</id>
+    <name>น.ส. วณัชณัณท์ วาดสิงแก้ว</name>
+    <password>VNCN00</password>
+    <store>Aerosoft</store>
+    <branch>Head Office</branch>
+    <department>PC Supervisor</department>
+    <shopid>1</shopid>
+    <role>2</role>
+    <shopgroup />
+  </Table>
+  <Table>
+    <oid>31</oid>
+    <id>RPC014</id>
+    <name>นางสาวนันทนา ไชยปัญญา</name>
+    <password>RRN00</password>
+    <store>โรบินสัน</store>
+    <branch>รัตนาธิเบศร์</branch>
+    <department />
+    <shopid>26</shopid>
+    <role>1</role>
+    <shopgroup>2</shopgroup>
+  </Table>
+  <Table>
+    <oid>32</oid>
+    <id>RPC015</id>
+    <name>นายกฤษฎา ศรีวรกุล</name>
+    <password>RMG00</password>
+    <store>โรบินสัน</store>
+    <branch>เมกะบางนา</branch>
+    <department />
+    <shopid>27</shopid>
+    <role>1</role>
+    <shopgroup>2</shopgroup>
+  </Table>
+  <Table>
+    <oid>33</oid>
+    <id>RPC016</id>
+    <name>นางสาวนันทนา เข็มเงิน</name>
+    <password>RSP00</password>
+    <store>โรบินสัน</store>
+    <branch>สุพรรณบุรี</branch>
+    <department />
+    <shopid>28</shopid>
+    <role>1</role>
+    <shopgroup>2</shopgroup>
+  </Table>
+  <Table>
+    <oid>34</oid>
+    <id>RPC017</id>
+    <name>นางสาวจันทร์แรม รุ่งกษัตรา</name>
+    <password>RAY00</password>
+    <store>โรบินสัน</store>
+    <branch>อยุธยา</branch>
+    <department />
+    <shopid>29</shopid>
+    <role>1</role>
+    <shopgroup>2</shopgroup>
+  </Table>
+  <Table>
+    <oid>35</oid>
+    <id>RPC018</id>
+    <name>น.ส. พิมพ์สุภา สาดคล้า</name>
+    <password>RKC00</password>
+    <store>โรบินสัน</store>
+    <branch>กาญจนบุรี</branch>
+    <department />
+    <shopid>30</shopid>
+    <role>1</role>
+    <shopgroup>2</shopgroup>
+  </Table>
+  <Table>
+    <oid>36</oid>
+    <id>SWPC002</id>
+    <name>นายสุวรรณ จิตสำโรง</name>
+    <password>SWLB00</password>
+    <store>สปอร์ตเวิลด์</store>
+    <branch>แหลมฉบัง</branch>
+    <department />
+    <shopid>31</shopid>
+    <role>1</role>
+    <shopgroup>6</shopgroup>
+  </Table>
+  <Table>
+    <oid>37</oid>
+    <id>SWPC003</id>
+    <name>นายเกรียงศักดิ์ ยะปายต๋า</name>
+    <password>SWBK00</password>
+    <store>สปอร์ตเวิล์ด</store>
+    <branch>บางแค</branch>
+    <department />
+    <shopid>32</shopid>
+    <role>1</role>
+    <shopgroup>6</shopgroup>
+  </Table>
+  <Table>
+    <oid>38</oid>
+    <id>ADM002</id>
+    <name>General Admin</name>
+    <password>MAII00</password>
+    <store>Aerosoft</store>
+    <branch>Head Cffice</branch>
+    <department>Administrator</department>
+    <shopid>1</shopid>
+    <role>2</role>
+    <shopgroup />
+  </Table>
+  <Table>
+    <oid>39</oid>
+    <id>SWP004</id>
+    <name />
+    <password>SWRY00</password>
+    <store>สปอร์ตเวิลด์</store>
+    <branch>ระยอง</branch>
+    <department />
+    <shopid>33</shopid>
+    <role>1</role>
+    <shopgroup>6</shopgroup>
+  </Table>
+  <Table>
+    <oid>40</oid>
+    <id>SWP005</id>
+    <name>นางสาววิมาลา วิเชียรเลิศ</name>
+    <password>SWTH00</password>
+    <store>สปอร์ตเวิลด์</store>
+    <branch>ตั้งฮั่วเส็ง</branch>
+    <department />
+    <shopid>34</shopid>
+    <role>1</role>
+    <shopgroup>6</shopgroup>
+  </Table>
+  <Table>
+    <oid>41</oid>
+    <id>LOC001</id>
+    <name>นางสาวมนิสรา มุ่งเขื่อนกลาง</name>
+    <password>LLUK00</password>
+    <store>ลัคกี้</store>
+    <branch>นครศรีธรรมราช</branch>
+    <department />
+    <shopid>35</shopid>
+    <role>1</role>
+    <shopgroup>8</shopgroup>
+  </Table>
+  <Table>
+    <oid>42</oid>
+    <id>LOC002</id>
+    <name>นางสาวสุภาสิณี พุทธา</name>
+    <password>LROE00</password>
+    <store>ร้อยเอ็ด</store>
+    <branch>พลาซ่า</branch>
+    <department />
+    <shopid>36</shopid>
+    <role>1</role>
+    <shopgroup>9</shopgroup>
+  </Table>
+  <Table>
+    <oid>43</oid>
+    <id>SUP002</id>
+    <name>นางสาวกัลญาภรณ์ วัลคำ</name>
+    <password>PCSP00</password>
+    <store>Aerosoft</store>
+    <branch>Head office</branch>
+    <department>PC Supervisor</department>
+    <shopid>1</shopid>
+    <role>2</role>
+    <shopgroup />
+  </Table>
+  <Table>
+    <oid>44</oid>
+    <id>RPC019</id>
+    <name />
+    <password>RSK00</password>
+    <store>โรบินสัน</store>
+    <branch>สมุทรปราการ</branch>
+    <department />
+    <shopid>37</shopid>
+    <role>1</role>
+    <shopgroup>2</shopgroup>
+  </Table>
+  <Table>
+    <oid>46</oid>
+    <id>ADM003</id>
+    <name>น.ส. ธัญญพร เผือกผ่อง</name>
+    <password>NUII00</password>
+    <store>Aerosoft</store>
+    <branch>Head Office</branch>
+    <department>Assistant</department>
+    <shopid>1</shopid>
+    <role>2</role>
+    <shopgroup />
+  </Table>
+  <Table>
+    <oid>47</oid>
+    <id>SWP006</id>
+    <name>นางสาวเมธาวี  ปิ่นคำ</name>
+    <password>SWMY00</password>
+    <store>สปอร์ตเวิลด์</store>
+    <branch>เมญ่าเชียงใหม่</branch>
+    <department />
+    <shopid>38</shopid>
+    <role>1</role>
+    <shopgroup>6</shopgroup>
+  </Table>
+  <Table>
+    <oid>48</oid>
+    <id>LOC003</id>
+    <name>นางสาวพัชยา  กำลังแรง</name>
+    <password>LVOG00</password>
+    <store>โว้ค</store>
+    <branch>กระบี่</branch>
+    <department />
+    <shopid>39</shopid>
+    <role>1</role>
+    <shopgroup>10</shopgroup>
+  </Table>
+  <Table>
+    <oid>49</oid>
+    <id>AREA02</id>
+    <name>นายวรุต</name>
+    <password>SSUP00</password>
+    <store>Aerosoft</store>
+    <branch>Head Office</branch>
+    <department>Sales Supervisor</department>
+    <shopid>1</shopid>
+    <role>2</role>
+    <shopgroup>8,9,10,11</shopgroup>
+  </Table>
+  <Table>
+    <oid>50</oid>
+    <id>RPC020</id>
+    <name>นายธนกร   พาสมบูรณ์</name>
+    <password>RSU00</password>
+    <store>โรบินสัน</store>
+    <branch>สุรินทร์</branch>
+    <department />
+    <shopid>41</shopid>
+    <role>1</role>
+    <shopgroup>2</shopgroup>
+  </Table>
+  <Table>
+    <oid>51</oid>
+    <id>RPC021</id>
+    <name>นางสาวสาลิกา   คนเพียร</name>
+    <password>RMD00</password>
+    <store>โรบินสัน</store>
+    <branch>มุกดาหาร</branch>
+    <department />
+    <shopid>42</shopid>
+    <role>1</role>
+    <shopgroup>2</shopgroup>
+  </Table>
+  <Table>
+    <oid>52</oid>
+    <id>RPC022</id>
+    <name>นางสาวอัญธิกา อาทิตย์เที่ย</name>
+    <password>RBK00</password>
+    <store>โรบินสัน</store>
+    <branch>บางแค</branch>
+    <department />
+    <shopid>43</shopid>
+    <role>1</role>
+    <shopgroup>2</shopgroup>
+  </Table>
+  <Table>
+    <oid>53</oid>
+    <id>BILL00</id>
+    <name>BILLING</name>
+    <password>BILLING</password>
+    <store>Aerosoft</store>
+    <branch>Head office</branch>
+    <department>Accounting</department>
+    <shopid>1</shopid>
+    <role>3</role>
+    <shopgroup />
+  </Table>
+  <Table>
+    <oid>54</oid>
+    <id>EVPC001</id>
+    <name />
+    <password>EVT01</password>
+    <store />
+    <branch />
+    <department />
+    <shopid />
+    <role>1</role>
+    <shopgroup />
+  </Table>
+  <Table>
+    <oid>55</oid>
+    <id>EVPC002</id>
+    <name />
+    <password>EVT02</password>
+    <store />
+    <branch />
+    <department />
+    <shopid />
+    <role>1</role>
+    <shopgroup />
+  </Table>
+  <Table>
+    <oid>56</oid>
+    <id>SUP003</id>
+    <name>นางสาวกุลฉัตร มีแจ้</name>
+    <password>PCSP01</password>
+    <store>Aerosoft</store>
+    <branch>Head Office</branch>
+    <department>Business Development</department>
+    <shopid />
+    <role>2</role>
+    <shopgroup />
+  </Table>
+  <Table>
+    <oid>57</oid>
+    <id>SUP004</id>
+    <name>โสรวีร์ นิธิกิจกโศลกุล</name>
+    <password>PCSP02</password>
+    <store>Aerosoft</store>
+    <branch>Head office</branch>
+    <department>Business Development</department>
+    <shopid />
+    <role>2</role>
+    <shopgroup />
+  </Table>
+  <Table>
+    <oid>58</oid>
+    <id>SWP007</id>
+    <name>นายสิทธิพงษ์  เสาสุวรรณ์</name>
+    <password>SWSR00</password>
+    <store>สปอร์ตเวิล์ด</store>
+    <branch>สุรินทร์พลาซ่า</branch>
+    <department />
+    <shopid>59</shopid>
+    <role>1</role>
+    <shopgroup>6</shopgroup>
+  </Table>
+  <Table>
+    <oid>59</oid>
+    <id>SWP008</id>
+    <name>นางสาวจุฑามาศ แพนทิพย์</name>
+    <password>SWCK00</password>
+    <store>สปอร์ตเวิล์ด</store>
+    <branch>ตึกคอมขอนแก่น</branch>
+    <department />
+    <shopid>51</shopid>
+    <role>1</role>
+    <shopgroup>6</shopgroup>
+  </Table>
+  <Table>
+    <oid>60</oid>
+    <id>OLPC005</id>
+    <name>นางสาวปวีณา ขอเอื้อนกลาง</name>
+    <password>OKY00</password>
+    <store>เอ้าท์เล็ทมอลล์</store>
+    <branch>เขาใหญ่</branch>
+    <department />
+    <shopid>63</shopid>
+    <role>1</role>
+    <shopgroup>3</shopgroup>
+  </Table>
+  <Table>
+    <oid>61</oid>
+    <id>SWP009</id>
+    <name>นางสาวอลิสา ชำนาญสงค์</name>
+    <password>SWJC00</password>
+    <store>สปอร์ตเวิล์ด</store>
+    <branch>จังซีลอน</branch>
+    <department />
+    <shopid>64</shopid>
+    <role>1</role>
+    <shopgroup>6</shopgroup>
+  </Table>
+  <Table>
+    <oid>62</oid>
+    <id>SWP010</id>
+    <name>นางสาวพรรณิภา สาริภัณฑ์</name>
+    <password>SWUB00</password>
+    <store>สปอร์ตเวิลดิ์</store>
+    <branch>ซิตี้มอลล์อุบล</branch>
+    <department />
+    <shopid>65</shopid>
+    <role>1</role>
+    <shopgroup>6</shopgroup>
+  </Table>
+  <Table>
+    <oid>63</oid>
+    <id>SWP011</id>
+    <name>นางสาวอรพรรณ ทองไทย</name>
+    <password>SWMF00</password>
+    <store>สปอร์ตเวิล์ด</store>
+    <branch>มาร์คโฟร์แพร่</branch>
+    <department />
+    <shopid>53</shopid>
+    <role>1</role>
+    <shopgroup>6</shopgroup>
+  </Table>
+  <Table>
+    <oid>64</oid>
+    <id>SWP012</id>
+    <name>นายวีระยุทธ์ ยาหนม</name>
+    <password>SWFI00</password>
+    <store>สปอร์ตเวิล์ด</store>
+    <branch>แฟชั่นไอส์แลนด์</branch>
+    <department />
+    <shopid>52</shopid>
+    <role>1</role>
+    <shopgroup>6</shopgroup>
+  </Table>
+  <Table>
+    <oid>65</oid>
+    <id>OLPC006</id>
+    <name>นางสาวโสภา สุภาพ</name>
+    <password>OKB00</password>
+    <store>เอ้าท์เล็ทมอลล์</store>
+    <branch>กระบี่</branch>
+    <department />
+    <shopid>74</shopid>
+    <role>1</role>
+    <shopgroup>3</shopgroup>
+  </Table>
+  <Table>
+    <oid>66</oid>
+    <id>MPC003</id>
+    <name>นางสาวสุเนตรา วันเพ็ญ</name>
+    <password>MBH00</password>
+    <store>เดอะมอลล์</store>
+    <branch>บลูพ็อตหัวหิน</branch>
+    <department />
+    <shopid>73</shopid>
+    <role>1</role>
+    <shopgroup>1</shopgroup>
+  </Table>
+  <Table>
+    <oid>67</oid>
+    <id>RPC023</id>
+    <name>นายนัฐวุฒิ  เชียงไข่แก้ว</name>
+    <password>RSK00</password>
+    <store>โรบินสัน</store>
+    <branch>สกลนคร</branch>
+    <department />
+    <shopid>78</shopid>
+    <role>1</role>
+    <shopgroup>2</shopgroup>
+  </Table>
+  <Table>
+    <oid>68</oid>
+    <id>LOC004</id>
+    <name>นางสาวอุไรวรรณ สุทธิวงษา</name>
+    <password>LFAL00</password>
+    <store>แฟรี่</store>
+    <branch>ขอนแก่น</branch>
+    <department />
+    <shopid>57</shopid>
+    <role>1</role>
+    <shopgroup />
+  </Table>
+  <Table>
+    <oid>69</oid>
+    <id>RPC024</id>
+    <name>นายธนากร ทองสิทธิ์</name>
+    <password>RPJ00</password>
+    <store>โรบินสัน</store>
+    <branch>ปราจีนบุรี</branch>
+    <department />
+    <shopid>50</shopid>
+    <role>1</role>
+    <shopgroup />
+  </Table>
+  <Table>
+    <oid>0</oid>
+    <id>IMPORTED</id>
+    <name>Temp user for Imported Data</name>
+    <password>vb,rviN9</password>
+    <store>Aerosoft</store>
+    <branch>Head office</branch>
+    <department>IT</department>
+    <shopid />
+    <role>3</role>
     <shopgroup />
   </Table>
 </DocumentElement>

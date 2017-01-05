@@ -27,7 +27,7 @@ namespace shopsales
             if(Session["cApp"]!=null)
             {
                 cApp = (ClsSessionUser)Session["cApp"];
-                lblMessage.Text = "ผู้เรียกรายงาน :" + cApp.user_name + " วันที่ " + ClsUtil.GetCurrentTHDate().ToString("yyyy-MM-dd HH:mm");
+                lblMessage.Text = "ผู้เรียกรายงาน :" + cApp.user_name + " วันที่ " + DateTime.Now.AddHours(7).ToString("yyyy-MM-dd HH:mm");
             }
             else
             {
@@ -84,7 +84,7 @@ namespace shopsales
         protected void LinkButton2_Click(object sender, EventArgs e)
         {
             //send to line app
-            Response.Redirect("savereport.aspx?reportid=rpt" + cApp.user_id + ClsUtil.GetCurrentTHDate().ToString("yyyyMMddHHmm") + "&shareLine=1");            
+            Response.Redirect("savereport.aspx?reportid=rpt" + cApp.user_id + DateTime.Now.ToString("yyyyMMddHHmm") + "&shareLine=1");            
         }
         protected void LinkButton3_Click(object sender, EventArgs e)
         {
@@ -92,7 +92,7 @@ namespace shopsales
             if(txtEMail.Text!="")
             {
                 DataTable dt = (DataTable)Session["rptData"];
-                lblStatus.Text = ClsData.SendDataToEmail(dt, cApp.user_id, ClsUtil.GetCurrentTHDate().ToString("yyyyMMddHHmm"), Label1.Text, labCliteria.Text,txtEMail.Text);
+                lblStatus.Text = ClsData.SendDataToEmail(dt, cApp.user_id, DateTime.Now.ToString("yyyyMMddHHmm"), Label1.Text, labCliteria.Text,txtEMail.Text);
             }
         }
         protected void ShowReport(DataTable dt)
@@ -110,7 +110,7 @@ namespace shopsales
         }
         protected string ExportToFile(DataTable dt)
         {
-            string filename = cApp.user_id + "_" + ClsUtil.GetCurrentTHDate().ToString("yyyyMMddHHmmss") + ".xml";
+            string filename = cApp.user_id + "_" + DateTime.Now.AddHours(7).ToString("yyyyMMddHHmmss") + ".xml";
             try
             {
                 ClsData.ExportToXMLFile(MapPath("~/" + filename), dt);

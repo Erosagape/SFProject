@@ -106,11 +106,13 @@
     <Content Include="addstore.aspx" />
     <Content Include="adduser.aspx" />
     <Content Include="bg.png" />
-    <Content Include="CreateGoods.aspx" />
-    <Content Include="dailyreport.aspx" />
-    <Content Include="goods.xml">
+    <Content Include="countertype.xml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="CreateGoods.aspx" />
+    <Content Include="customer.xml" />
+    <Content Include="dailyreport.aspx" />
+    <Content Include="employee.xml" />
     <Content Include="gpx.aspx" />
     <Content Include="gpxtest.aspx" />
     <Content Include="editsales.aspx" />
@@ -122,7 +124,6 @@
     <Content Include="liststore.aspx" />
     <Content Include="listuser.aspx" />
     <Content Include="logo.png" />
-    <Content Include="mailsetup.xml" />
     <Content Include="masterfile.aspx" />
     <Content Include="menu.aspx" />
     <Content Include="report.aspx" />
@@ -130,6 +131,9 @@
     <Content Include="salesentry.aspx" />
     <Content Include="ITest.svc" />
     <Content Include="CreateSales.aspx" />
+    <Content Include="saleszone.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="savereport.aspx" />
     <Content Include="selectgoods.aspx" />
     <Content Include="StockView.aspx" />
@@ -139,6 +143,7 @@
     <Content Include="SendStock.aspx" />
     <Content Include="testdx.aspx" />
     <Content Include="testemail.aspx" />
+    <Content Include="downloaddata.aspx" />
     <Content Include="UploadExcel.aspx" />
     <Content Include="viewTempData.aspx" />
     <Content Include="Web.config">
@@ -371,6 +376,13 @@
     <Compile Include="testemail.aspx.designer.cs">
       <DependentUpon>testemail.aspx</DependentUpon>
     </Compile>
+    <Compile Include="downloaddata.aspx.cs">
+      <DependentUpon>downloaddata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="downloaddata.aspx.designer.cs">
+      <DependentUpon>downloaddata.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UploadExcel.aspx.cs">
       <DependentUpon>UploadExcel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -403,6 +415,7 @@
   <ItemGroup>
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\aerosoft.pubxml" />
     <None Include="Properties\PublishProfiles\sfaerosoft.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -20,6 +20,10 @@ namespace shopsales
         private string sessionid = "";
         private string sharediscount = "";
         private string gpx = "";
+        private string salescode = "";
+        private string zonecode = "";
+        private string area = "";
+        private string supcode = "";
         #region default shared properties          
         public string user_id
         {
@@ -164,6 +168,11 @@ namespace shopsales
                 gpx = value;
             }
         }
+        public string shop_supcode { get { return supcode; } set { supcode = value; } }
+        public string shop_salescode { get { return salescode; } set { salescode = value; } }
+        public string shop_zonecode { get { return zonecode; } set { zonecode = value; } }
+        public string shop_areacode { get { return area; } set { area = value; } }
+
         #endregion
         #region this project function
         public string GetXMLFileName(string datein="")

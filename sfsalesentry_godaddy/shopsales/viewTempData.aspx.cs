@@ -5,114 +5,194 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
+using System.Threading;
 namespace shopsales
 {
     public partial class viewTempData : System.Web.UI.Page
     {
+        protected static string statustext = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(Session["tbExcel"]!=null)
+            if (!IsPostBack)
             {
-                DataTable dt = (DataTable)Session["tbExcel"];
-                Label1.Text = dt.Rows.Count + " Rows";
-                GridView1.DataSource = dt;
-                GridView1.DataBind();
+                if (Session["tbExcel"] != null)
+                {
+                    TextBox1.Text = Session["tbExcel"].ToString();
+                }
+                Loaddata();
+            }
+        }
+        private void PopulateDropDown()
+        {
+            DropDownList1.Items.Clear();
+            DataTable dt = (DataTable)Session["tbTemp"];
+            dt.DefaultView.Sort = "ShopName";
+            DataTable rs = dt.DefaultView.ToTable();
+            string shop = "";
+            DropDownList1.Items.Add(shop);
+            foreach (DataRow r in rs.Rows)
+            {
+                if (shop!=r["ShopName"].ToString())
+                {
+                    shop = r["ShopName"].ToString();
+                    DropDownList1.Items.Add(shop);
+                }
             }
         }
         private string GetXMLFileName(DataRow dr)
         {
-            string sdate = Convert.ToDateTime(dr["salesDate"]).ToString("yyyyMM");
-            string fname = dr["shopno"].ToString() + "_" + sdate + "_" + dr["salesBy"].ToString() + ".xml";
+            //string sdate = Convert.ToDateTime(dr["salesDate"]).ToString("yyyyMM");
+            var oid = dr["oid"].ToString().Split('_');
+            string fname = oid[0] + "_" + oid[1].Substring(0,6) + "_"  + oid[2] +".xml";
             return fname.ToUpper();
         }
-        private DataTable  InsertSalesEntry()
+        
+        protected void InsertSalesEntry()
         {
+            statustext = "Start Process";
+            string dateimport = TextBox1.Text;
             DataTable sales = ClsData.NewSalesData(new DataSet());
-            DataTable tb = (DataTable)Session["tbExcel"];
-            int rowid = 0;
-            foreach (DataRow dr in tb.Rows)
+            DataTable rs = (DataTable)Session["tbTemp"];
+            if(DropDownList1.SelectedValue.ToString()!="")
             {
-                try
+                rs.DefaultView.RowFilter = "ShopName='" + DropDownList1.SelectedValue.ToString() + "'";
+            }
+            else
+            {
+                rs.DefaultView.RowFilter = "";                
+            }
+            rs.DefaultView.Sort = "oid";
+            DataTable tb = rs.DefaultView.ToTable();
+            int rowid = 0;
+            int complete = 0;
+            int err = 0;
+            if(tb.Rows.Count>0)
+            {
+                string fname = GetXMLFileName(tb.Rows[0]);
+                DataTable dt = ClsData.GetSalesData(ClsData.GetPath() + @"\\" +  fname);
+                foreach (DataRow dr in tb.Rows)
                 {
-                    rowid++;
-                    string fname = GetXMLFileName(dr);
-                    DataTable dt = ClsData.GetSalesData(MapPath("~/" + fname));
-                    if (dt.Columns.Count > 0)
-                    {                        
-                        string sdate = Convert.ToDateTime(dr["salesDate"]).ToString("yyyy-MM-dd");
-                        string oid = dr["shopno"] + "_" + sdate.Replace("-","") +"_"+ ClsData.GetGoodsCode(dr["ModelCode"].ToString(), dr["ColorCode"].ToString(), dr["SizeNo"].ToString()) + "_" + rowid; 
-                        DataRow r = ClsData.QueryData(dt, "OID='" + oid + "'");
-                        r["OID"] = oid;
-                        r["salesDate"] = sdate;
-                        r["salesType"] = dr["salesType"];
-                        r["discountRate"] = dr["discountRate"];
-                        string GoodsCode = dr["ModelCode"].ToString() + dr["ColorCode"].ToString() + (Convert.ToInt32(dr["SizeNo"].ToString()) * 10).ToString();
-                        var shoe = ClsData.ShoeDataByCode(GoodsCode);
-                        r["prodID"] = shoe["OID"];
-                        r["prodName"] = shoe["GoodsName"];
-                        r["ModelCode"] = dr["ModelCode"];
-                        r["ColorCode"] = dr["ColorCode"];
-                        r["ColorName"] = shoe["colNameTh"];
-                        r["prodCat"] = shoe["ProdCatCode"];
-                        r["prodType"] = shoe["STId"];
-                        r["prodGroup"] = shoe["ProdGroupName"];
-                        r["SizeNo"] = dr["sizeNo"];
-                        r["salesQty"] = dr["salesQty"];
-                        //r["TagPrice"] = shoe["stdSellPrice"];
-                        r["TagPrice"] = dr["TagPrice"];
-                        Double rate = Convert.ToDouble(0 + dr["discountRate"].ToString()) / 100;
-                        Double baseprice = Convert.ToDouble(0 + r["TagPrice"].ToString());
-                        Double discprice = Convert.ToDouble(0 + r["TagPrice"].ToString()) * rate;
-                        //txtsalesBuyPrice.Text = (baseprice - discprice).ToString();
-                        r["salesPrice"] = (baseprice - discprice).ToString();
-                        r["shopName"] = dr["shopname"];
-                        r["entryBy"] = dr["salesBy"];
-                        r["remark"] = "";
-                        r["lastupdate"] = DateTime.Now.AddHours(7).ToString();
-
-                        var sharediscount = "0.00";
-                        var gpx = "100";
-                        //load gpx And sharediscount
-                        double discrate = 0;
-                        if (r["salesType"].ToString().Equals("3"))
+                    try
+                    {
+                        if (dt.Columns.Count > 0)
                         {
-                            try { discrate = Convert.ToDouble(dr["discountRate"]) / 100; } catch { }
+                            rowid++;
+                            if (fname != GetXMLFileName(dr))
+                            {
+                                dt.WriteXml(ClsData.GetPath() + @"\\" + fname);
+                                fname = GetXMLFileName(dr);
+                                dt = ClsData.GetSalesData(ClsData.GetPath()+ @"\\" + fname);
+                            }
+                            statustext = "Processing " + fname + " (Total=" + rowid + " of " + tb.Rows.Count +")";
+                            DataRow r = ClsData.QueryData(dt, "OID='" + dr["oid"].ToString() + "'");
+                            if (r["oid"].ToString() != "")
+                            {
+                                dt.Rows.Remove(r);
+                            }
+                            dt.ImportRow(dr);
+                            sales.ImportRow(dr);
+                            complete++;
+                            if (rowid==tb.Rows.Count)
+                            {
+                                dt.WriteXml(ClsData.GetPath() + @"\\" + fname);
+                            }
                         }
-                        //find gpx from promotion data
-                        Promotion p = ClsData.GetPromotionByDate(sdate, dr["salesType"].ToString(), dr["shopNo"].ToString(), discrate);
-                        if (p != null)
-                        {
-                            gpx = (p.GPRate() * 100).ToString();
-                            sharediscount = p.ShareDiscount.ToString();
-                        }
-                        r["ShareDiscount"] = sharediscount;
-                        r["Gpx"] = gpx;
-                        r["note"] = "";
-                        r["postFlag"] = "N";
-                        if (r.RowState == DataRowState.Detached) dt.Rows.Add(r);
-                        dt.WriteXml(MapPath("~/" + fname));
-
-                        sales.ImportRow(r);
+                    }
+                    catch (Exception e)
+                    {
+                        err++;
+                        ClsData.SaveLogData("UploadExcel", "SYSTEM", "ADDROW " + rowid, e.Message, DateTime.UtcNow.AddHours(7).ToString("yyyyMMddHHMM"), "ERR", "viewTempData.aspx", "InsertSalesEntry");
                     }
                 }
-                catch
-                {
-                    
-                }                
             }
-            return sales;
+            statustext = "Complete! (Total import=" + sales.Rows.Count +" complete=" + complete +" error=" + err +")";
+            sales.Dispose();
         }
-                protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            DataTable dt = InsertSalesEntry();
-            Label1.Text = dt.Rows.Count + " Rows Inserted!";
-            GridView1.DataSource = dt;
+            Button1.Enabled = false;
+            Timer1.Enabled = true;
+            Thread task=new Thread(new ThreadStart(InsertSalesEntry));
+            task.Start();            
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (DropDownList1.SelectedValue.ToString()!="")
+            {
+                DataTable tb = (DataTable)Session["tbTemp"];
+                tb.DefaultView.RowFilter = "ShopName='" + DropDownList1.SelectedValue.ToString() + "'";
+                DataTable dt = tb.DefaultView.ToTable();
+                Label1.Text = dt.Rows.Count + " Rows Found!";
+                GridView1.DataSource = dt;
+                GridView1.DataBind();
+            }
+            else
+            {
+                LoadTempData();
+            }
+            statustext = "";
+        }
+        protected void LoadTempData()
+        {
+            DataTable tb = ClsData.GetDataXML(TextBox1.Text);
+            try
+            {
+                tb.DefaultView.Sort = "oid";
+                DataTable dt = tb.DefaultView.ToTable();
+                Session["tbTemp"] = dt;
+                Label1.Text = dt.Rows.Count + " Rows";
+                GridView1.DataSource = dt;
+                GridView1.DataBind();
+                Session["tbExcel"] = TextBox1.Text;
+            }
+            catch
+            {
+                Session["tbTemp"] = null;
+            }
+        }
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Button2.Enabled = false;
+            Loaddata();
+            Button2.Enabled = true;
+        }
+        protected void Loaddata()
+        {
+            if (TextBox1.Text != "")
+            {
+                if(System.IO.File.Exists (ClsData.GetPath() + @"\\" + TextBox1.Text + ".xml"))
+                {
+                    Button1.Enabled = false;
+                    LoadTempData();
+                    if (Session["tbTemp"] != null)
+                    {
+                        PopulateDropDown();
+                        Button1.Enabled = true;
+                        return;
+                    }
+                }
+            }
+            Label1.Text = "File Not Found!";
+            GridView1.DataSource = null;
             GridView1.DataBind();
+        }
+
+        protected void Timer1_Tick(object sender, EventArgs e)
+        {
+            if(statustext!="") Label1.Text = statustext;
+            if(statustext.Substring(0,1)=="C")
+            {
+                Button1.Enabled = true;
+                statustext = "";
+                Timer1.Enabled = false;
+            }
         }
     }
 }

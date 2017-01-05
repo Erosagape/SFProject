@@ -25,6 +25,11 @@
     <GPx>58</GPx>
     <note />
     <postFlag>N</postFlag>
+    <Area>East</Area>
+    <zoneCode>51</zoneCode>
+    <salesCode>KAE-R</salesCode>
+    <supCode>PCSUP-2</supCode>
+    <CounterTYpe>เค้าท์เตอร์ปกติ</CounterTYpe>
   </Table>
   <Table>
     <OID>17_20160831_rpc010 _DW0306PK380</OID>
@@ -51,5 +56,10 @@
     <GPx>58</GPx>
     <note />
     <postFlag>N</postFlag>
+    <Area>East</Area>
+    <zoneCode>51</zoneCode>
+    <salesCode>KAE-R</salesCode>
+    <supCode>PCSUP-2</supCode>
+    <CounterTYpe>เค้าท์เตอร์ปกติ</CounterTYpe>
   </Table>
 </NewDataSet>

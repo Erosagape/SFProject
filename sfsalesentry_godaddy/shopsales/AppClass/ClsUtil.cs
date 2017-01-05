@@ -7,27 +7,6 @@ using System.Web.UI.WebControls;
 using DevExpress.XtraReports.UI;
 namespace shopsales
 {
-    //Class Function ต่างๆ
-    public static class ClsUtil
-    {
-        //ฟังก์ชั่นนี้สำหรับคืนค่าวันที่ปัจจุบันเป็น DateTime ของประเทศไทยเสมอ
-        public static DateTime GetCurrentTHDate() 
-        {
-            return GetTHDate(DateTime.Now);
-        }
-        //ฟังก์ชั่นนี้สำหรับคืนค่าวันที่ปัจจุบันเป็น DateTime เวลาโลก
-        public static DateTime GetUTCDate(DateTime d)
-        {
-            TimeZone tz = TimeZone.CurrentTimeZone; //get current Timezone from Server 
-            DateTime utcDate = tz.ToUniversalTime(d); //add with offset to change to Universal datetime
-            return d;
-        }
-        //ฟังก์ชั่นนี้สำหรับแปลงวันที่ปัจจุบันเป็น DateTime เวลาไทย
-        public static DateTime GetTHDate(DateTime din)
-        {
-            return GetUTCDate(din).AddHours(7); //add for TH Date (GMT +7)
-        }
-    }
     //class ใช้สำหรับส่งอีเมล์
     public static class CEMail
     {
@@ -430,7 +409,7 @@ namespace shopsales
             this.filename = fname;
             this.sheetname = sheet;
         }
-        public DataTable QueryDataTable()
+        public DataTable QueryDataTable(string sql)
         {
             DataTable dt = new DataTable();
             if (string.IsNullOrWhiteSpace(this.filename))
@@ -443,6 +422,7 @@ namespace shopsales
                 if(finfo.Exists)
                 {
                     dt = new DataTable();
+                    dt.TableName = sheetname;
                     using (var cls = new System.Data.OleDb.OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + filename + @";Extended Properties=""Excel 8.0;HDR=YES;IMEX=1;"""))
                     {
                         cls.Open();
@@ -451,7 +431,7 @@ namespace shopsales
                         {
                             sname = finfo.Name.Split('.')[0].Trim();
                         }
-                        System.Data.OleDb.OleDbDataAdapter da = new System.Data.OleDb.OleDbDataAdapter(@"select * from [" + sname + @"$]",cls);
+                        System.Data.OleDb.OleDbDataAdapter da = new System.Data.OleDb.OleDbDataAdapter(sql,cls);
                         da.Fill(dt);
                         cls.Close();
                     }

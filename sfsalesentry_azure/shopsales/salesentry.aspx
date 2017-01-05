@@ -69,6 +69,14 @@
         </td><td>            
         <asp:TextBox ID="txtDate" TextMode="Date" runat="server" Width="163px" Font-Bold="True" ForeColor="Green" Enabled="false"></asp:TextBox>
         </td></tr>
+        <tr>
+            <td>
+                <asp:Label ID="Label5" runat="server" Text="เค้าท์เตอร์ขาย"></asp:Label>
+            </td>
+            <td>
+                <asp:DropDownList ID="cboCounterType" runat="server" AutoPostBack="true" OnSelectedIndexChanged="cboCounterType_SelectedIndexChanged"></asp:DropDownList>
+            </td>
+        </tr>
         <tr><td>
         <asp:Label ID="Label1" runat="server" Text="ค้นหาสินค้า"></asp:Label>        
         </td><td>
