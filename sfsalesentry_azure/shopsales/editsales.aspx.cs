@@ -228,7 +228,14 @@ namespace shopsales
                 data["sizeNo"] = txtSizeNo.Text;
                 data["salesQty"] = txtSalesQty.Text;
                 data["TagPrice"] = txtTagPrice.Text;
-                data["salesPrice"] = txtSalesPrice.Text;
+                if (data["salesType"].ToString() == "3" && txtNote.Text.IndexOf("ส่วนลดเงินสด")<0)
+                {
+                    data["salesPrice"] = Convert.ToDouble(txtTagPrice.Text)-(Convert.ToDouble(txtTagPrice.Text)*(Convert.ToDouble(txtDiscountRate.Text)/100));
+                }
+                else
+                {
+                    data["salesPrice"] = txtSalesPrice.Text;
+                }
                 data["remark"] = txtRemark.Text;
                 data["prodType"] = txtprodType.Text;
                 data["prodCat"] = txtprodCat.Text;

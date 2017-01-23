@@ -95,19 +95,19 @@
                 <td>
                     <asp:TextBox ID="txtSize" runat="server" Width="66px"></asp:TextBox>
                 </td>
-                <td class="auto-style1"><asp:Label ID="Label7" runat="server" Text="Sales Type :"></asp:Label></td>
+                <td class="auto-style1"><asp:Label ID="Label7" runat="server" Text="ประเภทการขาย :"></asp:Label></td>
                 <td class="auto-style1"><asp:DropDownList ID="cbosalesType" runat="server" Width="187px"></asp:DropDownList>    
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Label10" runat="server" Text="Counter"></asp:Label>
+                    <asp:Label ID="Label10" runat="server" Text="เค้าท์เตอร์พื้นที่ขาย"></asp:Label>
                 </td>
                 <td>
                     <asp:DropDownList ID="cboCounter" runat="server"></asp:DropDownList>
                 </td>
                 <td>
-                    <asp:Label ID="Label11" runat="server" Text="Area"></asp:Label>
+                    <asp:Label ID="Label11" runat="server" Text="ภาค"></asp:Label>
                 </td>
                 <td>
                     <asp:DropDownList ID="cboArea" runat="server"></asp:DropDownList>
@@ -115,13 +115,13 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Label12" runat="server" Text="Sales"></asp:Label>
+                    <asp:Label ID="Label12" runat="server" Text="เซลล์ผู้รับผิดชอบ"></asp:Label>
                 </td>
                 <td>
                     <asp:DropDownList ID="cboSalesCode" runat="server"></asp:DropDownList>
                 </td>
                 <td>
-                    <asp:Label ID="Label13" runat="server" Text="Supervisor"></asp:Label>
+                    <asp:Label ID="Label13" runat="server" Text="Supervisor PC"></asp:Label>
                 </td>
                 <td>
                     <asp:DropDownList ID="cboSupCode" runat="server"></asp:DropDownList>

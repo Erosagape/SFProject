@@ -1591,7 +1591,21 @@ namespace shopsales
             try
             {
                 gpx = Convert.ToDouble(row["GPx"]);
-                salesin = (Convert.ToDouble(row["salesQty"]) * Convert.ToDouble(row["TagPrice"])) * (gpx / 100);
+                if(row["salesType"].ToString()=="2")
+                {
+                    salesin = (Convert.ToDouble(row["salesQty"]) * Convert.ToDouble(row["salesPrice"])) * (gpx / 100);
+                }
+                else
+                {
+                    if(gpx!=100)
+                    {
+                        salesin = (Convert.ToDouble(row["salesQty"]) * Convert.ToDouble(row["TagPrice"])) * (gpx / 100);
+                    }
+                    else
+                    {
+                        salesin = (Convert.ToDouble(row["salesQty"]) * Convert.ToDouble(row["salesPrice"])) * (gpx / 100);
+                    }
+                }
             }
             catch
             {

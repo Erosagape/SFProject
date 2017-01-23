@@ -798,4 +798,18 @@
     <CalculateType>0</CalculateType>
     <GPCal>0.581</GPCal>
   </Table>
+  <Table>
+    <OID>58</OID>
+    <EffectiveDateFrom>2016-01-01</EffectiveDateFrom>
+    <EffectiveDateTo>2016-12-31</EffectiveDateTo>
+    <GroupID>9</GroupID>
+    <SalesType>2</SalesType>
+    <SalesTypeName>One Price</SalesTypeName>
+    <GPx>0.15</GPx>
+    <ShareDiscount>0.00</ShareDiscount>
+    <DiscountRate>0.00</DiscountRate>
+    <Active>Y</Active>
+    <CalculateType>0</CalculateType>
+    <GPCal>0.85</GPCal>
+  </Table>
 </NewDataSet>

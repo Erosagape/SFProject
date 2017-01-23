@@ -11,6 +11,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
+        <asp:DropDownList ID="cboCounter" runat="server"></asp:DropDownList>
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
         Sheet Name :
         <asp:TextBox ID="TextBox1" runat="server">Template</asp:TextBox>

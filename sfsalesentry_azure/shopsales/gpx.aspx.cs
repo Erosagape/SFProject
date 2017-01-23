@@ -90,6 +90,10 @@ namespace shopsales
                             if (salesTypecal=="3")
                             {
                                 discrate = Convert.ToDouble(cApp.RPNull(dr["DiscountRate"], 0)) / 100;
+                                if(dr["note"].ToString().IndexOf("ส่วนลดเงินสด")<0)
+                                {
+                                    dr["salesPrice"] = Convert.ToDouble(dr["TagPrice"]) - (Convert.ToDouble(dr["TagPrice"]) * discrate);
+                                }
                             }
                             if(dr["note"].ToString().IndexOf("ส่วนลดเงินสด")>=0)
                             {
